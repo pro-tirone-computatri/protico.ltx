@@ -1,0 +1,18 @@
+<?xml version="1.1" encoding="UTF8"?>
+<DemoMessReihe>
+   <D20250301>
+    <Systole>182</Systole>
+     <Puls>66</Puls>
+   </D20250301>
+   <D20250302>
+     <Systole>158</Systole>
+     <Puls>75</Puls>
+   </D20250302>
+   <D20250303>
+     <Systole>179</Systole>
+     <Puls>67</Puls>
+   </D20250303>
+   <D20250304>
+     <Systole>170</Systole><Puls>78</Puls> <!-- !!! -->
+   </D20250304>
+</DemoMessReihe>

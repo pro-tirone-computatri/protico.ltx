@@ -1,0 +1,182 @@
+% This file is part of the Open Source project 'proTironeComputatri'
+% (c) 2025 Karsten Reincke (https://github.com/pro-tirone-computatri/protico.ltx)
+% It is distributed under the terms of the creative commons license
+% CC-BY-4.0 (= https://creativecommons.org/licenses/by/4.0/)
+
+\begin{frame}[fragile]  
+  \frametitle{LF09:08:Exkurs:Bitweise Verknüpfung}
+  \begin{center}
+    \begin{minipage}{0.9\textwidth}
+      \inputminted[fontsize=\footnotesize,linenos]{python}{\snpLf/dm-0908-bitmask.py}
+    \end{minipage}
+  \end{center}
+\end{frame}
+
+\begin{frame}[fragile]  
+  \frametitle{LF09:08:Exkurs:Bitweise Operatoren}
+  \vspace{0.2cm}
+
+  \begin{small}
+  \textbf{Bitweise Operatoren} in Computersprachen
+  \begin{itemize}
+    \item sind \texttt{!} , \texttt{|} und \texttt{\&} 
+    \item sind ein- oder zweistellige Funktionen \underline{in} der Menge $\{1,0\}$
+    \item bilden `\{1,0\}` bzw. `\{1,0\}x\{1,0\}` auf `\{1,0\}` ab
+  \end{itemize}
+    
+  \vspace{0.2cm}
+  \begin{center}
+
+      \renewcommand{\arraystretch}{1.3}
+\begin{tabular}{c|c|c|c|}
+  & \textit{not} = \texttt{!} & \textit{or} = \texttt{|} & \textit{and} = \texttt{\&} \\
+  \hline
+  R1 & \texttt{!1 $\rightarrow$ 0} & \texttt{1 | 1 $\rightarrow$ 1} & \texttt{1 \& 1 $\rightarrow$ 1} \\
+  \hline
+  R2 & \texttt{!0 $\rightarrow$ 1} & \texttt{1 | 0 $\rightarrow$ 1} & \texttt{1 \& 0 $\rightarrow$ 0} \\
+  \hline
+  R3 &  & \texttt{0 | 1 $\rightarrow$ 1} & \texttt{0 \& 1 $\rightarrow$ 0} \\
+  \hline
+  R4 &  & \texttt{0 | 0 $\rightarrow$ 0} & \texttt{0 \& 0 $\rightarrow$ 0} \\
+
+\end{tabular}
+    \end{center}
+  \end{small}
+  
+  \vspace{0.5cm}
+\begin{footnotesize}
+    \begin{flushright}
+      \textit{Bitweise Operatoren nehmen n Zahlen als Argumente und verknüpfen \\
+      die darin gesetzten an derselben Position gesetzten Bits nach diesen Regeln}
+    \end{flushright}
+  \end{footnotesize}
+
+\end{frame}
+
+\begin{frame}[fragile]  
+  \frametitle{LF09:08:Exkurs:Bitweise Operatoren}
+
+    \begin{center}
+    \begin{minipage}{0.9\textwidth}
+  
+      \inputminted[fontsize=\footnotesize,linenos]{python}{\snpLf/dm-0908-int-remains-int.py}
+    \end{minipage}
+    \end{center}
+
+
+  \vspace{0.6cm}
+  \begin{flushright}
+    \begin{footnotesize}
+      \textrm{\textbf{Integer bleibt Integer - unabhängig von der Darstellung!}}
+      
+      \vspace{0.3cm}
+      \textrm{\textit{$\Rightarrow$ Vor bitweiser Verknüpfung}}\\
+      \textrm{\textit{keine gesonderte Umwandlung}}\\
+      \texttt{'dezimal $\rightarrow$ binär'} \textrm{\textit{nötig.}}\\
+    \end{footnotesize}
+  \end{flushright}
+\end{frame}
+
+\begin{frame}[fragile]  
+  \frametitle{LF09:08:Exkurs:Logische Operatoren}
+  \vspace{0.2cm}
+
+  \begin{small}
+  \textbf{Logische Operatoren} in Computersprachen
+  \begin{itemize}
+    \item sind \texttt{!} , \texttt{||} und \texttt{\&\&} 
+    \item sind ein- oder zweistellige Funktionen \underline{in} der Menge $\{T,F\}$
+    \item bilden `\{T,F\}` bzw. `\{T,F\}x\{T,F\}` auf `\{T,F\}` ab
+  \end{itemize}
+    
+  \vspace{0.2cm}
+  \begin{center}
+
+      \renewcommand{\arraystretch}{1.3}
+\begin{tabular}{c|c|c|c|}
+  & \textit{NOT} = \texttt{!} & \textit{OR} = \texttt{||} & \textit{AND} = \texttt{\&\&} \\
+  \hline
+  R1 & \texttt{!T $\rightarrow$ F} & \texttt{T || T $\rightarrow$ T} & \texttt{T \&\& T $\rightarrow$ T} \\
+  \hline
+  R2 & \texttt{!F $\rightarrow$ T} & \texttt{T || F $\rightarrow$ T} & \texttt{T \&\& F $\rightarrow$ F} \\
+  \hline
+  R3 &  & \texttt{F || T $\rightarrow$ T} & \texttt{F \&\& T $\rightarrow$ F} \\
+  \hline
+  R4 &  & \texttt{F || F $\rightarrow$ F} & \texttt{F \&\& F $\rightarrow$ F} \\
+
+\end{tabular}
+    \end{center}
+  \end{small}
+  
+  \vspace{0.5cm}
+\begin{footnotesize}
+    \begin{flushright}
+      \textit{Logische Operatoren nehmen n Wahrheitswerte als Argumente \\
+      und verknüpfen diese nach obigen Regeln}
+    \end{flushright}
+  \end{footnotesize}
+
+\end{frame}
+
+\begin{frame}[fragile]  
+  \frametitle{LF09:08:Exkurs:Wahrheitswertetabellen}
+  \vspace{0.2cm}
+
+  \begin{small}
+  \textbf{Logische Operatoren} in der Logik sind 
+  \begin{itemize}
+    \item sind \texttt{$\neg$} , \texttt{$\lor$} und \texttt{$\land$} 
+    \item bilden `\{w,f\}` bzw. `\{w,f\}x\{w,f\}` auf `\{w,f\}` ab
+  \end{itemize}
+    
+  \vspace{0.2cm}
+
+Die Definition erfolgt durch Wahrheitswertetabellen:
+
+  \begin{center}
+
+      \renewcommand{\arraystretch}{1.3}
+\begin{tabular}{c|c|c|c|c|c|}
+p & q & $\neg$ p & $\neg$ q & p $\lor$ q & p $\land$ q \\
+\hline
+w & w & f & f & w & w \\
+w & f & f & w & w & f \\
+f & w & w & f & w & f \\
+f & f & w & w & f & f 
+\end{tabular}
+    \end{center}
+  \end{small}
+  
+  \vspace{0.5cm}
+\begin{footnotesize}
+    \begin{flushright}
+      \textit{Mit Wahrheitswertetabellen kann man weitere \\
+      'logische Operatoren' definieren, z.B. $\to$ (wenn, dann)}
+    \end{flushright}
+  \end{footnotesize}
+
+\end{frame}
+
+\begin{frame}[fragile]  
+  \frametitle{LF09:08:Logische Operatoren:Was geht?}
+  \begin{center}
+    \begin{minipage}{0.6\textwidth}
+      \inputminted[fontsize=\footnotesize,linenos]{python}{\snpLf/dm-0908-logop.py}
+    \end{minipage}
+      
+    \vspace{1cm}
+    \begin{minipage}{0.6\textwidth}
+      \inputminted[fontsize=\footnotesize,linenos]{c++}{\snpLf/dm-0908-logop.cc}
+    \end{minipage}
+  \end{center}
+\end{frame}
+
+\begin{frame}[fragile]  
+  \frametitle{LF09:08:Bitweise + logische Operatoren:Was geht?}
+  \begin{center}
+    \begin{minipage}{0.6\textwidth}
+      \inputminted[fontsize=\footnotesize,linenos]{python}{\snpLf/dm-0908-log-riddle.py}
+    \end{minipage}
+  \end{center}
+\end{frame}
+

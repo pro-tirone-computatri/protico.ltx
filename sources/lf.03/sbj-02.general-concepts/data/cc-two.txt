@@ -1,0 +1,10 @@
+File-Server
+Print-Server
+Mail-Server
+DNS-Server
+Shop-Server
+Web-Server
+Update-Server
+Anwendungsserver
+Terminal-Sever
+NAS-Server

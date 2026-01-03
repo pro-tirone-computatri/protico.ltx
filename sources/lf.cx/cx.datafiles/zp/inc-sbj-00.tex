@@ -1,0 +1,163 @@
+% This file is part of the Open Source project 'proTironeComputatri'
+% (c) 2025 Karsten Reincke (https://github.com/pro-tirone-computatri/protico.ltx)
+% It is distributed under the terms of the creative commons license
+% CC-BY-4.0 (= https://creativecommons.org/licenses/by/4.0/)
+
+\selectlanguage{ngerman}
+
+
+\begin{frame}  
+  \frametitle{LFCX:Datenaustauschformate}
+
+  \begin{center}
+    \includegraphics[width=0.7\paperwidth]{\imgLf/carrying-pain-1411867-pxh.png}
+  \end{center}
+
+  \begin{flushright}
+    \textcolor{black}{CSV, INI, JSON, XML und YAML}
+  \end{flushright}
+\end{frame}
+
+\begin{frame}[fragile] 
+  \frametitle{LFCX:Datenaustauschformate:Referenzdaten}
+  \begin{center}
+
+  \textbf{Blutdruckmessung}
+
+  \vspace{0.6cm}
+  \begin{small}
+  \renewcommand{\arraystretch}{1.5} 
+  \begin{tabular}{|r||c|c|c|c|}
+\hline
+\textbf{Datum:} & 2025-03-01 & 2025-03-02 & 2025-03-03 & 2025-03-04\\ \hline
+\textbf{Systole:} & 182 & 158 & 179 & 170\\ \hline
+\textit{\textcolor{gray}{Diastole:}} & 
+  \textit{\textcolor{gray}{110*}} & \textit{\textcolor{gray}{98*}} & 
+  \textit{\textcolor{gray}{103*}} & \textit{\textcolor{gray}{100*}}\\ \hline
+\textbf{Puls:} & 66 & 75 & 67 & 78\\ \hline
+  \end{tabular}
+  \end{small}
+  \end{center}
+
+  \vspace{0.6cm}
+  \begin{flushright}
+    \begin{tiny}
+      \textrm{\textit{* aus Platzgründen nicht in Datendateien übernommen.}}
+    \end{tiny}
+  \end{flushright}
+\end{frame}
+
+\begin{frame}[fragile] 
+  \frametitle{LFCX:Datenaustauschformate:CSV}
+
+
+  \begin{center}
+  \begin{minipage}{0.5\textwidth}
+  \begin{verbatim}
+    Datum,Systole,Puls
+    2025-03-01, 182, 66
+    2025-03-02, 158, 75
+    2025-03-03, 179, 67
+    2025-03-04, 170, 78
+  \end{verbatim}
+  \end{minipage}
+  \end{center}
+  \vspace{0.6cm}
+  \begin{flushright}
+    \begin{tiny}
+      \textrm{\textit{Comma Separated Values}}
+    \end{tiny}
+  \end{flushright}
+\end{frame}
+
+\begin{frame}[fragile]   
+  \frametitle{LFCX:Datenaustauschformate:INI}
+  \begin{columns}[t]
+  \column{0.5\textwidth}
+    \begin{center}
+    \begin{minipage}{0.6\textwidth}
+      \textbf{Konfigurationsdatei}
+      \inputminted[fontsize=\small,linenos]{ini}{\snpLf/cx-dff-config.ini}   
+    \end{minipage}
+    \end{center}
+  \column{0.5\textwidth}
+    \begin{center}
+    \begin{minipage}{0.5\textwidth}
+      \textbf{Datensatzdatei}
+      \inputminted[fontsize=\small,linenos]{ini}{\snpLf/cx-dff-measure.ini}   
+    \end{minipage}
+    \end{center}
+  \end{columns}
+
+  \vspace{0.6cm}
+  \begin{flushright}
+    \begin{tiny}
+      \textrm{\textit{Initialisierungsdatei}}
+    \end{tiny}
+  \end{flushright}
+\end{frame}
+
+\begin{frame}[fragile]  
+  \frametitle{LFCX:Datenaustauschformate:JSON}
+  \begin{center}
+  \begin{minipage}{0.4\textwidth}
+    \inputminted[fontsize=\footnotesize,linenos]{json}{\snpLf/cx-dff-measure.json}   
+  \end{minipage}
+  \end{center}
+
+  \begin{flushright}
+    \begin{tiny}
+      \textrm{\textit{JSON = JavaScript Object Notation}}
+    \end{tiny}
+  \end{flushright}
+\end{frame}
+
+\begin{frame}[fragile]  
+  \frametitle{LFCX:Datenaustauschformate:JSON:EBNF}
+  \begin{center}
+  \begin{minipage}{0.9\textwidth}
+    \inputminted[fontsize=\footnotesize,linenos]{ebnf}{\snpLf/cx-dff-grammar-json.ebnf}   
+  \end{minipage}
+  \end{center}
+
+  \vspace{0.6cm}
+  \begin{flushright}
+    \begin{tiny}
+      \textrm{\textit{(unvollständige) JSON Grammar in EBNF}}
+    \end{tiny}
+  \end{flushright}
+\end{frame}
+
+
+\begin{frame}[fragile]  
+  \frametitle{LFCX:Datenaustauschformate:XML}
+  \begin{center}
+  \begin{minipage}{0.6\textwidth}
+    \inputminted[fontsize=\footnotesize,linenos]{xml}{\snpLf/cx-dff-measure.xml}   
+  \end{minipage}
+  \end{center}
+  
+  \begin{flushright}
+    \begin{tiny}
+      \textrm{\textit{XML: - eXtensible Markup Language}}
+    \end{tiny}
+  \end{flushright}
+\end{frame}
+
+\begin{frame}[fragile]  
+  \frametitle{LFCX:Datenaustauschformate:YAML}
+  \begin{center}
+  \begin{minipage}{0.6\textwidth}
+    \inputminted[fontsize=\footnotesize,linenos]{yaml}{\snpLf/cx-dff-measure.yaml}   
+  \end{minipage}
+  \end{center}
+  
+  \vspace{0.6cm}
+  \begin{flushright}
+    \begin{tiny}
+      \textrm{\textit{ YAML :- "YAMl Ain't Markup Language"}}
+    \end{tiny}
+  \end{flushright}
+\end{frame}
+
+

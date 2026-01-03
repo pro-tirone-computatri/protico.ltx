@@ -1,0 +1,128 @@
+% This file is part of the Open Source project 'proTironeComputatri'
+% (c) 2025 Karsten Reincke (https://github.com/pro-tirone-computatri/protico.ltx)
+% It is distributed under the terms of the creative commons license
+% CC-BY-4.0 (= https://creativecommons.org/licenses/by/4.0/)
+
+\selectlanguage{ngerman}
+
+{
+\usebackgroundtemplate{\includegraphics[width=\paperwidth]{\imgLf/beach-steps-725480-pxh.png}}
+\begin{frame}  
+  \frametitle{LF11c:01:Prozessanalyse}
+
+  \vspace{6cm}
+  \begin{flushright}
+    \textcolor{white}{Was sind \\
+    \textit{Prozesse}?}
+  \end{flushright}
+\end{frame}
+}
+
+\begin{frame}[fragile]
+  \frametitle{LF11c:01:Prozessdokumentation:Flow-Chart \& Activity}
+  \begin{columns}
+    \column{0.5\textwidth}
+      \begin{block}{Beispielprozess}
+        \begin{verbatim}
+
+cat MIT.dirty.txt |\
+   sed 's/  */ /g' |\
+   tr -d '\r' |\
+   tr '\n' '$' |\
+   sed 's/\$\$/\n\n/g' |\
+   tr -d '$' |\
+   tr 'a' 'a' |\
+   sed 's/  */ /g' \
+ >> x.txt
+        \end{verbatim}
+      \end{block}
+    \column{0.5\textwidth} 
+    \begin{footnotesize}
+    \begin{itemize}
+      \item \texttt{cat} :- liest Daten aus Datei und gibt sie unverändert nach stdout aus.
+      \item \texttt{sed} :- (= Stream-Editor) = liest Daten von \texttt{stdin}, ersetzt das zwischen \texttt{/ /} durch das danach \texttt{/ /} und gibt das Ergebnis nach \texttt{stdout} aus.
+      \item \texttt{tr} :- liest Daten von \texttt{stdin}, ersetzt alle Zeichen 'A' durch 'B' bzw. löscht 'A' und schreibt nach \texttt{stdout}
+      \item \texttt{>} :- liest von einem IO-Channel (hier \texttt{stdout}) und lenkt die in eine Datei um.
+    \end{itemize}
+  \end{footnotesize}
+  \end{columns}
+
+\end{frame}
+
+{
+  \usebackgroundtemplate{\includegraphics[height=\paperheight]{\imgLf/supermarket-898411-pxh.png}}
+\begin{frame}[t]
+  \frametitle{LF11c:01:Prozessdokumentation:BPMN \& (e)EPK}
+  \begin{footnotesize}
+    { \bfseries 
+  \begin{columns}[t]
+    \column{0.5\textwidth}
+    \begin{itemize}
+      \item Ich bin für's Einkaufen zuständig.
+      \item Meine Frau schreibt den Einkaufszettel, schrittweise, wann immer ihr etwas einfällt, manchmal bis zur letzten Minute.
+      \item Irgendwann, bevor ich losfahre, checke ich, was uns an Wasch- und Hygieneartikel fehlt, und notiere das auf unserem Einkaufszettel.
+      \item Zum Einkaufen fahre ich freitags oder samstags.
+      \item Muss ich auch zur Reinigung, fahre ich allein nach \textit{Herborn}, gebe dort die Kleidung ab, nehme fertige wieder mit und kaufe danach auch dort im Rewe und ggf. auch im DM ein.
+    \end{itemize}
+    \column{0.5\textwidth} 
+    \begin{itemize}
+      \item Meistens fahre ich aber nur zum Rewe nach \textit{Niederweidbach}.
+      \item Steht Drogeriebedarf auf dem Zettel und muss ich nicht zur Reinigung, kaufe ich dagegen in \textit{Erda} ein: beim Rossmann und im Edeka gegenüber.
+      \item Manchmal kommt meine Frau mit nach \textit{Niederweidbach} oder \textit{Erda}.
+      \item Bin ich allein in \textit{Erda}, kaufe ich erst bei Rossmann und dann bei Edeka ein - oder umgekehrt.
+      \item Sind wir zu zweit in \textit{Erda}, beginnt meine Frau bei Rossmann, ich bei Edeka. Danach beenden wir den Edeka-Einkauf gemeinsam.
+      \item Auf dem Rückweg lutsche ich Lakritze - wenn ich allein bin.
+    \end{itemize}
+  \end{columns}
+  }
+\end{footnotesize}
+\end{frame}
+}
+
+
+\begin{frame}  
+  \frametitle{LF11c:01:::UML, Flowchart, BPMN \& (e)EPK}
+  \begin{center}
+    \includegraphics[width=10cm]{\imgLf/switchi.png}
+  \end{center}
+\end{frame}
+
+
+\begin{frame}
+  \frametitle{LF11c:01:::UML, Flowchart, BPMN \& (e)EPK}
+
+  \begin{tiny}
+  \parbox{.7\textwidth}{
+  In der Zentrale der Sportfirma 'Switchi' arbeiten 4 Schwestern, \textbf{Anna}, \textbf{Berta}, \textbf{Charlotte} und \textbf{Dora} Bridgerton. Jede Schwester betreut eine Abteilung: Anna das \textbf{Angeln}, Berta das \textbf{Baden}, Charlotte das \textbf{Curling} und Dora \textbf{Darts}. 
+  Ihre Aufgabe ist es, den Informationsaustausch zwischen den Abteilungen zu ermöglichen: 
+  }\hfill\parbox{.3\textwidth}{
+    \begin{center}\includegraphics[width=1.1cm]{\imgLf/switchi-core.png}\end{center}
+  }
+  \end{tiny}
+
+  \parbox{1\textwidth}{
+  \begin{footnotesize}
+  \begin{itemize}
+    \item \textit{Bekommt} eine der Schwestern \textit{einen Brief} aus der Abteilung, für die sie zuständig ist, \textit{analysiert} sie den oder \textit{die Adressaten}:  
+    \item Ist der Brief an alle anderen Abteilungen adressiert, \textit{läuft sie zum Kopierer}, \textit{kopiert ihn zweimal} und \textit{übergibt jeder} ihrer Schwestern \textit{einen Brief}.   
+    \item Ist der Brief dagegen an eine bestimmte Abteilung adressiert, \textit{übergibt sie den Brief direkt} an die Schwester, die für diese Abteilung zuständig ist. 
+    \item \textit{Reicht eine Schwester einen Brief an eine andere} Schwester, \textit{schickt diese den an die Abteilung, für die sie zuständig ist}.
+  \end{itemize}
+  \end{footnotesize}
+  }
+
+  \vspace{0.2cm}
+  \begin{tiny}
+  \parbox{1\textwidth}{
+  Der Chef lässt die Abteilungen oft und überraschend in andere Zimmer ziehen. Das fördere den Teamgeist. Deshalb kennen die Abteilungen erst einmal nur ihre eigene, aktuell gerade gültige Adresse. Und sie müssen, wollen sie eine andere Abteilung kontaktieren, darum zuerst deren aktuelle Adresse ermitteln. Dazu schicken zuerst an alle Abteilungen die Frage nach der Adresse der Abteilung, mit der sie reden wollen. 
+  }
+  \end{tiny}
+
+  \vspace{0.1cm}
+  \begin{tiny}
+    \parbox{1\textwidth}{
+  Abteilungen, die mit der Frage nicht gemeint sind, \textit{ignorieren diese}. Die tatsächlich \textit{gemeinte Abteilung schickt} dagegen der anfragenden Abteilung -- sie hat deren Adresse im Absender gefunden -- \textit{als Antwort ihre eigene Adresse}. Danach können die beiden Abteilungen für eine kleine Weile \textit{direkt Nachrichten austauschen}.
+    }
+  \end{tiny}
+
+\end{frame}

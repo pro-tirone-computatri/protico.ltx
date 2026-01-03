@@ -1,0 +1,82 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/25.0.2 Chrome/128.0.6613.186 Electron/32.2.5 Safari/537.36" version="25.0.2">
+  <diagram name="Page-1" id="7mwc7E3Da1yVqDWPhXlU">
+    <mxGraphModel dx="1138" dy="951" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="x5y7FwbxWKnUpJphXKlS-15" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F8CECC;" vertex="1" parent="1">
+          <mxGeometry x="20" y="532.5" width="1100" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="x5y7FwbxWKnUpJphXKlS-14" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E6D0DE;" vertex="1" parent="1">
+          <mxGeometry x="20" y="300" width="1100" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="x5y7FwbxWKnUpJphXKlS-1" value="&lt;font style=&quot;font-size: 36px;&quot; face=&quot;Courier New&quot;&gt;&lt;b style=&quot;&quot;&gt;[ RSIP RSMAC RDIP RDMAC PL ]&lt;/b&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="240" y="70" width="610" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="x5y7FwbxWKnUpJphXKlS-2" value="&lt;font style=&quot;font-size: 36px;&quot; face=&quot;Courier New&quot;&gt;&lt;b style=&quot;&quot;&gt;[ &lt;font color=&quot;#666666&quot;&gt;PRE&lt;/font&gt; &lt;font color=&quot;#0000ff&quot;&gt;DMAC&lt;/font&gt; &lt;font color=&quot;#006600&quot;&gt;SMAC&lt;/font&gt; &lt;font color=&quot;#808080&quot;&gt;X&lt;/font&gt; &lt;font color=&quot;#ff33ff&quot;&gt;0x806&lt;/font&gt; PAYLOAD ]&lt;/b&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="110" y="450" width="740" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="x5y7FwbxWKnUpJphXKlS-3" value="&lt;font style=&quot;font-size: 36px;&quot; face=&quot;Courier New&quot;&gt;&lt;b style=&quot;&quot;&gt;[ &lt;font color=&quot;#808080&quot;&gt;PRE&lt;/font&gt; &lt;font color=&quot;#006600&quot;&gt;SMAC&lt;/font&gt; &lt;font color=&quot;#006600&quot;&gt;SIP&lt;/font&gt; &lt;font color=&quot;#0000ff&quot;&gt;DMAC&lt;/font&gt; &lt;font color=&quot;#0000ff&quot;&gt;DIP&lt;/font&gt; ]&lt;/b&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="420" y="350" width="550" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="x5y7FwbxWKnUpJphXKlS-4" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;labelPosition=left;verticalLabelPosition=middle;align=right;verticalAlign=middle;rotation=-90;" vertex="1" parent="1">
+          <mxGeometry x="700" y="130" width="20" height="540" as="geometry" />
+        </mxCell>
+        <mxCell id="x5y7FwbxWKnUpJphXKlS-5" value="&lt;font face=&quot;Garamond&quot;&gt;&lt;i&gt;ARP-Request&amp;nbsp;&lt;/i&gt;&lt;/font&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font face=&quot;Garamond&quot;&gt;&lt;i&gt;+ ARP-Reply&lt;/i&gt;&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;rotation=-90;" vertex="1" parent="1">
+          <mxGeometry x="-10" y="394" width="110" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="x5y7FwbxWKnUpJphXKlS-6" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;labelPosition=left;verticalLabelPosition=middle;align=right;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="80" y="320" width="20" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="x5y7FwbxWKnUpJphXKlS-7" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;labelPosition=left;verticalLabelPosition=middle;align=right;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="80" y="542.5" width="20" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="x5y7FwbxWKnUpJphXKlS-9" value="&lt;font style=&quot;font-size: 36px;&quot; face=&quot;Courier New&quot;&gt;&lt;b style=&quot;&quot;&gt;[ &lt;font color=&quot;#666666&quot;&gt;PRE&lt;/font&gt; &lt;font color=&quot;#0000ff&quot;&gt;DMAC&lt;/font&gt; &lt;font color=&quot;#006600&quot;&gt;SMAC&lt;/font&gt; &lt;font color=&quot;#808080&quot;&gt;X&lt;/font&gt; &lt;font color=&quot;#6600cc&quot;&gt;0x800&lt;/font&gt; PAYLOAD ]&lt;/b&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="110" y="662.5" width="740" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="x5y7FwbxWKnUpJphXKlS-10" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;labelPosition=left;verticalLabelPosition=middle;align=right;verticalAlign=middle;rotation=-90;" vertex="1" parent="1">
+          <mxGeometry x="697.5" y="380" width="20" height="495" as="geometry" />
+        </mxCell>
+        <mxCell id="x5y7FwbxWKnUpJphXKlS-11" value="&lt;font style=&quot;font-size: 36px;&quot; face=&quot;Courier New&quot;&gt;&lt;b style=&quot;&quot;&gt;[ &lt;font color=&quot;#808080&quot;&gt;PRE&lt;/font&gt; &lt;font color=&quot;#006600&quot;&gt;SIP&lt;/font&gt;&amp;nbsp;&lt;font color=&quot;#0000ff&quot;&gt;DIP&lt;/font&gt;&amp;nbsp;&lt;/b&gt;&lt;/font&gt;&lt;b style=&quot;font-family: &amp;quot;Courier New&amp;quot;; font-size: 36px;&quot;&gt;PAYLOAD&lt;/b&gt;&lt;font style=&quot;font-size: 36px;&quot; face=&quot;Courier New&quot;&gt;&lt;b style=&quot;&quot;&gt;]&lt;/b&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="462.5" y="582.5" width="495" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="x5y7FwbxWKnUpJphXKlS-12" value="&lt;font face=&quot;Garamond&quot;&gt;&lt;i&gt;RS-RD-Nachricht&lt;/i&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;rotation=-90;" vertex="1" parent="1">
+          <mxGeometry x="-10" y="612.5" width="110" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="x5y7FwbxWKnUpJphXKlS-13" value="" style="shape=step;perimeter=stepPerimeter;whiteSpace=wrap;html=1;fixedSize=1;rotation=-90;" vertex="1" parent="1">
+          <mxGeometry x="485" y="160" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="x5y7FwbxWKnUpJphXKlS-16" value="&lt;i&gt;&lt;font face=&quot;Garamond&quot;&gt;Ethernet-Frame&lt;/font&gt;&lt;/i&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="990" y="450" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="x5y7FwbxWKnUpJphXKlS-17" value="&lt;i&gt;&lt;font face=&quot;Garamond&quot;&gt;ARP-Package&lt;/font&gt;&lt;/i&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="990" y="350" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="x5y7FwbxWKnUpJphXKlS-18" value="&lt;i&gt;&lt;font face=&quot;Garamond&quot;&gt;Ethernet-Frame&lt;/font&gt;&lt;/i&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="990" y="662.5" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="x5y7FwbxWKnUpJphXKlS-19" value="&lt;i&gt;&lt;font face=&quot;Garamond&quot;&gt;IP-Package&lt;/font&gt;&lt;/i&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="990" y="582.5" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="x5y7FwbxWKnUpJphXKlS-20" value="&lt;font face=&quot;Courier New&quot;&gt;https://de.wikipedia.org/wiki/IP-Paket&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="820" y="542.5" width="280" height="30" as="geometry" />
+        </mxCell>
+        <UserObject label="https://de.wikipedia.org/wiki/Datenframe" link="https://de.wikipedia.org/wiki/Datenframe" id="x5y7FwbxWKnUpJphXKlS-21">
+          <mxCell style="text;whiteSpace=wrap;fontFamily=Courier New;" vertex="1" parent="1">
+            <mxGeometry x="800" y="702.5" width="300" height="30" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="https://de.wikipedia.org/wiki/Datenframe" link="https://de.wikipedia.org/wiki/Datenframe" id="x5y7FwbxWKnUpJphXKlS-22">
+          <mxCell style="text;whiteSpace=wrap;fontFamily=Courier New;" vertex="1" parent="1">
+            <mxGeometry x="810" y="480" width="300" height="30" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="https://de.wikipedia.org/wiki/Address_Resolution_Protocol" link="https://de.wikipedia.org/wiki/Address_Resolution_Protocol" id="x5y7FwbxWKnUpJphXKlS-23">
+          <mxCell style="text;whiteSpace=wrap;fontFamily=Courier New;" vertex="1" parent="1">
+            <mxGeometry x="709" y="310" width="411" height="30" as="geometry" />
+          </mxCell>
+        </UserObject>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

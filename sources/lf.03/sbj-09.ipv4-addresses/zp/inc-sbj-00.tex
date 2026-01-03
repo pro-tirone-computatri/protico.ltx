@@ -1,0 +1,229 @@
+% This file is part of the Open Source project 'proTironeComputatri'
+% (c) 2025 Karsten Reincke (https://github.com/pro-tirone-computatri/protico.ltx)
+% It is distributed under the terms of the creative commons license
+% CC-BY-4.0 (= https://creativecommons.org/licenses/by/4.0/)
+
+\begin{frame}[fragile]  
+  \frametitle{LF03:09:IPv4-Adressen}
+  \vspace{0.2cm}
+  \begin{footnotesize}
+  \begin{center}
+    \renewcommand{\arraystretch}{1.5}
+    \begin{tabular}{|c|c||c|c|c|c|}
+    \hline
+    &  \textcolor{gray}{\tiny{B4}} & \textcolor{gray}{\tiny{B3}} & \textcolor{gray}{\tiny{B2}} 
+    & \textcolor{gray}{\tiny{B1}}  \\
+	  \hline
+    \hline
+    IPv4-String & \multicolumn{4}{c|}{"192.168.0.0"} \\
+    \hline
+	  dezimal aufgelöst & \texttt{192} & \texttt{168} & \texttt{0} & \texttt{0} \\
+    \hline
+    hexadezimal aufgelöst & \texttt{0xC2} & \texttt{0xA8} & \texttt{0x00} & \texttt{0x00}\\
+    \hline
+    binär aufgelöst & \texttt{11000000} & \texttt{10101000} & \texttt{00000000} & \texttt{00000000}\\
+    \hline
+  \end{tabular}
+\end{center}
+\end{footnotesize}
+\end{frame}
+
+\begin{frame}[fragile]  
+  \frametitle{LF03:09:IPv4-Adressen:Anzahl}
+  \vspace{0.2cm}
+  \begin{footnotesize}
+  \begin{center}
+    \renewcommand{\arraystretch}{1.5}
+    \begin{tabular}{|c|c|c|c|c|}
+    \hline
+    \textcolor{gray}{\tiny{B4}} & \textcolor{gray}{\tiny{B3}} & \textcolor{gray}{\tiny{B2}} 
+    & \textcolor{gray}{\tiny{B1}}  \\
+	  \hline
+    \hline
+	  \textcolor{blue}{\texttt{$2^8$}} & \textcolor{blue}{\texttt{$2^8$}} & \textcolor{blue}{\texttt{$2^8$}} & \textcolor{blue}{\texttt{$2^8$}} \\
+    \hline
+    \multicolumn{4}{|c|}{\textcolor{blue}{\texttt{$2^{(8 + 8 + 8 + 8)}$}}} \\
+    \hline
+    \multicolumn{4}{|c|}{\textcolor{blue}{\texttt{$= 2^{(32)}$}}} \\
+    \hline
+    \multicolumn{4}{|c|}{\textcolor{blue}{\texttt{$= 4.294.967.296$}}} \\
+    \hline
+  \end{tabular}
+\end{center}
+\end{footnotesize}
+
+\vspace{0.4cm}
+\begin{flushright}
+\begin{tiny}
+ergibt bei $8.000.000.000$ Erdbewohnerinnen\\ $~0.53$ IPv4-Adressen pro Person \texttt{;-)}
+\end{tiny}
+\end{flushright}
+
+\end{frame}
+
+\begin{frame}[fragile]  
+  \frametitle{LF03:09:IPv4-Adressen:Welche ist korrekt?}
+  \vspace{1cm}
+  \begin{center}
+  \begin{minipage}{0.5\textwidth}
+  \begin{enumerate}
+    \item \texttt{19216800}
+    \item \texttt{C2.A8.0.0}
+    \item \texttt{192.168.320.0}
+  \end{enumerate}
+  \end{minipage}
+  \end{center}
+\end{frame}
+
+
+\begin{frame}[fragile]  
+  \frametitle{LF03:09:IPv4-Netze}
+  \vspace{0.2cm}
+  \begin{footnotesize}
+  \begin{center}
+    \renewcommand{\arraystretch}{1.3}
+    \begin{tabular}{cr|c|c|c|c|c|}
+    \cline{3-6}
+    & &  \textcolor{gray}{\tiny{B4}} & \textcolor{gray}{\tiny{B3}} & \textcolor{gray}{\tiny{B2}} 
+    &  \textcolor{gray}{\tiny{B1}}  \\
+	  \cline{3-6}
+	  & IPv4-Adresse & \texttt{192} & \texttt{168} & \texttt{0} & \texttt{42} \\
+    \cline{3-6}
+    & Subnetzmaske & \texttt{255} & \texttt{255} & \texttt{255} & \texttt{0}\\
+    \cline{3-6}\\
+    \cline{3-6}
+	  & (bin)(IPv4-Adresse) & \textcolor{blue}{\texttt{11000000}} & \textcolor{blue}{\texttt{10101000}} & \textcolor{blue}{\texttt{00000000}} & \textcolor{teal}{\texttt{00101010}} \\
+    \& & (bin)(Subnetzmaske) & \textcolor{red}{\texttt{11111111}} & \textcolor{red}{\texttt{11111111}} & \textcolor{red}{\texttt{11111111}} & \texttt{00000000}\\
+    \cline{3-6}
+    = & (bin)(Netzadresse) & \textcolor{violet}{\texttt{11000000}} & \textcolor{violet}{\texttt{10101000}} & \textcolor{violet}{\texttt{00000000}} & \texttt{00000000} \\
+   
+    & Netzadresse & \textcolor{violet}{\texttt{192}} & \textcolor{violet}{\texttt{168}} & \textcolor{violet}{\texttt{0}} & \texttt{0} \\
+    \cline{3-6}\\
+    \cline{3-6}
+    & Broadcastadresse & \texttt{192} & \texttt{168} & \texttt{0} & \texttt{255} \\
+    \cline{3-6}
+    & Gatewayadresse & \texttt{192} & \texttt{168} & \texttt{0} & \texttt{1} \\
+    \cline{3-6}
+
+  \end{tabular}
+\end{center}
+\end{footnotesize}
+\end{frame}
+
+\begin{frame}[fragile]  
+  \frametitle{LF03:09:Exkurs:Notationsumwandlung}
+  \begin{footnotesize}
+  \begin{columns}
+    \column{0.3\textwidth}
+    \textbf{dec $\Rightarrow$ bin}
+  
+    \vspace{0.2cm}
+    \texttt{\textcolor{blue}{\tiny{0.}} \textcolor{teal}{43} : 2 = 21 \% \textcolor{red}{1}} $\uparrow$\\
+    \texttt{\textcolor{blue}{\tiny{1.}} 21 : 2 = 10 \% \textcolor{red}{1}} $\uparrow$\\
+    \texttt{\textcolor{blue}{\tiny{2.}} 10 : 2 = \ 5 \% \textcolor{red}{0}} $\uparrow$\\
+    \texttt{\textcolor{blue}{\tiny{3.}} \ 5 : 2 = \ 2 \% \textcolor{red}{1}} $\uparrow$\\
+    \texttt{\textcolor{blue}{\tiny{4.}} \ 2 : 2 = \ 1 \% \textcolor{red}{0}} $\uparrow$\\
+    \texttt{\textcolor{blue}{\tiny{5.}} \ 1 : 2 = \ 0 \% \textcolor{red}{1}} $\uparrow$ \\
+
+    \column{0.7\textwidth}
+    
+    \renewcommand{\arraystretch}{1.5}
+    \begin{tabular}{c c c c c c c c c}
+    \textit{\textcolor{blue}{7.}} &\textit{\textcolor{blue}{6.}} &
+      \textit{\textcolor{blue}{5.}} & \textit{\textcolor{blue}{4.}} &
+        \textit{\textcolor{blue}{3.}} & \textit{\textcolor{blue}{2.}} &
+          \textit{\textcolor{blue}{1.}} & \textit{\textcolor{blue}{0.}} & \\
+      \texttt{\textcolor{gray}{0}} & \texttt{\textcolor{gray}{0}} & \texttt{\textcolor{teal}{1}} & \texttt{\textcolor{teal}{0}} & 
+        \texttt{\textcolor{teal}{1}} & \texttt{\textcolor{teal}{0}} & \texttt{\textcolor{teal}{1}} & \texttt{\textcolor{teal}{1}} & \\
+   \end{tabular}
+  \end{columns}
+
+  \vspace{0.6cm}
+  \rule{0.9\textwidth}{0.5pt}
+  
+  \vspace{0.6cm}
+
+  \textbf{bin $\Rightarrow$ dec}
+  
+  \vspace{0.2cm}
+
+  \renewcommand{\arraystretch}{1.5}
+    \begin{tabular}{c c c c c c c c c}
+    \textit{\textcolor{blue}{7.}} &\textit{\textcolor{blue}{6.}} &
+      \textit{\textcolor{blue}{5.}} & \textit{\textcolor{blue}{4.}} &
+        \textit{\textcolor{blue}{3.}} & \textit{\textcolor{blue}{2.}} &
+          \textit{\textcolor{blue}{1.}} & \textit{\textcolor{blue}{0.}} & \\
+      \texttt{0} & \texttt{0} & \texttt{1} & \texttt{0} & \texttt{1} & \texttt{0} & \texttt{1} & \texttt{1} & \\
+      \texttt{0*2}$\mathcolor{magenta}{^7}$ & \texttt{0*2}$\mathcolor{magenta}{^6}$ & 
+        \texttt{1*2}$\mathcolor{magenta}{^5}$ & \texttt{0*2}$\mathcolor{magenta}{^4}$ & 
+         \texttt{1*2}$\mathcolor{magenta}{^3}$ & \texttt{0*2}$\mathcolor{magenta}{^2}$ & 
+           \texttt{1*2}$\mathcolor{magenta}{^1}$ & $\texttt{1*2}\mathcolor{magenta}{^1}$ & \\
+      & & 32 & + & 8 & + & 2 & + 1 = & \textcolor{teal}{43} \\
+   \end{tabular}
+  \end{footnotesize}
+
+  \vspace{0.5cm}
+  \tiny{\underline{Anregung}: Warum wäre \texttt{45} ein schlechtes Erklärbeispiel, nicht aber die \textit{Weltsuperzahl} \texttt{42}?}
+\end{frame}
+
+
+\begin{frame}[fragile]  
+  \frametitle{LF03:09:IPv4-Netze}
+  \vspace{0.2cm}
+  \begin{footnotesize}
+  \begin{center}
+    \renewcommand{\arraystretch}{1.3}
+    \begin{tabular}{cr|c|c|c|c|c|}
+    \cline{3-6}
+    & &  \textcolor{gray}{\tiny{B4}} & \textcolor{gray}{\tiny{B3}} & \textcolor{gray}{\tiny{B2}} 
+    &  \textcolor{gray}{\tiny{B1}}  \\
+	  \cline{3-6}
+	  & IPv4-Adresse & \texttt{192} & \texttt{168} & \texttt{0} & \texttt{42} \\
+    \cline{3-6}
+    & Subnetzmaske & \texttt{255} & \texttt{255} & \texttt{255} & \texttt{0}\\
+    \cline{3-6}
+  \end{tabular}
+\end{center}
+
+
+\vspace{0.2cm}
+
+  \begin{itemize}
+    \item \textit{Subnetzmaske} 'spaltet' \textit{IPv4-Adresse} in 
+
+    \begin{itemize}
+      \item \footnotesize{\textbf{Netzanteil} (hier `B4.B3.B2`) und}
+      \item \textbf{Hostanteil} (hier `B1`)
+    \end{itemize}
+    \item $\Rightarrow$
+    \begin{itemize}
+      \item \textbf{Netzadresse} :- Netzanteil $\circ$ kleinste Zahl im Hostanteil 
+      \item \textbf{Broadcastadresse} :-  Netzanteil $\circ$  größte Zahl im Hostanteil 
+      \item \textbf{Gatewayadresse}  :- `Netzadresse + 1`  | `Broadcastadresse -1` | ...
+    \end{itemize}
+  \end{itemize}
+\end{footnotesize}
+\end{frame}
+
+
+\begin{frame}[fragile]  
+  \frametitle{LF03:09:IPv4-Adressen:CIDR-Notation}
+
+  \vspace{1cm}
+\begin{center}
+\huge{
+  \texttt{\textcolor{blue}{192.168.0.0}/\textcolor{teal}{24}}
+}
+\end{center}
+
+\end{frame}
+
+\begin{frame}[fragile]  
+  \frametitle{LF03:09:IPv4-Adressen:Automatisierung}
+
+    \begin{center}
+    \begin{minipage}{0.9\textwidth}
+      \inputminted[fontsize=\footnotesize,linenos]{python}{\snpLf/dm-0309-nw-rule-verification.py}
+    \end{minipage}
+    \end{center}
+\end{frame}

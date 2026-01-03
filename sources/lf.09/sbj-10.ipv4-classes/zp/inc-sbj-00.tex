@@ -1,0 +1,323 @@
+% This file is part of the Open Source project 'proTironeComputatri'
+% (c) 2025 Karsten Reincke (https://github.com/pro-tirone-computatri/protico.ltx)
+% It is distributed under the terms of the creative commons license
+% CC-BY-4.0 (= https://creativecommons.org/licenses/by/4.0/)
+
+\begin{frame}
+  \frametitle{LF09:10:Traditionelle IPv4-Adressklassen}
+
+\begin{footnotesize}
+
+  \begin{tabular}{|c|r|c|}
+ 
+  \hline
+  \multirow{3}{*}{A} & \textbf{0.0.0.0} (= \texttt{0x00000000}) - \textbf{127.255.255.255} (= \texttt{0x7FFFFFFF}) & \tiny{\textcolor{red}{0b0}[01]\{31\}}\\
+    \cline{2-3} 
+    & \tiny{\textit{0.0.0.0} (= \texttt{0x00000000})}  [\tiny{kontextsensitiver Platzhalter}]  & \tiny{reserviert}\\
+    \cline{2-3} 
+    & \tiny{\textit{10.0.0.0} (= \texttt{0x0A000000})} - \tiny{\textit{10.255.255.255} (= \texttt{0x0AFFFFFF})} & \tiny{privat}\\
+    \cline{2-3} 
+    & \tiny{\textit{127.0.0.0} (= \texttt{0x7F000000})} - \tiny{\textit{127.255.255.255} (= \texttt{0x7FFFFFFF})} & \tiny{superprivat} \\
+  \hline
+  \multirow{3}{*}{B} & \textbf{128.0.0.0} (= \texttt{0x80000000}) - \textbf{191.255.255.255} (= \texttt{0xBFFFFFFF}) & \tiny{\textcolor{red}{0b10}[01]\{30\}} \\
+    \cline{2-3} 
+    & \tiny{\textit{169.254.0.1}} (= \texttt{0xA9FE0001}) - \tiny{\textit{169.254.255.255} (= \texttt{0xA9FEFFFF})} & \tiny{APIPA}\\
+    \cline{2-3} 
+    & \tiny{\textit{172.16.0.0} (= \texttt{0xAC100000})} - \tiny{\textit{172.31.255.255} (= \texttt{0xAC1FFFFF})} & \tiny{privat}\\
+  \hline
+  \multirow{3}{*}{C} & \textbf{192.0.0.0} (= \texttt{0xC0000000}) - \textbf{223.255.255.255} (= \texttt{0xDFFFFFFF}) & \tiny{\textcolor{red}{0b110}[01]\{29\}} \\
+    \cline{2-3} 
+    & \tiny{\textit{192.168.0.0}} (= \texttt{0xC0A80000}) - \tiny{\textit{192.168.255.255}} (= \texttt{0xC0A8FFFF}) & \tiny{privat}\\
+  \hline
+  D & 224.0.0.0 (= \texttt{0xE0000000}) - \texttt{239.255.255.255} (= \texttt{0xEFFFFFFF}) & \tiny{Multicast} \\
+  \hline
+  E & 240.0.0.0 (= \texttt{0xF0000000}) - \texttt{255.255.255.255} (= \texttt{0xFFFFFFFF}) & \tiny{Test}\\
+  \hline
+\end{tabular}
+
+\end{footnotesize}
+
+\end{frame}
+
+\begin{frame}
+  \frametitle{LF09:10:Exkurs:Regular Expressions}
+
+  \begin{center}
+  \textcolor{red}{0b0}[01]\{31\} = \\ alle Bitstrings beginnend mit \texttt{0b0}, gefolgt von 31 `0` oder `1`
+  \end{center}
+  \vspace{0.6cm}
+
+  \begin{footnotesize}
+    Notiert sein kann das Zeichen an einer Position - z.B. im String \texttt{AbbA}:
+  
+    \vspace{0.2cm}
+  
+
+    \begin{enumerate}
+      \item \textbf{literal}: \textcolor{blue}{AbbA}
+      \item \textbf{als Variante}: \textcolor{blue}{[Aa][Bb][Bb][Aa]} ($\Rightarrow$ \textcolor{gray}{aBBa} | \textcolor{gray}{AbbA} | ...)
+      \item \textbf{quantifiziert}: \textcolor{blue}{Ab\{1,2\}A} ($\Rightarrow$ \textcolor{gray}{AbA}) | \textcolor{gray}{AbbA})
+      \item \textbf{als quantifizierte Variante}: \textcolor{blue}{[[Aa][Bb]]\{2\}} ($\Rightarrow$ \textcolor{gray}{aBBa} | \textcolor{gray}{AbbA} | ...)
+      \item  \textbf{mit Spezial-Quantoren}: 
+      \begin{itemize}
+        \item \textcolor{blue}{Abb\textcolor{red}{?}A} ($\Rightarrow$ \textcolor{gray}{AbA} | \textcolor{gray}{AbbA})
+        \item \textcolor{blue}{Ab\textcolor{red}{+}A} ($\Rightarrow$ \textcolor{gray}{AbA} | ... | \textcolor{gray}{AbbbbbbA} | ...)
+        \item \textcolor{blue}{Ab\textcolor{red}{*}A} ($\Rightarrow$ \textcolor{gray}{AA} | ... | \textcolor{gray}{AbbbbbbA} | ...)
+      \end{itemize}
+    \end{enumerate}
+  \end{footnotesize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{LF09:10:Traditionelle IPv4-Adressklassen}
+  \begin{center}
+     \includegraphics[height=7cm]{\imgGl/ipv4-classes.png}
+  \end{center}
+
+\end{frame}
+
+\begin{frame}
+  \frametitle{LF09:10:Netzsegmentierung}
+  \begin{center}
+     \includegraphics[height=7cm]{\imgGl/split-680866-pxh.png}
+  \end{center}
+
+\end{frame}
+
+\begin{frame}
+  \frametitle{LF09:10:Netzsegmentierung als Abspaltung}
+  \begin{center}
+     \includegraphics[height=6.8cm]{\imgGl/ipv4-segmentation-splitting.png}
+  \end{center}
+
+  \begin{flushright}
+  \tiny{mit Dank an Dennis, 11IP24, GS-LDK}
+  \end{flushright}
+\end{frame}
+
+
+\begin{frame}
+
+  \frametitle{LF09:10:IPv4-Segmentierung (mit Gateway-Beziehung)}
+  \begin{columns}
+    \column{0.75\textwidth}
+      \begin{center}
+        \includegraphics[height=7.8cm]{\imgGl/ipv4-segmentation.png}
+      \end{center}
+    \column{0.25\textwidth}
+      \begin{tiny}1.) IPv4-Übermittlung unabhängig von IPv4-Adresssystematik.
+
+\vspace{0.3cm}      
+2.) Nachrichtenübermittlung mittels Hopping in benachbarte Broadcastdomainen.
+
+\vspace{0.3cm} 
+3.) Hopping = Wechsel andere Netz; Netzklassifikation dabei/dafür unerheblich.
+      
+\vspace{0.3cm} 
+4.) Router = in mehrere Netz eingebunden
+
+\vspace{0.3cm} 
+5.) Paketumschreibungen auf Layer-II/III-Ebene durch Router
+
+      \end{tiny}
+  \end{columns}  
+\end{frame}
+
+\begin{frame}
+
+  \frametitle{LF09:10:IPv4-Segmentierung als Prozess}
+  \begin{center}
+     \includegraphics[width=0.9\textwidth]{\imgLf/ipv4-netdesign-process.png}
+  \end{center}
+  
+  \begin{footnotesize}
+    \begin{itemize}
+      \item \textcolor{teal}{\textit{Heuristik A}}: Rechner, die viel  miteinander kommunizieren, gehören in dieselbe Broadcastdomäne!\footnote{\tiny{Denn jedes Hopping verlangsamt die Kommunikation, weil dabei zusätzlich Layer-3-Berechnungen nötig werden.}}
+      \item \textcolor{teal}{\textit{Heuristik B}}: Rechner, denen der Zugriff auf eine andere Broadcastdomäne mittels Firewallregeln erlaubt bzw. verboten werden soll, gehören in dieselbe Broadcastdomäne!\footnote{\tiny{Denn aufgesplittete Firewallregeln, die auf einzelne Rechner zugreifen, verlangsamen die Zugriffsberechnung. Und sie erschweren Netzwerkupdates}}
+    \end{itemize}
+\end{footnotesize}
+\end{frame}
+
+\begin{frame}[fragile]  
+  \frametitle{LF09:10:Uebung:IPv4-Segmentierung}
+  \begin{center}
+    \includegraphics[height=7.8cm]{\imgLf/ipv4-segmentation-task.png}
+  \end{center}
+\end{frame}
+
+\begin{frame}[fragile]  
+  \frametitle{LF09:10::Lösung:Initiale Bedarfsanalyse}
+
+  \vspace{1cm}
+  \begin{tiny}
+  \renewcommand{\arraystretch}{1.5}
+  \begin{tabular}{|c|c|c|c|c|c|c||c||c|c|c|c|}
+    
+    & \multicolumn{4}{c|}{Employees} %2-4 
+    & \multirow{2}{*}{$S$} %5-6
+    & \multirow{2}{*}{$\frac{C}{E}$} %7
+    & $\sum_{25}^{27}{}*\frac{C}{E}$
+    & \multicolumn{4}{c|}{Networkaddresses} \\  
+    & 25 & 26 & 27
+    & $\sum_{25}^{27}$ &  &
+    & $+S$
+    & $A_{d}$ 
+    & $A_{s}$
+    & $+(A_{d},A_{s})$
+    & Seg.
+  
+    \\  
+    \hline
+    \hline
+    FIN    & 5 & 5 & 3 & 13 & 1 & 1 & 14 & 14 & 3 & 17 & /27 [32]\\
+    \hline
+    HR     & 3 & 3 & 2 & 8 & 3 & 1 & 11 & 11 & 3 & 14 & /28 [16]\\
+    \hline
+    MNG     & 5 & 5 & 3 & 13 & 0 & 1 & 13 & 13 & 3 & 16 & /28 [16]\\
+    \hline
+    SD     & 10 & 10 & 5 & 25 & 0 & 2 & 50 & 50 & 3 & 53 & /26 [64]\\
+    \hline
+    PROD     & 0 & 0 & 0 & 0 & 5 & 1 & 5 &  5 & 3 & 8 & /29 [8]\\
+    \hline
+    WLAN   & 23 & 23 & 13 & 59 & - & 2 & 118 & 118 & 3 & 121 & /25 [128]\\
+    \hline
+    \multicolumn{10}{r}{$\sum$}
+    & 219
+    & 264 \\
+  \end{tabular}
+  \end{tiny}
+\end{frame}
+
+\begin{frame}
+
+  \frametitle{LF09:10::Lösung:Initiales Netzdesign}
+  \begin{center}
+    \includegraphics[height=7cm]{\imgLf/ipv4-segmentation-task-start-nw-design.png}
+  \end{center}
+\end{frame}
+
+\begin{frame}[fragile]  
+  \frametitle{LF09:10::Lösung:Bereinigte Bedarfsanalyse}
+  
+  \vspace{1cm}
+  \begin{tiny}
+  \renewcommand{\arraystretch}{1.5}
+  \begin{tabular}{|c|c|c|c|c|c|c||c||c|c|c|c|c|}
+      
+    & \multicolumn{4}{c|}{Employees} %2-4 
+    & \multirow{2}{*}{$S$} %5-6
+    & \multirow{2}{*}{$\frac{C}{E}$} %7
+    & $\sum_{25}^{27}{}*\frac{C}{E}$
+    & \multicolumn{5}{c|}{Networkaddresses} \\  
+    & 25 & 26 & 27
+    & $\sum_{25}^{27}$ &  &
+    & $+S$
+    & $A_{d}$ 
+    & $A_{s}$
+    & $A_{r}$
+    & $+(A_{d},A_{s},A_{r})$
+    & Seg.
+    \\  
+    \hline
+    \hline
+    FIN    & 5 & 5 & 3 & 13 & 1 & 1 & 14 & 14 & 3 & 0 & 17 & /27 [32]\\
+    \hline
+    HR     & 3 & 3 & 2 & 8 & 3 & 1 & 11 & 11 & 3 & 1 & 15 & /28 [16]\\
+    \hline
+    MNG     & 5 & 5 & 3 & 13 & 0 & 1 & 13 & 13 & 3 & 2 & 18 & /27 [32]\\
+    \hline
+    SD     & 10 & 10 & 5 & 25 & 0 & 2 & 50 & 50 & 3 & 2 & 55 & /26 [64]\\
+    \hline
+    PROD     & 0 & 0 & 0 & 0 & 5 & 1 & 5 &  5 & 3 & 1 & 9 & /28 [16]\\
+    \hline
+    WLAN   & 23 & 23 & 13 & 59 & 0 & \textbf{1,03}\footnote{\tiny{Größtes Restnetz: /26 [64] - 3 obligatorische Adressen = 61 / 59 = 1,03 pro Person ;-) }} & 61 & 61 & 3 & 0 & 64 & /26 [64]\\
+    \hline
+    \hline
+    RN-1   & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 3 & 5 & 8 & /29 [8]\\
+    \hline
+    RN-2   & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 3 & 1 & 4 & /30 [4]\\
+    \hline
+    \multicolumn{11}{r}{$\sum$}
+    & 190
+    & 236 \\
+  
+  \end{tabular}
+  \end{tiny}
+\end{frame}
+
+\begin{frame}[fragile]  
+  \frametitle{LF09:10::Lösung:Numerische Adressinstantiierung}
+    \begin{columns}[t]
+      \column{0.5\textwidth}
+    \begin{tiny}
+      \begin{tabular}{c l c l}
+      \texttt{192.168.1.0/26} & \texttt{\#64} & \multirow{4}{*}{\tcrotate{WLAN}} &  \texttt{NA: 192.168.1.0} \\
+      & \texttt{[.0,} &  & \texttt{BC: 192.168.1.63} \\
+      & \texttt{..., } &  & \texttt{NM: 255.255.255.192} \\
+      & \texttt{.63]} &  & \texttt{R1: 192.168.1.1} \\
+      \multicolumn{4}{l}{} \\
+      \multicolumn{4}{l}{\rule{0.95\textwidth}{0.4pt} } \\
+      \texttt{192.168.1.64/26} & \texttt{\#64} & \multirow{4}{*}{\tcrotate{SD}} &  \texttt{NA: 192.168.1.64} \\
+      & \texttt{[.64,} &  & \texttt{BC: 192.168.1.127} \\
+      & \texttt{..., } &  & \texttt{NM: 255.255.255.192} \\
+      & \texttt{.127]} &  & \texttt{GW: 192.168.1.65} \\
+      &  &  & \texttt{R2: 192.168.1.66} \\
+      &  &  & \texttt{R3: 192.168.1.67} \\
+      \multicolumn{4}{l}{\rule{0.95\textwidth}{0.4pt} } \\
+     \texttt{192.168.1.128/27} & \texttt{\#32} & \multirow{4}{*}{\tcrotate{FIN}} &  \texttt{NA: 192.168.1.128} \\
+      & \texttt{[.128,} &  & \texttt{BC: 192.168.1.159} \\
+      & \texttt{..., } &  & \texttt{NM: 255.255.255.224} \\
+      & \texttt{.159]} &  & \texttt{GW: 192.168.1.129} \\
+      \multicolumn{4}{l}{\rule{0.95\textwidth}{0.4pt} } \\
+     \texttt{192.168.1.160/27} & \texttt{\#32} & \multirow{4}{*}{\tcrotate{MNG}} &  \texttt{NA: 192.168.1.160} \\
+      & \texttt{[.160,} &  & \texttt{BC: 192.168.1.191} \\
+      & \texttt{..., } &  & \texttt{NM: 255.255.255.224} \\
+      & \texttt{.191]} &  & \texttt{GW: 192.168.1.161} \\
+      &  &  & \texttt{R2: 192.168.1.162} \\
+      &  &  & \texttt{R3: 192.168.1.163} \\
+      \multicolumn{4}{l}{\rule{0.95\textwidth}{0.4pt} } \\
+      \texttt{192.168.1.208/28} & \texttt{\#16} & \multirow{4}{*}{\tcrotate{PROD}} &  \texttt{NA: 192.168.1.208} \\
+      & \texttt{[.208,} &  & \texttt{BC: 192.168.1.223} \\
+      & \texttt{..., } &  & \texttt{NM: 255.255.255.248} \\
+      & \texttt{.223]} &  & \texttt{GW: 192.168.1.209} \\
+      & &  & \texttt{R1: 192.168.1.210} \\
+      \end{tabular}
+    \end{tiny}
+    \column{0.5\textwidth}
+    \begin{tiny}
+      \begin{tabular}{c l c l}
+      \texttt{192.168.1.192/28} & \texttt{\#16} & \multirow{4}{*}{\tcrotate{HR}} &  \texttt{NA: 192.168.1.192} \\
+      & \texttt{[.192,} &  & \texttt{BC: 192.168.1.207} \\
+      & \texttt{..., } &  & \texttt{NM: 255.255.255.240} \\
+      & \texttt{.207]} &  & \texttt{GW: 192.168.1.193} \\
+      &  &  & \texttt{R1: 192.168.1.194} \\
+      \multicolumn{4}{l}{\rule{0.95\textwidth}{0.4pt} } \\
+      \texttt{192.168.1.232/30} & \texttt{\#4} & \multirow{4}{*}{\tcrotate{RN1}} &  \texttt{NA: 192.168.1.232} \\
+      & \texttt{[.232,} &  & \texttt{BC: 192.168.1.235} \\
+      & \texttt{..., } &  & \texttt{NM: 255.255.255.252} \\
+      & \texttt{.235]} &  & \texttt{GW: 192.168.1.233} \\   
+      & &  & \texttt{R2: 192.168.1.234} \\   
+      \multicolumn{4}{l}{} \\
+      \multicolumn{4}{l}{\rule{0.95\textwidth}{0.4pt} } \\
+      \texttt{192.168.1.224/29} & \texttt{\#8} & \multirow{4}{*}{\tcrotate{RN2}} &  \texttt{NA: 192.168.1.224} \\
+      & \texttt{[.224,} &  & \texttt{BC: 192.168.1.231} \\
+      & \texttt{..., } &  & \texttt{NM: 255.255.255.248} \\
+      & \texttt{.231]} &  & \texttt{GW: 192.168.1.225} \\   
+      & &  & \texttt{R2: 192.168.1.226} \\   
+      & &  & \texttt{R3: 192.168.1.227} \\   
+      & &  & \texttt{R4: 192.168.1.228} \\   
+      & &  & \texttt{R5: 192.168.1.229} \\   
+      & &  & \texttt{R6: 192.168.1.230} \\   
+      \end{tabular}
+    \end{tiny}
+  \end{columns} 
+\end{frame}
+
+\begin{frame}
+
+  \frametitle{LF09:10::Lösung:Finales Netzdesign}
+  \begin{center}
+  \includegraphics[height=7cm]{\imgLf/ipv4-segmentation-task-final-nw-design.png}
+  \end{center}
+\end{frame}
+

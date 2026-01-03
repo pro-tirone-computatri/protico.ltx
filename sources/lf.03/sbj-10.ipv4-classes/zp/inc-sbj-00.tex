@@ -1,0 +1,125 @@
+% This file is part of the Open Source project 'proTironeComputatri'
+% (c) 2025 Karsten Reincke (https://github.com/pro-tirone-computatri/protico.ltx)
+% It is distributed under the terms of the creative commons license
+% CC-BY-4.0 (= https://creativecommons.org/licenses/by/4.0/)
+
+\begin{frame}
+  \frametitle{LF03:10:Traditionelle IPv4-Adressklassen}
+
+\begin{footnotesize}
+
+  \begin{tabular}{|c|r|c|}
+ 
+  \hline
+  \multirow{3}{*}{A} & \textbf{0.0.0.0} (= \texttt{0x00000000}) - \textbf{127.255.255.255} (= \texttt{0x7FFFFFFF}) & \tiny{\textcolor{red}{0b0}[01]\{31\}}\\
+    \cline{2-3} 
+    & \tiny{\textit{0.0.0.0} (= \texttt{0x00000000})}  [\tiny{kontextsensitiver Platzhalter}]  & \tiny{reserviert}\\
+    \cline{2-3} 
+    & \tiny{\textit{10.0.0.0} (= \texttt{0x0A000000})} - \tiny{\textit{10.255.255.255} (= \texttt{0x0AFFFFFF})} & \tiny{privat}\\
+    \cline{2-3} 
+    & \tiny{\textit{127.0.0.0} (= \texttt{0x7F000000})} - \tiny{\textit{127.255.255.255} (= \texttt{0x7FFFFFFF})} & \tiny{superprivat} \\
+  \hline
+  \multirow{3}{*}{B} & \textbf{128.0.0.0} (= \texttt{0x80000000}) - \textbf{191.255.255.255} (= \texttt{0xBFFFFFFF}) & \tiny{\textcolor{red}{0b10}[01]\{30\}} \\
+    \cline{2-3} 
+    & \tiny{\textit{169.254.0.1}} (= \texttt{0xA9FE0001}) - \tiny{\textit{169.254.255.255} (= \texttt{0xA9FEFFFF})} & \tiny{APIPA}\\
+    \cline{2-3} 
+    & \tiny{\textit{172.16.0.0} (= \texttt{0xAC100000})} - \tiny{\textit{172.31.255.255} (= \texttt{0xAC1FFFFF})} & \tiny{privat}\\
+  \hline
+  \multirow{3}{*}{C} & \textbf{192.0.0.0} (= \texttt{0xC0000000}) - \textbf{223.255.255.255} (= \texttt{0xDFFFFFFF}) & \tiny{\textcolor{red}{0b110}[01]\{29\}} \\
+    \cline{2-3} 
+    & \tiny{\textit{192.168.0.0}} (= \texttt{0xC0A80000}) - \tiny{\textit{192.168.255.255}} (= \texttt{0xC0A8FFFF}) & \tiny{privat}\\
+  \hline
+  D & 224.0.0.0 (= \texttt{0xE0000000}) - \texttt{239.255.255.255} (= \texttt{0xEFFFFFFF}) & \tiny{Multicast} \\
+  \hline
+  E & 240.0.0.0 (= \texttt{0xF0000000}) - \texttt{255.255.255.255} (= \texttt{0xFFFFFFFF}) & \tiny{Test}\\
+  \hline
+\end{tabular}
+
+\end{footnotesize}
+
+\end{frame}
+
+\begin{frame}
+  \frametitle{LF03:10:Exkurs: Regular Expressions}
+
+  \begin{center}
+  \textcolor{red}{0b0}[01]\{31\} = \\ alle Bitstrings beginnend mit \texttt{0b0}, gefolgt von 31 `0` oder `1`
+  \end{center}
+  \vspace{0.6cm}
+
+  \begin{footnotesize}
+    Notiert sein kann das Zeichen an einer Position - z.B. im String \texttt{AbbA}:
+  
+    \vspace{0.2cm}
+  
+
+    \begin{enumerate}
+      \item \textbf{literal}: \textcolor{blue}{AbbA}
+      \item \textbf{als Variante}: \textcolor{blue}{[Aa][Bb][Bb][Aa]} ($\Rightarrow$ \textcolor{gray}{aBBa} | \textcolor{gray}{AbbA} | ...)
+      \item \textbf{quantifiziert}: \textcolor{blue}{Ab\{1,2\}A} ($\Rightarrow$ \textcolor{gray}{AbA}) | \textcolor{gray}{AbbA})
+      \item \textbf{als quantifizierte Variante}: \textcolor{blue}{[[Aa][Bb]]\{2\}} ($\Rightarrow$ \textcolor{gray}{aBBa} | \textcolor{gray}{AbbA} | ...)
+      \item  \textbf{mit Spezial-Quantoren}: 
+      \begin{itemize}
+        \item \textcolor{blue}{Abb\textcolor{red}{?}A} ($\Rightarrow$ \textcolor{gray}{AbA} | \textcolor{gray}{AbbA})
+        \item \textcolor{blue}{Ab\textcolor{red}{+}A} ($\Rightarrow$ \textcolor{gray}{AbA} | ... | \textcolor{gray}{AbbbbbbA} | ...)
+        \item \textcolor{blue}{Ab\textcolor{red}{*}A} ($\Rightarrow$ \textcolor{gray}{AA} | ... | \textcolor{gray}{AbbbbbbA} | ...)
+      \end{itemize}
+    \end{enumerate}
+  \end{footnotesize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{LF03:10:Traditionelle IPv4-Adressklassen}
+  \begin{center}
+     \includegraphics[height=7cm]{\imgGl/ipv4-classes.png}
+  \end{center}
+
+\end{frame}
+
+\begin{frame}
+  \frametitle{LF03:10:Netzsegmentierung}
+  \begin{center}
+     \includegraphics[height=7cm]{\imgGl/split-680866-pxh.png}
+  \end{center}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{LF03:10:Netzsegmentierung als Abspaltung}
+\begin{center}
+   \includegraphics[height=6.8cm]{\imgGl/ipv4-segmentation-splitting.png}
+\end{center}
+
+\begin{flushright}
+\tiny{mit Dank an Dennis, 11IP24, GS-LDK}
+\end{flushright}
+\end{frame}
+
+\begin{frame}
+
+  \frametitle{LF03:10:IPv4-Segmentierung (mit Gateway-Beziehung)}
+  \begin{columns}
+    \column{0.75\textwidth}
+      \begin{center}
+        \includegraphics[height=7.8cm]{\imgGl/ipv4-segmentation.png}
+      \end{center}
+    \column{0.25\textwidth}
+      \begin{tiny}1.) IPv4-Übermittlung unabhängig von IPv4-Adresssystematik.
+
+\vspace{0.3cm}      
+2.) Nachrichtenübermittlung mittels Hopping in benachbarte Broadcastdomainen.
+
+\vspace{0.3cm} 
+3.) Hopping = Wechsel andere Netz; Netzklassifikation dabei/dafür unerheblich.
+      
+\vspace{0.3cm} 
+4.) Router = in mehrere Netz eingebunden
+
+\vspace{0.3cm} 
+5.) Paketumschreibungen auf Layer-II/III-Ebene durch Router
+
+      \end{tiny}
+  \end{columns}  
+\end{frame}
+
+

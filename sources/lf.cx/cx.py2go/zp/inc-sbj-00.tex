@@ -1,0 +1,48 @@
+% This file is part of the Open Source project 'proTironeComputatri'
+% (c) 2025 Karsten Reincke (https://github.com/pro-tirone-computatri/protico.ltx)
+% It is distributed under the terms of the creative commons license
+% CC-BY-4.0 (= https://creativecommons.org/licenses/by/4.0/)
+
+
+\begin{frame}[fragile]  
+  \frametitle{LFCX:py2go:Hello World}
+
+  \begin{columns}[t]
+  \column{0.5\textwidth}
+    \begin{center}
+    \begin{minipage}{0.5\textwidth}
+      \textbf{Shellscript}
+
+      \begin{minted}[fontsize=\small,linenos=true]{bash}
+#!/bin/bash
+        
+MESSAGE="Hello World"
+echo $MESSAGE
+
+      \end{minted}
+    \end{minipage}
+    \end{center}
+  
+  \column{0.5\textwidth}
+    \begin{center}
+    \begin{minipage}{0.5\textwidth}
+      \textbf{Pythonscript}
+      
+      \begin{minted}[fontsize=\small,linenos]{python}
+import pandas as pd
+
+message = "Hello World"
+print(message)
+      \end{minted}
+
+    \end{minipage}
+    \end{center}
+  \end{columns}
+
+  \vspace{0.6cm}
+  \begin{flushright}
+    \begin{tiny}
+      \textrm{\textit{Scriptbeispiele}}
+    \end{tiny}
+  \end{flushright}
+\end{frame}

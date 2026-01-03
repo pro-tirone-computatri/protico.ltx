@@ -1,0 +1,174 @@
+% This file is part of the Open Source project 'proTironeComputatri'
+% (c) 2025 Karsten Reincke (https://github.com/pro-tirone-computatri/protico.ltx)
+% It is distributed under the terms of the creative commons license
+% CC-BY-4.0 (= https://creativecommons.org/licenses/by/4.0/)
+
+\selectlanguage{ngerman}
+
+{
+\usebackgroundtemplate{\includegraphics[width=\paperwidth]{\imgLf/chart-774947-pxh.png}}
+\begin{frame}  
+  \frametitle{LFCX:Diagramme:UML}
+
+  \vspace{6cm}
+  \begin{flushright}
+    \textcolor{blue}{Crashkurs UML}
+  \end{flushright}
+\end{frame}
+}
+
+\begin{frame}[t]
+  \frametitle{LFCX:Diagramme:UML:Systematik\footcite[nach][8]{OestSche2014a}}
+  
+  \begin{footnotesize}
+  \begin{columns}
+    \column{0.5\textwidth}
+      \textbf{Strukturdiagramme}:
+      \begin{itemize}
+        \item Klassendiagramm 
+        \item Objektdiagramm 
+        \item Komponentendiagramm
+        \item Kompositionsstrukturdiagramm
+        \item Verteilungsdiagramm
+        \item Paketdiagramm
+        \item Profildiagramm 
+        \item Anwendungsfalldiagramm 
+      \end{itemize}
+
+    \column{0.5\textwidth}
+      \textbf{Verhaltensdiagramme}:
+      \begin{itemize}
+        \item Aktivitätsdiagramm 
+        \item Interaktionsdiagramm
+          \begin{itemize}
+            \item Interaktionsübersicht
+            \item Kommunikationsdiagramm
+            \item Sequenzdiagramm 
+            \item Zeitdiagramm
+          \end{itemize}
+        \item Zustandsdiagramm 
+          \begin{itemize}
+            \item Protokollautomat
+          \end{itemize}
+      \end{itemize}
+  \end{columns}
+  \end{footnotesize}
+  \vspace{1cm}
+  \tiny{Hinweis: Das Anwendungsfalldiagramm wird oft auch als Verhaltensdiagramm klassifiziert}
+\end{frame}
+
+\begin{frame}
+  \frametitle{LFCX:Diagramme:UML:Kontext}
+  
+  \begin{footnotesize}
+    \begin{columns}[t]
+    
+    \column{0.5\textwidth}
+      \textbf{Structural Diagrams}:
+      \begin{itemize}
+        \item \textbf{Class Diagram} \textrm{\textit{(beschreibt Klassen von Objekten, ihre Eigenschaften, Operationen und Beziehungen untereinanderS)}}
+        \item ...
+        \item \textbf{Object Diagram} \textrm{\textit{(ist eine zur Laufzeit vorhandene Einheit und ein Exemplar einer Klasse)}}      
+        \item \textbf{Use Case Diagram} \textrm{\textit{(zeigt Akteure, Anwendungsfälle und deren Beziehungen untereinander)}}
+      \end{itemize}
+
+    \column{0.5\textwidth}
+    \textbf{Behavioral Diagrams}:
+      \begin{itemize}
+        \item \textbf{Activity Diagram} \textrm{\textit{(beschreibt einen Ablauf mittels Knoten und Kontrollflüssen)}}
+        \item Interaktionsdiagramm
+        \item ...
+          \begin{itemize}
+            \item \textbf{Sequence Diagram} \textrm{\textit{(zeigt eine Reihe von Nachrichten, die von den Beteiligten in einer bestimmten Reihenfolge ausgetauscht werden.)}}
+          \end{itemize}
+        \item \textbf{State Diagramm} \textrm{\textit{beschreibt den Zustand (Stand der jeweiligen Daten) der Komponenten eines Systems}}
+        \item ...
+      \end{itemize}
+  \end{columns}
+  \end{footnotesize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{LFCX::UML:Aktivitätsdiagramm:Symbole}
+  \begin{center}
+    \includegraphics[height=7.8cm]{\imgGl/uml-activity-elements.png}
+  \end{center}
+\end{frame}
+
+\begin{frame}
+  \frametitle{LFCX::UML:Aktivitätsdiagramm:Beispiel}
+  \begin{center}
+  \includegraphics[height=7.8cm]{\imgGl/uml-activity-example.png}
+  \end{center}
+\end{frame}
+
+\begin{frame}
+  \frametitle{LFCX::UML:Sequenzdiagramm:Symbole}
+  \begin{center}
+  \includegraphics[height=7.8cm]{\imgGl/uml-sequence-elements.png}
+  \end{center}
+\end{frame}
+
+\begin{frame}
+  \frametitle{LFCX::UML:Sequenzdiagramm:Beispiel}
+  \begin{center}
+  \includegraphics[height=7.8cm]{\imgGl/uml-sequence-example.png}
+  \end{center}
+\end{frame}
+
+\begin{frame}
+  \frametitle{LFCX::Flussdiagramm:Symbole}
+  \begin{center}
+  \includegraphics[width=\textwidth]{\imgGl/flowchart-symbols.png}
+  \end{center}
+\end{frame}
+
+\begin{frame}
+  \frametitle{LFCX::Flussdiagramm:Erweiterte Symbole}
+  \begin{center}
+  \includegraphics[width=\textwidth]{\imgGl/flowchart-symbols-supplement.png}
+  \end{center}
+\end{frame}
+
+\begin{frame}
+  \frametitle{LFCX::Flussdiagramm:Beispiel}
+  \begin{center}
+  \includegraphics[height=7.5cm]{\imgGl/flowchart-example.png}
+  \end{center}
+\end{frame}
+
+\begin{frame}
+  \frametitle{LFCX::\underline{B}usiness \underline{P}rocess \underline{M}odel + \underline{N}otation: Symbole}
+  \begin{center}
+  \includegraphics[height=7cm]{\imgGl/bpmn-elements.png}
+  \end{center}
+\end{frame}
+
+\begin{frame}
+  \frametitle{LFCX::\underline{B}usiness \underline{P}rocess \underline{M}odel + \underline{N}otation: Beispiel}
+  \begin{center}
+  \includegraphics[height=7.5cm]{\imgGl/bpmn-example.png}
+  \end{center}
+\end{frame}
+
+\begin{frame}
+  \frametitle{LFCX::\underline{E}reignisgesteuerte \underline{P}rozess-\underline{K}ette: Symbole}
+  \begin{center}
+  \includegraphics[width=\textwidth]{\imgGl/epc-elements.png}
+  \end{center}
+\end{frame}
+
+\begin{frame}
+  \frametitle{LFCX::\underline{E}reignisgesteuerte \underline{P}rozess-\underline{K}ette: Beispiel}
+  \begin{center}
+  \includegraphics[height=7.5cm]{\imgGl/epc-example.png}
+  \end{center}
+\end{frame}
+
+
+\begin{frame}
+  \frametitle{LFCX::Synopse der Prozessdiagrammsymbole}
+  \begin{center}
+  \includegraphics[height=7cm]{\imgGl/symbols-synopse.png}
+  \end{center}
+\end{frame}

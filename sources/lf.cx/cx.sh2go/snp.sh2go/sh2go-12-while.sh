@@ -1,0 +1,37 @@
+#!/bin/sh
+#
+# This file is part of the Open Source project 'proTironeComputatri'
+# (c) 2025 Karsten Reincke (https://github.com/pro-tirone-computatri/protico.ltx)
+# It is distributed under the terms of the creative commons license
+# CC-BY-4.0 (= https://creativecommons.org/licenses/by/4.0/)
+#
+
+# Lesehinweis: 
+# In spitzen Klammern schreibe ich stets Tools und ihre Parameter.
+# Die Tools stellt Ihnen Betriebssystem zur Verfügung.
+#
+# Beipiel: 
+# Rufen Sie <echo dies> auf, meint, dass Sie an der
+# Kommandozeile echo dies eingeben. Wo sich das Tool, hier
+# <echo> bei Ihnen befindet, können Sie mit <which echo> erfragen
+
+EXC=sh2go-12
+echo "executing Uebung $EXC"
+
+# (1) Lassen Sie aus dem Skript heraus eine Datei mit den 5 Zeilen
+#  "Zeile 1" , "Zeile 2" , "Zeile 3" , "Zeile 4", "Zeile 5" befüllen
+# (2) Lesen Sie die Datei mit cat zeilenweise ein.
+# (3) Pipen Sie das an das Kommando while
+# (4) Hängen Sie an je Zeile Ihr Kürzel an und lassen sie die ausgeben.
+
+# Hintergrund: 
+#
+# (A) echo, >, >>, cat und  | wie gehabt.
+# (B) <while> nimmt ein Kommando, führt es (solang es kann) aus,
+#      speichert für jede Zeile das Ergebnis in einer Laufvariable 
+# (C) mit do und done umgenrzt man dann ein Sektion von Befehlen,
+#     in der man die Laufvariable nutzen kann.
+#
+# Beispiel cat datei | while read zeile; do echo HW; done
+
+

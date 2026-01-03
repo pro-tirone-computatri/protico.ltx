@@ -1,0 +1,88 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/25.0.2 Chrome/128.0.6613.186 Electron/32.2.5 Safari/537.36" version="25.0.2">
+  <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
+    <mxGraphModel dx="1340" dy="902" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="5vRTbS3Grme1YLSrkqy2-1" value="TERMINATOR" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;labelBackgroundColor=none;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="40" y="100" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5vRTbS3Grme1YLSrkqy2-2" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;:: markiert Start- oder Endpunkt&lt;/font&gt;&amp;nbsp;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="160" y="112.5" width="230" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="5vRTbS3Grme1YLSrkqy2-3" value="Startpoint" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_1;whiteSpace=wrap;fillColor=#f5f5f5;gradientColor=#b3b3b3;strokeColor=#666666;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="160" y="65" width="70" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="5vRTbS3Grme1YLSrkqy2-5" value="Process(step)" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="40" y="190" width="100" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="5vRTbS3Grme1YLSrkqy2-6" value="&lt;span style=&quot;font-size: 14px;&quot;&gt;::- markiert einen Arbeitsschritt, der den Input verändert&lt;/span&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="160" y="197.5" width="400" height="32.5" as="geometry" />
+        </mxCell>
+        <mxCell id="5vRTbS3Grme1YLSrkqy2-7" value="Process(step)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;gradientColor=#b3b3b3;strokeColor=#666666;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="160" y="160" width="80" height="28.5" as="geometry" />
+        </mxCell>
+        <mxCell id="5vRTbS3Grme1YLSrkqy2-8" value="Decision" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="40" y="270" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="5vRTbS3Grme1YLSrkqy2-9" value="&lt;span style=&quot;font-size: 14px;&quot;&gt;::- (ja-nein-) Verzweiger&lt;/span&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="160" y="303.75" width="400" height="32.5" as="geometry" />
+        </mxCell>
+        <mxCell id="5vRTbS3Grme1YLSrkqy2-10" value="Data (IO)" style="shape=parallelogram;html=1;strokeWidth=2;perimeter=parallelogramPerimeter;whiteSpace=wrap;rounded=1;arcSize=12;size=0.23;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="40" y="410" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5vRTbS3Grme1YLSrkqy2-11" value="&lt;span style=&quot;font-size: 14px;&quot;&gt;::- markiert eine Datenein- oder -ausgabe&lt;/span&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="160" y="423.75" width="400" height="32.5" as="geometry" />
+        </mxCell>
+        <mxCell id="5vRTbS3Grme1YLSrkqy2-12" value="Annotation" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.annotation_2;align=left;labelPosition=right;pointerEvents=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="40" y="500" width="50" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="5vRTbS3Grme1YLSrkqy2-13" value="&lt;span style=&quot;font-size: 14px;&quot;&gt;::- sprachliche Erläuterung&lt;/span&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="160" y="533.75" width="400" height="32.5" as="geometry" />
+        </mxCell>
+        <mxCell id="5vRTbS3Grme1YLSrkqy2-14" value="SUB-Process" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=process;whiteSpace=wrap;rounded=1;size=0.14;arcSize=6;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="570" y="110" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5vRTbS3Grme1YLSrkqy2-15" value="&lt;span style=&quot;font-size: 14px;&quot;&gt;::- referenziert auf einen (andernorts) definierten Teilprozess&lt;/span&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="690" y="130" width="400" height="32.5" as="geometry" />
+        </mxCell>
+        <mxCell id="5vRTbS3Grme1YLSrkqy2-17" value="" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_2;whiteSpace=wrap;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="610" y="231.25" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="5vRTbS3Grme1YLSrkqy2-18" value="&lt;span style=&quot;font-size: 14px;&quot;&gt;::- verweist auf andere Stelle der aktuellen Prozessseite&lt;/span&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="685" y="230" width="400" height="32.5" as="geometry" />
+        </mxCell>
+        <mxCell id="5vRTbS3Grme1YLSrkqy2-19" value="" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#f5f5f5;gradientColor=#b3b3b3;strokeColor=#666666;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="160" y="384" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="5vRTbS3Grme1YLSrkqy2-21" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=offPageConnector;rounded=0;size=0.5;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="595" y="324" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5vRTbS3Grme1YLSrkqy2-22" value="&lt;span style=&quot;font-size: 14px;&quot;&gt;::- verweist auf Stelle in einer anderen Prozessseite&lt;/span&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="680" y="324" width="400" height="32.5" as="geometry" />
+        </mxCell>
+        <mxCell id="5vRTbS3Grme1YLSrkqy2-23" value="" style="endArrow=classic;startArrow=none;html=1;rounded=0;startFill=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="580" y="439.5" as="sourcePoint" />
+            <mxPoint x="680" y="439.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5vRTbS3Grme1YLSrkqy2-24" value="Flowline" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="595" y="450" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="5vRTbS3Grme1YLSrkqy2-26" value="&lt;font face=&quot;Comic Sans MS&quot; style=&quot;font-size: 18px;&quot;&gt;Häufig verwendete (common) Flow-Chart-Elemente nach&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="540" y="520" width="510" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="5vRTbS3Grme1YLSrkqy2-27" value="&lt;font color=&quot;#ff0080&quot; style=&quot;font-size: 18px;&quot; face=&quot;Courier New&quot;&gt;&lt;b&gt;https://en.wikipedia.org/wiki/Flowchart&lt;/b&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="610" y="550" width="365" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="5vRTbS3Grme1YLSrkqy2-28" value="" style="endArrow=none;html=1;rounded=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="540" y="611.662353515625" as="sourcePoint" />
+            <mxPoint x="540" y="26.675323486328125" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

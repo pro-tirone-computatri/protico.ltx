@@ -1,0 +1,13 @@
+---
+- D20250301: {Systole: 182, Puls: 66}
+- D20250302:
+   Systole: 158
+   Puls: 75
+---
+Messreihe-2:
+  - D20250303: {Systole: 179, Puls: 67}
+  - D20250304:
+      Systole: 170
+      Puls: 78
+---
+
