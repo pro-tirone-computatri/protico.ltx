@@ -29,7 +29,7 @@
 
 Das ausführliche Manifest finden Sie unter [https://github.com/pro-tirone-computatri](https://github.com/pro-tirone-computatri). Es besagt im Kern, dass wir
 
-* Lehrerinnnen und Schülerinnen fertig aufbereitete Unterrichts- und Lerneinheiten für die Ausbildung zur Fachinformatikerin anbieten möchten. 
+* Lehrerinnen und Schülerinnen fertig aufbereitete Unterrichts- und Lerneinheiten für die Ausbildung zur Fachinformatikerin anbieten möchten. 
 * den Stoff, den die Abschlussprüfungen I und II erwarten, umfänglich und hochwertig aufbereiten wollen
 * jeder Nutzerin unsere Ergebnisse im Sinne freier Software und Dokumente gebührenfrei anbieten möchten.
 
@@ -45,7 +45,7 @@ Deshalb bieten Ihnen die *proTironeComputatri*-Repositories **_freie_ Lehr- und 
 
 Fertige *proTironeComputatri*-Unterrichtseinheiten werden - nach Lernfeld und intendierter Abfolge sortiert - als PDF-Dateien im Repository [https://github.com/pro-tirone-computatri/protico.lessons](https://github.com/pro-tirone-computatri/protico.lessons) bereitgestellt.
 
-Das Repository [https://github.com/pro-tirone-computatri/protico.ltx](https://github.com/pro-tirone-computatri/protico.ltx) enthält die LaTeX/Markdown/Makfile basierten Quellen samt zugehörigen Buildsysteme. Hier werden die Stundenfolgen schrittweise erarbeitet und erprobt, bevor sie als fertige PDFs in das Repositors `protico.lessons` überführt werden. 
+Das hier betrachtete Repository [https://github.com/pro-tirone-computatri/protico.ltx](https://github.com/pro-tirone-computatri/protico.ltx) enthält "nur" LaTeX/Markdown/Makefile-basierte Quellen samt zugehörigem Buildsystem für *proTironeComputatri*-Unterrichtseinheiten. In und mit diesem Repository werden die Stundenfolgen schrittweise erarbeitet und erprobt, bevor sie als fertige PDFs in das Repository `protico.lessons` überführt werden. 
 
 ### [Lizenz](https://github.com/pro-tirone-computatri/protico.ltx/blob/main/LICENSING.md) 
 
@@ -58,13 +58,13 @@ proTironeComputatri ist als GitHub-Organisation aufgesetzt und enthält folgende
 * `protico.lessons` stellt fertige Unterrichtseinheiten zum Download bereit, geordnet nach den Lernfeldern und Curriculum.
 * `protico.ltx` enthält LaTeX/Markdown-basierte Quellen für Unterrichtseinheiten samt build-System.
 * `protico.mso` soll einmal Microsoft-Office-Dokumente für Unterrichtseinheiten offerieren
-* `protico.mdd` enthält die selbstrefrentiellen Quellen für ein Markdown-Demo-System.
+* `protico.mdd` enthält die selbstreferentiellen Quellen für ein Markdown-Demo-System.
 
 In `protico.ltx` 
 
-* hat jedes Lernfeld - dem Rahmenlehrplan folgend - seinen eigenen Ordner [ z.B. `lf.03`, `lf.09`, oder `lf.11c` ].
-* wird der Stoff eines Lernfeldes als Folge von Themen aufbereitet [`sbj-00.xyz` bis `sbj-xy.zyx`] aufbereitet.
-* wird ein Thema gelegentlich in einzelen Aspekte aufgeteilt, die neben  der Gesamtsicht in der Subject-Datei zusätzlich als einzelnen Topic-Dateien bereitstehen. [`tpc-00.xyz` bis `tpc-xy.zyx`]
+* hat jedes Lernfeld - dem Rahmenlehrplan folgend - seinen eigenen Ordner [z.B. `lf.03`, `lf.09`, oder `lf.11c` ].
+* wird der Stoff eines Lernfeldes als Folge von Themen [`sbj-00.xyz` bis `sbj-xy.zyx`] aufbereitet.
+* wird ein Thema gelegentlich in einzelnen Aspekte aufgeteilt, die neben  der Gesamtsicht in der Subject-Datei zusätzlich als einzelnen Topic-Dateien bereitstehen. [`tpc-00.xyz` bis `tpc-xy.zyx`]
 * **besteht jede Unterrichtseinheit** zu einem Thema
   * **aus einer _[ZEN-Präsentation](https://www.amazon.de/Zen-oder-die-Kunst-Präsentation/dp/3864907594)_**, anhand derer die Lehrerin den Stoff mündlich einbringt (`sbj-nummer.thema-zenprese.pdf`)
   * und **aus einem zugehörigen _Tonspurdokument_** (`sbj-nummer.thema-ortaltrack.pdf`), das
@@ -87,6 +87,7 @@ Die intendierte Nutzung der Unterrichtseinheiten ist also, dass die Lehrerin
 * [X] Bis Ende August 2025 Integration einer exemplarischen Unterrichtseinheit
 * [X] Bis Ende September 2025 Reset des automatischen Deployments der Stunden und Releases 
 * [ ] Bis Ende Januar 2026 (Ende 1. Halbjahr 2025/26) Integration eines Grundbestandes an LF03- und LF09-Stunden
+* [ ] Bis Ende July 2026 (Ende 2. Halbjahr 2025/26) Integration aller LF03- und LF09-Stunden
 * [ ] Bis Ende July 2026 (Ende 2. Halbjahr 2025/26) stückweise Integration von LF-11c- und LF-11d-Stunden
 * [ ] ...
 
@@ -95,7 +96,7 @@ Die intendierte Nutzung der Unterrichtseinheiten ist also, dass die Lehrerin
 * [X] TODO: ermögliche das Customizen der Dokumente
 * [X] TODO: dokumentiere das Customizen der Dokumente
 * [X] TODO: ermögliche einen build-Zweig
-* [ ] TODO: ermögliche Generieren der LaTeX/beamer-Zen-Präsentationen
+* [X] TODO: ermögliche Generieren der LaTeX/beamer-Zen-Präsentationen
 * [X] TODO: erläutere generisches Femininum
 
 Anmerkungen:
