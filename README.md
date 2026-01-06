@@ -17,7 +17,7 @@
 </p>
 
 
-## Freie Unterrichtsmaterialien für die Ausbildung zur Fachinformatikerin.
+## Freie Lehrmaterialien für die Ausbildung zur Fachinformatikerin.
 
 <!-- LTeX:Language=en-US -->
 
@@ -25,9 +25,9 @@
 
 <!-- LTeX:Language=de-DE -->
 
-### Ziel
+### (1) Ziel
 
-Das ausführliche Manifest finden Sie unter [https://github.com/pro-tirone-computatri](https://github.com/pro-tirone-computatri). Es besagt im Kern, dass wir
+Das [proTironeComputatri-Manifest](https://github.com/pro-tirone-computatri) besagt im Kern, dass wir
 
 * Lehrerinnen und Schülerinnen fertig aufbereitete Unterrichts- und Lerneinheiten für die Ausbildung zur Fachinformatikerin anbieten möchten. 
 * den Stoff, den die Abschlussprüfungen I und II erwarten, umfänglich und hochwertig aufbereiten wollen
@@ -41,17 +41,18 @@ Deshalb bieten Ihnen die *proTironeComputatri*-Repositories **_freie_ Lehr- und 
 * die zusammen alle Themen und Aspekte eines Lernfeldes abdecken,
 * die CC-BY-4.0 lizenziert sind.
 
-### Inhalt
+### (2) Inhalt `protico.ltx`
+
+Das Repository [https://github.com/pro-tirone-computatri/protico.ltx](https://github.com/pro-tirone-computatri/protico.ltx) enthält "nur" die LaTeX/Markdown/Makefile-basierte Quellen für *proTironeComputatri*-Unterrichtseinheiten -- samt zugehörigem Buildsystem. In und mit diesem Repository erarbeiteten und erproben wir Stundenfolgen, bevor wir sie als fertige PDFs in das Repository `protico.lessons` hochladen. 
 
 Fertige *proTironeComputatri*-Unterrichtseinheiten werden - nach Lernfeld und intendierter Abfolge sortiert - als PDF-Dateien im Repository [https://github.com/pro-tirone-computatri/protico.lessons](https://github.com/pro-tirone-computatri/protico.lessons) bereitgestellt.
 
-Das hier betrachtete Repository [https://github.com/pro-tirone-computatri/protico.ltx](https://github.com/pro-tirone-computatri/protico.ltx) enthält "nur" LaTeX/Markdown/Makefile-basierte Quellen samt zugehörigem Buildsystem für *proTironeComputatri*-Unterrichtseinheiten. In und mit diesem Repository werden die Stundenfolgen schrittweise erarbeitet und erprobt, bevor sie als fertige PDFs in das Repository `protico.lessons` überführt werden. 
 
-### [Lizenz](https://github.com/pro-tirone-computatri/protico.ltx/blob/main/LICENSING.md) 
+### (3) [Lizenz](https://github.com/pro-tirone-computatri/protico.ltx/blob/main/LICENSING.md) 
 
 Sofern im Einzelfall nicht anders vermerkt, stehen alle Dokumente unter der [CC-BY-4.0-Lizenz](https://creativecommons.org/licenses/by/4.0/deed.de). Davon ausgenommen ist das [proTirone-Logo](./logo.png): Es darf nur verwendet werden, um das Projekt [proTirone](https://github.com/proi-tirone-computatri/) und des Repositories visuell zu markieren bzw. anzuteasern.
 
-### Struktur
+### (4) Struktur
 
 proTironeComputatri ist als GitHub-Organisation aufgesetzt und enthält folgende Repositories:
 
@@ -64,12 +65,12 @@ In `protico.ltx`
 
 * hat jedes Lernfeld - dem Rahmenlehrplan folgend - seinen eigenen Ordner [z.B. `lf.03`, `lf.09`, oder `lf.11c` ].
 * wird der Stoff eines Lernfeldes als Folge von Themen [`sbj-00.xyz` bis `sbj-xy.zyx`] aufbereitet.
-* wird ein Thema gelegentlich in einzelnen Aspekte aufgeteilt, die neben  der Gesamtsicht in der Subject-Datei zusätzlich als einzelnen Topic-Dateien bereitstehen. [`tpc-00.xyz` bis `tpc-xy.zyx`]
+* wird ein Thema gelegentlich in einzelnen Aspekte aufgeteilt, die neben der Gesamtsicht in der Subject-Datei zusätzlich als einzelnen Topic-Dateien bereitstehen. [`tpc-00.xyz` bis `tpc-xy.zyx`]
 * **besteht jede Unterrichtseinheit** zu einem Thema
   * **aus einer _[ZEN-Präsentation](https://www.amazon.de/Zen-oder-die-Kunst-Präsentation/dp/3864907594)_**, anhand derer die Lehrerin den Stoff mündlich einbringt (`sbj-nummer.thema-zenprese.pdf`)
   * und **aus einem zugehörigen _Tonspurdokument_** (`sbj-nummer.thema-ortaltrack.pdf`), das
     * den zur Präsentation zu 'erzählenden' Stoff sprachlich skizziert
-    * an passenden Stellen Übungen samt Lösungen enthält
+    * und an passenden Stellen Übungen samt Lösungen enthält
   * optional ergänzt von **einem _Übungsdokument_** (`sbj-nummer.thema-exercise.pdf`), das
     * die Übungen aus dem Tonspurdokument als reine Aufgaben extrahiert
     * und als 'Aufgabenblatt' ausgehändigt werden kann.
@@ -78,7 +79,7 @@ Die intendierte Nutzung der Unterrichtseinheiten ist also, dass die Lehrerin
 
 * die Zenpräsentation visualisiert
 * zu jeder Folie den Text aus dem Tonspurdokument erzählt
-* an jeder Überungiposition die Aktion an die Schülerinnen übergibt
+* an jeder Übungsposition die Aktion an die Schülerinnen übergibt
 * am Ende einer Unterrichtseinheit das Tonspurdokument zur Nachbereitung und Wiederauffrischung an die Schülerinnen aushändigt.
 
 ### [Milestones](https://github.com/pro-tirone-computatri/protico.ltx/blob/main/BACKLOG.md)
