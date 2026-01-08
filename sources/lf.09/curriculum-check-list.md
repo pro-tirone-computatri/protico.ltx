@@ -29,9 +29,11 @@
 | . | . | Adressen | MAC | sbj-07.mac-addresses-[].pdf |
 | . | . | Adressen | Binäroperatoren | sbj-08.bitwise-operations-[].pdf |
 | . | . | Adressen | IPv4 | sbj-09.ipv4-addresses-[].pdf |
-| . | . | Adressen | Netzsegentierung | sbj-10.ipv4-classes-[].pdf |
+| . | . | Adressen | Netzsegmentierung | sbj-10.ipv4-classes-[].pdf |
+| . | . | Adressen | DMZ \& Firewalls | ...-[].pdf |
+| . | . | Adressen | VLAN & Layer-III-Switches | ...-[].pdf |
 | . | . | Adressen | IPv6 | ...-[].pdf |
-| . | . | Layer II-III | Protokolle \& Packaging | ...-[].pdf |
+| . | . | Layer II-IV | Protokolle \& Packaging | ...-[].pdf |
 | . | . | Layer IV | Ports | ...-[].pdf |
 | . | . | Layer IV | NAT \& Hopping | ...-[].pdf |
 | . | . | Layer IV | ICMP, TCP-IP, UDP ...| ...-[].pdf |

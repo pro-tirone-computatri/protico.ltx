@@ -7,6 +7,10 @@
 
 EF="img-meta-data.json"
 
+lessons:
+	@find . -name "lf.*" -type d | while read dir; do \
+		(cd $${dir} && make lessons); \
+	 done
 
 clear:
 	@for fn in ${EF}; do \

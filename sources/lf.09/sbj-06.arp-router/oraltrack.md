@@ -104,7 +104,7 @@ __Lösung: Simulation mit Schreibtischtest: *[→ ZP:Sheet:3]*__
 
 Lösungen:
 
-* Aktivitätsdiagramm: **[→ ZP:Sheet:4]**, 
+* Aktivitätsdiagramm: **[→ ZP:Sheet:4]** (Die Idee, das Merken der Absender-IP-Adresse gesondert als parallele Akzivität zu repräsentieren, verdanken wir Waldemar, GSLDK/11iv24 
 * Sequenzdiagramm: **[→ ZP:Sheet:5]**, 
 * verdichtetes Sequenzdiagramm: **[→ ZP:Sheet:6]**
 

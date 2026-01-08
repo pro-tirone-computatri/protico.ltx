@@ -4,8 +4,10 @@
 # CC-BY-4.0 (= https://creativecommons.org/licenses/by/4.0/)
 #
 
+BLD=../../built/lf.09
+CCL=curriculum-check-list
 
-lessons:
+lessons: lesson-ccl
 	find . -maxdepth 1 -type d -name "sbj-*" | while read d; \
 		do echo $$d; \
 		( cd $$d; \
@@ -14,6 +16,7 @@ lessons:
 		) \
 	done
 
+
 clean:
 	find . -maxdepth 1 -type d -name "sbj-*" | while read d; \
 		do echo $$d; \
@@ -21,5 +24,14 @@ clean:
 		  make clean; \
 		) \
 	done
+	if [ -f ${CCL}.pdf ]; then rm ${CCL}.pdf; fi
 
+lesson-ccl: ccl 
+	mkdir -p ${BLD}
+	mv ${CCL}.pdf ${BLD}/
+	cp ${CCL}.md ${BLD}/
+
+	
+ccl:
+	( cd sbj-00.curriculum && make ../${CCL}.pdf)
 
