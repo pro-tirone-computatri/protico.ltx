@@ -260,10 +260,7 @@ Bonne Chance!
 * [ ] Netzwerkkomponenten \& -protokolle (NAS, SAN, iSCSI, SMB, NFS, Ethernet, FirbreChannel)
 * [ ] Datenaustauschformate XML, JSON, CVS, YAML 
 
-
-
 ### (Alte) Prüfungsfragen und Lösungsbogen
-
 
 Ein thematisches Exzerpt aus den realen Prüfungen AP1 und AP2, nach Jahren und Fachrichtung sortiert.
 
