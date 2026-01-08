@@ -50,7 +50,7 @@ Fertige *proTironeComputatri*-Unterrichtseinheiten werden - nach Lernfeld und in
 
 ### (3) [Lizenz](https://github.com/pro-tirone-computatri/protico.ltx/blob/main/LICENSING.md) 
 
-Sofern im Einzelfall nicht anders vermerkt, stehen alle Dokumente unter der [CC-BY-4.0-Lizenz](https://creativecommons.org/licenses/by/4.0/deed.de). Davon ausgenommen ist das [proTirone-Logo](./logo.png): Es darf nur verwendet werden, um das Projekt [proTirone](https://github.com/proi-tirone-computatri/) und des Repositories visuell zu markieren bzw. anzuteasern.
+Sofern im Einzelfall nicht anders vermerkt, stehen alle Dokumente unter der [CC-BY-4.0-Lizenz](https://creativecommons.org/licenses/by/4.0/deed.de). Davon ausgenommen ist das [proTirone-Logo](./logo.png): Es darf nur verwendet werden, um das Projekt [proTirone](https://github.com/proi-tirone-computatri/) und des Repositories visuell zu markieren bzw. anzuteasern. Die Erfüllung der CC-BY-4.0-Lizenz ist im Dokument [LICENSING.md](./LICENSING.md) näher geregelt.
 
 ### (4) Struktur
 
