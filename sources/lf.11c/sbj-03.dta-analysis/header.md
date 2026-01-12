@@ -1,5 +1,5 @@
 ---
-title: 'LF11C:03:Datenanalyse'
+title: 'LF11c:03:Datenanalyse'
 author: [K. Reincke]
 date: 2026-01-11
 keywords: [data,analysis]

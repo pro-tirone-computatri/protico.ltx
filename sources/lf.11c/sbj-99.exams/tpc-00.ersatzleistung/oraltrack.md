@@ -30,7 +30,7 @@
 <span style="color: green;">_Aufgabe_</span> <span style="color:magenta;">**LF11c:Klausurersatzleistung:Step:02**</span>
 
 * [ ] Bereinigen Sie die Daten syntaktisch, wo es die Einheitlichkeit gebietet. 
-* [ ] Beschbreiben Sie, welche Datensätze wie und warum syntaktisch bereinigt werden mussten.
+* [ ] Beschreiben Sie, welche Datensätze wie und warum syntaktisch bereinigt werden mussten.
 
 <!-- uebung::end -->
 
@@ -44,7 +44,7 @@
 <span style="color: green;">_Aufgabe_</span> <span style="color:magenta;">**LF11c:Klausurersatzleistung:Step:03**</span>
 
 * [ ] Bereinigen Sie die Daten semantisch, wo es Einheitlichkeit gebietet. 
-* [ ] Beschbreiben Sie, welche Datensätze wie und warum semantisch bereinigt werden mussten.
+* [ ] Beschreiben Sie, welche Datensätze wie und warum semantisch bereinigt werden mussten.
 
 <!-- uebung::end -->
 

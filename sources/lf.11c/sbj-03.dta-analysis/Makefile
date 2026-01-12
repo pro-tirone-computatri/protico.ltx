@@ -17,11 +17,7 @@ help:
 	echo "make [ help | lessons | lesson-exc | exercises | lesson-ort | oraltrack | lesson-zpr | zenprese ] "
 
 # recreates all sbj documents and releases them into the lesson directory tree
-lessons: oraltrack zenprese exercises
-	@ WD=`pwd` && SJN=`basename $${WD}` && LFN=`cat ../td.lf` && \
-	  TGD="${BLD}/$${LFN}" && mkdir -p $${TGD} && \
-	  ls *.pdf | while read PDF; do mv $${PDF} $${TGD}/$${SJN}-$${PDF}; done
-	@ tree ${BLD}
+lessons: lesson-exc lesson-ort lesson-zpr
 
 # --- SECTION EXERCISE ---
 # recreates exercise document, releases it into the lesson directory tree
@@ -44,7 +40,9 @@ exercises:
 lesson-ort: oraltrack
 	@ WD=`pwd` && SJN=`basename $${WD}` && LFN=`cat ../td.lf` && \
 	  TGD="${BLD}/$${LFN}" && mkdir -p $${TGD} && \
-    mv oraltrack.pdf $${TGD}/$${SJN}-oraltrack.pdf	
+    mv oraltrack.pdf $${TGD}/$${SJN}-oraltrack.pdf && \
+		mkdir -p $${TGD}/$${SJN}-data && \
+		cp ../dsp.lf/dsp.alpha.* ../dsp.lf/dsp.beta.* $${TGD}/$${SJN}-data
 	@ tree ${BLD}
 
 ort: oraltrack
