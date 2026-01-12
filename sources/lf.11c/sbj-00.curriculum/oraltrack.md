@@ -217,7 +217,7 @@ Bonne Chance!
 
 ### 4.) Addendum: Ergebnisse der Auswertungen:
 
-**Scope LF11c/12c (auf PK-Level)** [→  Katolog, S. 17-22](https://www.u-form-shop.de):
+**Scope LF11c/12c (auf PK-Level)** [→  Katolog, S. 17-25](https://www.u-form-shop.de):
 
 _LF 11/12 fachrichtungsübergreifend:_
 

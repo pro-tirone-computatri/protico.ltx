@@ -230,7 +230,7 @@ Bonne Chance!
 * [ ] IPv4-Adressen und -Segmentierung
 * [ ] RAID mit Mengenberechnung
 
-**Scope Lernfeld 09 (auf PK-Level)**: [→  Katolog XYZ, S. 19,20,21](https://www.u-form-shop.de)
+**Scope Lernfeld 09 (auf PK-Level)**: [→  Katolog, S. 19,20,21](https://www.u-form-shop.de)
 
 * [ ] Techniksystematik, Schichtenmodelle 
 * [ ] Physikalische Schicht, Repeater, Hub, ARP  
