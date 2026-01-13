@@ -1,5 +1,5 @@
 ---
-title: 'LF11c:99:00:Ersatzleistung'
+title: 'LF11c:99:2526-SMA:EL01'
 author: [K. Reincke]
 date: 2026-01-12
 keywords: [Konverterprogrammierung]
@@ -13,4 +13,4 @@ lang: "de-DE"
 papersize: a4
 colorlinks: true
 ---
-### LF11c:99:00:Klausurersatzleistung:Konverterprogrammierung 
+### LF11c:99:2526-SMA:EL01 

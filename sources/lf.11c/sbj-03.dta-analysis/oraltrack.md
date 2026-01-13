@@ -185,7 +185,16 @@ Was wäre das MVP für einen Konverter für gegebene Inputdaten im Format IF und
 
 ---
 
-*Lösung*: Es gibt ein von der Sache her geradezu zwingendes Verfahren:
+*Lösung*: Verschiedene Ansätze sind denkbar:
+
+* ZPR mit INCODE-Daten + Outpout-Adapter (im selben Format wie Input Daten)
+* Input-Adapter + ZPR + Outpout-Adapter
+* Inpuit-Adapter allein
+* ...
+
+Das bester ZPR nimmt die wesentlichsten Merkmale der Ziellösung in Angriff und ist zugleich so kleine wie möglich,
+
+Deshlab gibt es in diesem Fall ein von der Sache her geradezu zwingendes Verfahren:
 
 **Konverter MVP.0**:
 
