@@ -42,8 +42,7 @@ def write_as_ini(filename,daydata):
   ouf=open(filename,"w")
   # keep it simple: let the program crash if filename does not exist
   for ds in daydata:
-    ouf.write(f"[ {ds["day"]} ]\n,Sunrise={ds["sunrise"]}\n\
-      Sunset={ds["sunset"]}\nDurance={ds["durance"]}\n")
+    ouf.write(f"[ {ds["day"]} ]\nSunrise={ds["sunrise"]}\nSunset={ds["sunset"]}\nDurance={ds["durance"]}\n")
   return ouf.close()
 
 # main
