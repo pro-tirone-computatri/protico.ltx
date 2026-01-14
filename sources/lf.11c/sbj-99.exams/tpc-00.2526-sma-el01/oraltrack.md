@@ -11,7 +11,7 @@
 <!-- uebung::start -->
 <span style="color: green;">_Aufgabe_</span> <span style="color:magenta;">**LF11c:Klausurersatzleistung:Allgemein**</span>
 
-Sie erhalten im Folgende 7 aufgeinander aufbauende und ineinandergreifende Teilaufgaben. Auf's Ganze gesehen sollen Sie in Python einen Konverter vom gegebenen Input-Format ins JSON-Format programmieren. Die Einzelaufgaben brechen diese Aufgabe in Teilschritte herunter.
+Sie erhalten im Folgende 7 aufeinander aufbauende und ineinandergreifende Teilaufgaben. Auf's Ganze gesehen sollen Sie in Python einen Konverter vom gegebenen Input-Format ins JSON-Format programmieren. Die Einzelaufgaben brechen diese Aufgabe in Teilschritte herunter.
 
 Wenn Sie dabei
 
