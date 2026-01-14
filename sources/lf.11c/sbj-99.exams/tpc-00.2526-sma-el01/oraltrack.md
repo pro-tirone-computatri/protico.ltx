@@ -98,12 +98,12 @@ Punkte | Zensur
 <span style="color: green;">_Aufgabe_</span> <span style="color:magenta;">**LF11c:Klausurersatzleistung:Step:04**</span>
 
 * [ ] Programmieren Sie in Python einen Konverter, der die (syntaktisch und semantisch bereinigten) Daten in dem Format aus einer Datei einliest, das Sie in Step 1 festgelegt haben, und sie in demselben Format in eine andere Datei zurückschreibt. Verfolgen Sie dabei nachvollziehbar dem Minimal-Viable-Produkt-Prinzip:
-  * **MVP-0**:
+  * [ ] **MVP-0**:
     * [ ] Extrahieren Sie 3 Datensätze aus den von Ihnen bereinigten Daten als Testdaten. **(1P)**
     * [ ] Definieren Sie eine Zwischenrepräsentation.
     * [ ] Initialisieren Sie im Programm eine entsprechende Datenstruktur mit 2 Datensätzen aus Ihren Testdaten. **(2P)**
     * [ ] Progammieren Sie einen Output-Adapter für Ihren Konverter, der die interne Datenstruktur im selbst in Step 1 festgelegten Format in eine Datei schreibt. **(4P)**
-  * **MVP-1**:
+  * [ ] **MVP-1**:
     * [ ] Programmieren Sie einen Input-Adapter des Konverters, der Ihre Testdaten einliest und in eine interne Datenstruktur gemäß Ihrer Zwischenrepräsentation umwandelt. **(4P)**
     * [ ] Überprüfen Sie Ihr Programm, ob es die bereinigte Gesamtdatendatei [Format (Step 1)] einlesen und im gleichen Format in eine andere Datei ausgibt.
     * [ ] Kommentieren Sie Ihre Programm kurz, aber aussagekräftig. **(1P)**
@@ -120,13 +120,13 @@ Punkte | Zensur
 <span style="color: green;">_Aufgabe_</span> <span style="color:magenta;">**LF11c:Klausurersatzleistung:Step:05**</span>
 
 * [ ] Programmieren Sie in Python einen Konverter, der bereinigten Gesamtdaten [Format (Step 1)] aus einer Datei einliest und in anderen Formate in eine andere Datei ausgibt.
-  * **MVP-2**:
+  * [ ] **MVP-2**:
     * [ ] Progammieren Sie einen zweiten Output-Adapter für Ihren Konverter, der die interne Datenstruktur im CSV-Format in eine Datei schreibt. **(1P)**
-  * **MVP-3**:
+  * [ ] **MVP-3**:
     * [ ] Progammieren Sie einen dritten Output-Adapter für Ihren Konverter, der die interne Datenstruktur im JSON-Format in eine Datei schreibt. **(4P)**
-    * [ ] Modifizieren Sie Ihren Konverter so, dass er den Nutzer das Ausgabeformat wählen lässt. **(1P)**
+    * [ ] Modifizieren Sie Ihren Konverter so, dass er seinen Nutzer das Ausgabeformat wählen lässt. **(1P)**
     * [ ] Überprüfen Sie Ihr Programm, ob es die bereinigte Gesamtdatendatei [Format (Step 1)] einlesen und im JSON-Format in eine andere Datei ausgibt.
-    * [ ] Kommentieren Sie Ihre Programm kurz, aber aussagekräftig. **(1P)**
+    * [ ] Kommentieren Sie Ihr Programm kurz, aber aussagekräftig. **(1P)**
 
 <!-- uebung::end -->
 
@@ -140,9 +140,9 @@ Punkte | Zensur
 <span style="color: green;">_Aufgabe_</span> <span style="color:magenta;">**LF11c:Klausurersatzleistung:Step:06**</span>
 
 * [ ] Ergänzen Sie Ihren Konverter um einen Output-Adapter, der die Datenmenge (Anzahl der Bytes) ohne Datenverlust deutlich reduziert.
-  * **MVP-3**:
+  * **MVP-4**:
     * [ ] Beschreiben Sie Ihre Verbesserungsideen. **(2P)**
-    * [ ] Programmieren Sie dafür exemplarisch mit einem vierten Output-Adapter. **(2P)**
+    * [ ] Programmieren Sie dafür exemplarisch einen vierten Output-Adapter. **(2P)**
 
 <!-- uebung::end -->
 
