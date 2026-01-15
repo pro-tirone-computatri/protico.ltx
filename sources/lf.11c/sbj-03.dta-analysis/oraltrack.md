@@ -6,7 +6,7 @@
 -->
 <!-- LTeX:Language=de-DE -->
 
-### Aspekte der Datenanalyse **[→ ZP:Sheet:3]**
+### Dimensionen der Datenanalyse **[→ ZP:Sheet:2]**
 
 *Zweck von Daten*: Sie sollen
 
@@ -81,9 +81,9 @@ Es gibt aktuell zwei Verfahren, die Gravitationskonstante zu messen. Die Verfahr
 * **Datenverarbeitungsgrad**
   * **strukturierte Daten** haben festes, zu Bedeutung passendes Format und können auf/mit einer der Datenerfassungsformate repräsentiert werden, nämlich in/mit
     * JSON Dateien :- [https://de.wikipedia.org/wiki/JSON](https://de.wikipedia.org/wiki/JSON)
-    * XML Dateien :- [https://de.wikipedia.org/wiki/Extensible_Markup_Language](https://de.wikipedia.org/wiki/Extensible_Markup_Language)
+    * XML Dateien :- [https://de.wikipedia.org/wiki/Extensible\_Marku\_Language](https://de.wikipedia.org/wiki/Extensible_Markup_Language)
     * CSV Dateien :- [https://de.wikipedia.org/wiki/CSV_(Dateiformat)](https://de.wikipedia.org/wiki/CSV_(Dateiformat))
-    * INI-Dateien (Schlüssel-Wert-Paare) :- [https://en.wikipedia.org/wiki/INI_file](https://en.wikipedia.org/wiki/INI_file)
+    * INI-Dateien (Schlüssel-Wert-Paare) :- [https://en.wikipedia.org/wiki/INI\_file](https://en.wikipedia.org/wiki/INI_file)
     * YAML-Dateien :- [https://de.wikipedia.org/wiki/YAML](https://de.wikipedia.org/wiki/YAML)
     * → [protico.lessons](https://github.com/pro-tirone-computatri/protico.lessons/tree/main/download/lf.cx): lf.cx.Datafiles)
   * **semi-strukturierte Daten** haben Format, das die Bedeutung nicht vollständig repräsentiert [Bilder etc.]

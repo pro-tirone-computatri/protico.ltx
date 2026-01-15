@@ -33,7 +33,7 @@ def write_as_csv(filename,daydata):
 dd_file="dsp.lf/dsp.beta.csv";
 dd_test_file="dsp.lf/dsp.beta-td.csv";
 dd_csv_file="res.lf/daydata.csv";
-dd_json_file="res.lf/daydata.csv";
+dd_ini_file="res.lf/daydata.ini";
 
 daydata=fill_from_csv(dd_test_file)
 daydata=dd_hard_coded

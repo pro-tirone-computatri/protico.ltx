@@ -11,21 +11,17 @@
 <!-- uebung::start -->
 <span style="color: green;">_Aufgabe_</span> <span style="color:magenta;">**LF11c:Klausurersatzleistung:Allgemein**</span>
 
-Sie erhalten im Folgende 7 aufeinander aufbauende und ineinandergreifende Teilaufgaben. Auf's Ganze gesehen sollen Sie in Python einen Konverter vom gegebenen Input-Format ins JSON-Format programmieren. Die Einzelaufgaben brechen diese Aufgabe in Teilschritte herunter.
+Sie sollen in Python einen Konverter von einem Input-Format ins JSON-Format programmieren. Die folgenden Teilaufgaben brechen dieses Ziel in Teilschritte herunter. Was davon bewertet wird, ist durch die erreichbaren Punkte ausgewiesen. Alle anderen Unterpunkte - insbesondere die Befolgung des *Minimal-Viable-Product*-Prinzips - sollen Ihnen die Arbeit nur erleichtern. 
 
-Wenn Sie dabei
+Laden Sie zum Schluss Ihr lauffähiges Programm in nur einer Programmdatei (Endung `.py`) als Aufgabenlösung hoch.
 
-* ein Ergebnis beschreiben sollen, dann fügen Sie diese Beschreibung als Kommentar in Ihren Programmcode ein.
-* die einzulesende Daten vor der Verarbeitung modifizieren, fügen Sie Ihre Version als Input-Datendatei Ihrer Lösung hinzu.
-* Testdaten zusammenstellen, fügen Sie die als (zweite) Input-Datendatei Ihrer Lösung hinzu.
-* Daten, Funktionen oder Klassen programmieren, fügen Sie in einer einzigen Programmdatei Ihrer Lösung bei.
+Falls Sie darüberhinaus
 
-Laden Sie Ihre Dateien zum Schluss in den Ordner hoch, in den Sie auch alle bisherigen Übungen hochgeladen haben. Nutzen Sie dabei das bekannte Namensschema:
+* etwas beschreiben sollen, fügen Sie Ihren Text als Kommentar in Ihren Programmcode ein.
+* die einzulesende Daten vor der Verarbeitung modifizieren müssen, laden Sie zum Schluss auch Ihre Version der Input-Datendatei hoch. (Extension typgemäß).
+* Testdaten zusammenstellen sollen, laden Sie zum Schluss die als Test-Input-Datendatei hochi (Extension typgemäß).
 
-* Ihre Programmdatei ende bitte auf die Extension `.py`
-* Ihre Input-Datendatei(en) verwenden bitte die entsprechenden Dateiextensionen.  
-
-Ich bewerte Ihre Lösung nach den Merkmalen (Teilschritten), die ich im Folgenden mit einer Punktzahl versehen habe.
+Generieren Sie am Ende im üblichen Übungsbordner Ihren eigenen Unterordner `YYYY-MM-DD-conv-teta-IHRNAME`. Laden Sie all Ihre Dateien dahinein hoch
 
 Es sind 32 Punkte erreichbar (plus 4 Zusatzpunkte)
 
@@ -37,13 +33,10 @@ Punkte | Zensur
 29 | 1,6
 28 | 1,9
 27 | 2,1
-... | gemäß [ihk-notenschluessel](https://www.lehrerfreund.de/notenschluesselrechner/form-ihk-notenschluessel)
+26 | 2,4
+... | ...
 
-<!-- uebung::end -->
-
----
-
-**_Lösung zu Step 02:_**
+Fortsetzung gemäß [ihk-notenschluessel](https://www.lehrerfreund.de/notenschluesselrechner/form-ihk-notenschluessel)
 
 
 ---
@@ -59,9 +52,7 @@ Punkte | Zensur
 
 <!-- uebung::end -->
 
----
-
-**_Lösung zu Step 02:_**
+**_Lösung zu Step 01:_**
 
 ---
 
@@ -72,8 +63,6 @@ Punkte | Zensur
 * [ ] Beschreiben Sie, welche Datensätze wie und warum syntaktisch bereinigt werden mussten. **(1P)**
 
 <!-- uebung::end -->
-
----
 
 **_Lösung zu Step 02:_**
 
@@ -87,9 +76,6 @@ Punkte | Zensur
 
 <!-- uebung::end -->
 
-
----
-
 **_Lösung zu Step 03:_**
 
 ---
@@ -97,20 +83,18 @@ Punkte | Zensur
 <!-- uebung::start -->
 <span style="color: green;">_Aufgabe_</span> <span style="color:magenta;">**LF11c:Klausurersatzleistung:Step:04**</span>
 
-* [ ] Programmieren Sie in Python einen Konverter, der die (syntaktisch und semantisch bereinigten) Daten in dem Format aus einer Datei einliest, das Sie in Step 1 festgelegt haben, und sie in demselben Format in eine andere Datei zurückschreibt. Verfolgen Sie dabei nachvollziehbar dem Minimal-Viable-Produkt-Prinzip:
+* [ ] Programmieren Sie jetzt in Python einen Konverter, der die (syntaktisch und semantisch bereinigten) Inputdaten in dem Format aus einer Datei einliest, das Sie selbst in Step 1 festgelegt haben (= im Folgenden: *Step1Format*). Als erstes soll er sie auch nur in diesem *Step1Format* eine andere Datei zurückschreiben:
   * [ ] **MVP-0**:
-    * [ ] Extrahieren Sie 3 Datensätze aus den von Ihnen bereinigten Daten als Testdaten. **(1P)**
+    * [ ] Extrahieren Sie 3 Datensätze aus den von Ihnen bereinigten Inputdaten als Testdaten. **(1P)**
     * [ ] Definieren Sie eine Zwischenrepräsentation.
-    * [ ] Initialisieren Sie im Programm eine entsprechende Datenstruktur mit 2 Datensätzen aus Ihren Testdaten. **(2P)**
-    * [ ] Progammieren Sie einen Output-Adapter für Ihren Konverter, der die interne Datenstruktur im selbst in Step 1 festgelegten Format in eine Datei schreibt. **(4P)**
+    * [ ] Initialisieren Sie - diesem Format entsprechend - in Ihrem Programm *hard-gecodetet Testdaten*  mit 2 Datensätzen aus Ihren Testdaten. **(2P)**
+    * [ ] Progammieren Sie einen Output-Adapter für Ihren Konverter, der die *hard-gecodeten Testdaten* im *Step1Format* in eine Datei schreibt. **(4P)**
   * [ ] **MVP-1**:
     * [ ] Programmieren Sie einen Input-Adapter des Konverters, der Ihre Testdaten einliest und in eine interne Datenstruktur gemäß Ihrer Zwischenrepräsentation umwandelt. **(4P)**
-    * [ ] Überprüfen Sie Ihr Programm, ob es die bereinigte Gesamtdatendatei [Format (Step 1)] einlesen und im gleichen Format in eine andere Datei ausgibt.
+    * [ ] Überprüfen Sie dan, ob Ihr Programm auch die gesamten bereinigten Inputdaten im *Step1Format* einlesen und im *Step1Format* in eine andere Datei wieder ausgibt.
     * [ ] Kommentieren Sie Ihre Programm kurz, aber aussagekräftig. **(1P)**
 
 <!-- uebung::end -->
-
----
 
 **_Lösung zu Step 04:_**
 
@@ -119,18 +103,16 @@ Punkte | Zensur
 <!-- uebung::start -->
 <span style="color: green;">_Aufgabe_</span> <span style="color:magenta;">**LF11c:Klausurersatzleistung:Step:05**</span>
 
-* [ ] Programmieren Sie in Python einen Konverter, der bereinigten Gesamtdaten [Format (Step 1)] aus einer Datei einliest und in anderen Formate in eine andere Datei ausgibt.
+* [ ] Programmieren Sie in Python einen Konverter, der bereinigten Inputdaten [*Step1Format*] aus einer Datei einliest und in anderen Formate in eine andere Datei ausgibt.
   * [ ] **MVP-2**:
-    * [ ] Progammieren Sie einen zweiten Output-Adapter für Ihren Konverter, der die interne Datenstruktur im CSV-Format in eine Datei schreibt. **(1P)**
+    * [ ] Progammieren Sie einen zweiten Output-Adapter für Ihren Konverter, der die *hard-gecodetet Testdaten* im CSV-Format in eine Datei schreibt. **(1P)**
   * [ ] **MVP-3**:
-    * [ ] Progammieren Sie einen dritten Output-Adapter für Ihren Konverter, der die interne Datenstruktur im JSON-Format in eine Datei schreibt. **(4P)**
+    * [ ] Progammieren Sie einen dritten Output-Adapter für Ihren Konverter, der die *hard-gecodetet Testdaten* im JSON-Format in eine Datei schreibt. **(4P)**
     * [ ] Modifizieren Sie Ihren Konverter so, dass er seinen Nutzer das Ausgabeformat wählen lässt. **(1P)**
-    * [ ] Überprüfen Sie Ihr Programm, ob es die bereinigte Gesamtdatendatei [Format (Step 1)] einlesen und im JSON-Format in eine andere Datei ausgibt.
+    * [ ] Überprüfen Sie dann, ob Ihr Programm auch die gesamten bereinigte Inputdaten [*Step1Format*] einlesen und im JSON-Format und im CSV-Forat in eine andere Datei ausgeben kann.
     * [ ] Kommentieren Sie Ihr Programm kurz, aber aussagekräftig. **(1P)**
 
 <!-- uebung::end -->
-
----
 
 **_Lösung zu Step 05:_**
 
@@ -139,14 +121,12 @@ Punkte | Zensur
 <!-- uebung::start -->
 <span style="color: green;">_Aufgabe_</span> <span style="color:magenta;">**LF11c:Klausurersatzleistung:Step:06**</span>
 
-* [ ] Ergänzen Sie Ihren Konverter um einen Output-Adapter, der die Datenmenge (Anzahl der Bytes) ohne Datenverlust deutlich reduziert.
+* [ ] Ergänzen Sie Ihren Konverter um einen Output-Adapter, der die Datenmenge (Anzahl der Bytes) prinzipiell ohne Datenverlust deutlich reduziert.
   * **MVP-4**:
     * [ ] Beschreiben Sie Ihre Verbesserungsideen. **(2P)**
     * [ ] Programmieren Sie dafür exemplarisch einen vierten Output-Adapter. **(2P)**
 
 <!-- uebung::end -->
-
----
 
 **_Lösung zu Step 06:_**
 
@@ -159,8 +139,6 @@ Punkte | Zensur
 * [ ] Beschreiben Sie eine auffällige Eigenart der beteiligten Person. (2ZP)
 
 <!-- uebung::end -->
-
----
 
 **_Lösung zu Step 07:_**
 
