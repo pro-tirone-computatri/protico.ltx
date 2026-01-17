@@ -1,15 +1,11 @@
 # (C) 2026 K.Reincke: proTironeComputatri snippet [CC-BY-4.0]
 
-# converts a csv file of day data into the respective ini file
-# minimal viable product 1: writes intermediate representation as csv file (l21)
+# converts a csv file of day data into the respective ini file: VP-0.1
 
-# structure of the intermediate representation
-# A List () of dictionaries {}, each filled with four key-value-pairs
-
+# intermediate representation and hard-coded testdata
 dd_hard_coded=(
 { "day":"2026-01-01", "sunrise": "08:29","sunset": "16:31","durance": "08:02"},
-{ "day":"2026-01-02", "sunrise": "08:29","sunset": "16:32","durance": "08:03"}
-)
+{ "day":"2026-01-02", "sunrise": "08:29","sunset": "16:32","durance": "08:03"}) 
 
 # adapters to read daydata from a file
 def fill_from_csv(filename) :
@@ -27,16 +23,8 @@ def write_as_csv(filename,daydata):
   return ouf.close()
 
 # main
+dd_csv_file="res.lf/daydata.csv"
 
-# the clarified version of dsp.beta.xyz:
-# data-set-0 - data-set-3. accepted, data-set-4 rejected: inconsistent double
-dd_file="dsp.lf/dsp.beta.csv";
-dd_test_file="dsp.lf/dsp.beta-td.csv";
-dd_csv_file="res.lf/daydata.csv";
-dd_ini_file="res.lf/daydata.ini";
-
-daydata=fill_from_csv(dd_test_file)
 daydata=dd_hard_coded
-
 if (daydata):
   write_as_csv(dd_csv_file,daydata)

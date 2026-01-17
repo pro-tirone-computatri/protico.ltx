@@ -1,6 +1,6 @@
-<mxfile host="Electron" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/28.0.6 Chrome/138.0.7204.100 Electron/37.2.3 Safari/537.36" version="28.0.6">
+<mxfile host="Electron" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/25.0.2 Chrome/128.0.6613.186 Electron/32.2.5 Safari/537.36" version="25.0.2">
   <diagram name="Page-1" id="MylrrWLpKhrGfxkV-cFk">
-    <mxGraphModel dx="1320" dy="750" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+    <mxGraphModel dx="1699" dy="959" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -8,97 +8,214 @@
           <mxGeometry x="700" y="307" width="450" height="163" as="geometry" />
         </mxCell>
         <mxCell id="roSXIWu78jS0qM3OWuLN-59" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DDFFEE;" parent="1" vertex="1">
-          <mxGeometry x="20" y="500" width="1130" height="240" as="geometry" />
+          <mxGeometry x="30" y="500" width="1130" height="280" as="geometry" />
         </mxCell>
         <mxCell id="roSXIWu78jS0qM3OWuLN-55" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DDEEFF;" parent="1" vertex="1">
-          <mxGeometry x="20" y="40" width="1130" height="240" as="geometry" />
+          <mxGeometry x="20" y="50" width="1130" height="240" as="geometry" />
         </mxCell>
         <mxCell id="roSXIWu78jS0qM3OWuLN-3" value="&lt;font face=&quot;Garamond&quot; style=&quot;font-size: 15px;&quot;&gt;&lt;b style=&quot;&quot;&gt;&lt;font color=&quot;#0000ff&quot;&gt;ANALYS&lt;/font&gt;IEREN&lt;br&gt;&lt;/b&gt;&lt;/font&gt;&lt;font style=&quot;font-size: 14px; text-wrap: wrap;&quot; face=&quot;Garamond&quot;&gt;&lt;i&gt;= mit&amp;nbsp;&lt;/i&gt;&lt;/font&gt;&lt;div style=&quot;font-size: 14px; text-wrap: wrap;&quot;&gt;&lt;font face=&quot;Garamond&quot;&gt;&lt;i&gt;(HEX-)Editor&amp;nbsp;&lt;/i&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;i style=&quot;font-family: Garamond; font-size: 14px; text-wrap: wrap; background-color: initial;&quot;&gt;begutachten&lt;/i&gt;&lt;font face=&quot;Garamond&quot; style=&quot;font-size: 15px;&quot;&gt;&lt;b style=&quot;&quot;&gt;&amp;nbsp;&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;" style="html=1;shadow=0;dashed=0;align=center;verticalAlign=middle;shape=mxgraph.arrows2.arrow;dy=0;dx=30;notch=30;fillColor=#EEEEFF;" parent="1" vertex="1">
-          <mxGeometry x="180" y="144" width="180" height="120" as="geometry" />
+          <mxGeometry x="115" y="144" width="175" height="120" as="geometry" />
         </mxCell>
         <mxCell id="roSXIWu78jS0qM3OWuLN-9" value="&lt;font style=&quot;font-size: 15px;&quot; face=&quot;Garamond&quot;&gt;&lt;b style=&quot;&quot;&gt;&lt;font color=&quot;#0000ff&quot;&gt;INTERPRET&lt;/font&gt;IEREN&lt;/b&gt;&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 14px; text-wrap: wrap;&quot; face=&quot;Garamond&quot;&gt;&lt;i&gt;Bytes auf&amp;nbsp;&lt;/i&gt;&lt;/font&gt;&lt;div style=&quot;font-size: 14px; text-wrap: wrap;&quot;&gt;&lt;font face=&quot;Garamond&quot;&gt;&lt;i&gt;Werte oder&amp;nbsp;&lt;/i&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 14px; text-wrap: wrap;&quot;&gt;&lt;font face=&quot;Garamond&quot;&gt;&lt;i&gt;Zeichen abbilden&amp;nbsp;&lt;/i&gt;&lt;/font&gt;&lt;/div&gt;&lt;/div&gt;" style="html=1;shadow=0;dashed=0;align=center;verticalAlign=middle;shape=mxgraph.arrows2.arrow;dy=0;dx=30;notch=30;fillColor=#DDDDFF;" parent="1" vertex="1">
-          <mxGeometry x="330" y="144" width="180" height="120" as="geometry" />
+          <mxGeometry x="260" y="144" width="180" height="120" as="geometry" />
         </mxCell>
         <mxCell id="roSXIWu78jS0qM3OWuLN-11" value="&lt;font style=&quot;font-size: 15px;&quot; face=&quot;Garamond&quot;&gt;&lt;b style=&quot;&quot;&gt;&lt;font color=&quot;#0000ff&quot;&gt;REPAR&lt;/font&gt;IEREN&lt;/b&gt;&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;text-wrap: wrap; font-size: 14px;&quot; face=&quot;Garamond&quot;&gt;&lt;i style=&quot;&quot;&gt;strukturelle&amp;nbsp;&lt;/i&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;text-wrap: wrap; font-size: 14px;&quot; face=&quot;Garamond&quot;&gt;&lt;i&gt;Abweichungen&lt;/i&gt;&lt;/font&gt;&lt;div style=&quot;text-wrap: wrap;&quot;&gt;&lt;i style=&quot;font-family: Garamond; background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;angleichen&amp;nbsp;&lt;/font&gt;&lt;/i&gt;&lt;/div&gt;&lt;/div&gt;" style="html=1;shadow=0;dashed=0;align=center;verticalAlign=middle;shape=mxgraph.arrows2.arrow;dy=0;dx=30;notch=30;fillColor=#BBBBFF;" parent="1" vertex="1">
-          <mxGeometry x="630" y="144" width="180" height="120" as="geometry" />
+          <mxGeometry x="560" y="144" width="170" height="120" as="geometry" />
         </mxCell>
-        <mxCell id="roSXIWu78jS0qM3OWuLN-12" value="&lt;font style=&quot;font-size: 15px;&quot; face=&quot;Garamond&quot;&gt;&lt;b style=&quot;&quot;&gt;&lt;font color=&quot;#0000ff&quot;&gt;KONVERT&lt;/font&gt;IEREN&lt;/b&gt;&lt;/font&gt;&lt;div&gt;&lt;font face=&quot;Garamond&quot;&gt;&lt;span style=&quot;font-size: 14px; text-wrap: wrap;&quot;&gt;&lt;i&gt;als reine&amp;nbsp;&lt;/i&gt;&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font face=&quot;Garamond&quot;&gt;&lt;span style=&quot;font-size: 14px; text-wrap: wrap;&quot;&gt;&lt;i&gt;Textdatei&lt;/i&gt;&lt;/span&gt;&lt;/font&gt;&lt;br&gt;&lt;div style=&quot;text-wrap: wrap;&quot;&gt;&lt;font face=&quot;Garamond&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;&lt;i&gt;kompilieren&lt;/i&gt;&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;/div&gt;" style="html=1;shadow=0;dashed=0;align=center;verticalAlign=middle;shape=mxgraph.arrows2.arrow;dy=0;dx=30;notch=30;fillColor=#AAAAFF;" parent="1" vertex="1">
-          <mxGeometry x="780" y="144" width="180" height="120" as="geometry" />
+        <mxCell id="roSXIWu78jS0qM3OWuLN-12" value="&lt;font style=&quot;font-size: 15px;&quot; face=&quot;Garamond&quot;&gt;&lt;b style=&quot;&quot;&gt;&lt;font color=&quot;#0000ff&quot;&gt;KONVERT&lt;/font&gt;IEREN&lt;/b&gt;&lt;/font&gt;&lt;div&gt;&lt;font face=&quot;Garamond&quot;&gt;&lt;span style=&quot;font-size: 14px; text-wrap: wrap;&quot;&gt;&lt;i&gt;bereinigte Daten in&lt;/i&gt;&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font face=&quot;Garamond&quot;&gt;&lt;span style=&quot;font-size: 14px; text-wrap: wrap;&quot;&gt;&lt;i&gt;Austauschformate&lt;/i&gt;&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;div style=&quot;text-wrap: wrap;&quot;&gt;&lt;font face=&quot;Garamond&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;&lt;i&gt;umwandeln&lt;/i&gt;&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;/div&gt;" style="html=1;shadow=0;dashed=0;align=center;verticalAlign=middle;shape=mxgraph.arrows2.arrow;dy=0;dx=30;notch=30;fillColor=#AAAAFF;" parent="1" vertex="1">
+          <mxGeometry x="810" y="145" width="180" height="120" as="geometry" />
         </mxCell>
         <mxCell id="roSXIWu78jS0qM3OWuLN-13" value="&lt;font style=&quot;font-size: 15px;&quot; face=&quot;Garamond&quot;&gt;&lt;b style=&quot;&quot;&gt;&lt;font color=&quot;#0000ff&quot;&gt;FORMAT&lt;/font&gt;IEREN&lt;/b&gt;&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;font style=&quot;text-wrap: wrap;&quot; face=&quot;Garamond&quot;&gt;&lt;i style=&quot;&quot;&gt;Datensatz&lt;/i&gt;&lt;/font&gt;&lt;font style=&quot;text-wrap: wrap; background-color: initial;&quot; face=&quot;Garamond&quot;&gt;&lt;i&gt;struktur&lt;/i&gt;&lt;/font&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;font style=&quot;text-wrap: wrap; background-color: initial;&quot; face=&quot;Garamond&quot;&gt;&lt;i&gt;finden und auf&amp;nbsp;&lt;/i&gt;&lt;/font&gt;&lt;i style=&quot;text-wrap: wrap; background-color: initial; font-family: Garamond;&quot;&gt;&amp;nbsp;&lt;/i&gt;&lt;/font&gt;&lt;div style=&quot;text-wrap: wrap;&quot;&gt;&lt;div&gt;&lt;font style=&quot;font-size: 14px;&quot; face=&quot;Garamond&quot;&gt;&lt;i style=&quot;&quot;&gt;Zeilen abbilden&amp;nbsp;&lt;/i&gt;&lt;/font&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="html=1;shadow=0;dashed=0;align=center;verticalAlign=middle;shape=mxgraph.arrows2.arrow;dy=0;dx=30;notch=30;fillColor=#CCCCFF;" parent="1" vertex="1">
-          <mxGeometry x="480" y="144" width="180" height="120" as="geometry" />
+          <mxGeometry x="410" y="144" width="180" height="120" as="geometry" />
         </mxCell>
-        <mxCell id="roSXIWu78jS0qM3OWuLN-14" value="&lt;font style=&quot;font-size: 15px;&quot; face=&quot;Garamond&quot;&gt;&lt;b style=&quot;&quot;&gt;&lt;font color=&quot;#006600&quot;&gt;VISUALIS&lt;/font&gt;IEREN&lt;br&gt;&lt;/b&gt;&lt;/font&gt;&lt;font style=&quot;text-wrap: wrap; font-size: 14px;&quot; face=&quot;Garamond&quot;&gt;&lt;i&gt;als&amp;nbsp;&lt;/i&gt;&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;text-wrap: wrap; font-size: 14px;&quot; face=&quot;Garamond&quot;&gt;&lt;i&gt;Diagramm&lt;/i&gt;&lt;/font&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;font-family: Garamond; background-color: initial; font-size: 14px; text-wrap: wrap;&quot;&gt;&lt;i&gt;darstellen&lt;/i&gt;&lt;/span&gt;&lt;b style=&quot;font-size: 15px; text-wrap: nowrap; font-family: Garamond; background-color: initial;&quot;&gt;&amp;nbsp;&lt;/b&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" style="html=1;shadow=0;dashed=0;align=center;verticalAlign=middle;shape=mxgraph.arrows2.arrow;dy=0;dx=30;notch=30;fillColor=#EEFFEE;" parent="1" vertex="1">
-          <mxGeometry x="180" y="560" width="180" height="120" as="geometry" />
+        <mxCell id="roSXIWu78jS0qM3OWuLN-14" value="&lt;font style=&quot;font-size: 15px;&quot; face=&quot;Garamond&quot;&gt;&lt;b style=&quot;&quot;&gt;&lt;font color=&quot;#006600&quot;&gt;VISUALIS&lt;/font&gt;IEREN&lt;br&gt;&lt;/b&gt;&lt;/font&gt;&lt;font style=&quot;text-wrap: wrap; font-size: 14px;&quot; face=&quot;Garamond&quot;&gt;&lt;i&gt;als&amp;nbsp;&lt;/i&gt;&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;text-wrap: wrap; font-size: 14px;&quot; face=&quot;Garamond&quot;&gt;&lt;i&gt;Diagramm&lt;/i&gt;&lt;/font&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;font-family: Garamond; background-color: initial; font-size: 14px; text-wrap: wrap;&quot;&gt;&lt;i&gt;darstellen&lt;/i&gt;&lt;/span&gt;&lt;b style=&quot;font-size: 15px; text-wrap: nowrap; font-family: Garamond; background-color: initial;&quot;&gt;&amp;nbsp;&lt;/b&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" style="html=1;shadow=0;dashed=0;align=center;verticalAlign=middle;shape=mxgraph.arrows2.arrow;dy=0;dx=30;notch=30;fillColor=#bbFFbb;" parent="1" vertex="1">
+          <mxGeometry x="744.53" y="580" width="175.47" height="120" as="geometry" />
         </mxCell>
-        <mxCell id="roSXIWu78jS0qM3OWuLN-15" value="&lt;font style=&quot;font-size: 15px;&quot; face=&quot;Garamond&quot;&gt;&lt;b style=&quot;&quot;&gt;&lt;font color=&quot;#006600&quot;&gt;EVALU&lt;/font&gt;IEREN&lt;/b&gt;&lt;/font&gt;&lt;div&gt;&lt;font face=&quot;Garamond&quot;&gt;&lt;span style=&quot;font-size: 14px; text-wrap: wrap;&quot;&gt;&lt;i&gt;gliedern und&lt;/i&gt;&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font face=&quot;Garamond&quot;&gt;&lt;span style=&quot;font-size: 14px; text-wrap: wrap;&quot;&gt;&lt;i&gt;bereichsweise&lt;/i&gt;&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font face=&quot;Garamond&quot;&gt;&lt;span style=&quot;font-size: 14px; text-wrap: wrap;&quot;&gt;&lt;i&gt;klassifizieren&lt;/i&gt;&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;" style="html=1;shadow=0;dashed=0;align=center;verticalAlign=middle;shape=mxgraph.arrows2.arrow;dy=0;dx=30;notch=30;fillColor=#DDFFDD;" parent="1" vertex="1">
-          <mxGeometry x="330" y="560" width="180" height="120" as="geometry" />
+        <mxCell id="roSXIWu78jS0qM3OWuLN-15" value="&lt;font style=&quot;font-size: 15px;&quot; face=&quot;Garamond&quot;&gt;&lt;b style=&quot;&quot;&gt;&lt;font color=&quot;#006600&quot;&gt;EVALU&lt;/font&gt;IEREN&lt;/b&gt;&lt;/font&gt;&lt;div&gt;&lt;font face=&quot;Garamond&quot;&gt;&lt;span style=&quot;font-size: 14px; text-wrap: wrap;&quot;&gt;&lt;i&gt;Trends und&lt;/i&gt;&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font face=&quot;Garamond&quot;&gt;&lt;span style=&quot;font-size: 14px; text-wrap: wrap;&quot;&gt;&lt;i&gt;Auffälligkeiten&lt;/i&gt;&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font face=&quot;Garamond&quot;&gt;&lt;span style=&quot;font-size: 14px; text-wrap: wrap;&quot;&gt;&lt;i&gt;ermitteln&lt;/i&gt;&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;" style="html=1;shadow=0;dashed=0;align=center;verticalAlign=middle;shape=mxgraph.arrows2.arrow;dy=0;dx=30;notch=30;fillColor=#DDFFDD;" parent="1" vertex="1">
+          <mxGeometry x="396.5" y="580" width="160" height="120" as="geometry" />
         </mxCell>
-        <mxCell id="roSXIWu78jS0qM3OWuLN-16" value="&lt;font style=&quot;font-size: 15px;&quot; face=&quot;Garamond&quot;&gt;&lt;b style=&quot;&quot;&gt;&lt;font color=&quot;#006600&quot;&gt;KORRIG&lt;/font&gt;IEREN&lt;/b&gt;&lt;/font&gt;&lt;div&gt;&lt;span style=&quot;font-family: Garamond; background-color: initial; font-size: 14px; text-wrap: wrap;&quot;&gt;&lt;i&gt;semantische&amp;nbsp;&lt;/i&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-family: Garamond; background-color: initial; font-size: 14px; text-wrap: wrap;&quot;&gt;&lt;i&gt;Abweichungen&amp;nbsp;&lt;/i&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-family: Garamond; background-color: initial; font-size: 14px; text-wrap: wrap;&quot;&gt;&lt;i&gt;ausgleichen&lt;/i&gt;&lt;/span&gt;&lt;b style=&quot;background-color: initial; font-size: 15px; font-family: Garamond;&quot;&gt;&amp;nbsp;&lt;/b&gt;&lt;/div&gt;" style="html=1;shadow=0;dashed=0;align=center;verticalAlign=middle;shape=mxgraph.arrows2.arrow;dy=0;dx=30;notch=30;fillColor=#CCFFCC;" parent="1" vertex="1">
-          <mxGeometry x="480" y="560" width="180" height="120" as="geometry" />
+        <mxCell id="roSXIWu78jS0qM3OWuLN-16" value="&lt;font style=&quot;font-size: 15px;&quot; face=&quot;Garamond&quot;&gt;&lt;b style=&quot;&quot;&gt;&lt;font color=&quot;#006600&quot;&gt;KORRIG&lt;/font&gt;IEREN&lt;/b&gt;&lt;/font&gt;&lt;div&gt;&lt;span style=&quot;font-family: Garamond; background-color: initial; font-size: 14px; text-wrap: wrap;&quot;&gt;&lt;i&gt;semantische&amp;nbsp;&lt;/i&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-family: Garamond; background-color: initial; font-size: 14px; text-wrap: wrap;&quot;&gt;&lt;i&gt;Abweichungen&amp;nbsp;&lt;/i&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-family: Garamond; background-color: initial; font-size: 14px; text-wrap: wrap;&quot;&gt;&lt;i&gt;ausgleichen&lt;/i&gt;&lt;/span&gt;&lt;b style=&quot;background-color: initial; font-size: 15px; font-family: Garamond;&quot;&gt;&amp;nbsp;&lt;/b&gt;&lt;/div&gt;" style="html=1;shadow=0;dashed=0;align=center;verticalAlign=middle;shape=mxgraph.arrows2.arrow;dy=0;dx=30;notch=30;fillColor=#EEFfEE;" parent="1" vertex="1">
+          <mxGeometry x="266.5" y="580" width="160" height="120" as="geometry" />
         </mxCell>
-        <mxCell id="roSXIWu78jS0qM3OWuLN-17" value="&lt;font style=&quot;font-size: 15px;&quot; face=&quot;Garamond&quot;&gt;&lt;b style=&quot;&quot;&gt;&lt;font color=&quot;#006600&quot;&gt;PRÄPAR&lt;/font&gt;IEREN&lt;/b&gt;&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 15px;&quot; face=&quot;Garamond&quot;&gt;&lt;b style=&quot;&quot;&gt;&amp;nbsp; &amp;nbsp;&lt;/b&gt;&lt;/font&gt;&lt;i style=&quot;background-color: initial; font-family: Garamond; font-size: 14px; text-wrap: wrap;&quot;&gt;Aussagen zu&lt;/i&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-family: Garamond; background-color: initial; font-size: 14px; text-wrap: wrap;&quot;&gt;&lt;i&gt;Daten und&amp;nbsp;&lt;/i&gt;&lt;/span&gt;&lt;i style=&quot;background-color: initial; font-family: Garamond; font-size: 14px; text-wrap: wrap;&quot;&gt;Daten-&lt;/i&gt;&lt;/div&gt;&lt;div&gt;&lt;i style=&quot;background-color: initial; font-family: Garamond; font-size: 14px; text-wrap: wrap;&quot;&gt;qualität sammeln&lt;/i&gt;&lt;/div&gt;" style="html=1;shadow=0;dashed=0;align=center;verticalAlign=middle;shape=mxgraph.arrows2.arrow;dy=0;dx=30;notch=30;fillColor=#BBFFBB;" parent="1" vertex="1">
-          <mxGeometry x="630" y="560" width="180" height="120" as="geometry" />
+        <mxCell id="roSXIWu78jS0qM3OWuLN-17" value="&lt;font style=&quot;font-size: 15px;&quot; face=&quot;Garamond&quot;&gt;&lt;b style=&quot;&quot;&gt;&lt;font color=&quot;#006600&quot;&gt;AGGREG&lt;/font&gt;IEREN&lt;/b&gt;&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 15px;&quot; face=&quot;Garamond&quot;&gt;&lt;b style=&quot;&quot;&gt;&amp;nbsp; &amp;nbsp;&lt;/b&gt;&lt;/font&gt;&lt;i style=&quot;background-color: initial; font-family: Garamond; font-size: 14px; text-wrap: wrap;&quot;&gt;Aussagen zu&lt;/i&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-family: Garamond; background-color: initial; font-size: 14px; text-wrap: wrap;&quot;&gt;&lt;i&gt;Daten und&amp;nbsp;&lt;/i&gt;&lt;/span&gt;&lt;i style=&quot;background-color: initial; font-family: Garamond; font-size: 14px; text-wrap: wrap;&quot;&gt;Daten-&lt;/i&gt;&lt;/div&gt;&lt;div&gt;&lt;i style=&quot;background-color: initial; font-family: Garamond; font-size: 14px; text-wrap: wrap;&quot;&gt;qualität sammeln&lt;/i&gt;&lt;/div&gt;" style="html=1;shadow=0;dashed=0;align=center;verticalAlign=middle;shape=mxgraph.arrows2.arrow;dy=0;dx=30;notch=30;fillColor=#ccFFcc;" parent="1" vertex="1">
+          <mxGeometry x="526.5" y="580" width="160" height="120" as="geometry" />
         </mxCell>
         <mxCell id="roSXIWu78jS0qM3OWuLN-18" value="&lt;font style=&quot;font-size: 15px;&quot; face=&quot;Garamond&quot;&gt;&lt;b style=&quot;&quot;&gt;&lt;font color=&quot;#006600&quot;&gt;PRÄSENT&lt;/font&gt;IEREN&lt;/b&gt;&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 15px;&quot; face=&quot;Garamond&quot;&gt;&lt;b&gt;&amp;nbsp; &amp;nbsp;&lt;/b&gt;&lt;/font&gt;&lt;i style=&quot;background-color: initial; font-family: Garamond; font-size: 14px; text-wrap: wrap;&quot;&gt;Visualisierung und&lt;/i&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-family: Garamond; background-color: initial; font-size: 14px; text-wrap: wrap;&quot;&gt;&lt;i&gt;Datenaussagen&amp;nbsp;&lt;/i&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-family: Garamond; background-color: initial; font-size: 14px; text-wrap: wrap;&quot;&gt;&lt;i&gt;vorführen&lt;/i&gt;&lt;/span&gt;&lt;b style=&quot;background-color: initial; font-size: 15px; font-family: Garamond;&quot;&gt;&amp;nbsp; &amp;nbsp;&lt;/b&gt;&lt;/div&gt;" style="html=1;shadow=0;dashed=0;align=center;verticalAlign=middle;shape=mxgraph.arrows2.arrow;dy=0;dx=30;notch=30;fillColor=#AAFFAA;" parent="1" vertex="1">
-          <mxGeometry x="780" y="560" width="180" height="120" as="geometry" />
-        </mxCell>
-        <mxCell id="roSXIWu78jS0qM3OWuLN-53" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="roSXIWu78jS0qM3OWuLN-20" target="roSXIWu78jS0qM3OWuLN-3" edge="1">
-          <mxGeometry relative="1" as="geometry" />
+          <mxGeometry x="890" y="580" width="180" height="120" as="geometry" />
         </mxCell>
         <mxCell id="roSXIWu78jS0qM3OWuLN-20" value="" style="fontColor=#0066CC;verticalAlign=top;verticalLabelPosition=bottom;labelPosition=center;align=center;html=1;outlineConnect=0;fillColor=#CCCCCC;strokeColor=#6881B3;gradientColor=none;gradientDirection=north;strokeWidth=2;shape=mxgraph.networks.storage;" parent="1" vertex="1">
-          <mxGeometry x="40" y="154" width="100" height="100" as="geometry" />
+          <mxGeometry x="46" y="175" width="40" height="58" as="geometry" />
         </mxCell>
         <mxCell id="roSXIWu78jS0qM3OWuLN-26" value="" style="image;aspect=fixed;perimeter=ellipsePerimeter;html=1;align=center;shadow=0;dashed=0;spacingTop=3;image=img/lib/active_directory/workspace_site.svg;" parent="1" vertex="1">
-          <mxGeometry x="1000" y="576" width="123.71" height="120" as="geometry" />
+          <mxGeometry x="1070" y="620" width="65.98" height="64" as="geometry" />
         </mxCell>
         <mxCell id="roSXIWu78jS0qM3OWuLN-58" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="roSXIWu78jS0qM3OWuLN-27" target="roSXIWu78jS0qM3OWuLN-48" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
+              <mxPoint x="1110" y="204" />
               <mxPoint x="1120" y="204" />
               <mxPoint x="1120" y="320" />
-              <mxPoint x="745" y="320" />
+              <mxPoint x="915" y="320" />
             </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="roSXIWu78jS0qM3OWuLN-27" value="" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.document2;whiteSpace=wrap;size=0.25;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
-          <mxGeometry x="999.9999999999999" y="174" width="100" height="60" as="geometry" />
+          <mxGeometry x="1020" y="175" width="90" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="roSXIWu78jS0qM3OWuLN-28" value="&lt;div style=&quot;&quot;&gt;&lt;b style=&quot;font-size: 14px; font-family: &amp;quot;Courier New&amp;quot;; background-color: initial;&quot;&gt;*.csv&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;b style=&quot;font-size: 14px; font-family: &amp;quot;Courier New&amp;quot;; background-color: initial;&quot;&gt;*.xml&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;font face=&quot;Courier New&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;*.yaml&lt;/b&gt;&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font face=&quot;Courier New&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;*.json&lt;/b&gt;&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font face=&quot;Courier New&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;*.toml&lt;/b&gt;&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="1017.5" y="70" width="65" height="90" as="geometry" />
-        </mxCell>
-        <mxCell id="roSXIWu78jS0qM3OWuLN-54" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="roSXIWu78jS0qM3OWuLN-44" target="roSXIWu78jS0qM3OWuLN-14" edge="1">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="roSXIWu78jS0qM3OWuLN-28" value="&lt;div style=&quot;&quot;&gt;&lt;b style=&quot;font-size: 14px; font-family: &amp;quot;Courier New&amp;quot;; background-color: initial;&quot;&gt;*.csv&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;font face=&quot;Courier New&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;*.json&lt;/b&gt;&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font face=&quot;Courier New&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;*.sql&lt;/b&gt;&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font face=&quot;Courier New&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;*.toml&lt;/b&gt;&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font face=&quot;Courier New&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;*.yaml&lt;/b&gt;&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font face=&quot;Courier New&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;*.xml&lt;/b&gt;&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="1029.36" y="60" width="65" height="100" as="geometry" />
         </mxCell>
         <mxCell id="roSXIWu78jS0qM3OWuLN-44" value="" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.document2;whiteSpace=wrap;size=0.25;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
-          <mxGeometry x="40" y="590" width="100" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="roSXIWu78jS0qM3OWuLN-45" value="&lt;div style=&quot;&quot;&gt;&lt;b style=&quot;font-size: 14px; font-family: &amp;quot;Courier New&amp;quot;; background-color: initial;&quot;&gt;*.csv&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;b style=&quot;font-size: 14px; font-family: &amp;quot;Courier New&amp;quot;; background-color: initial;&quot;&gt;*.xml&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;font face=&quot;Courier New&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;*.yaml&lt;/b&gt;&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font face=&quot;Courier New&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;*.json&lt;/b&gt;&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font face=&quot;Courier New&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;*.toml&lt;/b&gt;&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="69.9999999999999" y="650" width="65" height="90" as="geometry" />
+          <mxGeometry x="58.5" y="620" width="56.5" height="40" as="geometry" />
         </mxCell>
         <mxCell id="roSXIWu78jS0qM3OWuLN-49" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;dashed=1;dashPattern=8 8;" parent="1" source="roSXIWu78jS0qM3OWuLN-47" target="roSXIWu78jS0qM3OWuLN-48" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="roSXIWu78jS0qM3OWuLN-47" value="" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.document2;whiteSpace=wrap;size=0.25;fillColor=#FFCCCC;strokeColor=#d6b656;" parent="1" vertex="1">
-          <mxGeometry x="990.0000000000001" y="360" width="100" height="60" as="geometry" />
+          <mxGeometry x="1021.86" y="361" width="88.14" height="60" as="geometry" />
         </mxCell>
         <mxCell id="roSXIWu78jS0qM3OWuLN-48" value="" style="shape=orEllipse;perimeter=ellipsePerimeter;whiteSpace=wrap;html=1;backgroundOutline=1;" parent="1" vertex="1">
-          <mxGeometry x="720" y="367" width="50" height="46" as="geometry" />
+          <mxGeometry x="890" y="368" width="50" height="46" as="geometry" />
         </mxCell>
-        <mxCell id="roSXIWu78jS0qM3OWuLN-51" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="roSXIWu78jS0qM3OWuLN-48" target="roSXIWu78jS0qM3OWuLN-44" edge="1">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="roSXIWu78jS0qM3OWuLN-56" value="syntaktischen Datenaufbereitung" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Garamond;fontSize=16;fontStyle=3" parent="1" vertex="1">
+          <mxGeometry x="40" y="60" width="240" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="roSXIWu78jS0qM3OWuLN-52" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="roSXIWu78jS0qM3OWuLN-12" target="roSXIWu78jS0qM3OWuLN-27" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="roSXIWu78jS0qM3OWuLN-56" value="Strukturelle Aufbereitung" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Garamond;fontSize=16;fontStyle=3" parent="1" vertex="1">
-          <mxGeometry x="140" y="60" width="210" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="roSXIWu78jS0qM3OWuLN-60" value="Semantische Aufbereitung" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Garamond;fontSize=16;fontStyle=3" parent="1" vertex="1">
-          <mxGeometry x="140" y="500" width="210" height="30" as="geometry" />
+        <mxCell id="roSXIWu78jS0qM3OWuLN-60" value="semantische Datenauswertung" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Garamond;fontSize=16;fontStyle=3" parent="1" vertex="1">
+          <mxGeometry x="63.5" y="530" width="205" height="30" as="geometry" />
         </mxCell>
         <mxCell id="roSXIWu78jS0qM3OWuLN-62" value="Datenzusammenführung" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Garamond;fontSize=16;fontStyle=3" parent="1" vertex="1">
-          <mxGeometry x="720" y="430" width="210" height="30" as="geometry" />
+          <mxGeometry x="710" y="440" width="210" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ScN8peGFgXbIr_8aouQS-2" value="" style="fontColor=#0066CC;verticalAlign=top;verticalLabelPosition=bottom;labelPosition=center;align=center;html=1;outlineConnect=0;fillColor=#CCCCCC;strokeColor=#6881B3;gradientColor=none;gradientDirection=north;strokeWidth=2;shape=mxgraph.networks.storage;" vertex="1" parent="1">
+          <mxGeometry x="757" y="176" width="40" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="ScN8peGFgXbIr_8aouQS-3" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="roSXIWu78jS0qM3OWuLN-11" target="ScN8peGFgXbIr_8aouQS-2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="580" y="360" as="sourcePoint" />
+            <mxPoint x="630" y="310" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ScN8peGFgXbIr_8aouQS-4" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=30;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="ScN8peGFgXbIr_8aouQS-2" target="roSXIWu78jS0qM3OWuLN-12">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="790" y="120" as="sourcePoint" />
+            <mxPoint x="840" y="70" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ScN8peGFgXbIr_8aouQS-5" value="&lt;div style=&quot;&quot;&gt;&lt;b style=&quot;font-size: 14px; font-family: &amp;quot;Courier New&amp;quot;; background-color: initial;&quot;&gt;*.csv&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;font face=&quot;Courier New&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;*.json&lt;/b&gt;&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font face=&quot;Courier New&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;*.sql&lt;/b&gt;&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font face=&quot;Courier New&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;*.toml&lt;/b&gt;&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font face=&quot;Courier New&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;*.yaml&lt;/b&gt;&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font face=&quot;Courier New&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;*.xml&lt;/b&gt;&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="58.499999999999886" y="670" width="65" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="ScN8peGFgXbIr_8aouQS-8" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=30;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="roSXIWu78jS0qM3OWuLN-20" target="roSXIWu78jS0qM3OWuLN-3">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="270" y="390" as="sourcePoint" />
+            <mxPoint x="320" y="340" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ScN8peGFgXbIr_8aouQS-9" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="roSXIWu78jS0qM3OWuLN-12" target="roSXIWu78jS0qM3OWuLN-27">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1210" y="210" as="sourcePoint" />
+            <mxPoint x="1260" y="160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ScN8peGFgXbIr_8aouQS-11" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;flipH=1;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=middle;size=0.5;rotation=-90;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="398.5" y="-170" width="21.5" height="580" as="geometry" />
+        </mxCell>
+        <mxCell id="ScN8peGFgXbIr_8aouQS-12" value="&lt;font face=&quot;Garamond&quot;&gt;&lt;i&gt;bash, python, perl, php, editor, ...&lt;/i&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="429.25" y="90" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ScN8peGFgXbIr_8aouQS-14" value="" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#232F3D;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.gear;" vertex="1" parent="1">
+          <mxGeometry x="389.25" y="60" width="40" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ScN8peGFgXbIr_8aouQS-15" value="" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#232F3D;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.programming_language;" vertex="1" parent="1">
+          <mxGeometry x="859.47" y="62" width="55.06" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="ScN8peGFgXbIr_8aouQS-17" value="&lt;font face=&quot;Garamond&quot;&gt;&lt;i&gt;python, perl, php, pandas, pandoc ...&lt;/i&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="797.0000000000001" y="100" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ScN8peGFgXbIr_8aouQS-18" value="&lt;font style=&quot;font-size: 15px;&quot; face=&quot;Garamond&quot;&gt;&lt;b style=&quot;&quot;&gt;&lt;font color=&quot;#006600&quot;&gt;LADEN&lt;/font&gt;&lt;/b&gt;&lt;/font&gt;&lt;div&gt;&lt;span style=&quot;font-family: Garamond; background-color: initial; font-size: 14px; text-wrap: wrap;&quot;&gt;&lt;i&gt;Semantiktool&lt;/i&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-family: Garamond; background-color: initial; font-size: 14px; text-wrap: wrap;&quot;&gt;&lt;i&gt;zugänglich&lt;/i&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-family: Garamond; background-color: initial; font-size: 14px; text-wrap: wrap;&quot;&gt;&lt;i&gt;machen&lt;/i&gt;&lt;/span&gt;&lt;/div&gt;" style="html=1;shadow=0;dashed=0;align=center;verticalAlign=middle;shape=mxgraph.arrows2.arrow;dy=0;dx=30;notch=30;fillColor=#faFFfa;" vertex="1" parent="1">
+          <mxGeometry x="140" y="580" width="160" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="ScN8peGFgXbIr_8aouQS-19" value="" style="fontColor=#0066CC;verticalAlign=top;verticalLabelPosition=bottom;labelPosition=center;align=center;html=1;outlineConnect=0;fillColor=#CCCCCC;strokeColor=#6881B3;gradientColor=none;gradientDirection=north;strokeWidth=2;shape=mxgraph.networks.storage;" vertex="1" parent="1">
+          <mxGeometry x="700" y="611" width="40" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="ScN8peGFgXbIr_8aouQS-20" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=30;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="roSXIWu78jS0qM3OWuLN-44" target="ScN8peGFgXbIr_8aouQS-18">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="180" y="510" as="sourcePoint" />
+            <mxPoint x="230" y="460" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="140" y="640" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ScN8peGFgXbIr_8aouQS-21" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;flipH=1;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=middle;size=0.5;rotation=-90;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="385" y="305" width="21.5" height="510" as="geometry" />
+        </mxCell>
+        <mxCell id="ScN8peGFgXbIr_8aouQS-23" value="" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#232F3D;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.programming_language;" vertex="1" parent="1">
+          <mxGeometry x="371.44000000000005" y="510" width="55.06" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="ScN8peGFgXbIr_8aouQS-24" value="&lt;font face=&quot;Garamond&quot;&gt;&lt;i&gt;python, perl, php, pandas, pandoc ...&lt;/i&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="440.0000000000001" y="516" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ScN8peGFgXbIr_8aouQS-25" value="" style="sketch=0;aspect=fixed;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;align=center;shape=mxgraph.mscae.other.powerpoint;fillColor=#DE5D24;" vertex="1" parent="1">
+          <mxGeometry x="859.47" y="510" width="44" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="ScN8peGFgXbIr_8aouQS-26" value="&lt;font face=&quot;Garamond&quot;&gt;&lt;i&gt;excel, powerpoint, gnuplot, beamer&lt;/i&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="914.5300000000001" y="517" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ScN8peGFgXbIr_8aouQS-32" value="" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="roSXIWu78jS0qM3OWuLN-48" target="ScN8peGFgXbIr_8aouQS-28">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="610" y="470" as="sourcePoint" />
+            <mxPoint x="660" y="420" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ScN8peGFgXbIr_8aouQS-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="ScN8peGFgXbIr_8aouQS-28" target="roSXIWu78jS0qM3OWuLN-44">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="20" y="390" />
+              <mxPoint x="20" y="640" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ScN8peGFgXbIr_8aouQS-34" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="720" y="351" width="153" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="ScN8peGFgXbIr_8aouQS-28" value="" style="shape=step;perimeter=stepPerimeter;whiteSpace=wrap;html=1;fixedSize=1;rotation=-180;fillColor=#FAFAFA;dashed=1;" vertex="1" parent="ScN8peGFgXbIr_8aouQS-34">
+          <mxGeometry width="153" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="ScN8peGFgXbIr_8aouQS-29" value="&lt;font style=&quot;font-size: 15px;&quot; face=&quot;Garamond&quot;&gt;&lt;b&gt;UNIFI&lt;/b&gt;ZIEREN&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 15px;&quot; face=&quot;Garamond&quot;&gt;&lt;i&gt;= Doubletten entfernen etc.&lt;/i&gt;&lt;/font&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="ScN8peGFgXbIr_8aouQS-34">
+          <mxGeometry x="11" y="8.5" width="131" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ScN8peGFgXbIr_8aouQS-35" value="&lt;b&gt;&lt;font color=&quot;#0000ff&quot; face=&quot;Courier New&quot;&gt;SYDA.A&lt;/font&gt;&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="210" y="245" width="50" height="19" as="geometry" />
+        </mxCell>
+        <mxCell id="ScN8peGFgXbIr_8aouQS-36" value="&lt;b&gt;&lt;font color=&quot;#0000ff&quot; face=&quot;Courier New&quot;&gt;SYDA.I&lt;/font&gt;&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="356.5" y="245" width="50" height="19" as="geometry" />
+        </mxCell>
+        <mxCell id="ScN8peGFgXbIr_8aouQS-37" value="&lt;b&gt;&lt;font color=&quot;#0000ff&quot; face=&quot;Courier New&quot;&gt;SYDA.F&lt;/font&gt;&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="510" y="245" width="50" height="19" as="geometry" />
+        </mxCell>
+        <mxCell id="ScN8peGFgXbIr_8aouQS-38" value="&lt;b&gt;&lt;font color=&quot;#0000ff&quot; face=&quot;Courier New&quot;&gt;SYDA.R&lt;/font&gt;&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="640" y="246" width="50" height="19" as="geometry" />
+        </mxCell>
+        <mxCell id="ScN8peGFgXbIr_8aouQS-39" value="&lt;b&gt;&lt;font color=&quot;#0000ff&quot; face=&quot;Courier New&quot;&gt;SYDA.K&lt;/font&gt;&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="914.53" y="246" width="50" height="19" as="geometry" />
+        </mxCell>
+        <mxCell id="ScN8peGFgXbIr_8aouQS-40" value="&lt;b&gt;&lt;font color=&quot;#003300&quot; face=&quot;Courier New&quot;&gt;SEDA.L&lt;/font&gt;&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="216.5" y="681" width="50" height="19" as="geometry" />
+        </mxCell>
+        <mxCell id="ScN8peGFgXbIr_8aouQS-41" value="&lt;b&gt;&lt;font color=&quot;#003300&quot; face=&quot;Courier New&quot;&gt;SEDA.K&lt;/font&gt;&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="339.25" y="681" width="50" height="19" as="geometry" />
+        </mxCell>
+        <mxCell id="ScN8peGFgXbIr_8aouQS-42" value="&lt;b&gt;&lt;font color=&quot;#003300&quot; face=&quot;Courier New&quot;&gt;SEDA.E&lt;/font&gt;&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="470" y="681" width="50" height="19" as="geometry" />
+        </mxCell>
+        <mxCell id="ScN8peGFgXbIr_8aouQS-43" value="&lt;b&gt;&lt;font color=&quot;#003300&quot; face=&quot;Courier New&quot;&gt;SEDA.A&lt;/font&gt;&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="600" y="681" width="50" height="19" as="geometry" />
+        </mxCell>
+        <mxCell id="ScN8peGFgXbIr_8aouQS-44" value="&lt;b&gt;&lt;font color=&quot;#003300&quot; face=&quot;Courier New&quot;&gt;SEDA.V&lt;/font&gt;&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="840" y="681" width="50" height="19" as="geometry" />
+        </mxCell>
+        <mxCell id="ScN8peGFgXbIr_8aouQS-45" value="&lt;b&gt;&lt;font color=&quot;#003300&quot; face=&quot;Courier New&quot;&gt;SEDA.P&lt;/font&gt;&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="990" y="681" width="50" height="19" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

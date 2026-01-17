@@ -6,7 +6,7 @@
 -->
 <!-- LTeX:Language=de-DE -->
 
-### Dimensionen der Datenanalyse **[→ ZP:Sheet:2]**
+### [1] Dimensionen der Datenanalyse **[→ ZP:Sheet:2]**
 
 *Zweck von Daten*: Sie sollen
 
@@ -20,7 +20,7 @@ Aber:
 * Sie müssen **syntaktisch** und **semantisch** interpretiert = **aufbereitet** werden.
 
 
-### Begriffe / Definitionen
+### [2] Begriffe / Definitionen
 
 * **Interne Daten** :- 
   * entstehen bei der Ausführung / Durchführung firmeneigener Prozesse
@@ -61,7 +61,7 @@ Aber:
 
 * **Konsistenz** :- meint Widerspruchsfreiheit
   * *innere Konsistenz* :- die innere Widerspruchsfreiheit der Daten (= die Daten dürfen nicht aussagen, dass 'etwas etwas in derselben Hinsicht zugleich zukommt und nicht zukommt') [Aristoteles]
-  * *äußere Konsistenz* : die Daten stehen nicht mit anders gewonnenen Daten im Widerspruch.
+  * *äußere Konsistenz* :- die Daten stehen nicht mit anders gewonnenen Daten im Widerspruch.
 
 *Beispiel*: 
 
@@ -76,7 +76,7 @@ Es gibt aktuell zwei Verfahren, die Gravitationskonstante zu messen. Die Verfahr
   * *Sind die Daten rechtlich nutzbar?*
 * **Einheitlichkeit**
   * *Ist das syntaktische Format einer Datenmenge gleich?*
-  * *Stimmt das syntaktische Format einer Datenmenge mit dem gleicher externer Daten überein?* = Standardkonform?
+  * *Stimmt das syntaktische Format einer Datenmenge mit dem gleicher, externer Daten überein?* = Standardkonform?
 
 * **Datenverarbeitungsgrad**
   * **strukturierte Daten** haben festes, zu Bedeutung passendes Format und können auf/mit einer der Datenerfassungsformate repräsentiert werden, nämlich in/mit
@@ -100,7 +100,7 @@ In sehr großen Datenmengen machen obige Begriffe keinen Sinn mehr, weil das, wo
 * Evaluierung (exemplarischer Vergleich mit Weltausschnitten)
 * Bereitstellung der Ergebnisse für eine Geschäftsverbesserung
 
-### Sprung in die konkrete Datenanalyse **[→ ZP:Sheet:3]**
+### [3] Sprung in die konkrete Datenanalyse **[→ ZP:Sheet:3]**
 
 ---
 
@@ -115,61 +115,88 @@ In sehr großen Datenmengen machen obige Begriffe keinen Sinn mehr, weil das, wo
 
 ---
 
-*Lösung*: Blutdruckmessungen **[→ ZP:Sheet:4]**
+Dieser Lösung nähern wir uns schrittweise:
 
-Oder wie Mustafa sagte: "Ahh, der Herr Reincke hat Bluthochdruck".
-
-### Phasen der Datenanalyse **[→ ZP:Sheet:5]**
+### [4] Phasen der Datenanalyse **[→ ZP:Sheet:5]**
 
 Analyse von Daten folgt immer dem Schema:
 
-1. **Strukturelle Aufbereitung**:
-   1. *Datenanalyse auf Bytelayer*: Was befindet sich tatsächlich auf der Platte, dem Stick etc. (**HEX-Editor**)
-   2. *Dateninterpretation auf Bytelayer*: Welche Bytes gehören zusammen und bilden welche Datentypen.
-   3. *Datensatzanalyse auf Bytelayer*: Welche Bytes bilden zusammen einen Datensatz und was ist das typische Format der Elemente eines Datensatzes?
-   4. *Syntaktische Datenbereinigung*: Können abweichende Formate in einzelnen Elementen an die typische Struktur angeglichen werden?
-   5. *Datenkonverter*: Welcher Konverter kann die Daten in eines der Standardaustauschformate umformen? Wie programmiert man ihn am besten.
-2. **Semantische Aufbereitung**:
-   1. *Datenvisualisierung*: Welches Diagramm / Grafikformat präsentiert die Daten angemessen?
-   2. *Datenevaluierung*: Was sollen die Daten erfassen? Gibt es Widersprüche? Dubletten? Inkonsistenzen?
-   3. *Datenkorrektur*: Welche Abweichler beruhen wahrscheinlich auf Mess- oder Erfassungsfehlern? Was kann bereinigt werden?
-   4. *Datenanalyse auf Inhaltsebene*: Was kann über das Verhalten der Daten gesagt werden?
-   5. *Trendvisualisierung*: Tendenzen, Verhalten, Aussagen präsentabel machen?
+0. **Datensicherung**:
+  1. Nicht auf den Originaldaten arbeiten, Datensicherung anlegen.
+  2. Wenn Datenmenge dafür zu groß. Datenportionen abspalten.
+1. **Syntaktische Datenaufbereitung**:
+   1. *Datenanalyse auf Byteebene* (`SYDA.A`): Ermitteln Sie, was sich tatsächlich auf der "Platte" (**HEX-Editor**)
+   2. *Dateninterpretation auf Byteebene* (`SYDA.I`): Ermitteln Sie, welche Bytes zusammengehören und welche Datentypen bilden.
+   3. *Datensatzformatanalyse auf Byteebene* (`SYDA.E`): Ermitteln Sie die Datensätze und deren typische innere Struktur.
+   4. *Syntaktische Datenreparatur* (`SYDA.R`): Gleichen Sie strukturell abweichende Datensätze wo sinnvoll syntaktisch oder löschen Sie die massiv dubiosen
+   5. *Datenkonverter* (`SYDA.K`): Programmieren Sie einen Konverter mit wiederverwendbarer Zwischenrepräsentation.
+2. **Semantische Auswertung**:
+   1. *Datenzugriff (Laden)* (`SEDA.L`): Recyceln Sie Ihren Konverter so, dass Sie programmintern Daten messen, zählen bzw. generell auswerten können.
+   2. *Semantische Datenkorrektur* (`SEDA.K`): Plausibilisieren Sie die Datensätze, korrigieren Sie sie wo möglich und löschen Sie 'Irrläufer'.
+   3. *Datenevaluation* (`SEDA.E`): Programmieren Sie die typischen Evaluationsfunktionen (Durchschnitt, Mittelwert, ...).
+   3. *Aggregation* (`SEDA.A`): Aggregieren Sie die ermittelten Trends, Aussagen etc. in einem geeigneten Format.
+   4. *Visualisierung* (`SEDA.V`): Entwickeln Sie ein präsentables Format für die aggregieren Aussagen.
+   5. *Präsentation* (`SEDA.P`): Präsentieren Sie die ableitbaren Tendenzen, Verhalten, Aussagen präsentabel.
 
-*Anmerkung*:
+*Anmerkungen*:
 
 * Ohne syntaktisch bereinigte Daten muss die semantische Aufbereitung scheitern.
 * Ohne Konverter (digital bearbeitbare Daten), können keine Trends berechnet werden.
 * Ohne semantische bereinigte Daten werden Aussagen zu Trends etc. verfälscht.
 
+*Regeln*:
 
-### Konverterarchitektur **[→ ZP:Sheet:6]**
+1. Gehen Sie davon aus, dass Ihre Daten 'verrauscht' sind - egal, was man Ihnen verspricht.
+2. Verlassen Sie sich nicht auf die Zusage, sie würden weitere Daten immer in exakt demselben Format bekommen. Niemand kann Ihnen das zusichern. Daten sind mit Tools generiert. Und die ändern sich.
+3. Integrieren Sie die syntaktische Datenbereinigung deshalb nicht in den Konverter. Setzen Sie für beides eigene Entwicklungen ab. Nutzen Sie gerne auch unterschiedliche Tools
+  1. SYDA.A - SYDA.E mit Methoden des Shellscriptings.
+  2. SYDA.K mit fertigen Konvertern, Datenbibliotheken und Interpretersprachen
+4. Schreiben Sie Ihren Konverter mit einer Zwischenrepräsentation, die Sie für spätere Mess- und Zählfunktionen wieder verwenden können.
+
+### [5] Probleme der Byte-Interpretation (SYDA.I) **[→ ZP:Sheet:5]**
+
+### [6] Verfahren beim Konverterbau **[→ ZP:Sheet:6]**
 
 Ein **Konverter**
 
 * liest Daten aus einer Datei (bzw. von Stdin) ein,
-* speichert sie in einer Zwischenrepräsentation uund
+* speichert sie typischerweis in einer Zwischenrepräsentation und
 * schreibt sie im Zielformat in eine Datei (bzw. nach Stdout).
   
-* kann Daten Datensatzweise einlesen, in ZRP-Form erfassen und sofort konvertieren.
+* kann die Daten datensatzweise einlesen, in einer ZRP-Form erfassen und jeden Datensatz sofort konvertieren.
   * *Vorteil*: auf große Datenmengen anwendbar
   * *Nachteil*: kontextsensitive Modifikationen i.d.R. nicht anwendbar
-* kann Daten insgesamt einlesen, in ZRP-Form erfassen und dann durchgehend konvertieren.
+* kann alle Datensätze der Daten zusammen in einer ZRP-Form erfassen und danach iterativ konvertieren.
   * *Vorteil*: kontextsensitive Modifikationen gut anwendbar 
   * *Nachteil*: Daten müssen insgesamt (oder in sehr großen Happen) 'in-memory' gehalten werden.
 
-* verwendet eine Adapterarchitektur:
-  * Jedes Inputformat hat einen Input-Adapter.
+* verwendet typischerweise eine Adapterarchitektur:
+  * Jedes Inputformat hat seinen eigenen Input-Adapter.
   * Verschiedene Input-Adapter lesen verschiedene syntaktische Formate in dieselbe ZRP ein.
-  * Jedes Outputformat bekommt einen spezifischen Output-Adapter.
+  * Jedes Outputformat bekommt seinen spezifischen Output-Adapter.
 
-Beim **Konverterbau** nutzen wir günstigenfalls eine MVP-Strategie:
+**Konverterarchitektur**:
 
-**MVP** = *Minimal Viable Product* 
+Das Konzept der 'Zwischenrepräsentation' (= Intermediate Representation)
+* stammt aus dem Compilerbau (→  [https://en.wikipedia.org/wiki/Intermediate_representation](https://en.wikipedia.org/wiki/Intermediate_representation) )
+* kann immer verwendet werden, wenn Daten / Programme aus dem einen Format ('Sourcecode', 'CSV') in andere Formate ('Binärcode für Architektur X, Y, Z', 'JSON, INI') überführt (konvertiert) werden sollen.
 
-> "[...] wörtlich ein 'minimal brauchbares oder existenzfähiges Produkt', ist die erste minimal funktionsfähige Iteration eines Produkts, die dazu dient, möglichst schnell aus Nutzerfeedback zu lernen und so Fehlentwicklungen an den Anforderungen der Nutzer vorbei zu verhindern."
+Eine explizite Zwischenrepräsentation (mit hard-gecodeten Beispieldaten) mit Adapterarchitektur zu verwenden, bringt drei Vorteile:
+
+1. Nach Definition und 'Füllung' der ZPR können Input- und Output-Adapter getrennt voneinander entwickelt werden.
+2. Weitere Adapter für neue Formate können bestehende Vorarbeiten nutzen
+3. Das Konverterprogramm bleibt leserlich.
+
+**Konverterentwicklung**:
+
+1. Vom den zu konvertierenden Daten 10% der Datensätze als Testdaten abspalten. 
+2. Von den Testdatensätzen zwei möglichst komplexe als 'hart-zu-kodierende' ZPR-Initialisierung auswählen
+3. Für die **Konverterprogrammierung** eine __*MVP-*__ (= *Minimal Viable Product*)-__*Stratgie*__ nutzen:
+
+> Ein MVP, "[...] wörtlich (übersetzt:) ein 'minimal brauchbares oder existenzfähiges Produkt', ist die erste minimal funktionsfähige Iteration eines Produkts, die dazu dient, möglichst schnell aus Nutzerfeedback zu lernen und so Fehlentwicklungen an den Anforderungen der Nutzer vorbei zu verhindern."
 > 
 > (vgl. [https://de.wikipedia.org/wiki/Minimum_Viable_Product](https://de.wikipedia.org/wiki/Minimum_Viable_Product))
+
 
 ---
 
@@ -185,62 +212,96 @@ Was wäre das MVP für einen Konverter für gegebene Inputdaten im Format IF und
 
 ---
 
-*Lösung*: Verschiedene Ansätze sind denkbar:
-
-* ZPR mit INCODE-Daten + Outpout-Adapter (im selben Format wie Input Daten)
-* Input-Adapter + ZPR + Outpout-Adapter
-* Inpuit-Adapter allein
-* ...
-
-Das bester ZPR nimmt die wesentlichsten Merkmale der Ziellösung in Angriff und ist zugleich so kleine wie möglich,
-
-Deshlab gibt es in diesem Fall ein von der Sache her geradezu zwingendes Verfahren:
-
-**Konverter MVP.0**:
-
-* [ ] Sichern Sie die Originaldaten. Entwickeln Sie Ihren Konverter nur auf Datenkopien.
-* [ ] Spalten Sie einen kleinen, aber hinreichend großen Satz an Testdaten ab, der die tatsächliche strukturelle und semantische Komplexität repräsentiert.
-* [ ] Spalten Sie von den Testdaten 3 möglichst komplexe Referenzdatensätze ab. (Nötigenfalls erhöhen Sie deren Komplexität)
-* [ ] Entscheiden Sie sich für Ihre Zwischenrepräsentation und dokumentieren Sie sie.
-* [ ] Erfassen Sie ihre Referenzdaten als In-Memory-Daten in Ihrem Konverterprogramm
-* [ ] Programmieren Sie einen Output-Adapter, der Ihre In-Memory-Referenz-Daten in dem vorgegebenen Inputformat in eine Datei ausgibt.
-
-**Konverter MVP.1**
-
-* [ ] Erweitern Sie *MVP.0* um einen Input-Adapter, der Ihre Testdaten in die ZPR einliest.
+*Lösung*: Verschiedene Ansätze denkbar. Meine bevorzugte Variante:  **[→ ZP:Sheet:7]**
 
 
-**Konverter MVP.2**:
+1. **MVP**: der leere Konverter mit hart-gecodeter initialisierter ZPR, Funktions-/Methodenhülsen und passendem *main*-Bereich
+2. **VP-0.1**: *MVP* + Outputadapter, der hart-gecodeten initialisierter ZPR in das **Input**format 'konvertiert'.
+3. **VP-0.2**: *VP-0.1* + Inputadapter, der die externen Testdaten in die ZPR überführt. (Durchstichskonverter: Inputformat -> Inputformat)
+4. **VP-0.3**: *VP-0.2* + Outputadapter, der hart-gecodeter initialisierter ZPR in das **Output**format 'konvertiert'
+5. **VP-1.0**: *VP-0.x* + User-Handlingslayer
 
-* [ ] Erweitern Sie *MVP.1* um einen Output-Adapter, der Ihre In-Memory-Referenz-Daten im Zielformat in eine Datei ausgibt.
+Begründung:
 
-usw. usw.
+* Ich schreibe immer zuerst ein leeres, aber strukturell möglichst komplettes Programm, damit der Rest nur 'Erweiterungsarbeit' ist.
+* Ich schreibe immer zuerst den Konverter 'Inputformat' nach 'Inputformat'. Das reduziert die Komplexität!
 
+**Zwischenübung zum Konverterbau**:
 
 ---
 
 <!-- uebung::start -->
-<span style="color: green;">_ÜBUNG_</span> <span style="color:magenta;">**LF11C:Datenanalyse:01**</span>
+<span style="color: green;">_ÜBUNG_</span> <span style="color:magenta;">**LF11C:Datenanalyse:03**</span>
 
 * [ ] Laden Sie sich die Datei `dsp.beta.xyz` herunter.
-* [ ] Durchlaufen Sie mit diesen Daten die Schritte 1-5 der strukturellen Aufbereitung:
-  * [ ] Finden Sie die Ordnung in den Dateien
-  * [ ] Modifizieren Sie die Daten in der Datei syntaktisch so, dass sie diese Ordnung widerspiegeln, ohne die Aussage zu ändern.
-  * [ ] Berichtigen Sie die Daten wo nötig syntaktisch.
-  * [ ] Berichtigen Sie die Daten wo nötig auch semantisch.
-* [ ] Programmieren Sie in Python einen Konverter, der diese Daten im INI-Format ausgibt:
+* [ ] Durchlaufen Sie mit diesen Daten alle Schritte der syntaktischen Aufbereitung:
+  * [ ] Stellen Sie eine Hypothese darüber auf, worum es bei diesen Daten geht.
+  * [ ] Finden Sie die Ordnung in den Dateien. (SYDA.A, SYDA.I)
+  * [ ] Modifizieren Sie die Daten in der Datei syntaktisch so, dass sie diese Ordnung widerspiegeln, ohne die Aussage zu ändern. (SYDA.F)
+  * [ ] Berichtigen Sie die Daten wo nötig syntaktisch. (SYDA.R)
+  * [ ] Berichtigen Sie die Daten wo unmittelbar erkennbar und möglich auch schon jetzt semantisch. (SEDA.K)
+* [ ] Programmieren Sie in Python einen Konverter, der diese Daten im INI-Format ausgibt: (SYDA.K)
   * [ ] Gehen Sie dabei gemäß MVP-Strategie vor.
-
+  * [ ] Nutzen Sie so wenig wie möglich externe Bibliotheken.
 Hinweis:
 
-* Nutzen Sie für die Programmierung als Inspirationsquellen gerne
-
-* lf.cx/cx.datafiles*
-* lf.cx/cx.py2fr*
-* lf.cx/cx.py2go*
+* <protico.lf.cx/cx.datafiles-\*> beschreibt Datenaustauschformate.
 
 <!-- uebung::end -->
 
 ---
 
+*Lösung*: 
+
+* (SYDA.A, - SYDA.R + SEDA.K): Datenkorrektur **[→ ZP:Sheet:8]**
+* Weltausschnitt der Daten: Tageslängen **[→ ZP:Sheet:9]**
+* Konverter MVP: **[→ ZP:Sheet:10]**
+  * Die Funktionen sind insofern leer, als sie nur sagen, was sie tun, ohne es tatsächlich zu tun.
+* Konverter VP-0.1: **[→ ZP:Sheet:11]**
+  * Die hinzugefügte Schreibadapter
+    * iteriert über die Liste von Dictionaries in den hardgecodete Testdaten (L21)
+    * nutzt f-Strings, um einen Datensatz neu zusammenzusetzen und zu schreiben. (L22)
+* Konverter VP-0.2/3: **[→ ZP:Sheet:12]**: importierbares Modul mit
+  * A) einem Leseadapter (L5ff)
+    * liest die CSV zeilenweise ein (L10),
+    * entfernt überflüssige Whitespaces vor und nach dem Datensatz,
+    * spaltet die Zeile anhand der Kommata,
+    * fügt ein entsprechendes Dictionary in die Liste der Datensätze hinzu,
+  * B) einem weiteren Schreibadapter (analog zu VP-0.1). (L26ff)
+* Konverter VP-1.0: **[→ ZP:Sheet:13]** 
+  * importiert Adapter-Modul
+  * verwendet Kommandozeilenparameter um Zielformate etc. auswählbar zu machen
+  * lässt die Daten einlesen (L25)
+  * lässt die Daten gemäß Vorgaben schreiben (L29ff)
+
+---
+
+<!-- uebung::start -->
+<span style="color: green;">_ÜBUNG_</span> <span style="color:magenta;">**LF11C:Datenanalyse:04**</span>
+
+Arbeiten Sie diese Aufgabe als Team ab. Organisieren Sie sich gemeinsam so, dass 
+Sie selbst als Teil eines Subteams der Lösung zuarbeiten können. Die Aufgabe 
+ist gelöst, wenn die Klasse gemeinsam einen funktionsfähigen Konverter 
+programmiert hat. Dazu gehen Sie so vor:
+
+* [ ] Laden Sie sich sicherheitshalber die Datei `dsp.alpha.xyz` noch einmal herunter.
+* [ ] Finden Sie die Ordnung in den Dateien. (SYDA.A, SYDA.I)
+* [ ] **Einigen Sie sich auf ein Format für die Zwischenrepräsentation**. 
+       * Das ist der Kern, den alle kennen müssen, um Aufgaben autonom zuarbeiten zu können.*
+* [ ] Organisieren Sie sich so, dass folgende Arbeiten möglichst schnell erledigt werden:
+  * [ ] Modifizieren Sie die Daten in der Datei syntaktisch so, dass sie diese Ordnung widerspiegeln, ohne die Aussage zu ändern. (SYDA.F)
+  * [ ] Berichtigen Sie die Daten wo nötig syntaktisch. (SYDA.R)
+  * [ ] Berichtigen Sie die Daten wo unmittelbar erkennbar und möglich auch schon jetzt semantisch. (SEDA.K)
+  * [ ] Spalten Sie 10% der bereinigten Daten als Testdaten ab 
+  * [ ] Programmieren Sie in Python anhand der MVP-Strategie einen Konverter, der diese Daten im JSON-Format ausgibt: (SYDA.K)
+  * [ ] Nutzen Sie so wenig wie möglich externe Bibliotheken.
+* [ ] Verfeinern Sie nebenbei fortlaufend Ihre Hypothese darüber auf, worum es bei diesen Daten geht.
+
+<!-- uebung::end -->
+
+---
+
+*Lösung*: Blutdruckmessungen **[→ ZP:Sheet:4]**
+
+Oder wie Mustafa (12ip/iv23) spontan sagte: "Ahh, der Herr Reincke hat Bluthochdruck".
 

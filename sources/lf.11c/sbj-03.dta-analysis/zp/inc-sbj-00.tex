@@ -22,14 +22,6 @@
 \end{frame}
 
 \begin{frame}  
-  \frametitle{LF11c:03:Datenanalyse:Lösung}
-
-  \begin{center}
-    \includegraphics[height=7.5cm]{\imgLf/blood-measure-939949-pxh.png}
-  \end{center}
-\end{frame}
-
-\begin{frame}  
   \frametitle{LF11c:03:Datenanalyse:Phasen}
   \begin{center}
     \includegraphics[height=7cm]{\imgLf/da-phases.png}
@@ -37,57 +29,108 @@
 \end{frame}
 
 \begin{frame}  
-  \frametitle{LF11c:03:Datenanalyse:Byteaufschlüsselung}
+  \frametitle{LF11c:03:Datenaufbereitung:Byte-Interpretation}
   \begin{center}
     \includegraphics[height=4cm]{\imgGl/coming-soon-118519-pxh.png}
   \end{center}
 \end{frame}
 
 \begin{frame}  
-  \frametitle{LF11c:03:Datenanalyse:Konverterarchitektur}
+  \frametitle{LF11c:03:Datenaufbereitung:Konverter:Architektur}
   \begin{center}
     \includegraphics[height=7.5cm]{\imgLf/converter-architecture.png}
   \end{center}
 \end{frame}
 
-% \begin{frame}[fragile]  
-%   \frametitle{LF11c:03:Datenanalyse:Codetest}
+\begin{frame}  
+  \frametitle{LF11c:03:Datenanalyse:Konverter:MVP-Phases}
+  \begin{center}
+    \includegraphics[height=7cm]{\imgLf/converter-mvp-phases.png}
+  \end{center}
+\end{frame}
 
-%   \begin{columns}[t]
-%   \column{0.5\textwidth}
-%     \begin{center}
-%     \begin{minipage}{0.5\textwidth}
-%       \textbf{Shellscript}
+\begin{frame}[fragile]  
+  \frametitle{LF11c:03:Datenaufbereitung:Konverter:\texttt{xyz$\rightarrow$csv} :}
 
-%       \begin{minted}[fontsize=\small,linenos=true]{bash}
-% #!/bin/bash
+  \begin{center}
+  \begin{minipage}{0.95\textwidth}
+    Initial erhalten:
 
-% # script literally 
-% # embedded into the
-% # latex file by:
-% # \begin{minted}
+    \inputminted [fontsize=\footnotesize,linenos]{python}{\dspLf/dsp.beta.xyz}
+  \end{minipage}
+  \end{center}
 
-% MESSAGE="Hello World"
-% echo $MESSAGE
-%       \end{minted}
+  \begin{center}
+  \begin{minipage}{0.95\textwidth}
+    SYDA.A - SYDA.F: Reformatiert und Komma nach Datensatz entfernt:
 
-%     \end{minipage}
-%     \end{center}
-%   \column{0.5\textwidth}
-%     \begin{center}
-%     \begin{minipage}{0.5\textwidth}
-%       \textbf{Pythonscript}
-%       \inputminted [fontsize=\small,linenos]{python}{\snpLf/tpl-hw.py}
-%     \end{minipage}
-%     \end{center}
-%   \end{columns}
+    \inputminted [fontsize=\footnotesize,linenos]{python}{\dspLf/dsp.beta-f.csv}
+  \end{minipage} 
+  \end{center}
 
-%   \vspace{0.6cm}
-%   \begin{flushright}
-%     \begin{tiny}
-%       \textrm{\textit{Scriptbeispiele}}
-%     \end{tiny}
-%   \end{flushright}
-% \end{frame}
+  \begin{center}
+  \begin{minipage}{0.95\textwidth}
+    SYDA.K: 5. Datensatz entfernt, weil falsches Datumsformat + Dublette:
+
+    \inputminted [fontsize=\footnotesize,linenos]{python}{\dspLf/dsp.beta-r.csv}
+  \end{minipage} 
+  \end{center}
+
+\end{frame}
+\begin{frame}  
+  \frametitle{LF11c:03:Datenaufbereitung::dsp-beta:Lösung}
+  \begin{center}
+    \includegraphics[height=7.5cm]{\imgLf/sunset-1364695-pxh.png}
+  \end{center}
+\end{frame}
+
+\begin{frame}[fragile]  
+  \frametitle{LF11c:03:Datenaufbereitung::dsp-beta:MVP}
+
+  \begin{center}
+  \begin{minipage}{0.8\textwidth}
+    \inputminted [fontsize=\tiny,linenos]{python}{\snpLf/dsp-beta-conv-mvp.py}
+  \end{minipage}
+  \end{center}
+\end{frame}
 
 
+\begin{frame}[fragile]  
+  \frametitle{LF11c:03:Datenaufbereitung::dsp-beta:VP-0.1}
+
+  \begin{center}
+  \begin{minipage}{0.8\textwidth}
+    \inputminted [fontsize=\tiny,linenos]{python}{\snpLf/dsp-beta-conv-vp01.py}
+  \end{minipage}
+  \end{center}
+\end{frame}
+
+\begin{frame}[fragile]  
+  \frametitle{LF11c:03:Datenaufbereitung::dsp-beta:Adapter}
+
+  \begin{center}
+  \begin{minipage}{0.8\textwidth}
+    \inputminted [fontsize=\tiny,linenos]{python}
+      {\snpLf/mod_dsp_beta_conv_adapters.py}
+  \end{minipage}
+  \end{center}
+\end{frame}
+
+\begin{frame}[fragile]  
+  \frametitle{LF11c:03:Datenaufbereitung::dsp-beta:VP-1.0}
+
+  \begin{center}
+  \begin{minipage}{0.8\textwidth}
+    \inputminted [fontsize=\tiny,linenos]{python}
+      {\snpLf/dsp-beta-conv.py}
+  \end{minipage}
+  \end{center}
+\end{frame}
+
+\begin{frame}  
+  \frametitle{LF11c:03:Datenaufbereitung:dsp-alpha.xyz:Lösung}
+
+  \begin{center}
+    \includegraphics[height=7.5cm]{\imgLf/blood-measure-939949-pxh.png}
+  \end{center}
+\end{frame}

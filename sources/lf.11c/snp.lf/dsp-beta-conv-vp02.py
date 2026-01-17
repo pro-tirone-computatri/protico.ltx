@@ -1,15 +1,10 @@
 # (C) 2026 K.Reincke: proTironeComputatri snippet [CC-BY-4.0]
+# converts a csv file of day data into the respective ini file: VP-0.1
 
-# converts a csv file of day data into the respective ini file
-# minimal viable product 2: read csv file into intermediate representation (l15)
-
-# structure of the intermediate representation
-# a list () of dictionaries {}, each filled with four key-value-pairs
-
+# intermediate representation and hard-coded testdata
 dd_hard_coded=(
 { "day":"2026-01-01", "sunrise": "08:29","sunset": "16:31","durance": "08:02"},
-{ "day":"2026-01-02", "sunrise": "08:29","sunset": "16:32","durance": "08:03"}
-)
+{ "day":"2026-01-02", "sunrise": "08:29","sunset": "16:32","durance": "08:03"}) 
 
 # adapters to read daydata from a file
 def fill_from_csv(filename) :
