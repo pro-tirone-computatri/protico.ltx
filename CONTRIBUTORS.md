@@ -15,4 +15,8 @@ These are the (main) contributors to the project *proTironeComputatri*
   * 'Lernfeld 11d' content file
 * Deutsche Telekom AG / Heinz Polsterer / Roland Hechwartner:
   * Folie 'Gummibärchensalat/FOSS' zur Weiterverwertung 
- 
+* Gewerbliche Schulen Dillenburg / Klasse 12ip/iv23 mit
+    Almamy, Berdan, Carl, Charlotte, Daniel, Eray, Fabian, Gennaro,
+    Keanoosh, Manuel, Mustafa, Nuri, Phil, Sabrina, Sky, Stefan 
+    Tim, Valbon, Felix, Jacob, Justin, Melanie
+  
