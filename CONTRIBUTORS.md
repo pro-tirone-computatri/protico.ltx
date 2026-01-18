@@ -19,4 +19,5 @@ These are the (main) contributors to the project *proTironeComputatri*
     Almamy, Berdan, Carl, Charlotte, Daniel, Eray, Fabian, Gennaro,
     Keanoosh, Manuel, Mustafa, Nuri, Phil, Sabrina, Sky, Stefan 
     Tim, Valbon, Felix, Jacob, Justin, Melanie
+  * 'Lernfeld 11c' converter code concerning data preparation
   
