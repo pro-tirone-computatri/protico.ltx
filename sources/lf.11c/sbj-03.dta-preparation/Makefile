@@ -41,8 +41,10 @@ lesson-ort: oraltrack
 	@ WD=`pwd` && SJN=`basename $${WD}` && LFN=`cat ../td.lf` && \
 	  TGD="${BLD}/$${LFN}" && mkdir -p $${TGD} && \
     mv oraltrack.pdf $${TGD}/$${SJN}-oraltrack.pdf && \
-		mkdir -p $${TGD}/$${SJN}-data && \
-		cp ../dsp.lf/dsp.alpha.* ../dsp.lf/dsp.beta.* $${TGD}/$${SJN}-data
+		mkdir -p $${TGD}/$${SJN}/dsp.lf && mkdir -p $${TGD}/$${SJN}/snp.lf && \
+		mkdir -p $${TGD}/$${SJN}/res.lf && \
+		cp ../dsp.lf/dsp.alpha.* ../dsp.lf/dsp.alpha-t.* ../dsp.lf/dsp.beta.* ../dsp.lf/dsp.beta-t.* $${TGD}/$${SJN}/dsp.lf && \
+		cp ../snp.lf/dsp-alpha-conv.py ../snp.lf/dsp-beta-conv.py $${TGD}/$${SJN}/snp.lf
 	@ tree ${BLD}
 
 ort: oraltrack

@@ -1,5 +1,5 @@
 ---
-title: 'LF11c:03:Datenanalyse'
+title: 'LF11c:03:Datenaufbereitung'
 author: [K. Reincke]
 date: 2026-01-11
 keywords: [data,analysis]
@@ -13,4 +13,4 @@ lang: "de-DE"
 papersize: a4
 colorlinks: true
 ---
-## LF11c:03:Datenanalyse
+## LF11c:03:Datenaufbereitung
