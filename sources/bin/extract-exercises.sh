@@ -20,7 +20,8 @@ UEBUNG="false"
 
 if [ -f $TARGETFILE ]; then rm $TARGETFILE; fi
 
-cat $SOURCEFILE | while read line; do
+# use IFS= for preserving the indenting white spaces
+cat $SOURCEFILE | while IFS= read line; do
 
   TOKEN=`echo $line | grep "uebung::end"`;
   if [ "$TOKEN" != "" ]; then 
