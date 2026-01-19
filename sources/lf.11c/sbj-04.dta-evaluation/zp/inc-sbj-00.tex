@@ -4,68 +4,80 @@
 % CC-BY-4.0 (= https://creativecommons.org/licenses/by/4.0/)
 
 \selectlanguage{ngerman}
-{
-\usebackgroundtemplate{\includegraphics[width=\paperwidth]{\imgGl/bird-flower-267994-pxh.png}}
 \begin{frame}  
-  \frametitle{LF00:sbj:flat}
+  \frametitle{LF11c:04:Datenauswertung}
+  
+  \begin{center}
+    \includegraphics[height=7.5cm]{\imgLf/data-charting-1366141-pxh.png}
+  \end{center}
 
-  \vspace{4cm}
-  \begin{flushright}
-    \textcolor{white}{Über das \textit{Thema}}
-  \end{flushright}
 \end{frame}
-}
 
-{
-\usebackgroundtemplate{\includegraphics[width=\paperwidth]{\imgLf/woman-considering-1080572-pxh.png}}
 \begin{frame}  
-  \frametitle{LF00:sbj:flat:Fußnotentest}
+  \frametitle{LF11c:04:Datenauswertung:Visuell:Charts}
+  \begin{center}
+    \includegraphics[height=7.5cm]{\imgLf/dsp.beta-r.png}
+  \end{center}
 
-  \vspace{4cm}
-  \begin{flushright}
-    Hinweis mit Nachweis zum\footcite[vgl.][17]{RlpIt2019a} \textit{Thema}
-  \end{flushright}
 \end{frame}
-}
+
+\begin{frame} 
+  \frametitle{LF11c:04:Datenauswertung:Mathematisch:Begriffe}
+  \begin{columns}[t]
+  \column{0.49\textwidth}
+  \begin{itemize}
+    \item Minimum [ $\min$ ]
+    \item Maximum [ $\max$ ]
+    \item Spann[br|w]eite [ $\langle ... \rangle$ ]
+    \item Durchschnitt (Mittelwert) [ $\overline{x}$] 
+    \item Median [ $\varnothing$ ]
+  \end{itemize}
+  \column{0.49\textwidth}
+  \begin{itemize}
+    \item Varianz (= \textit{durchschnittliche Abweichung vom Mittelwert (A)})
+    \item Standardabweichung (= \textit{durchschnittliche Abweichung vom Mittelwert (B)})
+  \end{itemize}
+\end{columns}
+
+\vspace{0.6cm}
+
+\begin{itemize}
+  \item Kovarianz (= \textit{Zusammenhang zweier metrischer Variablen})
+  \item Korrelationskoeffizient (= \textit{standardisierter Zusammenhang zweier metrischer Variablen})
+  \item Defects per Million Opportunities [ DPMO ] (= \textit{normierte Fehlerrate zur Qualifikation des datenerhebenden Prozesses})
+\end{itemize}
+\end{frame}
 
 \begin{frame}[fragile]  
-  \frametitle{LF00:sbj:flat:Codetest}
+  \frametitle{LF11c:04:Datenauswertung:Mathematisch:Beispiel}
 
-  \begin{columns}[t]
-  \column{0.5\textwidth}
-    \begin{center}
-    \begin{minipage}{0.5\textwidth}
-      \textbf{Shellscript}
+  \begin{center}
+  \begin{minipage}{0.9\textwidth}
+  \begin{minted}[fontsize=\footnotesize,linenos=true]{python}
 
-      \begin{minted}[fontsize=\small,linenos=true]{bash}
-#!/bin/bash
+systole = ( 182, 158, 179, 170 ) # sorted: ( 158, 170, 179, 182 )
+range(systole) = 24 # max(systole) - min(systole)
+average(systole) = ~172
+median(systole) = 174,5
+varianz(systole) = 87 
+    # ( (158-172)^2 + (170-172)^2 + (179-172)^2 + (182-172)^2 ) / 4
+deviance(systole) = 9,32 # sqrt(variance(systole))
 
-# script literally 
-# embedded into the
-# latex file by:
-# \begin{minted}
+pulse = ( 66, 75, 67, 78 ) # sorted ( 66, 67, 75, 78 ) 
+range(pulse) = 12 # max(pulse) - min(pulse)
+average(pulse) = 71,5
+median(pulse) = 71
+variance(pulse) = 27 
+  # ( (66-72)^2 + (75-72)^2 + (67-72)^2 + (78-72)^2 ) / 4
+deviance(pulse) = 5,2 # sqrt(variance(pulse))
 
-MESSAGE="Hello World"
-echo $MESSAGE
-      \end{minted}
+covariance(systole,pulse) = -28 # ... see oraltrack.pdf
+correlation_coefficient(systole,pulse) = -0.57 
+  # covariance(s,p) / (deviance(s) * deviance(p))
+  \end{minted}
+  \end{minipage}
+  \end{center}
 
-    \end{minipage}
-    \end{center}
-  \column{0.5\textwidth}
-    \begin{center}
-    \begin{minipage}{0.5\textwidth}
-      \textbf{Pythonscript}
-      \inputminted [fontsize=\small,linenos]{python}{\snpLf/tpl-hw.py}
-    \end{minipage}
-    \end{center}
-  \end{columns}
-
-  \vspace{0.6cm}
-  \begin{flushright}
-    \begin{tiny}
-      \textrm{\textit{Scriptbeispiele}}
-    \end{tiny}
-  \end{flushright}
 \end{frame}
 
 

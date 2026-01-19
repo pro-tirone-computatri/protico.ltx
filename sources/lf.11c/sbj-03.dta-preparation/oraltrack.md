@@ -8,7 +8,7 @@
 
 ### [1] Dimensionen der Datenanalyse **[→ ZP:Sheet:2]**
 
-*Zweck von Daten*: Sie sollen
+*Zweck von Daten*: Sie sollen ...
 
 * Weltbeschreibungen liefern.
 * zur Weltverbesserung anregen.

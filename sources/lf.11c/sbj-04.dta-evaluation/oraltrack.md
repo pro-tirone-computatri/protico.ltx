@@ -6,17 +6,15 @@
 -->
 <!-- LTeX:Language=de-DE -->
 
-**[→ ZP:Sheet:1]**
-
 ### Definitionen
 
 
-* **Datenauswertung** = 
+* **Datenauswertung** = **[→ ZP:Sheet:2]**
   * aus den Daten Aussagen über den repräsentierten Weltausschnitt ableiten
   * nach **Trends** suchen = Bereiche, die Prognosen erlauben
-  * nach **Abweichungen** suchen = die Trends auffällig unterbrechen (Peaks)
+  * nach **Abweichungen** suchen = die Trends auffällig unterbrechen (Peaks, Ausreißer)
 
-* **Datenvisualisierung** =
+* **Datenvisualisierung** = **[→ ZP:Sheet:3]**
   * grafische Aufbereitung der Daten zwecks Ableitung von Aussagen 
     anhand visueller Auffälligkeiten
   * **Linien- und Flächendiagramme** :- zur Darstellung des Werteverlaufs über die Zeit
@@ -26,8 +24,17 @@
   * **Blasendiagramm** : Verteilung von dreidimensionalen Messungen
   * **Wortwolken** : assoziative Begriffsdarstellung mit Gewichtung per Größe.
 
+  * Hier beispielhaft vorgeführt an den bereinigten dsp-beta-Daten:
+    * CSV-Daten in LibreOffice-Calc (Excel) laden
+    * Alle Daten vom Typ Text in intendierte Typen wandeln (hier Datum und Zeit)
+    * Diagrammtyp auswählen
+    * Datenranges zusammstellen.
+  * Achtung: Nicht alle Diagrammtypen sind für alle Daten visuell angmessen:
+    * Eine abfallende Linie für *Sunrise* und eine aufsteigende für *Sunset* macht Sinn.
+    * Ein Balkendiagramm zur Visualisierung der steigenden Tageslänge macht Sinn.
+    * Eine aggregierte Balkendarstellung ist nur schwer zu verstehen.
 
-* **Statistische Analyse** = 
+* **Statistische Analyse** =  **[→ ZP:Sheet:4]**
   * **Minimum** = kleinster Wert einer Datenreihe
   * **Maximum** = größter Wert einer Datenreihe
   * **Spannweite** = Maximum - Minimum
@@ -41,6 +48,13 @@
       Anzahl der Messungen ist es der Mittelwert der beiden Werte, die die Mitte der 
       Liste bilden.*)
     * Ausreißer fallen nicht so ins Gewicht
+  
+Zwischenfrage: **Wozu sind diese Werte eigentlich gut?**
+
+Intuitives Verfahren in grafischen Datendiagrammen: Ermittle die Normalität (*Mittelwert*, *Median*, *Trends*), dann die *Ausreißer*, dann die Gründe.
+
+Das geht auch mathematisch / programmiertechnisch. Mit folgenden Definitionen: 
+
   * **Varianz** =
     * durchschnittliche Abweichung vom Mittelwert
     * Berechnung:
@@ -82,9 +96,28 @@
       * Berechne die Standardabweichungen zweier Datenspalten einer Datenmessung 
       * Berechne die Kovarianz bezogen auf diese Datenspalten.
       * Dividiere die Kovarianz durch das Produkt beider Standardabweichungen.
+  * **Defects per Million Opportunities** (*DPMO*)
+    * gibt an, wie viel falsche (falsch erfasste, repräsentierte, ...) Daten pro 1 Millionen Möglichkeiten
+  
+> *DPMO represents the number of defects that could occur per million opportunities in any given process, 
+> thus providing a standardized measure for evaluating process performance and quality across 
+> different industries and scales of operation.* 
+> ( vgl. [https://www.sixsigmaonline.org/defects-per-million-opportunities-dpmo-six-sigma](https://www.sixsigmaonline.org/defects-per-million-opportunities-dpmo-six-sigma))
+
+    * Berechnung:
+      * Anzahl der gemessenen Fehler = D (was als Fehler gilt, wird definiert)
+      * Anzahl der produzierten / verglichenen Einheiten (units) = N (zählen)
+      * Anzahl der *möglichen* Fehler pro produzierter / verglichener Einheit = O(opportunities)
+      * Formel **`DPMO=(D/(N\*O))*1,000,000`** 
+      * ( vgl. [https://six-sigma-deutschland.de/defects-per-million-opportunities-dpmo/](https://six-sigma-deutschland.de/defects-per-million-opportunities-dpmo/) )
+
+  * **Six Sigma** (*6S*)
+    * meint Qualität eines Prozesses
+    * bester realistisch möglicher Wert = 3.4 DPMO
 
 
-### Beispiel:
+
+### Beispiel:  **[→ ZP:Sheet:5]**
 
 | Typ | unsortierte Werteliste | sortierte Werteliste |
 |---|---|---|
@@ -140,7 +173,7 @@
 ```
 Standardabweichung(Systole) = 9,32
 Standardabweichung(Puls) = 5,2
-Kovarianz(Systole,Plus) = -28
+Kovarianz(Systole,Puls) = -28
 Korrelationskoeffizient = -28/(9,32*5,2) = -28/4846 ~= -0,57
 ```
 
