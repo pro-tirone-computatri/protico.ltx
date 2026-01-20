@@ -3,8 +3,6 @@ import sys
 import datetime
 import random
 
-
-
 myData=[
   ["2024-05-13T07:00",182,116,66],
   ["2024-05-14T06:30",158,110,75],
@@ -187,7 +185,7 @@ def writeData(fname,farray,fstyle) :
         case 'shuffled':
           fp.write('{}{}{}{}'.format(vset[0],chr(vset[1]),chr(vset[2]),chr(vset[3])))
         case 'csv':
-          fp.write('{},{},{},{}\n'.format(vset[0],vset[1],vset[2],vset[3]))
+          fp.write('{},{},{},{},{}\n'.format(i,vset[0],vset[1],vset[2],vset[3]))
         case 'txt':
           fp.write('{},{},{},{}'.format(vset[0],vset[1],vset[2],vset[3]))
         case _:
@@ -196,7 +194,8 @@ def writeData(fname,farray,fstyle) :
   fp.close()
 
 
-# main section
+# main sectionls
+
 data_smp="dsp.alpha"
 dsmp_pur=data_smp + ".xyz"
 dsmp_ord=data_smp + ".ordered.xyz"

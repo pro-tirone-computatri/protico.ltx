@@ -192,7 +192,7 @@ und des Patienten zu liefern. Ausgang für Implementationen ist der Konverter `d
 * [ ] Das Projekt läuft über 5 Sprints von je einer Doppelstunde.
 * [ ] Wählen Sie zu Anfang eine ScrumMasterin. Sie arbeitet nicht mit, sondern sorgt für die 
       Einhaltung der Regeln - insbesondere dafür, dass Zeitbegrenzungen eingehalten werden!
-* [ ] **ScrumPlanning**: Beginnen Sie jeden Sprint (= jede Doppelstunde) mit einem Scrumplanning von höchstens 15 min:
+* [ ] **SprintPlanning**: Beginnen Sie jeden Sprint (= jede Doppelstunde) mit einem Scrumplanning von höchstens 15 min:
   * [ ] *Verkürzter __Sprintpoker__*: Schätzen Sie neue Aufgaben im Productbacklog per Zuruf hinsichtlich Komplexität/Aufwand. 
    (einfach: 1, mittel: 3, komplex: 5, unbekannt: 13). Einigen Sie sich schnell auf einen Wert.
   * [ ] Einigen Sie sich auf die Anzahl der Punkte, die Sie als Team in diesem Sprint (bis zur nächsten Pause) abarbeiten werden.
@@ -265,4 +265,11 @@ Ein gutes Team überfordert sich aber auch nicht.
 
 ---
 
+**Hinweis für Lehrerin**: nach Aufgaben 1.x bis 2.x neue Daten `dsp.alpha.ii.csv` mit Report ins Spiel bringen:
 
+Szenario: 
+
+* PO Rücksprache mit Produktion
+* Differenzen in bereinigter Datengrundlöage festgestellt.
+* Produktion hat darum selbst einen Datenset im Format des Teams aufbereitet (dsp.alpha.ii.csv)
+* Produktion hat Abweichungen beschrieben, gezählt und reportet. (dsp.alpha.ii-report.csv)
