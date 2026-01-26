@@ -96,21 +96,22 @@ vgl.
 * Die neuere Segmentierung ist `MA-L`, `MA-M`, `MA-S` einer Reaktion darauf:
 
 
-* Die strikte Aufteilung in 2^24 Vendoren, die je über 2^24 Kennungen verfügen ist mittlerweile - in Analogie zu feineren IP-Netzsegmentierung mit CIDR-Notation - verfeinert. Es gibt jetzt
-  * `MA-L`-Segemente (= MAC Address Block Large) ~ bisheriger OUI (Organizationally Unique Identifier)	Aufteilung :- (2^24 ~= 16 Million)
-  * `MA-M`-Segemente (= MAC Address Block Medium)	:-	2^20 ~= 1 Million
-  * `MA-S`-Segemente (=	MAC Address Block Small) ~ bisheriger	OUI-36 :-	2^12 ~= 4,096
+* Die strikte Aufteilung in 2^24 Vendoren, die je über 2^24 Kennungen verfügen ist mittlerweile - in Analogie zu feineren IP-Netzsegmentierung mit CIDR-Notation - verfeinert. 
+* Es gibt jetzt **[→ ZP:Sheet 5]**
+  * **OUI-24**: `MA-L`-Segemente (= MAC Address Block Large) ~ bisheriger OUI (Organizationally Unique Identifier)	Aufteilung :- (2^24 ~= 16 Million)
+  * **OUI-28**: `MA-M`-Segemente (= MAC Address Block Medium)	:-	2^20 ~= 1 Million
+  * **OUI-35**: `MA-S`-Segemente (=	MAC Address Block Small) ~ bisheriger	OUI-36 :-	2^12 ~= 4,096
 
 vgl. 
 
 * [https://macaddress.io/faq/what-is-a-ma-l-ma-m-ma-s-assignment](https://macaddress.io/faq/what-is-a-ma-l-ma-m-ma-s-assignment)
 * [https://macaddress.io/faq/what-is-an-organizationally-unique-identifier-oui](https://macaddress.io/faq/what-is-an-organizationally-unique-identifier-oui)
-* 
+* [https://de.wikipedia.org/wiki/MAC-Adresse](https://de.wikipedia.org/wiki/MAC-Adresse)
 
 
 *Konsequenz:*
 
-* Es gibt m.W. keinen formalen Bestätigungsprozess für die Eindeutigkeit.
+* Es gibt m.W. keinen formalen Bestätigungsprozess für die Eindeutigkeit. Das wäre als weltübergreifender Prozess zu teuer.
 * MAC-Adressen können doppelt erscheinen.
 
 **Kontextfrage:**

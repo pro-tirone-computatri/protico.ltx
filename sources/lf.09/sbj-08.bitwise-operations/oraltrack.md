@@ -86,20 +86,20 @@ Lesehinweis: die logischen Zeichen sind im Font dieses Textes nicht darstellbar,
 <!-- uebung::start -->
 <span style="color: green;">_ÜBUNG_</span> <span style="color:magenta;">**LF09:08:Bit-Operatoren:01**</span>
 
-* [ ] Beschreiben Sie, was [→ ZP:Sheet:7]  besagt.
+* [ ] Beschreiben Sie, was [→ ZP:Sheet:7] besagt.
 
 <!-- uebung::end -->
 
 
 Lösung:
 
-**(A) Was ist hier logische los?** [→ ZP:Sheet:7]
+**A) [→ ZP:Sheet:7]** ist dieselbe logische Verküpfung zweier Aussagen, einmal in Python, einmal in C/C++
 
 
 ```
 # PYTHON-Example:
 x=2
-if x % 2 == 0 AND x % 3 == 0 : 
+if x % 2 == 0 and x % 3 == 0 : 
   print("durch 2 und 3 teilbar")
 else:
   print("nicht durch 2 und 3 teilbar")
@@ -117,7 +117,7 @@ else {
 
 ```
 
-Lösung: Logische Verknüpfung zweier Aussagen
+
 
 ---
 
@@ -131,7 +131,7 @@ Lösung: Logische Verknüpfung zweier Aussagen
 
 Lösung:
 
-**(B) Was ist hier logische los?** [→ ZP:Sheet:8]
+**(B) [→ ZP:Sheet:8] ** enthält unerfüllbare Bedingung**
 
 ```
 # PYTHON-Riddle:
@@ -142,10 +142,8 @@ else:
   print("häh?")
 ```
 
-Lösung: Unerfüllbare Bedingung
-
-- `2 % 2` ist niemals positiv
-- `4 & 2` == `0b0100 & 0b0010` == `0b0000` ist niemals 1
+- `2 % 2` ist niemals true, weil `%-Rest = 0`
+- `4 & 2` == `0b0100 & 0b0010` == `0b0000` : ergo nicht 1 : ergo false
 - if-statement braucht logischer Verknüpfung wegen nur ersten Test auszurechnen
 
 
@@ -161,5 +159,8 @@ Lösung: Unerfüllbare Bedingung
 
 ---
 
+Lösung:
 
-
+* `168 & 128` →  `(128|40) & 128` →  `128`
+* (`2==2` → `T`) `&&` (`"Birne"=="Apfel"`  → `F`))  → `(T && F)`  → `F`
+- Entscheidung erst im letzten logischen Term

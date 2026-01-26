@@ -1,7 +1,7 @@
 ---
 title: 'LFCX:py2rf'
 author: [K. Reincke]
-date: 2025-08-18
+date: 2026-01-23
 keywords: [Python Refresher]
 header-left: "\\theauthor"
 header-center: "proTironeComputatri"
