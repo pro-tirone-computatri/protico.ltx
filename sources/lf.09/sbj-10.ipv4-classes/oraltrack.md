@@ -164,10 +164,13 @@ Nehmen wir an, ich hätte überraschend doch noch 256 routbare, unverbrauchte IP
   
 <!-- uebung::end -->
 
+Lösung **[→ ZP:Sheet:9]**
+
+
 <!-- uebung::start -->
 <span style="color: green;">_ÜBUNG_</span> <span style="color:magenta;">LF09:10:Segmentierung:02</span>
 
-**[→ ZP:Sheet:9]**
+**[→ ZP:Sheet:10]**
 
 Setzen Sie bitte für Ihre Firma ein IPv4-basiertes Netzwerk auf. Ihre Firma hat dazu folgende Eigenarten und Wünsche:
 
@@ -197,7 +200,7 @@ Bitte planen Sie ein Netz, dass die Wünsche durch eine geeignete Segmentierung 
 
 **Lösung:** 
 
-**LF09:02:02 [→ ZP:Sheet:10] Initiale Bedarfsanalyse**
+**LF09:02:02 [→ ZP:Sheet:11] Initiale Bedarfsanalyse**
 
 * _Abkürzungen_
   * **E** = Employees / Mitarbeiter
@@ -221,7 +224,7 @@ Bitte planen Sie ein Netz, dass die Wünsche durch eine geeignete Segmentierung 
 
 → Das Netzwerkdesign wird zu einem mehrstufigen, iterativen Prozess.
 
-**LF09:02:02 [→ ZP:Sheet:11] initiales Netzwerkdesign**
+**LF09:02:02 [→ ZP:Sheet:12] initiales Netzwerkdesign**
 
 * *Minimal Viable Product* : 1 Core-Netz, alle Rechner im Core-Netz, 1 Router im Core-Netz mit Hopping heraus ins Internet (Core-Dateway).
 * *Erweiterungen*: 
@@ -234,7 +237,7 @@ Bitte planen Sie ein Netz, dass die Wünsche durch eine geeignete Segmentierung 
   * X:) 2. Router in DEV mit Interface nach PROD
   * Z:) Goldplating: Router in MNG mit Interface nach HR und DEa etc.
 
-**LF09:02:02 [→ ZP:Sheet:12] Bereinigte Bedarfsanalyse**
+**LF09:02:02 [→ ZP:Sheet:13] Bereinigte Bedarfsanalyse**
 
 * _Abkürzungen_
   * **E** = Employees / Mitarbeiter
@@ -255,8 +258,8 @@ Bitte planen Sie ein Netz, dass die Wünsche durch eine geeignete Segmentierung 
    * Die Zugriffe müssen zusätzlich zu Netzwerkstruktur per Firewall-Regeln in den zuständigen Routern begrenzt werden. 
 
 
-**LF09:02:02 [→ ZP:Sheet:13] Adressinstantiierung**
+**LF09:02:02 [→ ZP:Sheet:14] Adressinstantiierung**
 
-**LF09:02:02 [→ ZP:Sheet:14] Finales Netzwerkdesign**
+**LF09:02:02 [→ ZP:Sheet:15] Finales Netzwerkdesign**
 
 

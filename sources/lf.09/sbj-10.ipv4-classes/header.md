@@ -1,7 +1,7 @@
 ---
 title: 'LF09:10:IPv4-Netzsegmentierung'
 author: [K. Reincke]
-date: 2026-01-26
+date: PTCDATE
 keywords: [Layer-II, Layer-III, IPv4-Adressen, IPv4-Netzklassen, Segmentierung]
 header-left: "\\theauthor"
 header-center: "proTironeComputatri"

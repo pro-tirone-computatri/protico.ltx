@@ -93,7 +93,11 @@ Lesehinweis: die logischen Zeichen sind im Font dieses Textes nicht darstellbar,
 
 Lösung:
 
-**A) [→ ZP:Sheet:7]** ist dieselbe logische Verküpfung zweier Aussagen, einmal in Python, einmal in C/C++
+**A) [→ ZP:Sheet:7]** 
+
+* soll dieselbe logische Verknüpfung zweier Aussagen sein, einmal in Python, einmal in C/C++
+* ist es tatsächlich aber nicht: C++-Beispiel testet, ob bei `x / 2' Rest bleibt, wenn
+  ja : 'durch 2 teilbar'. Ein Rest bleibt aber: wenn nicht durch 2 teilbar!
 
 
 ```
@@ -109,10 +113,10 @@ else:
 /* C++ Example */
 int x=2;
 if ((x % 2) && (x % 3)) {
-  cout << "durch 2 und 3 teilbar";
+  cout << "durch 2 und 3 teilbar - hmmh?";
 }
 else {
-  cout << "nicht durch 2 und 3 teilbar";
+  cout << "nicht durch 2 und 3 teilba - hmmh?";
 }
 
 ```

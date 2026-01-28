@@ -1,7 +1,7 @@
 ---
 title: 'LF03:08:Bitweise Verknüpfung'
 author: [K. Reincke]
-date: 2025-08-18
+date: 2026-01-26
 keywords: [Layer I, Layer-II, Layer-III, MAC-Adressen, IPv4-Adressen]
 header-left: "\\theauthor"
 header-center: "proTironeComputatri"

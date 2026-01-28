@@ -17,7 +17,11 @@ These are the (main) contributors to the project *proTironeComputatri*
   * Folie 'Gummibärchensalat/FOSS' zur Weiterverwertung 
 * Gewerbliche Schulen Dillenburg / Klasse 12ip/iv23 mit
     Almamy, Berdan, Carl, Charlotte, Daniel, Eray, Fabian, Gennaro,
-    Keanoosh, Manuel, Mustafa, Nuri, Phil, Sabrina, Sky, Stefan 
+    Keanoosh, Manuel, Mustafa, Nuri, Phil, Sabrina, Sky, Stefan, 
     Tim, Valbon, Felix, Jacob, Justin, Melanie
   * 'Lernfeld 11c' converter code concerning data preparation
+* Gewerbliche Schulen Dillenburg / Klasse 11iv24 mit
+    Alexander, David, Daniel, Dominika, Evelina, Faezah,
+    Janis, Jenny, Juliana, Justin, Luca, Matts, Tim, Waldemar
+  * 'Lernfeld 9' Bilder vom Fadennetzwerk etc.
   

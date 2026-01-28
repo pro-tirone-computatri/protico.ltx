@@ -82,6 +82,38 @@ Wie im realen Berufsleben: **_eine überraschende Kommunikationsaufgabe_**, der 
 
 Dies vorab vorzubereiten, macht uns bei der Präsentation, der Debatte oder dem Vortrag ruhig. Und unsere Ruhe sorgt für Geborgenheit beim Publikum.
 
+<!-- uebung::start -->
+<span style="color: green;">_ÜBUNG_</span> <span style="color:magenta;">**LFCX:Rhetorik:02**</span>
+
+
+*Wiederholung mit Vorbereitungszeit für Spickzettel*:
+
+* Vorbereiten: 4 gefaltete Zettel, je einen mit dem Wort "1. Katze", "2. Hund", "3. Esel" 
+  bzw. "4. Küchenschabe".
+* Vier Schülerinnen wählen im Geheimen je einen Zettel. Was darauf steht, sagen sie niemandem.
+
+*Ansage*: 
+
+* [ ] Dieselben Regeln wie unter (1).
+* [ ] Zusätzlich: Jeder 120 sec. für das Schreiben eines Spickzettels
+  
+*Ausführung*:
+
+* Reihenfolge jetzt die der NUmmern
+
+*Auswertung*: "Was ist nun das wichtigste Tier?"
+
+* [ ] Stimmen für *Katze*:
+* [ ] Stimmen für *Hund*:
+* [ ] Stimmen für *Esel*:
+* [ ] Stimmen für *Küchenschabe*:
+
+<!-- uebung::end -->
+
+---
+
+Auswertung: ... wie oben.
+
 ### 4. Die eigene inhaltliche Vorbereitung [→ ZP:Sheet:5]
 
 #### 4.A

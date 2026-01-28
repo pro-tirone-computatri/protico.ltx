@@ -91,5 +91,10 @@ Lesehinweis: die logischen Zeichen sind im Font dieses Textes nicht darstellbar,
 
 ---
 
+Lösung:
+
+* `168 & 128` →  `(128|40) & 128` →  `128`
+* (`2==2` → `T`) `&&` (`"Birne"=="Apfel"`  → `F`))  → `(T && F)`  → `F`
+- Entscheidung erst im letzten logischen Term
 
 
