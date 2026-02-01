@@ -1,7 +1,7 @@
 ---
 title: 'LF09:05:ARP\&SWITCH'
 author: [K. Reincke]
-date: 2025-08-18
+date: PTCDATE
 keywords: [Layer I, Layer-II, ARP, Switch]
 header-left: "\\theauthor"
 header-center: "proTironeComputatri"

@@ -1,7 +1,7 @@
 ---
 title: 'LF09:01:Fadennetzwerk'
 author: [K. Reincke]
-date: 2025-09-01
+date: PTCDATE
 keywords: [Fadennetzwerk]
 header-left: "\\theauthor"
 header-center: "proTironeComputatri"

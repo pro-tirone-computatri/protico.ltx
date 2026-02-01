@@ -1,7 +1,7 @@
 ---
 title: 'LF00:00:00:topic'
 author: [K. Reincke]
-date: 2025-04-28
+date: PTCDATE
 keywords: [tpc-00.name]
 header-left: "\\theauthor"
 header-center: "proTironeComputatri"

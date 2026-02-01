@@ -22,8 +22,8 @@ texFiles:
 	@ echo "### (1) collecting relevant tex files"
 	@ make texFiles
 	@ echo "### (2) computing the image reference"
-	@ bash ../../../../bin/collect-img-meta-data.sh `cat ../../../td.lf`
-	@ python3 ../../../../bin/write-img-meta-data-list.py > inc-image-list.tex
+	@ bash ../../../bin/collect-img-meta-data.sh `cat ../../td.lf`
+	@ python3 ../../../bin/write-img-meta-data-list.py > inc-image-list.tex
 	@ echo "### (2) converting $< to $@"
 	@ pdflatex -shell-escape $<
 	@ biber `basename $< .tex`

@@ -1,7 +1,7 @@
 ---
 title: 'LF00:00:Deep'
 author: [K. Reincke]
-date: 2025-04-28
+date: PTCDATE
 keywords: [sbj-00.name]
 header-left: "\\theauthor"
 header-center: "proTironeComputatri"

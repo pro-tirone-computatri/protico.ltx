@@ -2,9 +2,9 @@
 # converts a csv file of day data into the respective ini file: VP-0.1
 
 # intermediate representation and hard-coded testdata
-dd_hard_coded=(
+dd_hard_coded=[
 { "day":"2026-01-01", "sunrise": "08:29","sunset": "16:31","durance": "08:02"},
-{ "day":"2026-01-02", "sunrise": "08:29","sunset": "16:32","durance": "08:03"}) 
+{ "day":"2026-01-02", "sunrise": "08:29","sunset": "16:32","durance": "08:03"}] 
 
 # adapters to read daydata from a file
 def fill_from_csv(filename) :
@@ -33,13 +33,13 @@ def write_as_csv(filename,daydata):
 # main
 
 # the clarified version of dsp.beta.xyz:
-# data-set-0 - data-set-3. accepted, data-set-4 rejected: inconsistent double
+# data-set-0 - data-set-3. accepted, data-set-4 rejectevi d: inconsistent double
 dd_file="dsp.lf/dsp.beta.csv";
-dd_test_file="dsp.lf/dsp.beta-td.csv"; # test data set
+dd_test_file="dsp.lf/dsp.beta-t.csv"; # test data set
 dd_csv_file="res.lf/daydata.csv";
 dd_ini_file="res.lf/daydata.ini";
 
-daydata=fill_from_csv(dd_test_file)
+daydata=fill_from_csv(dd_file)
 #daydata=dd_hard_coded
 
 if (daydata):

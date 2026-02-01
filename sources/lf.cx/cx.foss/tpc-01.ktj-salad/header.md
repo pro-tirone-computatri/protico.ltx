@@ -1,7 +1,7 @@
 ---
 title: 'LFCX:FOSS:KTJ-Salat'
 author: [K. Reincke]
-date: 2025-04-28
+date: PTCDATE
 keywords: ["Open Source", "Free Sofwtare"]
 header-left: "\\theauthor"
 header-center: "proTironeComputatri"

@@ -1,7 +1,7 @@
 ---
 title: 'LF03:06:Adresssysteme'
 author: [K. Reincke]
-date: 2025-08-18
+date: PTCDATE
 keywords: [Layer I, Layer-II, MAC-Adressen]
 header-left: "\\theauthor"
 header-center: "proTironeComputatri"

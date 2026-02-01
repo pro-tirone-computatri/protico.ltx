@@ -1,7 +1,7 @@
 ---
 title: 'LF11c:99:condensates'
 author: [K. Reincke]
-date: 2025-08-18
+date: PTCDATE
 keywords: [sbj-00.flat]
 header-left: "\\theauthor"
 header-center: "proTironeComputatri"

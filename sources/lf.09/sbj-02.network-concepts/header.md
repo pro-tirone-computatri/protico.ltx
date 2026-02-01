@@ -1,7 +1,7 @@
 ---
 title: 'LF09:02:Netzwerktaxonomien'
 author: [K. Reincke]
-date: 2025-11-09
+date: PTCDATE
 keywords: [Netzwerkbegriffe]
 header-left: "\\theauthor"
 header-center: "proTironeComputatri"

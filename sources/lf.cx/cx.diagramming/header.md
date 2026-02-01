@@ -1,7 +1,7 @@
 ---
 title: 'LFCX:Diagramme'
 author: [K. Reincke]
-date: 2025-09-01
+date: PTCDATE
 keywords: [Diagrammerstellung LF09]
 header-left: "\\theauthor"
 header-center: "proTironeComputatri"

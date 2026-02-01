@@ -1,7 +1,7 @@
 ---
 title: 'LFCX:Erstbegegnung'
 author: [K. Reincke]
-date: 2025-09-06
+date: PTCDATE
 keywords: [Self Introduction Selbstvorstellung]
 header-left: "\\theauthor"
 header-center: "proTironeComputatri"

@@ -1,7 +1,7 @@
 ---
 title: 'LFCX:sh2go'
 author: [K. Reincke]
-date: 2025-09-04
+date: PTCDATE
 keywords: [Shell Powershell Pwsh pwsh bash Programming]
 header-left: "\\theauthor"
 header-center: "proTironeComputatri"

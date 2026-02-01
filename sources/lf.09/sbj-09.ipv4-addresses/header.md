@@ -1,7 +1,7 @@
 ---
 title: 'LF09:09:IPv4-Adressen\&-Netze'
 author: [K. Reincke]
-date: 2026-01-26
+date: PTCDATE
 keywords: [Layer-II, Layer-III, MAC-Adressen, IPv4-Adressen, IPv4-Netze]
 header-left: "\\theauthor"
 header-center: "proTironeComputatri"

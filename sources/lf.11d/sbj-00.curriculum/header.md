@@ -2,7 +2,7 @@
 title: LF11d:00:Curriculum
 author: [K. Reincke]
 subject: "lf11c/sbj-00"
-date: 2025-08-19
+date: PTCDATE
 keywords: [LF11c Curriculum]
 header-left: "\\theauthor"
 header-center: "proTironeComputatri"

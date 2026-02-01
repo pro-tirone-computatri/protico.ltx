@@ -2,7 +2,7 @@
 title: 'LF03:00:Curriculum'
 author: [K. Reincke]
 subject: "lf03/sbj-01"
-date: 2025-09-02
+date: PTCDATE
 keywords: [LF03 Curriculum]
 header-left: "\\theauthor"
 header-center: "proTironeComputatri"

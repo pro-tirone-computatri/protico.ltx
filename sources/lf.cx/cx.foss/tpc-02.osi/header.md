@@ -1,7 +1,7 @@
 ---
 title: 'LFCX:FOSS:OSI'
 author: [K. Reincke]
-date: 2025-09-17
+date: PTCDATE
 keywords: [FOSS, "Open Source Initiative", OSI]
 header-left: "\\theauthor"
 header-center: "proTironeComputatri"

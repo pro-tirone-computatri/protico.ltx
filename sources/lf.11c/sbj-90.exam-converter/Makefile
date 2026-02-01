@@ -7,25 +7,27 @@ AUX_EXTS=tmp
 RES_EXTS=pdf
 DEL_FILE=exercises
 
-LNX_TD="../../.."
+LNX_TD="../.."
 PTC_TD="../${LNX_TD}"
 BLD=${PTC_TD}/built
+MDHTMP=mdh.tmp
 
-EVD="../../../3ps/eisvogel"
+
+EVD="../../3ps/eisvogel"
 
 help:
 	echo "make [ help | lessons | lesson-exc | exercises | lesson-ort | oraltrack | lesson-zpr | zenprese ] "
 
 # recreates all sbj documents and releases them into the lesson directory tree
-lessons: lesson-ort lesson-exc lesson-zpr
+lessons: lesson-exc lesson-ort lesson-zpr 
 
 # --- SECTION EXERCISE ---
 # recreates exercise document, releases it into the lesson directory tree
 lesson-exc: exercises 
 	@ if [ -f exercises.pdf ]; then \
-	    WD=`pwd` && TCN=`basename $${WD}` && SWD=`dirname $${WD}` && SJN=`basename $${SWD}` &&  LFN=`cat ../../td.lf` && \
-      TGD="${BLD}/$${LFN}/$${SJN}" && mkdir -p $${TGD} && \
-      mv exercises.pdf $${TGD}/$${TCN}-exercises.pdf; \
+	    WD=`pwd` && SJN=`basename $${WD}` && LFN=`cat ../td.lf` && \
+	    TGD="${BLD}/$${LFN}" && mkdir -p $${TGD} && \
+    	    mv exercises.pdf $${TGD}/$${SJN}-exercises.pdf; \
 	  fi
 	@ tree ${BLD}
 
@@ -38,12 +40,15 @@ exercises:
 # --- SECTION ORALTRACK ---
 # recreates oraltrack document, releases it into the lesson directory tree
 lesson-ort: oraltrack
-	@ WD=`pwd` && TCN=`basename $${WD}` && SWD=`dirname $${WD}` && SJN=`basename $${SWD}` &&  LFN=`cat ../../td.lf` && \
-    TGD="${BLD}/$${LFN}/$${SJN}" && mkdir -p $${TGD} && \
-    mv oraltrack.pdf $${TGD}/$${TCN}-oraltrack.pdf 
+	@ WD=`pwd` && SJN=`basename $${WD}` && LFN=`cat ../td.lf` && \
+	  TGD="${BLD}/$${LFN}" && mkdir -p $${TGD} && \
+	mv oraltrack.pdf $${TGD}/$${SJN}-oraltrack.pdf && \
+	mkdir -p $${TGD}/$${SJN}/dsp.lf && mkdir -p $${TGD}/$${SJN}/snp.lf && \
+	mkdir -p $${TGD}/$${SJN}/res.lf && \
+	cp ../dsp.lf/dsp.teta.* ../dsp.lf/dsp.teta-t.* $${TGD}/$${SJN}/dsp.lf && \
+	cp ../snp.lf/dsp-teta-conv.py ../snp.lf/mod_dsp_teta* $${TGD}/$${SJN}/snp.lf
 	@ tree ${BLD}
 
-	
 ort: oraltrack
 
 oraltrack:
@@ -52,9 +57,9 @@ oraltrack:
 # --- SECTION ZENPRESE ---
 # recreates the zp document, releases it into the lesson directory tree
 lesson-zpr: zenprese
-	@ WD=`pwd` && TCN=`basename $${WD}` && SWD=`dirname $${WD}` && SJN=`basename $${SWD}` &&  LFN=`cat ../../td.lf` && \
-    TGD="${BLD}/$${LFN}/$${SJN}" && mkdir -p $${TGD} && \
-    mv zenprese.pdf $${TGD}/$${TCN}-zenprese.pdf	
+	@ WD=`pwd` && SJN=`basename $${WD}` && LFN=`cat ../td.lf` && \
+	  TGD="${BLD}/$${LFN}" && mkdir -p $${TGD} && \
+          mv zenprese.pdf $${TGD}/$${SJN}-zenprese.pdf	
 	@ tree ${BLD}
 
 zpr: zenprese
@@ -68,7 +73,8 @@ zenprese:
 .md.pdf:
 	@ echo "### `date +'%Y%m%dT%H%M%S'`"
 	@ echo "### converting $< to $@"
-	@ pandoc header.md $< -o $@ --from markdown --template ${EVD}/eisvogel.latex --listings -V lang=de-DE
+	@ MYD=`date +'%Y-%m-%d'` && cat header.md | sed "s/PTCDATE/$${MYD}/" >${MDHTMP} 
+	@ pandoc ${MDHTMP} $< -o $@ --from markdown --template ${EVD}/eisvogel.latex --listings -V lang=de-DE
 	@ make clear
 
 clear:

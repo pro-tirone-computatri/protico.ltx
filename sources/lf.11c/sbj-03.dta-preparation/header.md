@@ -1,7 +1,7 @@
 ---
 title: 'LF11c:03:Datenaufbereitung'
 author: [K. Reincke]
-date: 2026-01-11
+date: PTCDATE
 keywords: [data,analysis]
 header-left: "\\theauthor"
 header-center: "proTironeComputatri"

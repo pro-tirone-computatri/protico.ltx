@@ -1,7 +1,7 @@
 ---
 title: 'LFCX:Rhetorik'
 author: [K. Reincke]
-date: 2025-11-09
+date: PTCDATE
 keywords: [Rhetorik, Präsentation, Debatte, Sprechen]
 header-left: "\\theauthor"
 header-center: "proTironeComputatri"

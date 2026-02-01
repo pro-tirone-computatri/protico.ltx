@@ -1,7 +1,7 @@
 ---
 title: 'LFCX:Shellprogrammierung:Tools'
 author: [K. Reincke]
-date: 2025-04-28
+date: PTCDATE
 keywords: [Powershel bash pwsh Installation]
 header-left: "\\theauthor"
 header-center: "proTironeComputatri"

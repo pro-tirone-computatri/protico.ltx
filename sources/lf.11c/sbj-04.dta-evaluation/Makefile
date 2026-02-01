@@ -10,6 +10,8 @@ DEL_FILE=exercises
 LNX_TD="../.."
 PTC_TD="../${LNX_TD}"
 BLD=${PTC_TD}/built
+MDHTMP=mdh.tmp
+
 
 EVD="../../3ps/eisvogel"
 
@@ -67,7 +69,8 @@ zenprese:
 .md.pdf:
 	@ echo "### `date +'%Y%m%dT%H%M%S'`"
 	@ echo "### converting $< to $@"
-	@ pandoc header.md $< -o $@ --from markdown --template ${EVD}/eisvogel.latex --listings -V lang=de-DE
+	@ MYD=`date +'%Y-%m-%d'` && cat header.md | sed "s/PTCDATE/$${MYD}/" >${MDHTMP} 
+	@ pandoc ${MDHTMP} $< -o $@ --from markdown --template ${EVD}/eisvogel.latex --listings -V lang=de-DE
 	@ make clear
 
 clear:

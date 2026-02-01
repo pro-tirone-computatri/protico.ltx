@@ -1,7 +1,7 @@
 ---
 title: 'LFCX:Datenaustauschformate'
 author: [K. Reincke]
-date: 2025-11-22
+date: PTCDATE
 keywords: [Datenaustausch, CSV, INI, JSON, PYTHON, YAML ]
 header-left: "\\theauthor"
 header-center: "proTironeComputatri"

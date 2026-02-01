@@ -1,7 +1,7 @@
 ---
 title: 'LF09:06:ARP,Router\&Hopping'
 author: [K. Reincke]
-date: 2025-08-18
+date: PTCDATE
 keywords: [Layer I, Layer-II, Layer-III, ARP, Router, Hopping]
 header-left: "\\theauthor"
 header-center: "proTironeComputatri"

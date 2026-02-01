@@ -1,8 +1,8 @@
 ---
-title: 'LF11c:99:2526-SMA:EL01'
+title: 'LF11c:90:Ersatzleistung:Converter'
 author: [K. Reincke]
-date: 2026-01-12
-keywords: [Konverterprogrammierung]
+date: PTCDATE
+keywords: [LF.11c, Datenanalyse, Klausur, Ersatzleitung, Connverterbau]
 header-left: "\\theauthor"
 header-center: "proTironeComputatri"
 header-right: "\\thetitle" 
@@ -13,4 +13,4 @@ lang: "de-DE"
 papersize: a4
 colorlinks: true
 ---
-### LF11c:99:2526-SMA:EL01 
+## LF11c:90:Ersatzleistung:Converter

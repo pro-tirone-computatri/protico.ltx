@@ -13,6 +13,8 @@ INCOLL=tmp.tmp
 LNX_TD="../.."
 PTC_TD="../${LNX_TD}"
 BLD=${PTC_TD}/built
+MDHTMP=mdh.tmp
+
 
 EVD="../../3ps/eisvogel"
 
@@ -20,11 +22,7 @@ help:
 	echo "make [ help | lessons | lesson-exc | exercises | lesson-ort | oraltrack | lesson-zpr | zenprese ] "
 
 # recreates all sbj documents and releases them into the lesson directory tree
-lessons: oraltrack zenprese exercises
-	@ WD=`pwd` && SJN=`basename $${WD}` && LFN=`cat ../td.lf` && \
-	  TGD="${BLD}/$${LFN}" && mkdir -p $${TGD} && \
-	  ls *.pdf | while read PDF; do mv $${PDF} $${TGD}/$${SJN}-$${PDF}; done
-	@ tree ${BLD}
+lessons: lesson-exc lesson-ort lesson-zpr 
 
 # --- SECTION EXERCISE ---
 # recreates exercise document, releases it into the lesson directory tree
@@ -72,7 +70,8 @@ oraltrack:
 			echo "adopting content of $$f";\
 	  done;\
 	done;
-	@ pandoc header.md ${INCOLL} -o oraltrack.pdf --from markdown --template ${EVD}/eisvogel.latex --listings -V lang=de-DE
+	@ MYD=`date +'%Y-%m-%d'` && cat header.md | sed "s/PTCDATE/$${MYD}/" >${MDHTMP} 
+	@ pandoc ${MDHTMP} ${INCOLL} -o oraltrack.pdf --from markdown --template ${EVD}/eisvogel.latex --listings -V lang=de-DE
 	@ make clear
 
 # --- SECTION ZENPRESE ---
@@ -94,7 +93,8 @@ zenprese:
 .md.pdf:
 	@ echo "### `date +'%Y%m%dT%H%M%S'`"
 	@ echo "### converting $< to $@"
-	@ pandoc header.md $< -o $@ --from markdown --template ${EVD}/eisvogel.latex --listings -V lang=de-DE
+	@ MYD=`date +'%Y-%m-%d'` && cat header.md | sed "s/PTCDATE/$${MYD}/" >${MDHTMP} 
+	@ pandoc ${MDHTMP} $< -o $@ --from markdown --template ${EVD}/eisvogel.latex --listings -V lang=de-DE
 	@ make clear
 
 clear:

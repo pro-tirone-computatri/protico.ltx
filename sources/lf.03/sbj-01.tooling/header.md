@@ -1,7 +1,7 @@
 ---
 title: 'LF03:01:Tools'
 author: [K. Reincke]
-date: 2025-09-02
+date: PTCDATE
 keywords: [Tooling LF03]
 header-left: "\\theauthor"
 header-center: "proTironeComputatri"

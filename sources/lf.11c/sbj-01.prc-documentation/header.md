@@ -2,7 +2,7 @@
 title: LF11c:01:Prozessanalyse
 author: [K. Reincke]
 subject: "lf11c/sbj-01"
-date: 2025-09-21
+date: PTCDATE
 keywords: [LF11c Prozessanalyse]
 header-left: "\\theauthor"
 header-center: "proTironeComputatri"

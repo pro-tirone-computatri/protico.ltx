@@ -10,6 +10,7 @@ DEL_FILE=exercises
 LNX_TD="../../.."
 PTC_TD="../${LNX_TD}"
 BLD=${PTC_TD}/built
+MDHTMP=mdh.tmp
 
 EVD="../../../3ps/eisvogel"
 
@@ -68,7 +69,8 @@ zenprese:
 .md.pdf:
 	@ echo "### `date +'%Y%m%dT%H%M%S'`"
 	@ echo "### converting $< to $@"
-	@ pandoc header.md $< -o $@ --from markdown --template ${EVD}/eisvogel.latex --listings -V lang=de-DE
+	@ MYD=`date +'%Y-%m-%d'` && cat header.md | sed "s/PTCDATE/$${MYD}/" >${MDHTMP} 
+	@ pandoc ${MDHTMP} $< -o $@ --from markdown --template ${EVD}/eisvogel.latex --listings -V lang=de-DE
 	@ make clear
 
 clear:
@@ -78,6 +80,5 @@ clear:
 clean:	clear
 	$(foreach EXT, ${RES_EXTS}, @if [ ! "x`ls *.${EXT} 2>/dev/null`" = "x" ]; then rm *.${EXT}; echo "removing existing .${EXT}-target-files"; fi;)
 	$(foreach BNA, ${DEL_FILE}, @if [ ! "x`ls ${BNA}.* 2>/dev/null`" = "x" ]; then rm ${BNA}.*; echo "removing existing derivated ${BNA}.*"; fi;)
-
 	(cd zp && make clean)
 

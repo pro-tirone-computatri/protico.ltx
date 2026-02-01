@@ -1,7 +1,7 @@
 ---
 title: 'LFCX:FOSS'
 author: [K. Reincke]
-date: 2025-09-12
+date: PTCDATE
 keywords: ["Open Source", "Free Software", 'CC-Lizenzen', 'Creative Commons']
 header-left: "\\theauthor"
 header-center: "proTironeComputatri"

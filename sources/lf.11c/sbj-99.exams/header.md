@@ -1,7 +1,7 @@
 ---
 title: 'LF11c:99:Klausuren'
 author: [K. Reincke]
-date: 2026-01-11
+date: PTCDATE
 keywords: [Klausur]
 header-left: "\\theauthor"
 header-center: "proTironeComputatri"

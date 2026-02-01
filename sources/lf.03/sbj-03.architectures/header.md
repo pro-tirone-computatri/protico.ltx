@@ -1,7 +1,7 @@
 ---
 title: 'LF03:03:Systemarchitekturen'
 author: [K. Reincke]
-date: 2025-11-04
+date: PTCDATE
 keywords: [client-server-systeme, peer-to-peer, edge-computing, clouds, cloudcomputing]
 header-left: "\\theauthor"
 header-center: "proTironeComputatri"

@@ -1,7 +1,7 @@
 ---
 title: LFCX:FOSS:CC-Lizenzen
 author: [K. Reincke]
-date: 2025-09-17
+date: PTCDATE
 keywords: [FOSS, Bilder, Fotografien, Creative Commons]
 header-left: "\\theauthor"
 header-center: "proTironeComputatri"

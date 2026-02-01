@@ -2,7 +2,7 @@
 title: "DE:Curriculum"
 author: [K. Reincke]
 subject: "DE 01/00"
-date: 2025-09-02
+date: PTCDATE
 keywords: [DE, Deutsch, Curriculum]
 header-left: "\\theauthor"
 header-center: "proTironeComputatri"

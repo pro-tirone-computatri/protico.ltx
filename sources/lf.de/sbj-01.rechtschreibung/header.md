@@ -2,7 +2,7 @@
 title: "DE:Rechtschreibung:"
 author: [K. Reincke]
 subject: "DE 01/00"
-date: 2025-09-17
+date: PTCDATE
 keywords: [DE, Deutsch, Rechtschreibung ]
 header-left: "\\theauthor"
 header-center: "proTironeComputatri"

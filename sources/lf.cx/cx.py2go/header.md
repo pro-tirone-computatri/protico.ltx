@@ -1,7 +1,7 @@
 ---
 title: 'LFCX:py2go'
 author: [K. Reincke]
-date: 2025-11-24
+date: PTCDATE
 keywords: [python]
 header-left: "\\theauthor"
 header-center: "proTironeComputatri"

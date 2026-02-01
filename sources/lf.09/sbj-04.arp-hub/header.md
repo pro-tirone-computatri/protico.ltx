@@ -1,7 +1,7 @@
 ---
 title: 'LF09:04:ARP\&HUB'
 author: [K. Reincke]
-date: 2025-08-18
+date: PTCDATE
 keywords: [Layer I, Layer-II, ARP, Hub]
 header-left: "\\theauthor"
 header-center: "proTironeComputatri"

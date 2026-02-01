@@ -3,14 +3,14 @@
 # converts a csv file of day data into the respective ini file: VP-0.1
 
 # intermediate representation and hard-coded testdata
-dd_hard_coded=(
+dd_hard_coded=[
 { "day":"2026-01-01", "sunrise": "08:29","sunset": "16:31","durance": "08:02"},
-{ "day":"2026-01-02", "sunrise": "08:29","sunset": "16:32","durance": "08:03"}) 
+{ "day":"2026-01-02", "sunrise": "08:29","sunset": "16:32","durance": "08:03"}] 
 
 # adapters to read daydata from a file
 def fill_from_csv(filename) :
   print(f"reading from csv file <{filename}>")
-  daydata=()
+  daydata=[]
   return daydata
 
 # adapters to write daydata into a file

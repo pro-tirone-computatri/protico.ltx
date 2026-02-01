@@ -1,7 +1,7 @@
 ---
 title: 'LFCX:Tooling'
 author: [K. Reincke]
-date: 2025-09-04
+date: PTCDATE
 keywords: [Installation PWSH Powershel VSCode VSCodium draw.io]
 header-left: "\\theauthor"
 header-center: "proTironeComputatri"

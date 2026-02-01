@@ -1,0 +1,140 @@
+% This file is part of the Open Source project 'proTironeComputatri'
+% (c) 2025 Karsten Reincke (https://github.com/pro-tirone-computatri/protico.ltx)
+% It is distributed under the terms of the creative commons license
+% CC-BY-4.0 (= https://creativecommons.org/licenses/by/4.0/)
+
+\selectlanguage{ngerman}
+
+\begin{frame}[fragile]  
+  \frametitle{LF11c::EL:Konverter:\texttt{xyz$\rightarrow$json}:Step-01/02} 
+
+  \begin{footnotesize}
+    initial in einer Zeile erhalten:
+  \end{footnotesize}
+  \begin{center}
+  \begin{minipage}{0.95\textwidth}
+
+    \inputminted [fontsize=\tiny]{python}{\dspLf/dsp.teta.xyz}
+  \end{minipage}
+  \end{center}
+    
+  \begin{footnotesize}
+    manuell in CSV umgewandelt = Zeilenweise formatiert, Komma am Zeilenende entfernt
+  \end{footnotesize}
+
+  \begin{center}
+  \begin{minipage}{0.8\textwidth}
+    \begin{minted}[fontsize=\footnotesize,linenos=true]{python}
+id, exercise-date, 3 * (targetvalue, is-value)
+    \end{minted}
+    \inputminted [fontsize=\footnotesize]{python}{\dspLf/dsp.teta.csv}
+  \end{minipage} 
+  \end{center}
+
+\end{frame}
+
+\begin{frame}[fragile]  
+  \frametitle{LF11c::EL:Konverter:\texttt{xyz$\rightarrow$csv}:Step-03} 
+
+  \begin{footnotesize}
+   Datum in Datensatz  7 + 14 bereinigt, Datensätze 14/15 vertauscht 
+  \end{footnotesize}
+
+  \begin{center}
+  \begin{minipage}{0.8\textwidth}
+    \inputminted [fontsize=\footnotesize]{python}{\dspLf/dsp.teta-c.csv}
+  \end{minipage} 
+  \end{center}
+
+  \begin{footnotesize}
+   Testdaten abgespalten: 
+  \end{footnotesize}
+
+  \begin{center}
+  \begin{minipage}{0.8\textwidth}
+    \inputminted [fontsize=\footnotesize]{python}{\dspLf/dsp.teta-t.csv}
+  \end{minipage} 
+  \end{center}
+
+
+\end{frame}
+
+\begin{frame}[fragile]  
+  \frametitle{LF11c::EL:Konverter:\texttt{xyz$\rightarrow$json}:Step-04:MVP} 
+
+  \begin{center}
+  \begin{minipage}{0.8\textwidth}
+    \inputminted [fontsize=\tiny,linenos]{python}{\snpLf/dsp-teta-conv-mvp.py}
+  \end{minipage}
+  \end{center}
+\end{frame}
+
+
+\begin{frame}[fragile]  
+  \frametitle{LF11c::EL:Konverter:\texttt{xyz$\rightarrow$json}:Step-04:VP-0.1} 
+
+  \begin{center}
+  \begin{minipage}{0.8\textwidth}
+    \inputminted [fontsize=\tiny,linenos]{python}{\snpLf/dsp-teta-conv-vp01.py}
+  \end{minipage}
+  \end{center}
+\end{frame}
+
+\begin{frame}[fragile]  
+  \frametitle{LF11c::EL:Konverter:\texttt{xyz$\rightarrow$json}:Step-05:VP-0.2a} 
+
+  \begin{center}
+  \begin{minipage}{0.8\textwidth}
+    \inputminted [fontsize=\tiny,linenos]{python}
+      {\snpLf/mod_dsp_teta_conv_csv.py}
+  \end{minipage}
+  \end{center}
+\end{frame}
+
+\begin{frame}[fragile]  
+  \frametitle{LF11c::EL:Konverter:\texttt{xyz$\rightarrow$json}:Step-05:VP-0.2b} 
+
+  \begin{center}
+  \begin{minipage}{0.8\textwidth}
+    \inputminted [fontsize=\tiny,linenos]{python}
+      {\snpLf/mod_dsp_teta_conv_json.py}
+  \end{minipage}
+  \end{center}
+\end{frame}
+
+\begin{frame}[fragile]  
+  \frametitle{LF11c::EL:Konverter:\texttt{xyz$\rightarrow$json}:Step-05:VP-1.0} 
+
+  \begin{center}
+  \begin{minipage}{0.8\textwidth}
+    \inputminted [fontsize=\tiny,linenos]{python}
+      {\snpLf/dsp-teta-conv.py}
+  \end{minipage}
+  \end{center}
+\end{frame}
+
+\begin{frame}[fragile]  
+  \frametitle{LF11c::EL:Konverter:\texttt{xyz$\rightarrow$json}:Step-06:VP-1.1}
+
+  \begin{center}
+  \begin{minipage}{0.8\textwidth}
+    \inputminted [fontsize=\tiny,linenos]{python}
+      {\snpLf/mod_dsp_teta_condensed_csv.py}
+  \end{minipage}
+  \end{center}
+\end{frame}
+
+\begin{frame}  
+  \frametitle{LF11c::EL:Konverter:\texttt{xyz$\rightarrow$json}:Step-07:Usage}
+
+  \begin{center}
+    \includegraphics[height=5cm]{\imgLf/plank-musculature.png}
+  \end{center}
+
+  \begin{flushright}
+    \begin{footnotesize}
+  Data taken from a tool for strengthen your body: \href{https://plankpad.com/de}{https://plankpad.com/de}
+    \end{footnotesize}
+  \end{flushright}
+
+\end{frame}

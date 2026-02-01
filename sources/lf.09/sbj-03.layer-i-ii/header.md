@@ -1,7 +1,7 @@
 ---
 title: 'LF09:03:Netzwerklayer I-II'
 author: [K. Reincke]
-date: 2025-11-09
+date: PTCDATE
 keywords: [Netzwerklayer-I, Netzwerklayer-II]
 header-left: "\\theauthor"
 header-center: "proTironeComputatri"
