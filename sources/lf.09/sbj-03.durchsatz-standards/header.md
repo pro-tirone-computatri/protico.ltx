@@ -1,5 +1,5 @@
 ---
-title: 'LF09:03:Netzwerklayer I-II'
+title: 'LF09:03:Netzwerk:Datendurchsatz'
 author: [K. Reincke]
 date: PTCDATE
 keywords: [Netzwerklayer-I, Netzwerklayer-II]
@@ -13,4 +13,4 @@ lang: "de-DE"
 papersize: a4
 colorlinks: true
 ---
-## LF09:03:Netzwerklayer I-II
+## LF09:03:Netzwerk:Datendurchsatz und andere Layer-I-II-Standards
