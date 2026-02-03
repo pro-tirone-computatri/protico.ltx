@@ -1,0 +1,10 @@
+ISO_11801_Cable = CableSchield '/' PairShield CableTyp;
+CableSchield = Unshieled | Screened | Foiled;
+PairShield = Unshieled | Shielded | Schieled Foiled;
+CableType = TwistedPair | QuadPair;
+Unshielded = 'U';
+Screened = 'S';
+Schieled = 'S';
+Foiled = 'F';
+TwistedPair = 'TP';
+QuadPair = 'QP';

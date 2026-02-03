@@ -6,9 +6,8 @@
 -->
 <!-- LTeX:Language=de-DE -->
 
-**[→ ZP:Sheet:1]**
 
-### 1. Kabeltypen 
+### 1. Kabeltypen **[→ ZP:Sheet:2]**
 
 * **Thin-Wire** (Koaxialkabel):
   * *10BASE2* = dünnes, flexibles Koaxialkabel (→  Thin Ethernet, ThinWire oder Cheapernet)
@@ -19,24 +18,25 @@
   * *10BASE-T* für Stern-Topologien 
 * **Glasfaser** für die universelle Gebäude-Verkabelung (UGV)
 
-Differenziert auch nach der Kabelabschirmung 
+Differenziert auch nach der Kabelabschirmung **[→ ZP:Sheet:3]**
 
-Benennungsschema:
+Benennungsschema nach ISO-11801: **[→ ZP:Sheet:4]**
 
-1. Kabelbezeichner :- Gesamtabschirmung '/' Adernpaarabschirmung Kabelbeschaffenheit
-2. Gesamtabschirmung :- [ U (ungeschirmt) | F (Folienschirm) | S (Geflechtschirm) | SF (Geflecht- und Folienschirm) ]
-3. Adernpaarabschirmung :- [ U (ungeschirmt) | F (Folienschirm) | S (Geflechtschirm) ]
-4. Kabelbeschaffenheit :- [ TP (Twisted Pair) | QP (Quad Pair) ]
+* Gesamtabschirmung '/' Adernpaarabschirmung InnererKabeltyp
+
+* Gesamtabschirmung :- [ U (ungeschirmt/unshieled) | F (Folienschirm/foiled) | S (Geflechtschirm/screened) | SF (Geflecht- und Folienschirm) ]
+* Adernpaarabschirmung :- [ U (ungeschirmt/unshieled) | F (Folienschirm/foiled) | S (Geflechtschirm/shieled) ]
+* InnererKabeltyp* :- [ TP (Twisted Pair) | QP (Quad Pair) ]
 
 ergibt: U/UTP, S/STP, F/STP, S/UTP, F/UTP oder SF/UTP
 
 Vereinfacht:
 
-* **UTP** = *Unshielded Twisted Pair* (Cat5e-Kabel): 
+* **U/UTP** = *Unshielded Twisted Pair* (Cat5e-Kabel): 
   * Kabel einzeln gegen andere abgeschirmt (keine sonstige Abschirmung)
   * Kabel paarweise verdrillt (twisted).
   * Genutzt bei Fast- und Gigabit-Ethernet.
-* **STP** = *Shielded Twisted Pair*: 
+* **U/STP** = *Shielded Twisted Pair*: 
   * Kabel einzeln gegen andere abgeschirmt 
   * Kabel paarweise verdrillt (twisted).
   * Mit einer unbekannten Abschirmung der Paare gegeneinander.
@@ -54,6 +54,7 @@ Vereinfacht:
 * [→ Gratzke et.al: Technische IT Berufe, Lernfelder 6-9, 2022, S. 325ff]
 * [→ [https://de.wikipedia.org/wiki/Twisted-Pair-Kabel](https://de.wikipedia.org/wiki/Twisted-Pair-Kabel)]
 
+Industriebenennungen weichen Industrieshema ab.
 
 Grundsatz: je komplexer die Abschirmung, desto teurer
 
@@ -68,9 +69,12 @@ Hinweis:
 
 * **MB/s** steht für *Mega__bytes_* per Seconds
 * **Mbps** steht für *Mega__bits_* per Seconds (MBits/s)
+  * Im Internetkontext auch: **MBit/s**: `1 Mbps = 1 MBit/s = 1.000.000 Bits pro Sekunde.`
+
+
 * Kleinere Einheiten:
-  * **Kbps** = **Kilo**_bits_ per Seconds
   * **KB/S** = **Kilo**_bytes_ per Seconds
+  * **Kbps** = **Kilo**_bits_ per Seconds
 * Zusammenhang Bits:
   * `1000 Bits per Second` = `10^3 Bps` = `1 Kbps`
   * `1000 Kilobits per Second` = `10^3 Kbps` = `1 Mbps` = `10^3*10^3=10^6 Bps`
@@ -90,7 +94,13 @@ von ein 2 Megabyte großes Bild, wenn man von Störung und den Protokollbytes/-b
 
 ---
 
-Lösung.
+Lösung: 
+
+```
+1.)  2 MB = 2000 KB = 16.000 KBits
+2.)  16.000 Kbits /  512 Kbps = 31.25 sec.
+
+```
 
 ### 3. Ethernetstandards
 
@@ -112,9 +122,10 @@ Umrechnung von Kilo[byte/bits] in [Bytes/Bits] oft unklar kommuniziert:
 
 > Da `2^10` = 1024 sehr nahe bei 1000 liegt, bürgerte es sich ein, bei 
 > Größenangaben von Datenmengen in Bit und Byte den 
-> Vorsatz Kilo für 1024 zu verwenden
+> Vorsatz Kilo für 1024 zu verwenden (→ [https://de.wikipedia.org/wiki/Vorsätze_für_Maßeinheiten](https://de.wikipedia.org/wiki/Vorsätze_für_Maßeinheiten))
 
 Beispiel: 
+
 * Vom *Atari Mega STE 4* wurde gesagt, er habe "4 **MB** ST RAM"
 (→ [https://en.wikipedia.org/wiki/Atari_MEGA_STE](https://en.wikipedia.org/wiki/Atari_MEGA_STE)). 
 * Das wären 1000 Kilobytes = 1000*1000 = 10^6 Bytes gewesen.
@@ -123,12 +134,18 @@ Beispiel:
 
 Deshalb gibt es zwei gesonderte Präfixsysteme als Standard:
 
-Dezimal | Größe | Binär | Größe
-|---|---|---|---|
-| Kilo | `10^3` | Kibi | `2^10` |
-| Mega | `10^6` | Mebi | `2^20` |
-| Giga | `10^9` | Gibi | `2^30` |
-| ... | ... | ... | ... |
+Dezimal | Kürzel | Größe | Binär | Kürzel | Größe
+|---|---|---|---|---|---|
+| Kilo | K | `10^3` | Kibi | Ki | `2^10` |
+| Mega | M | `10^6` | Mebi | Mi | `2^20` |
+| Giga | G | `10^9` | Gibi | Gi | `2^30` |
+| ... | ... | ... | ... | ... | ... |
+
+Da Kibi etc. im Binärkontext entstanden und verwendet spricht man dann von
+
+* Kibibytes (KiB) / Kibibits
+* Mebibibytes (MiB) / Mebibits
+* Gibibibytes (GiB) / Gibibits
 
 usw. für Tera/Tebi, Peta/Pebi, Exa/Exbi, Zetta/Zebi, Yotta/Yobi, Ronna/Robi, Quetta/Quebi
 
@@ -139,7 +156,7 @@ usw. für Tera/Tebi, Peta/Pebi, Exa/Exbi, Zetta/Zebi, Yotta/Yobi, Ronna/Robi, Qu
 * **Kilobyte** (*KB*) = `10^3` Byte = 1000 Byte 
 * **Kibibyte** (*KiB*) = `2^10` Byte = 1024 Byte
 * **Megabyte** (*MB*) = `10^6` Byte = 1.000.000 Byte 
-* **Mebibyte** (*MiB*) = `2^20` Byte = 1.048.576 Byte
+* **Mebibyte** (*MeB*) = `2^20` Byte = 1.048.576 Byte
 * **Gigabyte** (*GB*) = `10^9` Byte =  1.000.000.000 Byte
 * **Gibibyte** (*GiB*) = `2^30` Byte = 1.073.741.824 Byte
 * **Terabyte** (*TB*) = `10^12` Byte = 1000 GB
@@ -170,6 +187,27 @@ Wie lang braucht die Übertragung?
 
 ---
 
+---
+
+<!-- uebung::start -->
+<span style="color: green;">_ÜBUNG_</span> <span style="color:magenta;">**LF09:03:Verdrahtung:03**</span>
+
+Rufen Sie eine Shell auf und setzen Sie das Kommando 
+`git clone https://github.com/pro-tirone-computatri/protico.ltx.git`
+
+
+* In welcher Einheit wird Ihnen der Fortschritt der heruntergeladenen Dateien und der Datendurchsatz reportert.
+* Was gibt Ihnen der Report als Größe des heruntergeladenen Repositories an?
+* Wie groß sind die heruntergeladenen Dateien wirklixh?
+  
+<!-- uebung::end -->
+
+Lösung: 
+
+* Stand 03.20.2026: `Receiving objects: 100% (1344/1344), 175.48 MiB | 12.53 MiB/s, done`
+* `du -sh` gibt an 157M
+
+---
 
 ### 5. Wlan-Standards
 
@@ -225,5 +263,5 @@ Zur Frage nach der Sicherheit in WLANs gehört Verschlüsselung (s.o.) und Authe
   - wird über EAP (Extensible Authentication Protocol) angesprochen
   - [→ [https://de.wikipedia.org/wiki/Remote\_Authentication\_Dial-In\_User\_Service](https://de.wikipedia.org/wiki/Remote\_Authentication\_Dial-In\_User\_Service)]
 
-
+* **WPA3** = nochmals verbesserte Verschlüsselungsmethode mit Aufgabe pre-shared-Key
 

@@ -7,10 +7,89 @@
 
 
 \begin{frame}  
-  \frametitle{LF09:03::Layer I-II: Kabeltypen }
+  \frametitle{LF09:03::Layer I-II:Kabeltypen }
   \begin{center}
     \includegraphics[height=7.5cm]{\imgGl/cable-types.png}
   \end{center}
+\end{frame}
+
+\begin{frame}  
+  \frametitle{LF09:03::Layer I-II:Kabeltypen }
+  \begin{center}
+    \includegraphics[height=7.5cm]{\imgGl/cable-types-exampels.png}
+  \end{center}
+\end{frame}
+
+\begin{frame}  
+  \frametitle{LF09:03::Layer I-II:Kabeltypen:Systematik}
+  \begin{center}
+    \includegraphics[height=7cm]{\imgGl/cable-type-systematic.png}
+  \end{center}
+  \begin{flushright}
+    \begin{tiny}
+      Screenshot taken from \href{https://en.wikipedia.org/wiki/Twisted\_pair}{https://en.wikipedia.org/wiki/Twisted\_pair}
+    \end{tiny}
+  \end{flushright}
+\end{frame}
+
+\begin{frame}[fragile]  
+   \frametitle{LF09:03::Layer I-II:Kabeltypen:Systematik:EBNF }
+  \begin{center}
+  \begin{minipage}{0.9\textwidth}
+    \inputminted[fontsize=\footnotesize,linenos]{ebnf}{\snpLf/dm-0903-cable-marker.ebnf}   
+  \end{minipage}
+  \end{center}
+
+  \vspace{0.6cm}
+  \begin{flushright}
+    \begin{tiny}
+      \textrm{\textit{(unvollständige) Cable Lable Grammar in EBNF}}
+    \end{tiny}
+  \end{flushright}
+\end{frame}
+
+\begin{frame}  
+  \frametitle{LF09:03::Layer I-II:Datendurchsatz }
+
+  \begin{tiny}
+  \begin{center}
+  \begin{table}
+  \caption{Bit-Context}
+  \renewcommand{\arraystretch}{1.5}
+  \begin{tabular}{|c||c|c|c|c|}
+    \hline
+    Size & Unit & Meaning & Size & Number \\
+    \hline
+    \hline
+    Mega & 1 Mbps (MBit/s) & 1 Megabit per Second &  $10^6$ Bits per Second & 1.000.000 $\frac{Bits}{s}$\\
+    \hline
+    Kilo & 1 Kbps (KBit/s) & 1 Kilobit per Second &  $10^3$ Bits per Second & 1.000 $\frac{Bits}{s}$ \\
+    \hline
+     - & 1 Bps (Bit/s) & 1 Bit per Second &  $1$ Bit per Second & 1 $\frac{Bit}{s}$ \\
+    \hline
+  \end{tabular}
+  \end{table}
+
+  \vspace{0.4cm}
+  \begin{table}
+  \caption{Byte-Context}
+  \renewcommand{\arraystretch}{1.5}
+  \begin{tabular}{|c||c|c|c|c|}
+    \hline
+    Size & Unit & Meaning & Size & Number\\
+    \hline
+    \hline
+    Mega & 1 MB/s & 1 Megabyte per Second & $10^6$ Bytes per Second & 1.000.000 $\frac{B}{s}$ \\
+    \hline
+    Kilo & 1 KB/s & 1 Kilobyte per Second & $10^3$ Bytes per Second & 1.000 $\frac{B}{s}$\\
+    \hline
+     - & 1 B/s & 1 Byte per Second &  $1$ Byte per Second & 1 $\frac{B}{s}$ \\
+    \hline
+  \end{tabular}  
+\end{table}
+  \end{center}
+  \end{tiny}
+
 \end{frame}
 
 
@@ -41,7 +120,7 @@
     \hline
     kilo & $10^3$ & kibi &  $2^{10}$ \\
     \hline
-    mega & $10^6$ & mibi &  $2^{20}$  \\
+    mega & $10^6$ & mebi &  $2^{20}$  \\
     \hline
     giga & $10^9$ & gibi &  $2^{30}$  \\
     \hline
@@ -57,7 +136,7 @@
     \hline
     1 Kilobyte &  $10^3$ Bytes & 1 Kibibyte = KiB & $2^{10}$ Bytes \\
     \hline
-    1 Megabyte &  $10^6$ Bytes & 1 Mibibyte = MiB & $2^{20}$ Bytes \\
+    1 Megabyte &  $10^6$ Bytes & 1 Mebibyte = MiB & $2^{20}$ Bytes \\
     \hline
     1 Gigabyte &  $10^9$ Bytes & 1 Gibibyte = GiB & $2^{30}$ Bytes \\
     \hline
@@ -66,7 +145,7 @@
 \end{footnotesize}
 \end{center}
 
-\vspace{0.4cm}
+\vspace{0.1cm}
 $\rightarrow$ Unterscheide auch \texttt{Mbps} von \texttt{Mibps} und \texttt{MB/s} von \texttt{MiB/s}!
 
 \end{frame}
@@ -90,9 +169,10 @@ $\rightarrow$ Unterscheide auch \texttt{Mbps} von \texttt{Mibps} und \texttt{MB/
 \end{frame}
 
 \begin{frame}  
-  \frametitle{LF09:03::Layer I-II:Wlan-Sicherheit }
+  \frametitle{LF09:03::Layer I-II:Wlan-Sicherheit:WEP,WPA,WPA2}
 
-  \subsubsection{Verschlüsselung}
+   \textbf{Verschlüsselung}:
+
   \begin{itemize}
     \item \textbf{WEP} = Wired Equivalent Privacy Verschlüsselung (RC4-Verschlüsselung)  
     \item \textbf{WPA} = Wi-Fi Protected Access (Wie WEP, aber mit TKIP (Temporal Key Integrity Protocol))
@@ -100,13 +180,29 @@ $\rightarrow$ Unterscheide auch \texttt{Mbps} von \texttt{Mibps} und \texttt{MB/
    \begin{itemize}
       \item verbesserte Verschlüsselungsmethode AES (Advanced Encryption Standard) 
       \item mit CCMP (Counter Mode with Cipher Block Chaining Message Authentication Code Protocol) 
-    \end{itemize}
+    \end{itemize}  
   \end{itemize}
 
-  \subsubsection{Authentifizierung}
+  \vspace{0.2cm}
+  \textbf{Authentifizierung}:
+
   \begin{itemize}
     \item \textbf{WPA-PSK}:  Kenntnis \textbf{Pre-Shared-Key} =  Nutzungsberechtigung.
     \item \textbf{Radius-Server} (Remote Authentication Dial-In User Service) : zentraler personenbezogener Authentifizierungsserver
+  \end{itemize}
+
+\end{frame}
+
+\begin{frame}  
+  \frametitle{LF09:03::Layer I-II:Wlan-Sicherheit:WPA3}
+
+  
+  \begin{itemize}
+     \item \textbf{WPA3} = Wi-Fi Protected Access 3
+    \begin{itemize}
+      \item verbesserte Verschlüsselungsmethode AES 128 bzw AES-256 (Advanced Encryption Standard) 
+      \item Statt pre-Shared-Key-Verfahren hier Simultaneous Authentication of Equals (SAE),
+    \end{itemize}    
   \end{itemize}
 
 \end{frame}
