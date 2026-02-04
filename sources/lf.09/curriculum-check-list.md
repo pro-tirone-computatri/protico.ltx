@@ -21,7 +21,7 @@
 |  | UML | Sequencediagram | cx.diagramming-[].pdf |
 |  | Faden-Netzwerk | Dokumentation | sbj-01.thread-network-[].pdf |
 |  | Netzwerk | Layer \& Typologien | sbj-02.network-concepts-[].pdf |
-|  | Layer I | Begriffe | Datendurchsatz | sbj-03.data-throughout-[].pdf |
+|  | Layer I | Begriffe | Datendurchsatz | sbj-03.data-throughput-[].pdf |
 |  | Layer I/VII | Datenaustauschformate | cx.datafiles-[].pdf |
 |  | Layer II-III | Repeater, Hub \& ARP | sbj-04.arp-hub-[].pdf |
 |  | Layer II-III | Bridge, Switch \& ARP| sbj-05.arp-switch-[].pdf |

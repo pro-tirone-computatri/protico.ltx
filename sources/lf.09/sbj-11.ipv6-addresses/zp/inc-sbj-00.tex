@@ -1,0 +1,166 @@
+% This file is part of the Open Source project 'proTironeComputatri'
+% (c) 2025 Karsten Reincke (https://github.com/pro-tirone-computatri/protico.ltx)
+% It is distributed under the terms of the creative commons license
+% CC-BY-4.0 (= https://creativecommons.org/licenses/by/4.0/)
+
+\begin{frame}[fragile]  
+  \frametitle{LF09:11:IPv6-Adressen}
+  \vspace{0.2cm}
+  \begin{tiny}
+  \begin{center}
+    \renewcommand{\arraystretch}{3}
+    \begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+    \hline
+    \textcolor{gray}{\tiny{F.}} & \textcolor{gray}{\tiny{E.}} &
+        \textcolor{gray}{\tiny{D.}} & \textcolor{gray}{\tiny{C.}} &
+          \textcolor{gray}{\tiny{B.}} & \textcolor{gray}{\tiny{A.}} &
+            \textcolor{gray}{\tiny{9.}} & \textcolor{gray}{\tiny{8.}} &
+              \textcolor{gray}{\tiny{7.}} & \textcolor{gray}{\tiny{6.}} &
+                \textcolor{gray}{\tiny{5.}} & \textcolor{gray}{\tiny{4.}} &
+                  \textcolor{gray}{\tiny{3.}} & \textcolor{gray}{\tiny{2.}} &
+                   \textcolor{gray}{\tiny{1.}} & \textcolor{gray}{\tiny{0.}} \\
+    \hline
+    \textcolor{blue}{\tiny{20}} & \textcolor{blue}{\tiny{01}} &
+        \textcolor{blue}{\tiny{0d}} & \textcolor{blue}{\tiny{b8}} &
+          \textcolor{blue}{\tiny{00}} & \textcolor{blue}{\tiny{00}} &
+            \textcolor{blue}{\tiny{08}} & \textcolor{blue}{\tiny{d3}} &
+              \textcolor{blue}{\tiny{00}} & \textcolor{blue}{\tiny{00}} &
+                \textcolor{blue}{\tiny{8a}} & \textcolor{blue}{\tiny{2e}} &
+                  \textcolor{blue}{\tiny{00}} & \textcolor{blue}{\tiny{70}} &
+                   \textcolor{blue}{\tiny{73}} & \textcolor{blue}{\tiny{44}} \\
+    \hline
+    \multicolumn{2}{|c|}{2001} & \multicolumn{2}{c|}{0db8} &
+      \multicolumn{2}{c|}{0000} & \multicolumn{2}{c|}{08d3} &
+        \multicolumn{2}{c|}{0000} & \multicolumn{2}{c|}{8a2e} &
+          \multicolumn{2}{c|}{0070} & \multicolumn{2}{c|}{7344} \\
+    \hline
+    \multicolumn{16}{|c|}{
+      \textcolor{teal}{\footnotesize{\textbf{2001:0db8:0000:08d3:0000:8a2e:0070:7344}}}} \\
+    \hline
+    \hline
+    \multicolumn{16}{|c|}{\textcolor{gray}{führende Nullen im Bytepaar dürfen weggelassen werden}} \\
+    \hline
+    \multicolumn{2}{|c|}{2001} & \multicolumn{2}{c|}{db8} &
+      \multicolumn{2}{c|}{0} & \multicolumn{2}{c|}{8d3} &
+        \multicolumn{2}{c|}{0} & \multicolumn{2}{c|}{8a2e} &
+          \multicolumn{2}{c|}{70} & \multicolumn{2}{c|}{7344} \\
+    \hline
+    \multicolumn{16}{|c|}{\textcolor{teal}{\small{\textbf{2001:db8:0:8d3:0:8a2e:070:7344}}}} \\
+    \hline
+    \hline
+    \multicolumn{16}{|c|}{\textcolor{gray}{1 mal dürfen alle 0er Bytepaare hintereinder weggelassen werden}} \\
+    \hline
+    \multicolumn{2}{|c|}{2001} & \multicolumn{2}{c|}{db8} &
+      \multicolumn{2}{|c|}{} & \multicolumn{2}{c|}{8d3} &
+        \multicolumn{2}{|c|}{0} & \multicolumn{2}{c|}{8a2e} &
+          \multicolumn{2}{|c|}{70} & \multicolumn{2}{c|}{7344} \\
+    \hline
+    \multicolumn{16}{|c|}{\textcolor{teal}{\normalsize{\textbf{2001:db8::8d3:0:8a2e:070:7344}}}} \\
+   
+    \hline
+    \hline
+  \end{tabular}
+\end{center}
+\end{tiny}
+\end{frame}
+
+\begin{frame}[fragile]  
+  \frametitle{LF09:11:IPv6-Adressen:Anzahl}
+
+  \vspace{0.2cm}
+  \begin{tiny}
+  \begin{center}
+    \renewcommand{\arraystretch}{3}
+    \begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+      \hline
+      \textcolor{gray}{\tiny{F.}} & \textcolor{gray}{\tiny{E.}} &
+        \textcolor{gray}{\tiny{D.}} & \textcolor{gray}{\tiny{C.}} &
+          \textcolor{gray}{\tiny{B.}} & \textcolor{gray}{\tiny{A.}} &
+            \textcolor{gray}{\tiny{9.}} & \textcolor{gray}{\tiny{8.}} &
+              \textcolor{gray}{\tiny{7.}} & \textcolor{gray}{\tiny{6.}} &
+                \textcolor{gray}{\tiny{5.}} & \textcolor{gray}{\tiny{4.}} &
+                  \textcolor{gray}{\tiny{3.}} & \textcolor{gray}{\tiny{2.}} &
+                   \textcolor{gray}{\tiny{1.}} & \textcolor{gray}{\tiny{0.}} \\
+      \hline
+      \textcolor{blue}{\tiny{$2^8$}} & \textcolor{blue}{\tiny{$2^8$}} &
+        \textcolor{blue}{\tiny{$2^8$}} & \textcolor{blue}{\tiny{$2^8$}} &
+          \textcolor{blue}{\tiny{$2^8$}} & \textcolor{blue}{\tiny{$2^8$}} &
+            \textcolor{blue}{\tiny{$2^8$}} & \textcolor{blue}{\tiny{$2^8$}} &
+              \textcolor{blue}{\tiny{$2^8$}} & \textcolor{blue}{\tiny{$2^8$}} &
+                \textcolor{blue}{\tiny{$2^8$}} & \textcolor{blue}{\tiny{$2^8$}} &
+                  \textcolor{blue}{\tiny{$2^8$}} & \textcolor{blue}{\tiny{$2^8$}} &
+                   \textcolor{blue}{\tiny{$2^8$}} & \textcolor{blue}{\tiny{$2^8$}} \\
+      \hline
+      \multicolumn{16}{|c|}{\footnotesize{\textcolor{blue}{
+        \texttt{$2^{(8 + 8 + 8 + 8 + 8 + 8 + 8 + 8 + 8 + 8 + 8 + 8 + 8 + 8 + 8 + 8 + 8)}$}}}} \\
+    \hline
+    \multicolumn{16}{|c|}{\small{\textcolor{blue}{\texttt{$= 2^{(128)}$}}}} \\
+    \hline
+    \multicolumn{16}{|c|}{\normalsize{\textcolor{teal}{\texttt{$= 3,402823669*10^{38}$}}}} \\
+    \hline
+    \multicolumn{16}{|c|}{\normalsize{\textcolor{magenta}{\texttt{ ~ $30$ Sextillionen}}}} \\
+    \hline
+  \end{tabular}
+\end{center}
+\end{tiny}
+
+\vspace{0.4cm}
+\begin{flushright}
+\begin{tiny}
+$3,402823669*10^{38}$ ist unvorstellbar groß
+\end{tiny}
+\end{flushright}
+
+\end{frame}
+
+
+\begin{frame}
+  \frametitle{IPv6-Adressklassen}
+
+  \begin{footnotesize}
+
+  \begin{itemize}
+    \item \textbf{Unspecified Address} = \texttt{0:0:0:0:0:0:0:0/128} = \texttt{::/128} \textit{ Entspricht der IPv4-Adresse 0.0.0.0/32}
+    \item \textbf{Link Local Unicast-Address} = aus \texttt{FE80::/10} = \textit{Werden nicht geroutet. Quasi eine Mac-Adresse. Jedes Interface muss so eines haben.}
+    \item \textbf{Unique Local Unicast-Address} = aus \texttt{FC00::/7} = \textit{Entspricht den privaten IPv4-Adressen}
+    \item \textbf{Loopback Address} = \texttt{::1/128} = \textit{Entspricht den superprivaten IPv4-Adressen}
+    \item \textbf{Multicast Address} =  aus \texttt{FF00::/8}
+    \item \textbf{Global Unicast Address} =  alle anderen
+  \end{itemize}
+
+  Eine \textbf{Global Unicast Address} besteht aus einem Routing-Präfix (48 Bits = 6 Bytes), einer Subnetz ID und einer Interface-ID. In dem Präfix sind 13 Bits für die Top-Level-Aggregation vorgesehen. 13 Bits = 8191 Toplevel Provider. In den Routingtabellen werden nur aggregierte Netze verwaltet.\footnote{\tiny{\cite[vgl][188ff]{Schreiner2014a}}}
+  \end{footnotesize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Von der MAC-Adresse zur Link Local Unicast Address}
+
+  \begin{footnotesize}
+
+  \begin{itemize}
+    \item Mac-Adresse (Hex-Notation) in zwei 3-Byte-Blöcke aufteilen:\\
+    \qquad \texttt{52:74:f2:b1:a8:7f} $\rightarrow$ \texttt{52:74:f2} und \texttt{b1:a8:7f}
+    \item Dazwischen den Wert \texttt{FF:FE} einfügen: \\
+    \qquad \texttt{52:74:f2} + \texttt{FF:FE} + \texttt{b1:a8:7f} $\rightarrow$ \texttt{52:74:f2:FF:FE:b1:a8:7f})
+    \item Das Ergebnis in die IPv6-Format umwandeln: \\
+    \qquad \texttt{52:74:f2:FF:FE:b1:a8:7f} $\rightarrow$ \texttt{5274:f2ff:feb1:a87f} )
+    \item Das erste Oktet in Binärnotation umwandeln: \\
+    \qquad \texttt{52} $\rightarrow$ \texttt{01010010})
+    \item Das 7 Bit invertieren: \\
+    \qquad \texttt{01010010} $\rightarrow$ \texttt{01010000})
+    \item Ergebnis in Hex-Notation umwandeln:\\ 
+    \qquad \texttt{01010000} $\rightarrow$ \texttt{50})
+    \item Das erste Oktet durch den neuen Wert ersetzen \\
+    \qquad \texttt{5274:f2ff:feb1:a87f} $\rightarrow$ \texttt{5074:f2ff:feb1:a87f})
+    \item Dem Ganzen das Link-Local-Prefix voransetzen: \\
+    \qquad \texttt{fe80::} voran ( \texttt{5074:f2ff:feb1:a87f} $\rightarrow$ \texttt{fe80::5074:f2ff:feb1:a87f})
+  \end{itemize}
+
+
+\end{footnotesize}
+
+\end{frame}
+
+
+
+
