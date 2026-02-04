@@ -216,13 +216,16 @@ Wie lang braucht die Übertragung?
 Lösung:
 
 ```
-1.) 12 MiB = 12 * 2²⁰ * 8 =  12 * 1048576 * 8 = 100.663.296 Bits = 100,663296 Mbits
+1.) 12 MiB = 12 * 2^20 * 8 =  12 * 1048576 * 8 = 100.663.296 Bits = 100,663296 Mbits
 2.) 100,663296 Mbits / 1000 Mbps = 0.100663296 s
 
 ```
 
 ---
-">**LF09:03:Verdrahtung:03**</span>
+
+
+<!-- uebung::start -->
+<span style="color: green;">_ÜBUNG_</span> <span style="color:magenta;">**LF09:03:Verdrahtung:03**</span>
 
 Rufen Sie eine Shell auf und setzen Sie das Kommando 
 `git clone https://github.com/pro-tirone-computatri/protico.ltx.git`
@@ -238,10 +241,20 @@ Lösung:
 
 Stand 04.02.2026 :
 
-* git report: `Receiving objects: 100% (1344/1344), 175.48 MiB | 12.53 MiB/s, done`
-* `du -sh` gibt an 157M
+* git report: `Receiving objects: 100% (1373/1373), 181.73 MiB | 12.53 MiB/s, done`
+* `du -sh` (besser: `du -ahd1`) sagt: 467M (Gemeint MB)
+* File-Browser sagt: 486.8 MB
 
+```
+181.73 MiB = 181,73 * 2^20 = 190557716.48 Bytes / 1.000.000 = 190.55771648 MB
+
+=>
+
+a.) runtergeladen:  190,6 MB
+b.) auf der Platte: 486.8 MB
 ---
+
+**Grund:** Git nutzt Kompression bei Netzkommandos *push*, *pull*, *clone* etc.
 
 ### 5. Wlan-Standards
 
