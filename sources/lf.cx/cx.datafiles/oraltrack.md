@@ -249,7 +249,7 @@ Lösung:
   * Der eigentliche Text innerhalb eines Tags beginnt mit einem Zeichen, gefolgt von beliebig vielen Zeichen und Zahlen.
   * Der eigentliche Text innerhalb eines Tags enthält keine WhiteSpace-Zeichen.
   * Der eigentliche Text innerhalb des öffnenden und schließendes Tags muss gleich sein.
-  * Jede XML-Datei beginnt mit `<?xml version="1.1" encoding="UTF9">`.
+  * Jede XML-Datei beginnt mit `<?xml version="1.1" encoding="UTF8">`.
   * Danach folgen beliebig viele getaggte und verschachtelte Werte
   * Vor und nach einem Tag können beliebig viele Whitespaces folgen.
   * Whitespaces zwischen den Tags gehören zum Wert. Es ist gute Tradition, Strings trotzdem mit Hochkommata zusammenzufassen.
@@ -329,6 +329,7 @@ Messreihe-2:
 ```
 
 Hinweis: 
+
 * YAML-Dateien werden oft als Konfigurationsdazteien im Cloud-Kontext verwendet. 
 * Waren gedacht als Vereinfachung der JSON-Syntax
 * Ist aber durch die Variantenvielfalt schwer einheitlich / projektübergreifend zu nutzen.

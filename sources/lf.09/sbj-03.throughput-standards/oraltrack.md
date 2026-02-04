@@ -54,9 +54,33 @@ Vereinfacht:
 * [→ Gratzke et.al: Technische IT Berufe, Lernfelder 6-9, 2022, S. 325ff]
 * [→ [https://de.wikipedia.org/wiki/Twisted-Pair-Kabel](https://de.wikipedia.org/wiki/Twisted-Pair-Kabel)]
 
-Industriebenennungen weichen Industrieshema ab.
+Achtung: Englische Seite nutzt leicht andere Bezeichner. Dort wird 'Screened' (versus Foilded) als
+Bezeichnung für den Schutz des Kabelpaares benutzt, nicht für die Umhüllung als Ganzes.
+[→ [https://en.wikipedia.org/wiki/Twisted_pair](https://en.wikipedia.org/wiki/Twisted_pair)]
 
 Grundsatz: je komplexer die Abschirmung, desto teurer
+
+Industriebenennungen weichen von der ISO-Norm ab.
+
+**Weitere Kabeltypisierung:**
+
+| Category | Construction | Bandwidth | Application |
+| --- | --- | --- | --- |
+| Cat 3	| UTP |	16 MHz |	10BASE-T, 100BASE-T4 |
+| Cat 4	| UTP |	20 MHz |	16 Mbit/s Token Ring |
+| Cat 5	| UTP	| 100 MHz |	100BASE-TX, 1000BASE-T |
+| Cat 5e	| UTP, F/UTP, U/FTP |	100 MHz |	1000BASE-T, 2.5GBASE-T |
+| Cat 6	  | UTP, F/UTP, U/FTP |	250 MHz |	5GBASE-T, 10GBASE-T |
+| Cat 6A	| UTP, F/UTP, U/FTP, S/FTP | 500 MHz | 5GBASE-T, 10GBASE-T |
+| Cat 7	  | S/FTP, F/FTP | 600 MHz | ? |
+| Cat 7A	| S/FTP, F/FTP | 1 GHz  | ? |
+| Cat 8.1	| F/UTP, U/FTP | 2 GHz  |	25GBASE-T, 40GBASE-T |
+| Cat 8.2 | S/FTP, F/FTP | 2 GHz	| 25GBASE-T, 40GBASE-T |
+
+[→ [https://en.wikipedia.org/wiki/Twisted_pair](https://en.wikipedia.org/wiki/Twisted_pair)]
+
+Grundsatz: Je höher die Kategorie (Kabeltyp), desto höher die Bandbreite und komplexer die Abschirmung
+
 
 ### 2. Datendurchsatz
 
@@ -122,7 +146,9 @@ Umrechnung von Kilo[byte/bits] in [Bytes/Bits] oft unklar kommuniziert:
 
 > Da `2^10` = 1024 sehr nahe bei 1000 liegt, bürgerte es sich ein, bei 
 > Größenangaben von Datenmengen in Bit und Byte den 
-> Vorsatz Kilo für 1024 zu verwenden (→ [https://de.wikipedia.org/wiki/Vorsätze_für_Maßeinheiten](https://de.wikipedia.org/wiki/Vorsätze_für_Maßeinheiten))
+> Vorsatz Kilo für 1024 zu verwenden 
+> 
+> (→ [https://de.wikipedia.org/wiki/Vorsätze_für_Maßeinheiten](https://de.wikipedia.org/wiki/Vors\ätze_für_Maßeinheiten))
 
 Beispiel: 
 
@@ -165,7 +191,7 @@ usw. für Tera/Tebi, Peta/Pebi, Exa/Exbi, Zetta/Zebi, Yotta/Yobi, Ronna/Robi, Qu
 usw. für Peta/Pebi, Exa/Exbi, Zetta/Zebi, Yotta/Yobi
 
 * [→ [https://de.wikipedia.org/wiki/Datenmenge](https://de.wikipedia.org/wiki/Datenmenge)]
-* [→ [https://de.wikipedia.org/wiki/Vorsätze_für_Maßeinheiten](https://de.wikipedia.org/wiki/Vorsätze_für_Maßeinheiten)]
+* [→ [https://de.wikipedia.org/wiki/Vorsätze_für_Maßeinheiten](https://de.wikipedia.org/wiki/Vors\ätze_für_Maßeinheiten)]
 
 Hinweis: Die implizite Größenerweiterung betrifft u.U. auch die Dateisysteme und Dateien 
 (falls das Format mit 2^x-Vielfachen arbeitet)
@@ -187,10 +213,16 @@ Wie lang braucht die Übertragung?
 
 ---
 
----
+Lösung:
 
-<!-- uebung::start -->
-<span style="color: green;">_ÜBUNG_</span> <span style="color:magenta;">**LF09:03:Verdrahtung:03**</span>
+```
+1.) 12 MiB = 12 * 2²⁰ * 8 =  12 * 1048576 * 8 = 100.663.296 Bits = 100,663296 Mbits
+2.) 100,663296 Mbits / 1000 Mbps = 0.100663296 s
+
+```
+
+---
+">**LF09:03:Verdrahtung:03**</span>
 
 Rufen Sie eine Shell auf und setzen Sie das Kommando 
 `git clone https://github.com/pro-tirone-computatri/protico.ltx.git`
@@ -204,7 +236,9 @@ Rufen Sie eine Shell auf und setzen Sie das Kommando
 
 Lösung: 
 
-* Stand 03.20.2026: `Receiving objects: 100% (1344/1344), 175.48 MiB | 12.53 MiB/s, done`
+Stand 04.02.2026 :
+
+* git report: `Receiving objects: 100% (1344/1344), 175.48 MiB | 12.53 MiB/s, done`
 * `du -sh` gibt an 157M
 
 ---
