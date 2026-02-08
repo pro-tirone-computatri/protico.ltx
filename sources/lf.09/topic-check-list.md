@@ -23,10 +23,10 @@
 * [ ] Grafische Darstellung / Diagramme [auch LF09/17]
 * [ ] Ausdehnung \& Topologien [auch LF09/20]
 * [ ] IPv4-Adressen und -Segmentierung
-* [ ] IPv4-Adressen und -Segmentierung
+* [ ] IPv6-Adressen und -Segmentierung
 * [ ] RAID mit Mengenberechnung
 
-**Scope Lernfeld 03  in AP1 Prüfungen*
+**Scope Lernfeld 03 in AP1 Prüfungen*
 
 * [ ] Sicherheitsrisiken gemäß BSI IT-Grundschutz-Kompendium
 * [ ] Präsentationsrechner außerhalb Institutsnetz
@@ -83,7 +83,7 @@
 * [ ] Netzwerkkomponenten \& -protokolle (NAS, SAN, iSCSI, SMB, NFS, Ethernet, FirbreChannel)
 * [ ] Datenaustauschformate XML, JSON, CVS, YAML 
 
-**Scope Lernfeld 03  in AP1 Prüfungen**
+**Scope Lernfeld 09 in AP1 Prüfungen**
 
 * [ ] REST
 * [ ] HTTP (Get-Post-Delete)

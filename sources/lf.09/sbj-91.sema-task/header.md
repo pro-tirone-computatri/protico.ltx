@@ -1,8 +1,8 @@
 ---
-title: 'LF11c:99:Klausuren'
+title: 'LF09:91:Ersatzleistung:1HBJ'
 author: [K. Reincke]
 date: PTCDATE
-keywords: [Klausur]
+keywords: [sbj-00.flat]
 header-left: "\\theauthor"
 header-center: "proTironeComputatri"
 header-right: "\\thetitle" 
@@ -13,4 +13,4 @@ lang: "de-DE"
 papersize: a4
 colorlinks: true
 ---
-## LF11C:99:Klausuren und Ersatzleistungen
+## LF09:91:Ersatzleistung:1.HBJ:Dokumentation
