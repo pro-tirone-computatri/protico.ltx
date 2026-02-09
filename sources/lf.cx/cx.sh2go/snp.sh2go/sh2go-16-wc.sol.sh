@@ -10,7 +10,7 @@
 # In spitzen Klammern schreibe ich stets Tools und ihre Parameter.
 # Die Tools stellt Ihnen Betriebssystem zur Verfügung.
 #
-# Beipiel: 
+# Beispiel: 
 # Rufen Sie <echo dies> auf, meint, dass Sie an der
 # Kommandozeile echo dies eingeben. Wo sich das Tool, hier
 # <echo> bei Ihnen befindet, können Sie mit <which echo> erfragen
@@ -25,11 +25,12 @@ echo "executing Uebung $EXC"
 
 # Hintergrund: 
 #
-# Das Tool 'wc' (word count) liest eine Datei von der Festplatte oder
-# über stdin ein und zählt alle Wörter. Mit der Option 'l' (wc -l) für 
-# line zählt es die Zeilen
+# Das Tool <wc> (word count) liest eine Datei von der Festplatte oder
+# über stdin ein und zählt alle Wörter. Mit der Option 'l' <wc -l> für 
+# 'line' zählt es die Zeilen
 #
-
-cat mynumbers | wc -l 
+MNF="mynumbers.txt"
+cat ${MFN} | wc -l 
+cat ${MFN} | sort | uniq | wc -l 
 
 

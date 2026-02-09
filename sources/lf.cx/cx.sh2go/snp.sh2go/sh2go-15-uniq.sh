@@ -10,7 +10,7 @@
 # In spitzen Klammern schreibe ich stets Tools und ihre Parameter.
 # Die Tools stellt Ihnen Betriebssystem zur Verfügung.
 #
-# Beipiel: 
+# Beispiel: 
 # Rufen Sie <echo dies> auf, meint, dass Sie an der
 # Kommandozeile echo dies eingeben. Wo sich das Tool, hier
 # <echo> bei Ihnen befindet, können Sie mit <which echo> erfragen
@@ -32,10 +32,9 @@ echo "executing Uebung $EXC"
 
 # Hintergrund: 
 #
-# Das Tool 'uniq' löscht in einer Datei oder in einer über stdin zeilenweise eingelesenen
+# Das Tool <uniq> löscht in einer Datei oder in einer über stdin zeilenweise eingelesenen
 # Datei doppelte auftretende Zeile (Duplikate). Allerdings erwartet es dafür eine
-# sortiert Liste. Sonst findet es nicht alle Doubletten.
+# sortierte Liste. Sonst findet es nicht alle Doubletten.
 #
-
 
 

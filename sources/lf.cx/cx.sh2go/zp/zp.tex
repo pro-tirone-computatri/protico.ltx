@@ -22,7 +22,7 @@
 \def\imgGl{../../../img.gl/}
 \def\bibGl{../../../bib.gl}
 \def\cfgGl{../../../cfg.gl/}
-\def\snpGl{../../../snp.gl/}
+\def\snpGl{../../../snp.gl}
 \def\imgLf{../../img.lf}
 \def\cfgLf{../../cfg.lf}
 \def\snpLf{../../snp.lf}
@@ -57,6 +57,7 @@
 \usepackage{fontawesome}
 \usepackage{rotating}
 \usepackage[dvipsnames]{xcolor}
+\usepackage{minted}
 
 \newcommand\tcrotate[1]{\begin{turn}{90}{#1}\end{turn}}
 
@@ -65,7 +66,7 @@
 \addtobeamertemplate{footnote}{\hskip -2em}{}
 
 % title frame
-\title{LFCX:Shellprogrammierung}
+\title{LFCX:Shellprogramming}
 \subtitle{für die Ausbildung zur Fachinformatikerin\input{\cfgGl/inc.lfn-zp}}
 \institute{GS-LDK}
 \author{Karsten Reincke}
@@ -83,8 +84,7 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % add the other topic snippets here
-\input{inc-intro-00}
-\input{../tpc-01.tooling/zp/inc-tpc-00}
+\input{inc-sbj-00}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % be careful to modify the closing commands
@@ -102,6 +102,6 @@
 \input{\cfgGl/inc.zp-bnw}
 
 % 4. insert the liteature hints 
-%\input{\cfgGl/inc.zp-lvz}
+\input{\cfgGl/inc.zp-lvz}
 
 \end{document}

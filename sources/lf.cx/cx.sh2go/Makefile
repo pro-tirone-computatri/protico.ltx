@@ -7,9 +7,6 @@ AUX_EXTS=tmp
 RES_EXTS=pdf
 DEL_FILE=exercises
 
-# the file into which the sub content is collected
-INCOLL=tmp.tmp
-
 LNX_TD="../.."
 PTC_TD="../${LNX_TD}"
 BLD=${PTC_TD}/built
@@ -36,20 +33,9 @@ lesson-exc: exercises
 
 exc: exercises
 
-exercises: 
-	@ echo "collecting exercises"
-	@ if [ -f "${INCOLL}" ]; then rm "${INCOLL}"; fi
-	@ find . -type d -name "tpc*" | sort | while read d; do\
-		find $${d} -type f -name "oraltrack.md" | sort | while read f; do\
-			cat $${f} >> "${INCOLL}";\
-			echo "collecting exercise base of $$f";\
-	  done;\
-	done;
-	@ if [ -f "${INCOLL}" ]; then \
-		bash ${LNX_TD}/bin/extract-exercises.sh ${INCOLL}; \
-	  if [ -f exercises.md ]; then make exercises.pdf; fi; \
-	fi
-	@ make clear
+exercises:
+	@ bash ${LNX_TD}/bin/extract-exercises.sh oraltrack.md;
+	@ if [ -f exercises.md ]; then make exercises.pdf; fi
 
 # --- SECTION ORALTRACK ---
 # recreates oraltrack document, releases it into the lesson directory tree
@@ -62,24 +48,14 @@ lesson-ort: oraltrack
 ort: oraltrack
 
 oraltrack:
-	@ echo "collecting oraltracks"
-	@ if [ -f "${INCOLL}" ]; then rm "${INCOLL}"; fi
-	@ find . -type d -name "tpc*" | sort | while read d; do\
-		find $${d} -type f -name "oraltrack.md" | sort | while read f; do\
-			cat $${f} >> ${INCOLL};\
-			echo "adopting content of $$f";\
-	  done;\
-	done;
-	@ MYD=`date +'%Y-%m-%d'` && cat header.md | sed "s/PTCDATE/$${MYD}/" >${MDHTMP} 
-	@ pandoc ${MDHTMP} ${INCOLL} -o oraltrack.pdf --from markdown --template ${EVD}/eisvogel.latex --listings -V lang=de-DE
-	@ make clear
+	make oraltrack.pdf
 
 # --- SECTION ZENPRESE ---
 # recreates the zp document, releases it into the lesson directory tree
 lesson-zpr: zenprese
 	@ WD=`pwd` && SJN=`basename $${WD}` && LFN=`cat ../td.lf` && \
 	  TGD="${BLD}/$${LFN}" && mkdir -p $${TGD} && \
-    mv zenprese.pdf $${TGD}/$${SJN}-zenprese.pdf	
+          mv zenprese.pdf $${TGD}/$${SJN}-zenprese.pdf	
 	@ tree ${BLD}
 
 zpr: zenprese
@@ -105,5 +81,4 @@ clean:	clear
 	$(foreach EXT, ${RES_EXTS}, @if [ ! "x`ls *.${EXT} 2>/dev/null`" = "x" ]; then rm *.${EXT}; echo "removing existing .${EXT}-target-files"; fi;)
 	$(foreach BNA, ${DEL_FILE}, @if [ ! "x`ls ${BNA}.* 2>/dev/null`" = "x" ]; then rm ${BNA}.*; echo "removing existing derivated ${BNA}.*"; fi;)
 	(cd zp && make clean)
-	find . -type d -name "tpc*" | while read d; do (cd $$d && make clean); done
 

@@ -10,7 +10,7 @@
 # In spitzen Klammern schreibe ich stets Tools und ihre Parameter.
 # Die Tools stellt Ihnen Betriebssystem zur Verfügung.
 #
-# Beipiel: 
+# Beispiel: 
 # Rufen Sie <echo dies> auf, meint, dass Sie an der
 # Kommandozeile echo dies eingeben. Wo sich das Tool, hier
 # <echo> bei Ihnen befindet, können Sie mit <which echo> erfragen

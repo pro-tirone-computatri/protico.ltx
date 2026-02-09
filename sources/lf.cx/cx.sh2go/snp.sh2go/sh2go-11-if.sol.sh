@@ -10,7 +10,7 @@
 # In spitzen Klammern schreibe ich stets Tools und ihre Parameter.
 # Die Tools stellt Ihnen Betriebssystem zur Verfügung.
 #
-# Beipiel: 
+# Beispiel: 
 # Rufen Sie <echo dies> auf, meint, dass Sie an der
 # Kommandozeile echo dies eingeben. Wo sich das Tool, hier
 # <echo> bei Ihnen befindet, können Sie mit <which echo> erfragen
@@ -34,6 +34,9 @@ echo "executing Uebung $EXC"
 #       -eq :- equal  -lt :- less than 
 # (D) TRUE-CMD und FALSE-CMD können jedes Shell-Kommando sein.
 # (E) Wichtig: TEST-CMD, TRUE-CMD und FALSE-CMD müssen mit einem ; abgeschlossen werden.
+# 
+# Ergänzung: Bei den Tests ist das TEST-CMD - z.B. '[ STR = STR ]' - eine Abkürzung
+# für den Aufruf `test STR = STR` des externen Tools <test>
 
 # Disclaimer: Die ist nur ein äußerst kleiner Teil der Testmöglichkeiten.
 
