@@ -116,15 +116,15 @@ von ein 2 Megabyte großes Bild, wenn man von Störung und den Protokollbytes/-b
 
 <!-- uebung::end -->
 
----
-
-Lösung: 
+**Lösung:** 
 
 ```
 1.)  2 MB = 2000 KB = 16.000 KBits
 2.)  16.000 Kbits /  512 Kbps = 31.25 sec.
 
 ```
+
+---
 
 ### 3. Ethernetstandards
 
@@ -211,50 +211,108 @@ Wie lang braucht die Übertragung?
 
 <!-- uebung::end -->
 
----
-
-Lösung:
+**Lösung:**
 
 ```
-1.) 12 MiB = 12 * 2^20 * 8 =  12 * 1048576 * 8 = 100.663.296 Bits = 100,663296 Mbits
+1.) 12 MiB = 12 * 2^20 * 8 =  12 * 1048576 * 8 
+    = 100.663.296 Bits = 100,663296 Mbits
 2.) 100,663296 Mbits / 1000 Mbps = 0.100663296 s
 
 ```
 
 ---
 
-
 <!-- uebung::start -->
 <span style="color: green;">_ÜBUNG_</span> <span style="color:magenta;">**LF09:03:Verdrahtung:03**</span>
 
-Rufen Sie eine Shell auf und setzen Sie das Kommando 
+* [ ] Rufen Sie eine Shell auf
+* [ ] Geben Sie folgendes Kommando ein
+
 `git clone https://github.com/pro-tirone-computatri/protico.ltx.git`
 
-
-* In welcher Einheit wird Ihnen der Fortschritt der heruntergeladenen Dateien und der Datendurchsatz reportert.
+* In welcher Einheit wird Ihnen der Fortschritt der heruntergeladenen Dateien und der Datendurchsatz reportet.
 * Was gibt Ihnen der Report als Größe des heruntergeladenen Repositories an?
-* Wie groß sind die heruntergeladenen Dateien wirklixh?
+* Wie groß sind die heruntergeladenen Dateien wirklich?
   
 <!-- uebung::end -->
 
-Lösung: 
-
+**Lösung:**
 Stand 04.02.2026 :
 
-* git report: `Receiving objects: 100% (1373/1373), 181.73 MiB | 12.53 MiB/s, done`
+* git report:
+
+`Receiving objects: 100% (1373/1373), 181.73 MiB | 12.53 MiB/s, done`
+
 * `du -sh` (besser: `du -ahd1`) sagt: 467M (Gemeint MB)
 * File-Browser sagt: 486.8 MB
 
+Wie groß ist die Differenz?
+
 ```
-181.73 MiB = 181,73 * 2^20 = 190557716.48 Bytes / 1.000.000 = 190.55771648 MB
+1) 181.73 MiB = 181,73 * 2^20 = 
+    190557716.48 Bytes / 1.000.000 = 190.55771648 MB
+also
+2) Downloadgröße:  190.6 MB
+3) Plattenbelegung: 486.8 MB
 
-=>
+```
 
-a.) runtergeladen:  190,6 MB
-b.) auf der Platte: 486.8 MB
+**Grund:** Git nutzt Kompression bei den Netzkommandos *push*, *pull*, *clone* etc.
+
 ---
 
-**Grund:** Git nutzt Kompression bei Netzkommandos *push*, *pull*, *clone* etc.
+<!-- uebung::start -->
+
+<span style="color: green;">_ÜBUNG_</span> <span style="color:magenta;">**LF09:03:Verdrahtung:04**</span>
+
+Aufgabe aus der AP1-Prüfung 2022(?)
+
+In einer PLY-Datei sind 3840 Punkte gespeichert. Jeder Punkt wird durch x, y und z Koordinaten bestimmt.
+Jede Koordinate durch einen 32-Bit-Float-Wert kodiert:
+
+1. [ ] Berechnen Sie, wie viele Kibibyte Sie benötigen, um die 3840 Punkte zu speichern. Der Speicherbedarf
+      des Dateiheaders und Farbcodierungen sollen nicht berücksichtigt werden.
+2. [ ] Jeder Punkt soll jetzt im RGB-Farbraum mit je 8 Bit pro Farbkanal kodiert werden. Berechnen Sie,
+      wie viele Farben sich damit darstellen lassen.
+3. [ ] Berechnen Sie, wie viel Prozent Speicher Sie pro Bildpunkt Sie zusätzlich benötigen, um
+      die Farbwerte zu speichern.
+
+<!-- uebung::end -->
+
+
+**Lösung:** 
+
+*zu 1.)*
+
+```
+A.) Bei 3840 Punkte und 3 Koordinatenwerte a 32 Bit pro Punkt 
+    ergeben sich 3840 * 3 * 32 = 368640 Bits
+B.) 1 Kibibyte = 2^10 Bytes * 8 = 8192 Bits
+C.) 368640 Bits / 8192 = 45 KiB
+
+```
+
+*zu 2.)*
+
+```
+3 Bytes a 2^8 Bits = 2^8 * 2^8 * 2^8 = 2^(8+8+8) 
+  = 2^24 = 16.777.216
+```
+
+*zu 2.)*
+
+```
+A) Bisher pro Punkt Speicherbedarf 3*32 Bits = 96 Bits.
+B) Zusätzlicher Speicherbedarf für Farbkodierung pro Punkt: 
+   3*8 Bits = 24Bits
+C) Speicherbedarf insgesamt jetzt 120Bits.
+D) Mehrbedarf von 24Bits sind 25% von 96Bits (24/96*100=25%)
+E) Vom neuen Gesamtbedarf aus gesehen, sind
+   - 96 Bits 80% von 120 Bits (96*100/12=80%)
+   - 24 Bits 20% von 120 Bits (24*100/120=20%)
+```
+
+---
 
 ### 5. Wlan-Standards
 
