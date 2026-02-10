@@ -268,7 +268,7 @@ also
 Aufgabe aus der AP1-Prüfung 2022(?)
 
 In einer PLY-Datei sind 3840 Punkte gespeichert. Jeder Punkt wird durch x, y und z Koordinaten bestimmt.
-Jede Koordinate durch einen 32-Bit-Float-Wert kodiert:
+Jede Koordinate wird durch einen 32-Bit-Float-Wert kodiert:
 
 1. [ ] Berechnen Sie, wie viele Kibibyte Sie benötigen, um die 3840 Punkte zu speichern. Der Speicherbedarf
       des Dateiheaders und Farbcodierungen sollen nicht berücksichtigt werden.
