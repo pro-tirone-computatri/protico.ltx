@@ -3,12 +3,14 @@
 % It is distributed under the terms of the creative commons license
 % CC-BY-4.0 (= https://creativecommons.org/licenses/by/4.0/)
 
+\selectlanguage{ngerman}
+
 \begin{frame}[fragile]  
   \frametitle{LF09:11:IPv6-Adressen}
   \vspace{0.2cm}
   \begin{tiny}
   \begin{center}
-    \renewcommand{\arraystretch}{3}
+    \renewcommand{\arraystretch}{2.4}
     \begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
     \hline
     \textcolor{gray}{\tiny{F.}} & \textcolor{gray}{\tiny{E.}} &
@@ -35,7 +37,7 @@
           \multicolumn{2}{c|}{0070} & \multicolumn{2}{c|}{7344} \\
     \hline
     \multicolumn{16}{|c|}{
-      \textcolor{teal}{\footnotesize{\textbf{2001:0db8:0000:08d3:0000:8a2e:0070:7344}}}} \\
+      \textcolor{teal}{\footnotesize{\textbf{2001:\textcolor{magenta}{0}db8:\textcolor{magenta}{000}0:\textcolor{magenta}{0}8d3:\textcolor{magenta}{000}0:8a2e:\textcolor{magenta}{00}70:7344}}}} \\
     \hline
     \hline
     \multicolumn{16}{|c|}{\textcolor{gray}{führende Nullen im Bytepaar dürfen weggelassen werden}} \\
@@ -45,17 +47,17 @@
         \multicolumn{2}{c|}{0} & \multicolumn{2}{c|}{8a2e} &
           \multicolumn{2}{c|}{70} & \multicolumn{2}{c|}{7344} \\
     \hline
-    \multicolumn{16}{|c|}{\textcolor{teal}{\small{\textbf{2001:db8:0:8d3:0:8a2e:070:7344}}}} \\
+    \multicolumn{16}{|c|}{\textcolor{teal}{\small{\textbf{2001:db8:\textcolor{orange}{0}:8d3:\textcolor{orange}{0}:8a2e:70:7344}}}} \\
     \hline
     \hline
-    \multicolumn{16}{|c|}{\textcolor{gray}{1 mal dürfen alle 0er Bytepaare hintereinder weggelassen werden}} \\
+    \multicolumn{16}{|c|}{\textcolor{gray}{1-mal dürfen alle 0er Bytepaare hintereinander weggelassen werden}} \\
     \hline
     \multicolumn{2}{|c|}{2001} & \multicolumn{2}{c|}{db8} &
-      \multicolumn{2}{|c|}{} & \multicolumn{2}{c|}{8d3} &
-        \multicolumn{2}{|c|}{0} & \multicolumn{2}{c|}{8a2e} &
-          \multicolumn{2}{|c|}{70} & \multicolumn{2}{c|}{7344} \\
+      \multicolumn{2}{c|}{} & \multicolumn{2}{c|}{8d3} &
+        \multicolumn{2}{c|}{0} & \multicolumn{2}{c|}{8a2e} &
+          \multicolumn{2}{c|}{70} & \multicolumn{2}{c|}{7344} \\
     \hline
-    \multicolumn{16}{|c|}{\textcolor{teal}{\normalsize{\textbf{2001:db8::8d3:0:8a2e:070:7344}}}} \\
+    \multicolumn{16}{|c|}{\textcolor{teal}{\normalsize{\textbf{2001:db8::8d3:\textcolor{orange}{0}:8a2e:70:7344}}}} \\
    
     \hline
     \hline
@@ -69,6 +71,7 @@
 
   \vspace{0.2cm}
   \begin{tiny}
+    
   \begin{center}
     \renewcommand{\arraystretch}{3}
     \begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
@@ -107,7 +110,8 @@
 \vspace{0.4cm}
 \begin{flushright}
 \begin{tiny}
-$3,402823669*10^{38}$ ist unvorstellbar groß
+$3,402823669*10^{38}$ = $3.4028237e+38-8*10^9=3.4028237e+38$ = unvorstellbar groß\\
+(nach z.B. \href{https://www.desmos.com/scientific?lang=de}{https://www.desmos.com/scientific})
 \end{tiny}
 \end{flushright}
 
@@ -115,25 +119,163 @@ $3,402823669*10^{38}$ ist unvorstellbar groß
 
 
 \begin{frame}
-  \frametitle{IPv6-Adressklassen}
+  \frametitle{LF09:11:IPv6-Adressklassen}
 
   \begin{footnotesize}
 
   \begin{itemize}
-    \item \textbf{Unspecified Address} = \texttt{0:0:0:0:0:0:0:0/128} = \texttt{::/128} \textit{ Entspricht der IPv4-Adresse 0.0.0.0/32}
-    \item \textbf{Link Local Unicast-Address} = aus \texttt{FE80::/10} = \textit{Werden nicht geroutet. Quasi eine Mac-Adresse. Jedes Interface muss so eines haben.}
-    \item \textbf{Unique Local Unicast-Address} = aus \texttt{FC00::/7} = \textit{Entspricht den privaten IPv4-Adressen}
-    \item \textbf{Loopback Address} = \texttt{::1/128} = \textit{Entspricht den superprivaten IPv4-Adressen}
-    \item \textbf{Multicast Address} =  aus \texttt{FF00::/8}
-    \item \textbf{Global Unicast Address} =  alle anderen
+    \item \textbf{Unspecified Address} = \texttt{0:0:0:0:0:0:0:0/128} = \texttt{::/128} \\
+    \begin{tiny}{\textit{ Entspricht der IPv4-Adresse 0.0.0.0/32}}\end{tiny}
+
+    \item \textbf{Global Unicast Address} =  weltweit gültig, ins Internet routbarar \\
+    \begin{tiny}{Erkennungspräfix: \textcolor{magenta}{\texttt{2000::/3}} 
+      ( \texttt{0x[20|00] = \textcolor{teal}{001}00000|00000000} })
+    \end{tiny}
+
+    \item \textbf{Link Local Unicast-Address} = nur in BCD gültig, nicht routbarar, wie MAC-Adresse\\
+    \begin{tiny}{Erkennungspräfix: \textcolor{magenta}{\texttt{fe80::/10}} 
+      ( \texttt{0x[fe|80] = \textcolor{teal}{111111110}|\textcolor{teal}{10}0000000})}
+    \end{tiny}
+
+    \item \textbf{Unique Local Address} = ULA, nicht ins Internet routbarar, wie private IPv4-Adressen \\
+    \begin{tiny}{Erkennungspräfix: \textcolor{magenta}{\texttt{fc00::/7}} 
+      ( \texttt{0x[fc|00] = \textcolor{teal}{1111110}0|000000000})}
+    \end{tiny}
+
+    \item \textbf{Multicast Address} = Funktion wie gehabt,\\
+    \begin{tiny}{Erkennungspräfix: \textcolor{magenta}{\texttt{ff00::/8}} 
+      ( \texttt{0x[ff|00] = \textcolor{teal}{111111111}|000000000})}
+    \end{tiny}
+
   \end{itemize}
 
-  Eine \textbf{Global Unicast Address} besteht aus einem Routing-Präfix (48 Bits = 6 Bytes), einer Subnetz ID und einer Interface-ID. In dem Präfix sind 13 Bits für die Top-Level-Aggregation vorgesehen. 13 Bits = 8191 Toplevel Provider. In den Routingtabellen werden nur aggregierte Netze verwaltet.\footnote{\tiny{\cite[vgl][188ff]{Schreiner2014a}}}
   \end{footnotesize}
 \end{frame}
 
+\begin{frame}[fragile]  
+  \frametitle{LF09:11:IPv6-Segmentierung für Global Unicast Addr.}
+  \vspace{0.2cm}
+  \begin{tiny}
+
+  \begin{itemize}
+    \item \textcolor{red}{IANA} $\rightarrow$ \textcolor{orange}{RIR} (Regional Internet Registry): /32-Ipv6-Netz
+    \item \textcolor{orange}{RIR} $\rightarrow$ \textcolor{blue}{ISP} (Internetprovider): /48-IPv6-Netz
+    \item \textcolor{blue}{ISP} $\rightarrow$ \textcolor{teal}{Kunde}: /56-IPv6-Netz
+    \item \textcolor{teal}{Kunde} $\rightarrow$ \textcolor{gray}{Gerät} : 64Bit-Identifier
+  \end{itemize}
+
+
+  \begin{center}
+    \renewcommand{\arraystretch}{3}
+    \begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+    \hline
+     \multicolumn{8}{|c|}{\footnotesize{\textcolor{magenta}{Netzpräfix (64 Bit)}}} &
+     \multicolumn{8}{c|}{\footnotesize{\textcolor{gray}{Interface Identifier (64 Bit)}}}\\
+    \hline
+    \textcolor{gray}{\tiny{F.}} & \textcolor{gray}{\tiny{E.}} &
+        \textcolor{gray}{\tiny{D.}} & \textcolor{gray}{\tiny{C.}} &
+          \textcolor{gray}{\tiny{B.}} & \textcolor{gray}{\tiny{A.}} &
+            \textcolor{gray}{\tiny{9.}} & \textcolor{gray}{\tiny{8.}} &
+              \textcolor{gray}{\tiny{7.}} & \textcolor{gray}{\tiny{6.}} &
+                \textcolor{gray}{\tiny{5.}} & \textcolor{gray}{\tiny{4.}} &
+                  \textcolor{gray}{\tiny{3.}} & \textcolor{gray}{\tiny{2.}} &
+                   \textcolor{gray}{\tiny{1.}} & \textcolor{gray}{\tiny{0.}} \\
+
+    \hline
+    \textcolor{red}{\tiny{20}} & \textcolor{red}{\tiny{01}} &
+        \textcolor{red}{\tiny{0d}} & \textcolor{red}{\tiny{b8}} &
+          \textcolor{orange}{\tiny{85}} & \textcolor{orange}{\tiny{a3}} &
+            \textcolor{blue}{\tiny{08}} & \textcolor{teal}{\tiny{d3}} &
+              \textcolor{gray}{\tiny{00}} & \textcolor{gray}{\tiny{00}} &
+                \textcolor{gray}{\tiny{8a}} & \textcolor{gray}{\tiny{2e}} &
+                  \textcolor{gray}{\tiny{00}} & \textcolor{gray}{\tiny{70}} &
+                   \textcolor{gray}{\tiny{73}} & \textcolor{gray}{\tiny{44}} \\
+    \hline
+     \multicolumn{4}{|c|}{\footnotesize{\textcolor{red}{IANA}}} &
+     \multicolumn{2}{c|}{\footnotesize{\textcolor{orange}{RIR}}} &
+     \multicolumn{1}{c|}{\footnotesize{\textcolor{blue}{ISP}}} &
+     \multicolumn{1}{c|}{\footnotesize{\textcolor{teal}{Kde}}} &
+     \multicolumn{8}{c|}{\footnotesize{\textcolor{gray}{Interface Identifier (64 Bit)}}}\\   
+     
+     
+    \hline
+
+    \multicolumn{2}{|c|}{2001} & \multicolumn{2}{c|}{0db8} &
+      \multicolumn{2}{c|}{85a3} & \multicolumn{2}{c|}{08d3} &
+        \multicolumn{2}{c|}{0000} & \multicolumn{2}{c|}{8a2e} &
+          \multicolumn{2}{c|}{0070} & \multicolumn{2}{c|}{7344} \\
+    \hline
+    \multicolumn{6}{|c|}{\tiny{\textcolor{red}{Routing-Präfix}}} &
+    \multicolumn{2}{c|}{\tiny{\textcolor{blue}{Subnet-Ids}}} &
+    \multicolumn{8}{c|}{\footnotesize{\textcolor{gray}{Interface Identifier (64 Bit)}}}\\  
+    \hline
+    \end{tabular}
+  \end{center}
+\end{tiny}
+
+\vspace{0.4cm}
+\begin{flushright}
+\begin{tiny}
+nach  \href{https://de.wikipedia.org/wiki/IPv6}{https://de.wikipedia.org/wiki/IPv6}
+\end{tiny}
+\end{flushright}
+\end{frame}
+
 \begin{frame}
-  \frametitle{Von der MAC-Adresse zur Link Local Unicast Address}
+  \frametitle{LF09:11:Ergänzende Hinweise}
+  \begin{footnotesize}
+    \begin{itemize}
+      \item Interface Identifier hat immer 64 Bit
+      \item Demselben Interface können mehrere IPv6-Adressen zugeordnet sein.
+      \item Die Interface-ID kann folglich in mehreren IPv6-Adressen auftauchen.
+      \item Eine \textbf{Global Unicast Address} beginnt mit einem Routing-Präfix (48 Bits = 6 Bytes), 
+      \item Im Routing-Präfix sind 'nur' 13 Bits für die Top-Level-Aggregation vorgesehen.   
+      \item 13 Bits = 8191 Toplevel Provider = RIRs
+      \item In Routingtabellen werden nur aggregierte Netze verwaltet.
+    \end{itemize}
+  \end{footnotesize}
+  \vspace{0.4cm}
+  \begin{tiny}
+      \cite[vgl. dazu][188ff]{Schreiner2014a}
+  \end{tiny}
+\end{frame}
+
+
+\begin{frame}
+  \frametitle{LF09:11: die MAC-Adresse als Link Local Unicast Addr.}
+
+  \begin{footnotesize}
+
+  \begin{center}
+ 
+ \begin{bfseries}Link Local Unicast Address\end{bfseries} = \textcolor{red}{nicht routbare Adresse im lokalen Netz}
+
+ \vspace{0.5cm}
+  $\Rightarrow$
+
+ \vspace{0.5cm}
+  sozusagen eine  \begin{bfseries}\textcolor{blue}{IPv6-Mac-Adresse}\end{bfseries}
+
+ \vspace{0.5cm}
+  $\Rightarrow$
+
+ \vspace{0.5cm}
+  Warum die nicht aus realer MAC-Adresse 'konstruieren'?
+ 
+  \vspace{0.5cm}
+
+  \end{center}
+  \begin{tiny}
+    \textcolor{blue}{Idee:} \textcolor{gray}Link Local Unicast Prefix \texttt{FE80} + viele 0en + 6Byte Mac-Adresse?
+  \end{tiny}
+\end{footnotesize}
+
+\end{frame}
+
+
+
+\begin{frame}
+  \frametitle{LF09:11: die MAC-Adresse als Link Local Unicast Addr.}
 
   \begin{footnotesize}
 
@@ -162,5 +304,21 @@ $3,402823669*10^{38}$ ist unvorstellbar groß
 \end{frame}
 
 
+\begin{frame}
+  \frametitle{LF09:11:IPv6-Vorteile}
+
+  \begin{footnotesize}
+
+  \begin{itemize}
+    \item Vergrößerung des Adressraums. 
+    \item Vereinfachung der Protokolle, weniger Rechenaufwand für Router. 
+    \item DHCP vielfach überflüssig.
+    \item Implementierung von IPsec innerhalb des IPv6-Standards.
+    \item Immanente Unterstützung von Netztechniken wie Quality of Service und Multicast.
+  \end{itemize}
+
+\end{footnotesize}
+
+\end{frame}
 
 

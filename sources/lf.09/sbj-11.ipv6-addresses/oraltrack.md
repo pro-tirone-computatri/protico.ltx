@@ -11,7 +11,7 @@
 
 
 * bestehen aus 128 Bits (= 16 Bytes)
-* werden zur Verschriftlichung in 8 Blöcke zu je 2 Bytes aufgeteilt.
+* werden zur Verschriftlichung in 8 Blöcke zu je 2 Bytes aufgeteilt
 * jedes Bytes hexadezimal notiert
 * 2 benachbarte Bytes bilden ein Paar und werden vom folgenden durch einen \texttt{:} abgetrennt.
 * Die Bytes werden mit abnehmender Wertigkeit von links nach rechts ausgegeben.
@@ -31,7 +31,7 @@ Anmerkung:
 * Verteilung: 
   * Provider bekommt von [https://www.ripe.net/](https://www.ripe.net/) z.B. \texttt{2001:0db8::/32} zur weiteren Verteilung. 
   * Kunde bekommt vom Provider z.B. \texttt{2001:0db8:0000:0001/64} 
-* Grundsatz: Jede bekommt mindestens `2^{64}` IPv6-Adressen mindestens
+* Grundsatz: Jedes Netz hat mindestens `2^{64}` IPv6-Adressen
 
 ---
 
@@ -48,17 +48,61 @@ Finden Sie mit `ipconfig` bzw.  `ifconfig` Ihre IPv6-Adresse im Schulnetz
 ---
 
 
+---
+
+<!-- uebung::start -->
+<span style="color: green;">_ÜBUNG_</span> <span style="color:magenta;">LF09:11:IPv6:02</span>
+
+* [ ] Verdichten Sie die IPv6-Adresse `2001:0db8:0000:08d3:0000:0000:8a2e:7344`
+* [ ] Expandieren Sie die IPv6-Adresse `fc00::8a2e:0:0:70:7344`
+  
+<!-- uebung::end -->
+
+Lösung:
+
+* `2001:0db8:0000:08d3:0000:0000:8a2e:7344` => `2001:db8:0:08d3::8a2e:7344`
+* `fc00::8a2e:0:0:70:7344` => `fc00:0000:0000:8a2e:0000:0000:0070:7344`
+
+---
+
+
 **[→ ZP:Sheet:3]**
 
 * Zahlenmäßig stünden mit 16 Bytes `2^{128}` = `3,4 * 10^{38}` = `340 Sextillionen` IPv6-Adressen zur Verfügung
-* $3,402823669*10^{38}$ ist so groß, dass mein Taschenrechner 
-- wenn ich davon die $8.000.000.000$ Erdbewohnerinnen abziehen lasse - immer noch denselben Wert ausgibt.
+* $3,402823669*10^{38}$ ist so groß, dass mein Taschenrechner oder ein Internetrechner -- wenn ich davon die $8.000.000.000$ Erdbewohnerinnen abziehen lasse --- immer noch denselben Wert ausgibt.
 
 ### 2) IPv6-Adressklassen [→ ZP:Sheet:4]
 
-### 3) IPv6-MacAdresseb [→ ZP:Sheet:5]
+**Denkfrage:**
 
-Grundfrage: Könnte man eine Mac-Adresse (weltweit eindeutig) n icht als IPv6-Adresse verwenden?
+Wenn doch jedes Interface eines Rechner leicht eine routbare IPv6-Adresse bekommen kann,
+wozu braucht man dann *Unique Local Addresses*?
+
+### 3) IPv6-Segmentierung [→ ZP:Sheet:5]
+
+---
+
+<!-- uebung::start -->
+<span style="color: green;">_ÜBUNG_</span> <span style="color:magenta;">LF09:11:IPv6:03</span>
+
+Ihre Startup hat 2 Bereiche: Das Management (8 Personen mit je 4 Geräten) und 
+die Entwicklung (4 Personen mit je 8 Geräten). Keine Gruppe soll
+auf die Rechner der anderen Gruppe zugreifen können. Die Internetverbindung ist schon
+über einen Internetroute mit globaler IPv4 - und Global Unicast IPv6 Addresse gewährleistet.
+Nach Innen soll Firma ein IPv6-Netz ohne *Global Unicast Addressen* verwenden.
+
+[ ] Setzen Sie ein passendes IPv6-Netz auf, das ein Personalwachstum von 400% mit abdeckt.
+
+  
+<!-- uebung::end -->
+
+Lösung: [→ ZP:Sheet:9]
+
+---
+
+### 4) IPv6-MacAdressen [→ ZP:Sheet:5]
+
+Grundfrage: Könnte man eine Mac-Adresse (weltweit eindeutig) nicht als IPv6-Adresse verwenden?
 
 Ausgang:
 
@@ -92,3 +136,8 @@ Warum die Bit-Konvertierung?
 * Deshalb die Inversion der 7. Bits.
 *  [ → [https://ben.akrin.com/mac-address-to-ipv6-link-local-address-online-converter/](https]://ben.akrin.com/mac-address-to-ipv6-link-local-address-online-converter/)]
 *  [ → [https://community.cisco.com/t5/networking-knowledge-base/why-we-flip-the-7th-bit-in-eui-64-a-comprehensive-analysis/ta-p/4951015](https://community.cisco.com/t5/networking-knowledge-base/why-we-flip-the-7th-bit-in-eui-64-a-comprehensive-analysis/ta-p/4951015)]
+*  
+
+*Hinweis:* Liest man die Erklärungen genau, geht es nur deshalb um das 'Flippen'
+/ Inverntiereb des  7Bits, weil es als gesetzt vorausgesetzt wird. Von der Idee her
+muss es gelöscht werden, wenn es gesetzt ist.
