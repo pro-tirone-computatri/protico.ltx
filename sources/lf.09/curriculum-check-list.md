@@ -30,7 +30,7 @@
 |  | Adressen | IPv4 | sbj-09.ipv4-addresses* |
 |  | Adressen | Netzsegmentierung | sbj-10.ipv4-classes* |
 |  | Adressen | IPv6 | sbj-11.ipv6* |
-|  | Adressen | Net-Analyse | sbj-12.netanalysis* |
+|  | Adressen | Net-Analyse | sbj-12.network-analysis* |
 |  | Adressen | DMZ \& Firewalls | ...* |
 |  | Adressen | VLAN & Layer-III-Switches | ...* |
 |  | Layer II-IV | Protokolle \& Packaging | ...* |

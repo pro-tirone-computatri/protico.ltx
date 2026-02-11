@@ -93,7 +93,7 @@ Hinweis:
 
 * **MB/s** steht für *Mega__bytes_* per Seconds
 * **Mbps** steht für *Mega__bits_* per Seconds (MBits/s)
-  * Im Internetkontext auch: **MBit/s**: `1 Mbps = 1 MBit/s = 1.000.000 Bits pro Sekunde.`
+  * Im Internetkontext auch: **Mbit/s**: `1 Mbps = 1 Mbit/s = 1.000.000 Bits pro Sekunde.`
 
 
 * Kleinere Einheiten:

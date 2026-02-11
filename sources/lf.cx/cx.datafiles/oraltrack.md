@@ -190,7 +190,8 @@ _**Disclaimer**_: **_([→ ZP:Sheet:7])_**
 (R5) members = member | member ',' members;
 (R6) member = ws string ws ':' element;
 (R7) array = '[' ws ']' | '[' elements ']';
-(R8) ws = '' | '0020' ws | '000A' ws | '000D' ws | '0009' ws; 
+(R8) elements = element | element ',' elements;
+(R9) ws = '' | '0020' ws | '000A' ws | '000D' ws | '0009' ws; 
 ```
 Aus R1 - R3 folgt, dass jede Datei, die mit einem korrekt notierten Object, Array etc. beginnt, eine korrekte JSON-Datei ist.
 
@@ -212,7 +213,7 @@ Gelegentlich hört man trotzdem, eine JSON-Datei müsse mit einer geschweiften K
 
 ---
 
-Lösung: 
+Lösung: **_([→ ZP:Sheet:R8])_**
 
 * [1] folgt aus R1 + R2 + R3 + R4 + R8
 * [2] folgt aus R1 + R2 + R3 + R7 + R8
@@ -237,7 +238,7 @@ Lösung:
 * Dort findet man die Regel `elements = element | element ',' elements`
 
 
-### 5.) XML _([→ ZP:Sheet:8])_
+### 5.) XML _([→ ZP:Sheet:R9])_
 
 = Extensible Markup Language
 
@@ -286,13 +287,13 @@ Lösung:
 
 *Anmerkung*: Welche Tags und welche Typen der Werte in einem XML-Dateityp erlaubt sind, werden durch externe 'Doc-Type-Definition'-Dateien (DTD) oder xml-Schema-Dateien bestimmt.
 
-zZ den vielen anderen Detailanforderungen/Möglichkeiten vgl.
+Zu den vielen anderen Detailanforderungen/Möglichkeiten vgl.
 
 * [https://de.wikipedia.org/wiki/Extensible_Markup_Language](https://de.wikipedia.org/wiki/Extensible_Markup_Language)
 * Robert Eckstein: XML Pocket Reference, O'Reily, 2001
 * u. viele andere neuere Werke
 
-### 6. YAML _([→ ZP:Sheet:9])_
+### 6. YAML _([→ ZP:Sheet:10])_
 
 steht für *YAML Ain't Markup Language* (ursprünglich: *Yet Another Markup Language*))
 

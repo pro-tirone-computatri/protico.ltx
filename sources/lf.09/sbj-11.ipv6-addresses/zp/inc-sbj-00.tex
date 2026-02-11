@@ -110,8 +110,7 @@
 \vspace{0.4cm}
 \begin{flushright}
 \begin{tiny}
-$3,402823669*10^{38}$ = $3.4028237e+38-8*10^9=3.4028237e+38$ = unvorstellbar groß\\
-(nach z.B. \href{https://www.desmos.com/scientific?lang=de}{https://www.desmos.com/scientific})
+$2^{128} / 8.000.000.000\ Menschen = 3,402823669*10^{38} / (8*10^{9})  = 4.253529586*10^{28}\ pro\ Mensch$ = unvorstellbar groß
 \end{tiny}
 \end{flushright}
 
@@ -141,13 +140,23 @@ $3,402823669*10^{38}$ = $3.4028237e+38-8*10^9=3.4028237e+38$ = unvorstellbar gro
     \begin{tiny}{Erkennungspräfix: \textcolor{magenta}{\texttt{fc00::/7}} 
       ( \texttt{0x[fc|00] = \textcolor{teal}{1111110}0|000000000})}
     \end{tiny}
+  \end{itemize}
 
-    \item \textbf{Multicast Address} = Funktion wie gehabt,\\
+  \begin{tiny}
+
+  \begin{itemize}
+    \item \textbf{Unicast Address} :- One-To-One-Adresse = 1 Adresse, 1 Interface
+
+    \item \textbf{Multicast Address} = One-to-Many-Adresse = 1 Adresse aufgelöst auf viele Interfaces\\
     \begin{tiny}{Erkennungspräfix: \textcolor{magenta}{\texttt{ff00::/8}} 
       ( \texttt{0x[ff|00] = \textcolor{teal}{111111111}|000000000})}
     \end{tiny}
 
+    \item \textbf{Anycast Address} = One-to-Nearest-Adresse = 1 Adresse aufgelöst auf die am besten passende\\
+    = netzwerktechnisch 'nächste'. Erkennungspräfix: Wie Global Unicast Adressen. Unterschied konfigurativ.
+
   \end{itemize}
+  \end{tiny}
 
   \end{footnotesize}
 \end{frame}
@@ -225,12 +234,12 @@ nach  \href{https://de.wikipedia.org/wiki/IPv6}{https://de.wikipedia.org/wiki/IP
   \frametitle{LF09:11:Ergänzende Hinweise}
   \begin{footnotesize}
     \begin{itemize}
-      \item Interface Identifier hat immer 64 Bit
+      \item Interface Identifier hat immer 64 Bit.
       \item Demselben Interface können mehrere IPv6-Adressen zugeordnet sein.
       \item Die Interface-ID kann folglich in mehreren IPv6-Adressen auftauchen.
       \item Eine \textbf{Global Unicast Address} beginnt mit einem Routing-Präfix (48 Bits = 6 Bytes), 
       \item Im Routing-Präfix sind 'nur' 13 Bits für die Top-Level-Aggregation vorgesehen.   
-      \item 13 Bits = 8191 Toplevel Provider = RIRs
+      \item 13 Bits = 8191 Toplevel Provider = RIRs.
       \item In Routingtabellen werden nur aggregierte Netze verwaltet.
     \end{itemize}
   \end{footnotesize}
@@ -281,21 +290,21 @@ nach  \href{https://de.wikipedia.org/wiki/IPv6}{https://de.wikipedia.org/wiki/IP
 
   \begin{itemize}
     \item Mac-Adresse (Hex-Notation) in zwei 3-Byte-Blöcke aufteilen:\\
-    \qquad \texttt{52:74:f2:b1:a8:7f} $\rightarrow$ \texttt{52:74:f2} und \texttt{b1:a8:7f}
+    \qquad \texttt{52:74:f2:b1:a8:7f} $\rightarrow$ \texttt{52:74:f2} und \texttt{b1:a8:7f}.
     \item Dazwischen den Wert \texttt{FF:FE} einfügen: \\
-    \qquad \texttt{52:74:f2} + \texttt{FF:FE} + \texttt{b1:a8:7f} $\rightarrow$ \texttt{52:74:f2:FF:FE:b1:a8:7f})
+    \qquad \texttt{52:74:f2} + \texttt{FF:FE} + \texttt{b1:a8:7f} $\rightarrow$ \texttt{52:74:f2:FF:FE:b1:a8:7f}.
     \item Das Ergebnis in die IPv6-Format umwandeln: \\
-    \qquad \texttt{52:74:f2:FF:FE:b1:a8:7f} $\rightarrow$ \texttt{5274:f2ff:feb1:a87f} )
-    \item Das erste Oktet in Binärnotation umwandeln: \\
-    \qquad \texttt{52} $\rightarrow$ \texttt{01010010})
+    \qquad \texttt{52:74:f2:FF:FE:b1:a8:7f} $\rightarrow$ \texttt{5274:f2ff:feb1:a87f}.
+    \item Das erste Oktett in Binärnotation umwandeln: \\
+    \qquad \texttt{52} $\rightarrow$ \texttt{01010010}
     \item Das 7 Bit invertieren: \\
-    \qquad \texttt{01010010} $\rightarrow$ \texttt{01010000})
+    \qquad \texttt{01010010} $\rightarrow$ \texttt{01010000}.
     \item Ergebnis in Hex-Notation umwandeln:\\ 
-    \qquad \texttt{01010000} $\rightarrow$ \texttt{50})
-    \item Das erste Oktet durch den neuen Wert ersetzen \\
-    \qquad \texttt{5274:f2ff:feb1:a87f} $\rightarrow$ \texttt{5074:f2ff:feb1:a87f})
+    \qquad \texttt{01010000} $\rightarrow$ \texttt{50}.
+    \item Das erste Oktett durch den neuen Wert ersetzen \\
+    \qquad \texttt{5274:f2ff:feb1:a87f} $\rightarrow$ \texttt{5074:f2ff:feb1:a87f}.
     \item Dem Ganzen das Link-Local-Prefix voransetzen: \\
-    \qquad \texttt{fe80::} voran ( \texttt{5074:f2ff:feb1:a87f} $\rightarrow$ \texttt{fe80::5074:f2ff:feb1:a87f})
+    \qquad \texttt{fe80::} voran ( \texttt{5074:f2ff:feb1:a87f} $\rightarrow$ \texttt{fe80::5074:f2ff:feb1:a87f}.
   \end{itemize}
 
 

@@ -28,10 +28,12 @@ Beispiel:
 Anmerkung:
 
 * In IPv6-Adressen gibt es keine Netzmaske! Der Netzanteil wird ausschließlich in CIDR-Notation markiert 
-* Verteilung: 
-  * Provider bekommt von [https://www.ripe.net/](https://www.ripe.net/) z.B. \texttt{2001:0db8::/32} zur weiteren Verteilung. 
-  * Kunde bekommt vom Provider z.B. \texttt{2001:0db8:0000:0001/64} 
-* Grundsatz: Jedes Netz hat mindestens `2^{64}` IPv6-Adressen
+* Verteilung:
+  * IANA → RIR (Regional Internet Registry) (z.B. ripe.net): /32-Ipv6-Netz
+  * RIR → ISP (Internetprovider): /48-IPv6-Netz
+  * ISP → Kunde: /56-IPv6-Netz
+  * Kunde → jedes Gerät : 64Bit-Identifier
+
 
 ---
 
@@ -69,7 +71,12 @@ Lösung:
 **[→ ZP:Sheet:3]**
 
 * Zahlenmäßig stünden mit 16 Bytes `2^{128}` = `3,4 * 10^{38}` = `340 Sextillionen` IPv6-Adressen zur Verfügung
-* $3,402823669*10^{38}$ ist so groß, dass mein Taschenrechner oder ein Internetrechner -- wenn ich davon die $8.000.000.000$ Erdbewohnerinnen abziehen lasse --- immer noch denselben Wert ausgibt.
+* Teil man die Zahl auf 8.000.000.000 Menschen auf ergibt sich:
+
+`2^128 / 8.000.000.000 Menschen = ~3,4*10^38 / 8*10^9 = ~4,2 * 10^28 Adressen pro Mensch` 
+
+
+Das ist immer noch unvorstellbar groß
 
 ### 2) IPv6-Adressklassen [→ ZP:Sheet:4]
 
@@ -80,18 +87,43 @@ wozu braucht man dann *Unique Local Addresses*?
 
 ### 3) IPv6-Segmentierung [→ ZP:Sheet:5]
 
+
+**Grundsatz**: 
+
+* 128-Bit IPv6-Adresse wird in 2 64Bit-Blöcke aufgeteilt.
+* Die ersten 64 Bit identifizieren das Netzwerk (bei IPv4: Netzadresse)
+* Die zweiten 64 Bit identifizieren das Interface (bei IPv4: Hostanteil)
+* eine Segmentierung der Interface-ID ist  nicht möglich.
+* ein Subnetting findet nur im Netzteil statt.
+
+**Verfahren:**
+
+* IANA →   RIR (Regional Internet Registry): /32-Ipv6-Netz
+* RIR →  ISP (Internetprovider): /48-IPv6-Netz
+* ISP →   Kunde: /56-IPv6-Netz
+* Kunde →   Gerät : 64Bit-Identifier
+
+Also:
+
+1. Kunde kann - wenn er ein /64-IPv6-Netz erhält - 2^64 Geräte in die BCD einbinden.
+2. Kunde kann - wenn er ein /64-IPv6-Netz erhält - damit keine Subnetzstruktur bilden.
+3. Kunde kann Subnetting nur betreiben, wenn er IPb6-Netz mit kleinerer CIDR-Notation erhält:
+
+Kleinstes mögliches Subnetting: /63-Netz ermöglicht 2 /64-Netze.
+
+
 ---
 
 <!-- uebung::start -->
 <span style="color: green;">_ÜBUNG_</span> <span style="color:magenta;">LF09:11:IPv6:03</span>
 
-Ihre Startup hat 2 Bereiche: Das Management (8 Personen mit je 4 Geräten) und 
+Ihre Start-up hat 2 Bereiche: Das Management (8 Personen mit je 4 Geräten) und 
 die Entwicklung (4 Personen mit je 8 Geräten). Keine Gruppe soll
 auf die Rechner der anderen Gruppe zugreifen können. Die Internetverbindung ist schon
-über einen Internetroute mit globaler IPv4 - und Global Unicast IPv6 Addresse gewährleistet.
-Nach Innen soll Firma ein IPv6-Netz ohne *Global Unicast Addressen* verwenden.
+über einen Internetrouter mit globaler IPv4 - und Global Unicast IPv6 Addresse gewährleistet.
+Nach Innen soll Firma ein IPv6-Netz ohne *Global Unicast Adressen* verwenden.
 
-[ ] Setzen Sie ein passendes IPv6-Netz auf, das ein Personalwachstum von 400% mit abdeckt.
+* [ ] Setzen Sie ein passendes IPv6-Netz auf, das ein Personalwachstum von 400% mit abdeckt.
 
   
 <!-- uebung::end -->
@@ -138,6 +170,54 @@ Warum die Bit-Konvertierung?
 *  [ → [https://community.cisco.com/t5/networking-knowledge-base/why-we-flip-the-7th-bit-in-eui-64-a-comprehensive-analysis/ta-p/4951015](https://community.cisco.com/t5/networking-knowledge-base/why-we-flip-the-7th-bit-in-eui-64-a-comprehensive-analysis/ta-p/4951015)]
 *  
 
+CISCO Community sagt dazu:
+
+1. "The 7th bit in a MAC address is known as the Universal/Local (U/L) bit, which indicates whether the address is globally administered or locally administered."
+2. "When this bit is set to '0' the address is considered globally unique, and when it is set to '1' it signifies a locally administered address."
+3 "Inverting the 7th bit (U/L bit) ensures that the resulting identifiers are appropriately designated for local significance, avoiding conflicts with globally administered addresses and allowing for efficient local network configuration."
+
+Daraus folgt: Wäre das 7. Bit schon gesetzt, würde es - 'invertiert' - eine lokal generierte MAC/Ipv6-Adresse als global verwaltet markieren.
+
+Es gibt Anmerkungen, dass das 'Flippen' in der Spezifikation besser formuliert werden sollte. ([https://forums.whirlpool.net.au/archive/2324153]) 
+
 *Hinweis:* Liest man die Erklärungen genau, geht es nur deshalb um das 'Flippen'
-/ Inverntiereb des  7Bits, weil es als gesetzt vorausgesetzt wird. Von der Idee her
+/ Invertieren des  7Bits, weil es als gesetzt vorausgesetzt wird. Von der Idee her
 muss es gelöscht werden, wenn es gesetzt ist.
+
+
+Anmerkung zu **DHCP** in IPv6:
+
+1. Es heißt, man spare sich in IPv6 den DHCP-Server.
+2. Das stimmt nur bzgl. der IPv6-Kommunikation in einer Broadcast-Domain: Die Link-Local-Unicast-Adresse kann aus der MAC ausgerechnet werden.
+3. Also: In einer BCD tatsächlich kein DHCP nötig.
+4. Tatsächlich gibt es auch einen DHCP-v6 Dienst: [https://en.wikipedia.org/wiki/DHCPv6](https://en.wikipedia.org/wiki/DHCPv6)
+
+
+---
+
+<!-- uebung::start -->
+<span style="color: green;">_ÜBUNG_</span> <span style="color:magenta;">LF09:11:IPv6:04</span>
+
+* [ ] Ermitteln Sie über `ipconfig` bzw. `ifconfig` diem MAC-Adresse Ihrer Netzwerkkarte.
+* [ ] Wandeln Sie die in eine IPv6 Link-Local-Unicast-Adresse um.
+* [ ] Ermitteln Sie Ihre reale Link-Local-Unicast-Adresse. Gibt es einen Zusammenhang?
+
+<!-- uebung::end -->
+
+**Lösung:**
+
+1. MAC-Adresse feststellen: `a0:d3:65:d3:60:ee`
+2. splitten und FF:FE einfügen: `a0:d3:65:ff:fe:d3:60:ee`
+3. in IPv6-Format umwandeln: `a0d3:65ff:fed3:60:ee`
+4. erstes Oktett in Binärnotation umwandeln: `a0` = `10100000`
+5. 7. Bit invertieren: `10100000` = `10100010`
+6. in Hexzahl zurück verwandeln: `10100010` = `a2`
+7. erstes Oktett durch neuen Wert ersetzen `a0d3:65ff:fed3:60:ee` = `a2d3:65ff:fed3:60:ee`
+8. das Link-Local-Unicast-Prefix voransetzen: `fe00::a2d3:65ff:fed3:60:ee`
+9. real `fe80::4645:ebfc:8c20:fc82`
+
+
+
+---
+
+

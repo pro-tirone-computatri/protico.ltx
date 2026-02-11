@@ -12,7 +12,7 @@ ws = '' | '0020' ws | '000A' ws | '000D' ws | '0009' ws; (* R9 *)
 
 (* Anwendung: *)
 
-json = '{ }';              (* zulässig? *)
-json = '[ ]';              (* zulässig? *)
-json = '"stimme": "hoch"'; (* zulässig? *)
-json = 'true';             (* zulässig? *)
+json = '{ }';              (* R1 > R2 > R3 > R4 *)
+json = '[ ]';              (* R1 > R2 > R3 > R7 *)
+json = '"stimme": "hoch"'; (* R1 > ? > R6 : members nur in obj R4 *)
+json = 'true';             (* R1 > R2 > R3 *)
