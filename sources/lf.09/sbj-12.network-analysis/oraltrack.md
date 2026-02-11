@@ -8,7 +8,7 @@
 
 **[→ ZP:Sheet:2]**
 
-### 1) `arp` 
+### 1) `arp` (W11: `arp -a`) 
 
 > "[...] manipulates or displays the kernel's IPv4 network neighbour cache." [ → man(arp)]
 
@@ -24,7 +24,7 @@ Address      HWtype  HWaddress           Flags Mask Iface
 speedport.ip ether   c4:e5:32:15:a6:bc   C          wlp113s0f0
 ```
 
-### 2) `ifconfig` und `ipconfig`
+### 2) `ifconfig` (W11: `ipconfig /all`)
 
 > "[...] is used to configure [or display] the kernel-resident network interfaces" [ → man(ifconfig)]
 
@@ -48,7 +48,7 @@ inet6 fe80::3b8:77e6:12cc:b8b3  prefixlen 64  scopeid 0x20<link>
 ether a0:d3:65:d3:60:ee  (Ethernet)
 ```
 
-### 3) `ip`
+### 3) `ip` (W11 ---)
 
 > "[...] show[s] / manipulate[s] routing, network devices, interfaces and tunnels [ → man(ip)]
 
@@ -171,10 +171,9 @@ default      speedport.ip  0.0.0.0        UG     0    0      0    wlp113s0f0
 <span style="color: green;">_ÜBUNG_</span> <span style="color:magenta;">**LF09:12:Netanalysis:01**</span>
 
 * [ ] Machen Sie sich zuerst mit allen Tools unter Linux vertraut. Nutzen Sie dazu das Schulnetz.
-* [ ] Wenden Sie dann die unter Windows vorhandenen äquivalenten Tools an. Nutzen Sie dazu das Schulnetz.
+* [ ] Machen Sie sich danach mit den Windows Äquivalenten vertraut. Nutzen Sie dazu das Schulnetz.
 * [ ] Finden Sie so viel wie möglich über den Aufbau des Schulnetzes heraus.
 * [ ] Dokumentieren Sie die Struktur des Schulnetzes, so weit Ihnen erkennbar.
-
 
 <!-- uebung::end -->
 
