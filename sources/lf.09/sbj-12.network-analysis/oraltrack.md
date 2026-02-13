@@ -8,7 +8,7 @@
 
 **[→ ZP:Sheet:2]**
 
-### 1) `arp` (W11: `arp -a`) 
+### 1) `arp` (unter W11: `arp -a`) 
 
 > "[...] manipulates or displays the kernel's IPv4 network neighbour cache." [ → man(arp)]
 
@@ -24,7 +24,7 @@ Address      HWtype  HWaddress           Flags Mask Iface
 speedport.ip ether   c4:e5:32:15:a6:bc   C          wlp113s0f0
 ```
 
-### 2) `ifconfig` (W11: `ipconfig /all`)
+### 2) `ifconfig` (unter W11: `ipconfig /all`)
 
 > "[...] is used to configure [or display] the kernel-resident network interfaces" [ → man(ifconfig)]
 
@@ -48,9 +48,12 @@ inet6 fe80::3b8:77e6:12cc:b8b3  prefixlen 64  scopeid 0x20<link>
 ether a0:d3:65:d3:60:ee  (Ethernet)
 ```
 
-### 3) `ip` (W11 ---)
+### 3) `ip` (unter W11: netsh)
 
 > "[...] show[s] / manipulate[s] routing, network devices, interfaces and tunnels [ → man(ip)]
+
+#### 3.1) `ip` 
+unter Linux
 
 * `ip addr` "shows addresses assigned to all network interfaces" (= IPv4- und IPv6-Adressen in CIDR-Notation)
 * `ip neigh` "shows the current neighbour table in kernel." (= Infos über BCD-Partner)
@@ -73,9 +76,25 @@ ist moderner als ipfconfig, liefert feinere Aussagen.
 * `ip -6 route show` zeigt die ipv6-Routingtabelle an
 * `ip -stats -human link show` zeigt eine Paketstatistik an
 
+#### 3.2) `netsh` 
+unter Windows 11
+
+* steht für *Network Shell* [ → [https://learn.microsoft.com/de-de/windows-server/administration/windows-commands/netsh](https://learn.microsoft.com/de-de/windows-server/administration/windows-commands/netsh)]
+* wird von einer Shell -- z.B. pwsh -- aus aufgerufen
+* ist selbst eine Shell, die Netzwerkbefehle entgegennimmt und ausführt
+* arbeitet mit ineinander verschachtelten Kontexten gefolgt von einem Befehl und dessen Parameter
+
+Beispiele:
+
+* `netsh interface ipv4 show addresses` (Befehl: *show* Parameter: *addresses*)
+* `netsh interface ipv4 show interfaces interface=17`  (Befehl: *show* Parameter: *interfaces* *interface=17*)
+* `netsh interface ipv6 show addresses` (Befehl: *show* Parameter: *addresses*)
+
+
+
 ### 4) `ping`
 
-> "send[s] ICMP ECHO_REQUEST to network hosts"  [ → man(ping)]
+> "send[s] ICMP ECHO_REQUEST to network hosts" [ → man(ping)]
 
 
 * `ping 8.8.8.8` sendet Echorequest zu einem Googleserver. Liefert Dauer bis zur Rückkehr.

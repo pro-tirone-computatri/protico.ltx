@@ -2,9 +2,9 @@
 import ipaddress
 import sys
 # set the default values and overload them by cmdline arguments
-IP_AD1='192.168.0.2'
-NT_MSK='255.255.255.0'
-IP_AD2='192.168.0.1'
+IP_AD1='10.75.65.222'
+NT_MSK='255.255.224.0'
+IP_AD2='10.75.70.108'
 if ((len(sys.argv)>1)) : IP_AD1=sys.argv[1]
 if ((len(sys.argv)>2)) : NT_MSK=sys.argv[2]
 if ((len(sys.argv)>3)) : IP_AD2=sys.argv[3]
