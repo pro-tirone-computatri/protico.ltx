@@ -181,7 +181,7 @@ default      speedport.ip  0.0.0.0        UG     0    0      0    wlp113s0f0
 * `netstat -ano | grep tcp` liefert die lauschenden und etablierten TCP-Socket-Verbindungen
 * `netstat -ano | grep udp` liefert die lauschenden und etablierten UDP-Socket-Verbindungen
 
-Ähnlich: `lsof -i -n
+Ähnlich: `lsof -i -n`
 
 
 ---
@@ -196,7 +196,76 @@ default      speedport.ip  0.0.0.0        UG     0    0      0    wlp113s0f0
 
 <!-- uebung::end -->
 
+*Solution:* **[→ ZP:Sheet:3]**
+
+* **Netz:**
+  * aus `ifconfig` WLAN-Schnittstellen-ID ablesen.
+  * aus `ifconfig $WLID` eigene IP-Adresse, Netz-Maske, Netz-Adresse, BCD-Adresse ablesen.
+  * aus `ip route show` Gateway-Adresse Netz-Adresse mit Präfixlänge ablesen.
+  * mit `ipaddress.ip_address(...)` Gateway-Definitionsmethode feststellen (NT+1 oder BC-1?)
+  * **Ergebnis:** [Stand 12.2.26:] 10.75.64.0/19
+    * 10.75 = wohl ein aus privatem Klasse-A-Netz (/8) abgespaltenes Klasse B-Netz (/16)
+    * 10.75.64 = aus dem Klasse-B-Netz abgespaltenes /19-Subnetz
+    * weitere aus 10.75/16 abspaltbare /19-Subnetze:
+      * *10.75.00 - 10.75.31.255 [hätte 10.75.20.1 als Mittendrin-Gateway. Realistisch?]* 
+      * 10.75.32 - 10.75.63.255
+      * **10.75.64 - 10.75.95.255** [existiert]
+      * *10.75.96 - 10.75.127.255 [hätte 10.75.110.1 als Mittendrin-Gateway. Realistisch?]*
+      * 10.75.128 - 10.75.159.255
+      * 10.75.160 - 10.75.191.255
+      * 10.75.192 - 10.75.223.255
+      * 10.75.224 - 10.75.255.255
+    * Segmentierung kann aber auch ganz anders sein
+* **Netzumgebung:**
+  * mit `traceroute 8.8.8.8` Weg zu Google durch Schulnetze ermitteln:
+  * Nbook → WLAN-GW:10.75.95.254 → ZWGW:10.75.20.1 → EDGEGW:10.75.110.1 → Internet
+  * `nslookup www.gs-ldk.de` → IP-Adresse 'Schulwebserver': `178.254.11.61`
+  * `nslookup gs-ldk.de` → IP-Adresse 'Domainserver': `178.254.11.61` (Hypothese: ders. also auch kein ssh.gs-ldk.de)
+  * `nslookup www.gs-ldk.eu` → IP-Adresse 'Schulserver': `80.144.108.63`
+  * Wege zu Servern:
+    * `traceroute 178.254.11.61`: von außen kein Ergebnis, letzte angezeigte IP: `185.195.100.22`
+    * `traceroute 80.144.108.63`: von außen kein Ergebnis, letzte angezeigte IP: `87.137.244.137` 
+  * mit whois-Dienst und IP-Geolocation-Diensten 
+    * wie
+      * [https://www.heise.de/netze/tools/whois/](https://www.heise.de/netze/tools/whois/)
+      * [https://whois.ripe.net](https://whois.ripe.net)
+      * [https://www.bennetrichter.de/tools/ip/](https://www.bennetrichter.de tools/ip/)
+      * [https://nordvpn.com/de/ip-lookup/](https://nordvpn.com/de/ip-lookup/)
+    * Ort und Anbieter feststellen:
+      * `178.254.11.61` ISP: 1blu GmbH, OWNER: EVANZO, ORT: North Rhine-Westphalia/Eschweiler
+      * `185.195.100.22` ISP/OWNER: EVANZO, ORT: unknown
+      * `80.144.108.63` ISP: Deutsche Telekom AG, OWNER: Deutsche Telekom AG, Internet service provider, ORT: Hessen/Greifenstein
+      * `87.137.244.137` ISP: Deutsche Telekom AG, OWNER: Deutsche Telekom AG, Internet service provider ORT: unknown
+    * zusammenfassen:
+      * Web-Präsenz der Schule wird von einer Firma EVANZO gehostet
+      * Anbindung der Schule über Provider 'Deutsche Telekom'
+* **Schulnetzstruktur:** Hypothese: 3 Netze bis Außenpunkt des Schulnetzes spricht für Struktur
+  * DMZ: Gateway: *10.75.110.1* 
+    * wenn `ping 10.75.110.0` kein Ergebnis und
+    * wenn `ping 10.75.110.255` => *ping: Do you want to ping broadcast?*
+    * dann *10.75.110.0/24* Netz
+  * Verwaltungsnetz: Gateway: 10.75.20.1
+    * wenn `ping 10.75.20.0` kein Ergebnis und
+    * wenn `ping 10.75.20.255` => *ping: Do you want to ping broadcast?*
+    * dann *10.75.20.0/24* Netz
+  * Wlan = Unterrichtsnetz
+  * Office-Lan für Fachzimmer und Sekretariat (Hypothese!)
+  * Binnen-Server-Lan
+
 ---
 
 
+<!-- uebung::start -->
+<span style="color: green;">_ÜBUNG_</span> <span style="color:magenta;">**LF09:12:Netanalysis:02**</span>
 
+
+Strukturieren und erstellen Sie ein JSON-File, dem Sie entnehmen können,
+
+* [ ] welche sieben zentralen Netzanalysetools wir haben,
+* [ ] wie man sie benutzt und
+* [ ] was man von Ihnen erfährt.
+* [ ] zu welchen Zwecken man mit welchen Netzanalysetools benutzen kann.
+
+<!-- uebung::end -->
+
+---

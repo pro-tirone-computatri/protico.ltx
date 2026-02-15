@@ -49,9 +49,6 @@ Finden Sie mit `ipconfig` bzw.  `ifconfig` Ihre IPv6-Adresse im Schulnetz
 
 ---
 
-
----
-
 <!-- uebung::start -->
 <span style="color: green;">_ÜBUNG_</span> <span style="color:magenta;">LF09:11:IPv6:02</span>
 
@@ -78,11 +75,49 @@ Lösung:
 
 Das ist immer noch unvorstellbar groß
 
-### 2) IPv6-Adressklassen [→ ZP:Sheet:4]
+### 2) IPv6-Adresstypen [→ ZP:Sheet:4]
+
+* Adressklassen wie bei IPv4 gibt es in IPv6 nicht
+* Adressentypen im Hinblick auf die Zwecke gibt es in IPv6 (fast) genaus, wie in IPv4 - nur heißen Sie anders:
+
+* __Unspecified Address__ = 0:0:0:0:0:0:0:0/128 = ::/128
+* __Global Unicast Address__ = 
+  * weltweit gültig, 
+  * ins Internet routbar
+  * Erkennungspräfix: 2000::/3 ( 0x[20|00] = 00100000|00000000 )
+* __Link Local Unicast-Address__ = 
+  * nur innnerhalb einer Broadcastdomäne gültig, 
+  * nicht routbar 
+  * quasi MAC-Adresse
+  * Erkennungspräfix: fe80::/10 ( 0x[fe|80] = 111111110|100000000)
+* __Unique Local Address__ = 
+  * ULA
+  * nicht ins Internet routbar
+  * in einem privaten Netz routbar
+  * wie private IPv4-Adressen
+  * Erkennungspräfix: fc00::/7 ( 0x[fc|00] = 11111100|000000000)
+* __Loopback__ = 
+  * allows a host to talk to itself over IPv6
+  * wie superprivate Adressen
+  * Erkennungspräfix: ::1/128 (= es gibt nur eine)
+
+* __Unicast Address__ =
+  * One-To-One-Adresse
+  * _Global Unicast Address_ u. Link Local Unicast-Address u. Unique Local Address
+* __Multicast Address__ =
+  * One-to-Many-Adresse
+  * wie IPv4 Multicastadressen 224.0.0.0/4
+  * Erkennungspräfix: ff00::/8
+* __Anycast Address__ =
+  * One-to-Nearest-Adresse
+  * Erkennungspräfix: Wie Global Unicast Adressen. Unterschied konfigurativ.
+
+Für weitere Einzelheiten vgl. [https://www.ripe.net/media/documents/ipv6_reference_card.pdf](https://www.ripe.net/media/documents/ipv6_reference_card.pdf)
+
 
 **Denkfrage:**
 
-Wenn doch jedes Interface eines Rechner leicht eine routbare IPv6-Adresse bekommen kann,
+Wenn doch jedes Interface eines Rechners leicht eine routbare IPv6-Adresse bekommen kann,
 wozu braucht man dann *Unique Local Addresses*?
 
 ### 3) IPv6-Segmentierung [→ ZP:Sheet:5]
@@ -111,8 +146,11 @@ Also:
 
 Kleinstes mögliches Subnetting: /63-Netz ermöglicht 2 /64-Netze.
 
+Anmerkungen: [→ ZP:Sheet:6]
 
 ---
+
+[→ ZP:Sheet:7]
 
 <!-- uebung::start -->
 <span style="color: green;">_ÜBUNG_</span> <span style="color:magenta;">LF09:11:IPv6:03</span>
@@ -121,18 +159,22 @@ Ihre Start-up hat 2 Bereiche: Das Management (8 Personen mit je 4 Geräten) und
 die Entwicklung (4 Personen mit je 8 Geräten). Keine Gruppe soll
 auf die Rechner der anderen Gruppe zugreifen können. Die Internetverbindung ist schon
 über einen Internetrouter mit globaler IPv4 - und Global Unicast IPv6 Addresse gewährleistet.
-Nach Innen soll Firma ein IPv6-Netz ohne *Global Unicast Adressen* verwenden.
+Nach innen soll Firma ein IPv6-Netz ohne *Global Unicast Adressen* verwenden.
 
 * [ ] Setzen Sie ein passendes IPv6-Netz auf, das ein Personalwachstum von 400% mit abdeckt.
 
   
 <!-- uebung::end -->
 
-Lösung: [→ ZP:Sheet:9]
+Lösung: [→ ZP:Sheet:8]
+
+1. /64 Subnetz pro Abteilung bedeutet (2^64)-1 anschließbare Geräte. Das ist zukunftssicher.
+2. Nur *Unique Local*-Adressen mit Präfix `fc00:` verwenden.
+3. Aus 1. und 2. folgt: Durchnumerierung der Subnetze reicht
 
 ---
 
-### 4) IPv6-MacAdressen [→ ZP:Sheet:5]
+### 4) IPv6-MacAdressen [→ ZP:Sheet:9]
 
 Grundfrage: Könnte man eine Mac-Adresse (weltweit eindeutig) nicht als IPv6-Adresse verwenden?
 
@@ -143,6 +185,8 @@ Ausgang:
 * Die letzten drei sind die Interfacenummer = Netzwerkkarten-ID. 
   
 MAC-Adresse sollte als in eine IPv6 *Link Local Unicast Address* umgewandelt werden können
+
+Umwandlungsalgorithmus: **[→ ZP:Sheet:10]**
 
 * Mac-Adresse (Hex-Notation) in zwei 3-Byte-Blöcke aufteilen:
   * `(52:74:f2:b1:a8:7f` → `52:74:f2 und b1:a8:7f)`
@@ -184,8 +228,7 @@ Es gibt Anmerkungen, dass das 'Flippen' in der Spezifikation besser formuliert w
 / Invertieren des  7Bits, weil es als gesetzt vorausgesetzt wird. Von der Idee her
 muss es gelöscht werden, wenn es gesetzt ist.
 
-
-Anmerkung zu **DHCP** in IPv6:
+Anmerkung zu **DHCP** in IPv6: **[→ ZP:Sheet:11]**
 
 1. Es heißt, man spare sich in IPv6 den DHCP-Server.
 2. Das stimmt nur bzgl. der IPv6-Kommunikation in einer Broadcast-Domain: Die Link-Local-Unicast-Adresse kann aus der MAC ausgerechnet werden.
@@ -198,7 +241,7 @@ Anmerkung zu **DHCP** in IPv6:
 <!-- uebung::start -->
 <span style="color: green;">_ÜBUNG_</span> <span style="color:magenta;">LF09:11:IPv6:04</span>
 
-* [ ] Ermitteln Sie über `ipconfig` bzw. `ifconfig` diem MAC-Adresse Ihrer Netzwerkkarte.
+* [ ] Ermitteln Sie über `ipconfig` bzw. `ifconfig` die MAC-Adresse Ihrer Netzwerkkarte.
 * [ ] Wandeln Sie die in eine IPv6 Link-Local-Unicast-Adresse um.
 * [ ] Ermitteln Sie Ihre reale Link-Local-Unicast-Adresse. Gibt es einen Zusammenhang?
 

@@ -118,7 +118,7 @@ $2^{128} / 8.000.000.000\ Menschen = 3,402823669*10^{38} / (8*10^{9})  = 4.25352
 
 
 \begin{frame}
-  \frametitle{LF09:11:IPv6-Adressklassen}
+  \frametitle{LF09:11:IPv6-Adresstypen}
 
   \begin{footnotesize}
 
@@ -126,20 +126,24 @@ $2^{128} / 8.000.000.000\ Menschen = 3,402823669*10^{38} / (8*10^{9})  = 4.25352
     \item \textbf{Unspecified Address} = \texttt{0:0:0:0:0:0:0:0/128} = \texttt{::/128} \\
     \begin{tiny}{\textit{ Entspricht der IPv4-Adresse 0.0.0.0/32}}\end{tiny}
 
-    \item \textbf{Global Unicast Address} =  weltweit gültig, ins Internet routbarar \\
+    \item \textbf{Global Unicast Address} =  weltweit gültig, ins Internet routbar \\
     \begin{tiny}{Erkennungspräfix: \textcolor{magenta}{\texttt{2000::/3}} 
       ( \texttt{0x[20|00] = \textcolor{teal}{001}00000|00000000} })
     \end{tiny}
 
-    \item \textbf{Link Local Unicast-Address} = nur in BCD gültig, nicht routbarar, wie MAC-Adresse\\
+    \item \textbf{Link Local Unicast-Address} = nur in BCD gültig, nicht routbar, wie MAC-Adresse\\
     \begin{tiny}{Erkennungspräfix: \textcolor{magenta}{\texttt{fe80::/10}} 
       ( \texttt{0x[fe|80] = \textcolor{teal}{111111110}|\textcolor{teal}{10}0000000})}
     \end{tiny}
 
-    \item \textbf{Unique Local Address} = ULA, nicht ins Internet routbarar, wie private IPv4-Adressen \\
+    \item \textbf{Unique Local Address} = ULA, nicht ins Internet routbar, wie private IPv4-Adressen \\
     \begin{tiny}{Erkennungspräfix: \textcolor{magenta}{\texttt{fc00::/7}} 
-      ( \texttt{0x[fc|00] = \textcolor{teal}{1111110}0|000000000})}
-    \end{tiny}
+      ( \texttt{0x[fc|00] = \textcolor{teal}{1111110}0|000000000})}\end{tiny}
+    
+    \item \textbf{Loopback Address} = 'Selbstgespräch'-Adresse, wie superprivat IPv4-Adressen \\
+    \begin{tiny}Erkennungspräfix: \textcolor{magenta}{\texttt{::1/128}} \end{tiny}
+
+
   \end{itemize}
 
   \begin{tiny}
@@ -249,6 +253,19 @@ nach  \href{https://de.wikipedia.org/wiki/IPv6}{https://de.wikipedia.org/wiki/IP
   \end{tiny}
 \end{frame}
 
+\begin{frame}
+  \frametitle{LF09:11:IPv6-Segmentierung:Übung}
+  \begin{center}
+    \includegraphics[height=7.2cm]{\imgLf/ipv6-segmentation-task.png}
+  \end{center}
+\end{frame}
+
+\begin{frame}
+  \frametitle{LF09:11:IPv6-Segmentierung:Lösung}
+  \begin{center}
+    \includegraphics[height=7.5cm]{\imgLf/ipv6-segmentation-solution.png}
+  \end{center}
+\end{frame}
 
 \begin{frame}
   \frametitle{LF09:11: die MAC-Adresse als Link Local Unicast Addr.}

@@ -124,6 +124,9 @@ verwendet nur 4 Schichten:
     * und hat demnach die Berechnungsformel (n*(n-1))/2 = Gaus'sche Summenformel
     * In (teil(!))vermaschten System relativ aufwendiges Routing
     * kostenintensiv: Im vermaschten Subnetz mit n Knoten braucht jeder Maschine/Knoten (n*(n-1))/2 Netzwerkinterfaces oder einen zugeordneten Switch/Hub mit (n*(n-1))/2 Ports
+  * **Namensclash:**
+    * deutsch: *vollvermaschtes System* von Maschen.
+    * englisch: *full mesh topology* oder *fully meshed system*, NICHT: *mashed*! (mash = Brei, Matsch mashed = zerquestscht) 
 * **Zellen**-Topologie:
   * Bereiche der Erreichbarkeit überlagern sich, Geräte ’wandern’ von einer Zelle zur anderen.
   * Vorteil: Ausfall eines Gerätes betrifft nicht das Netz als solches.
