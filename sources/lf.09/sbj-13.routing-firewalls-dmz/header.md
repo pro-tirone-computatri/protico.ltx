@@ -1,8 +1,8 @@
 ---
-title: 'LF03:08:Bitweise Verknüpfung'
+title: 'LF09:13:Routing,DMZ,Firewalls'
 author: [K. Reincke]
 date: PTCDATE
-keywords: [Layer I, Layer-II, Layer-III, MAC-Adressen, IPv4-Adressen]
+keywords: [sbj-00.flat]
 header-left: "\\theauthor"
 header-center: "proTironeComputatri"
 header-right: "\\thetitle" 
@@ -13,4 +13,4 @@ lang: "de-DE"
 papersize: a4
 colorlinks: true
 ---
-## LF03:08:Exkurs: Bitweise Verknüpfungen bzw. bitweise und logische Operatoren 
+## LF09:13:Routing,DMZ,Firewalls:

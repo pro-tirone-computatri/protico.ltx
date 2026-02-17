@@ -90,7 +90,7 @@ verwendet nur 4 Schichten:
   * Ethernet, Token Bus, Token Ring, FDDI
 
 
-* →  https://de.wikipedia.org/wiki/Internetprotokollfamilie](https://de.wikipedia.org/wiki/Internetprotokollfamilie)
+* → [https://de.wikipedia.org/wiki/Internetprotokollfamilie](https://de.wikipedia.org/wiki/Internetprotokollfamilie)
 * → [https://en.wikipedia.org/wiki/Internet_protocol_suite](https://en.wikipedia.org/wiki/Internet_protocol_suite)
 
 

@@ -22,7 +22,7 @@ echo "executing solution of task <$EXC>"
 
 # EXAM-D2: Implementieren Sie ein Skript, das überprüft, ob alle sh2go-Übungen 
 # intern auch die Übungsnummer verwenden, die extern ihr Dateinamen enthält
-# Wenn nicht, soll es Pfad und Namen der entsprechende Datei und den
+# Wenn nicht, soll es Pfad und Namen der entsprechenden Datei und den
 # Hinweis 'Mismatch' ausgeben
 
 # [5 PT]
