@@ -54,8 +54,6 @@ Vereinfacht:
 * [→ Gratzke et.al: Technische IT Berufe, Lernfelder 6-9, 2022, S. 325ff]
 * [→ [https://de.wikipedia.org/wiki/Twisted-Pair-Kabel](https://de.wikipedia.org/wiki/Twisted-Pair-Kabel)]
 
-eBNF: **[→ ZP:Sheet:5]**
-i
 Achtung: Englische Seite nutzt leicht andere Bezeichner. Dort wird 'Screened' (versus Foilded) als
 Bezeichnung für den Schutz des Kabelpaares benutzt, nicht für die Umhüllung als Ganzes.
 [→ [https://en.wikipedia.org/wiki/Twisted_pair](https://en.wikipedia.org/wiki/Twisted_pair)]
@@ -84,7 +82,7 @@ Industriebenennungen weichen von der ISO-Norm ab.
 Grundsatz: Je höher die Kategorie (Kabeltyp), desto höher die Bandbreite und komplexer die Abschirmung
 
 
-### 2. Datendurchsatz **[→ ZP:Sheet:6]**
+### 2. Datendurchsatz **[→ ZP:Sheet:5]**
 
 Übertragungsgeschwindigkeit (max. Datendurchsatz) in einem Kabel 
 
@@ -111,7 +109,7 @@ Hinweis:
 ---
 
 <!-- uebung::start -->
-<span style="color: green;">_ÜBUNG_</span> <span style="color:magenta;">**LF09:03:Verdrahtung:01**</span>
+<span style="color: green;">_ÜBUNG_</span> <span style="color:magenta;">**LF03:03:Verdrahtung:01**</span>
 
 Gesetzt, ein Kabel kann maximal 512 Kbps übertragen. Wie lang braucht die Übertragung
 von ein 2 Megabyte großes Bild, wenn man von Störung und den Protokollbytes/-bits abstrahiert?
@@ -128,7 +126,8 @@ von ein 2 Megabyte großes Bild, wenn man von Störung und den Protokollbytes/-b
 
 ---
 
-### 3. Ethernetstandards **[→ ZP:Sheet:7]**
+### 3. Ethernetstandards **[→ ZP:Sheet:6]**
+
 
 Ethernetstandards basieren auf *Mbps*:
 
@@ -138,7 +137,8 @@ Ethernetstandards basieren auf *Mbps*:
 * **10 Gigabit Ethernet** = IEEE Standard 802.3ae = *10 Gbps*
 
 
-### 4. Verfeinerte Größenangaben **[→ ZP:Sheet:8]**
+### 4. Verfeinerte Größenangaben **[→ ZP:Sheet:7]**
+
 
 Umrechnung von Kilo[byte/bits] in [Bytes/Bits] oft unklar kommuniziert: 
 
@@ -201,7 +201,7 @@ Hinweis: Die implizite Größenerweiterung betrifft u.U. auch die Dateisysteme u
 ---
 
 <!-- uebung::start -->
-<span style="color: green;">_ÜBUNG_</span> <span style="color:magenta;">**LF09:03:Verdrahtung:02**</span>
+<span style="color: green;">_ÜBUNG_</span> <span style="color:magenta;">**LF03:03:Verdrahtung:02**</span>
 
 Gesetzt,
 
@@ -225,47 +225,8 @@ Wie lang braucht die Übertragung?
 ---
 
 <!-- uebung::start -->
-<span style="color: green;">_ÜBUNG_</span> <span style="color:magenta;">**LF09:03:Verdrahtung:03**</span>
 
-* [ ] Rufen Sie eine Shell auf
-* [ ] Geben Sie folgendes Kommando ein
-
-`git clone https://github.com/pro-tirone-computatri/protico.ltx.git`
-
-* In welcher Einheit wird Ihnen der Fortschritt der heruntergeladenen Dateien und der Datendurchsatz reportet.
-* Was gibt Ihnen der Report als Größe des heruntergeladenen Repositories an?
-* Wie groß sind die heruntergeladenen Dateien wirklich?
-  
-<!-- uebung::end -->
-
-**Lösung:**
-Stand 04.02.2026 :
-
-* git report:
-
-`Receiving objects: 100% (1373/1373), 181.73 MiB | 12.53 MiB/s, done`
-
-* `du -sh` (besser: `du -ahd1`) sagt: 467M (Gemeint MB)
-* File-Browser sagt: 486.8 MB
-
-Wie groß ist die Differenz?
-
-```
-1) 181.73 MiB = 181,73 * 2^20 = 
-    190557716.48 Bytes / 1.000.000 = 190.55771648 MB
-also
-2) Downloadgröße:  190.6 MB
-3) Plattenbelegung: 486.8 MB
-
-```
-
-**Grund:** Git nutzt Kompression bei den Netzkommandos *push*, *pull*, *clone* etc.
-
----
-
-<!-- uebung::start -->
-
-<span style="color: green;">_ÜBUNG_</span> <span style="color:magenta;">**LF09:03:Verdrahtung:04**</span>
+<span style="color: green;">_ÜBUNG_</span> <span style="color:magenta;">**LF03:03:Verdrahtung:04**</span>
 
 Aufgabe aus der AP1-Prüfung 2022(?)
 
@@ -316,7 +277,8 @@ E) Vom neuen Gesamtbedarf aus gesehen, sind
 
 ---
 
-### 5. Wlan-Standards **[→ ZP:Sheet:9]**
+### 5. Wlan-Standards **[→ ZP:Sheet:8]**
+
 
 WLAN-Typen/Techniken werden ebenfalls anhand der in einer Sekunde übertragbaren 
 Datenmenge klassifiziert:
@@ -340,7 +302,7 @@ Zu den neueren Standards vgl.:
 * [→ [https://de.wikipedia.org/wiki/Wireless\_Local\_Area\_Network](https://de.wikipedia.org/wiki/Wireless\_Local\_Area\_Network)]
 
 
-### 6. Wlan-Sicherheit **[→ ZP:Sheet:10,11]**
+### 6. Wlan-Sicherheit **[→ ZP:Sheet:9,10]**
 
 * Netze auf Kabelbasis sind physikalisch vor ungewolltem Zugriff geschützt. 
   * (Anm.: Jedenfalls in Maßen: mit kriminellem Aufwand können Kabel physikalisch 'angebohrt' werden.)

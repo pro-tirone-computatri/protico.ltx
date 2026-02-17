@@ -1,0 +1,192 @@
+% This file is part of the Open Source project 'proTironeComputatri'
+% (c) 2025 Karsten Reincke (https://github.com/pro-tirone-computatri/protico.ltx)
+% It is distributed under the terms of the creative commons license
+% CC-BY-4.0 (= https://creativecommons.org/licenses/by/4.0/)
+
+\selectlanguage{ngerman}
+
+
+\begin{frame}  
+  \frametitle{LF03:03::Layer I-II:Kabeltypen }
+  \begin{center}
+    \includegraphics[height=7.5cm]{\imgGl/cable-types.png}
+  \end{center}
+\end{frame}
+
+\begin{frame}  
+  \frametitle{LF03:03::Layer I-II:Kabeltypen }
+  \begin{center}
+    \includegraphics[height=7.5cm]{\imgGl/cable-types-exampels.png}
+  \end{center}
+\end{frame}
+
+\begin{frame}  
+  \frametitle{LF03:03::Layer I-II:Kabeltypen:Systematik}
+  \begin{center}
+    \includegraphics[height=7cm]{\imgGl/cable-type-systematic.png}
+  \end{center}
+  \begin{flushright}
+    \begin{tiny}
+      Screenshot taken from \href{https://en.wikipedia.org/wiki/Twisted\_pair}{https://en.wikipedia.org/wiki/Twisted\_pair}
+    \end{tiny}
+  \end{flushright}
+\end{frame}
+
+\begin{frame}  
+  \frametitle{LF03:03::Layer I-II:Datendurchsatz }
+
+  \begin{tiny}
+  \begin{center}
+  \begin{table}
+  \caption{Bit-Context}
+  \renewcommand{\arraystretch}{1.5}
+  \begin{tabular}{|c||c|c|c|c|}
+    \hline
+    Size & Unit & Meaning & Size & Number \\
+    \hline
+    \hline
+    Mega & 1 Mbps (Mbit/s) & 1 Megabit per Second &  $10^6$ Bits per Second & 1.000.000 $\frac{Bits}{s}$\\
+    \hline
+    Kilo & 1 Kbps (KBit/s) & 1 Kilobit per Second &  $10^3$ Bits per Second & 1.000 $\frac{Bits}{s}$ \\
+    \hline
+     - & 1 Bps (Bit/s) & 1 Bit per Second &  $1$ Bit per Second & 1 $\frac{Bit}{s}$ \\
+    \hline
+  \end{tabular}
+  \end{table}
+
+  \vspace{0.4cm}
+  \begin{table}
+  \caption{Byte-Context}
+  \renewcommand{\arraystretch}{1.5}
+  \begin{tabular}{|c||c|c|c|c|}
+    \hline
+    Size & Unit & Meaning & Size & Number\\
+    \hline
+    \hline
+    Mega & 1 MB/s & 1 Megabyte per Second & $10^6$ Bytes per Second & 1.000.000 $\frac{B}{s}$ \\
+    \hline
+    Kilo & 1 KB/s & 1 Kilobyte per Second & $10^3$ Bytes per Second & 1.000 $\frac{B}{s}$\\
+    \hline
+     - & 1 B/s & 1 Byte per Second &  $1$ Byte per Second & 1 $\frac{B}{s}$ \\
+    \hline
+  \end{tabular}  
+\end{table}
+  \end{center}
+  \end{tiny}
+
+\end{frame}
+
+
+\begin{frame}  
+  \frametitle{LF03:03::Layer I-II: Ethernetstandards }
+
+  \begin{itemize}
+    \item \textbf{Ethernet/10Base-T} = IEEE Standard 802.3 = 10 Mbps
+    \item \textbf{Fast Ethernet/100Base-T} = IEEE Standard 802.3u = 100 Mbps
+    \item \textbf{Gigabit Ethernet/GigE} = IEEE Standard 802.3z = 1000 Mbps
+    \item \textbf{10 Gigabit Ethernet} = IEEE Standard 802.3ae = 10 Gbps
+  \end{itemize}
+
+\end{frame}
+
+\begin{frame}  
+  \frametitle{LF03:03::Layer I-II: Datendurchsatzberechnungen }
+
+  \begin{center}
+  \begin{footnotesize}
+
+  \renewcommand{\arraystretch}{1.5}
+  \begin{tabular}{|c|c|c|c|}
+    \multicolumn{4}{c}{Präfixsystematik}  \\
+    \hline
+    Dec. & Size & Bin. & Size \\
+    \hline
+    \hline
+    kilo & $10^3$ & kibi &  $2^{10}$ \\
+    \hline
+    mega & $10^6$ & mebi &  $2^{20}$  \\
+    \hline
+    giga & $10^9$ & gibi &  $2^{30}$  \\
+    \hline
+  \end{tabular}
+
+  \vspace{0.4cm}
+  \renewcommand{\arraystretch}{1.5}
+  \begin{tabular}{|c|c|c|c|}
+    \multicolumn{4}{c}{IT-Anwendung} \\
+    \hline
+    Dec. & Size & Bin. & Size\\
+    \hline
+    \hline
+    1 Kilobyte &  $10^3$ Bytes & 1 Kibibyte = KiB & $2^{10}$ Bytes \\
+    \hline
+    1 Megabyte &  $10^6$ Bytes & 1 Mebibyte = MiB & $2^{20}$ Bytes \\
+    \hline
+    1 Gigabyte &  $10^9$ Bytes & 1 Gibibyte = GiB & $2^{30}$ Bytes \\
+    \hline
+  \end{tabular}
+
+\end{footnotesize}
+\end{center}
+
+\vspace{0.1cm}
+$\rightarrow$ Unterscheide auch \texttt{Mbps} von \texttt{Mibps} und \texttt{MB/s} von \texttt{MiB/s}!
+
+\end{frame}
+
+\begin{frame}  
+  \frametitle{LF03:03::Layer I-II:Wlan-Standards nach Datendurchsatz }
+  \begin{small}
+
+  \begin{itemize}
+    \item \textbf{IEEE 802.11a} = max 54 Mbit/s im 5GHz Band
+    \item \textbf{IEEE 802.11b} = max 11 Mbit/s im 2,4 GHz Band
+    \item \textbf{IEEE 802.11g} = max 54 Mbit/s im 2,4 GHz Band
+    \item \textbf{IEEE 802.11n} = Wi-Fi4 = erlaubt bis zu 289 Mbit/s im 2,4 GHz Band und bis 600 Mbit/s im 5GHz Band
+    \item \textbf{IEEE 802.11ac} = Wi-Fi5 = seit 2014 mit max. 6933 Mbit/s nur 5GHz Ban
+    \item \textbf{IEEE 802.11ax} = Wi-Fi6 = seit 2021 mit max. 9600 Mbit/s im 2,4-GHz- und im 5-GHz-Band arbeitet. 
+    \item \textbf{IEEE 802.11be} = Wi-Fi7 = seit 2024 im 2,4-GHz-, 5-GHz- und 6-GHz-Band
+    \item \textbf{IEEE 802.11 Mrd.} = Wi-Fi8 = voraussichtlich 2028 
+  \end{itemize}
+\end{small}
+
+\end{frame}
+
+\begin{frame}  
+  \frametitle{LF03:03::Layer I-II:Wlan-Sicherheit:WEP,WPA,WPA2}
+
+   \textbf{Verschlüsselung}:
+
+  \begin{itemize}
+    \item \textbf{WEP} = Wired Equivalent Privacy Verschlüsselung (RC4-Verschlüsselung)  
+    \item \textbf{WPA} = Wi-Fi Protected Access (Wie WEP, aber mit TKIP (Temporal Key Integrity Protocol))
+    \item \textbf{WPA2} = Wi-Fi Protected Access 2 
+   \begin{itemize}
+      \item verbesserte Verschlüsselungsmethode AES (Advanced Encryption Standard) 
+      \item mit CCMP (Counter Mode with Cipher Block Chaining Message Authentication Code Protocol) 
+    \end{itemize}  
+  \end{itemize}
+
+  \vspace{0.2cm}
+  \textbf{Authentifizierung}:
+
+  \begin{itemize}
+    \item \textbf{WPA-PSK}:  Kenntnis \textbf{Pre-Shared-Key} =  Nutzungsberechtigung.
+    \item \textbf{Radius-Server} (Remote Authentication Dial-In User Service) : zentraler personenbezogener Authentifizierungsserver
+  \end{itemize}
+
+\end{frame}
+
+\begin{frame}  
+  \frametitle{LF03:03::Layer I-II:Wlan-Sicherheit:WPA3}
+
+  
+  \begin{itemize}
+     \item \textbf{WPA3} = Wi-Fi Protected Access 3
+    \begin{itemize}
+      \item verbesserte Verschlüsselungsmethode AES 128 bzw AES-256 (Advanced Encryption Standard) 
+      \item Statt pre-Shared-Key-Verfahren hier Simultaneous Authentication of Equals (SAE),
+    \end{itemize}    
+  \end{itemize}
+
+\end{frame}

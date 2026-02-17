@@ -13,7 +13,7 @@
 
 <!-- uebung::start -->
 
-<span style="color: green;">_AUFGABE_</span> <span style="color:magenta;">**LF09:90:1.1**</span>
+<span style="color: green;">_AUFGABE_</span> <span style="color:magenta;">**LF09:92:1.1**</span>
 
 *Netzwerke werden auch nach der Art ihrer Struktur klassifiziert.*
 
@@ -32,7 +32,7 @@ Lösung:
 
 <!-- uebung::start -->
 
-<span style="color: green;">_AUFGABE_</span> <span style="color:magenta;">**LF09:90:1.2**</span>
+<span style="color: green;">_AUFGABE_</span> <span style="color:magenta;">**LF09:92:1.2**</span>
 
 *Es gibt zwei Schichtenmodelle, die Begriffe und Konzepte der Netzwerktechnologie ordnen sollen.*
 
@@ -55,7 +55,7 @@ Lösung:
 
 <!-- uebung::start -->
 
-<span style="color: green;">_AUFGABE_</span> <span style="color:magenta;">**LF09:90:2**</span>
+<span style="color: green;">_AUFGABE_</span> <span style="color:magenta;">**LF09:92:2**</span>
 
 MAC-Adressen gelten im IPv4-Netz als Adresse der Netzwerkkarte, IPv4-Adressen als Adresse des Gerätes.
 
@@ -80,7 +80,7 @@ Lösung:
   
 <!-- uebung::start -->
 
-<span style="color: green;">_AUFGABE_</span> <span style="color:magenta;">**LF09:90:3**</span>
+<span style="color: green;">_AUFGABE_</span> <span style="color:magenta;">**LF09:92:3**</span>
 
 * 3.1.1 __Beschreiben Sie, was ein *Repeater* seiner intendierten Aufgabe nach tut.__ (2P)
 * 3.1.2 __Beschreiben Sie, was ein *Hub* seiner intendierten Aufgabe nach tut.__ (2P)
@@ -112,7 +112,7 @@ Lösung:
 
 <!-- uebung::start -->
 
-<span style="color: green;">_AUFGABE_</span> <span style="color:magenta;">**LF09:90:4**</span>
+<span style="color: green;">_AUFGABE_</span> <span style="color:magenta;">**LF09:92:4**</span>
 
 *Die Kommunikation auf Layer-II bzw. auf Hub-, Bridge- oder Switchebene ist mittels des Adress-Resolution-Protokolls geregelt*:
 
