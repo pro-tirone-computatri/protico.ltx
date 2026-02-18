@@ -43,10 +43,8 @@ Lösung: **[→ ZP:Sheet:3]**
 
 Grundsatz:
 
-* Sind mehrere Router in ein Netzwerk eingebunden
-  * (= setzt es sich aus mehreren Broadcastdomains zusammen)
-* gibt es
-  * (sofern nicht durch Firewalls unterbunden)
+* Sind mehrere Router in einer Broadcast-Domäne eingebunden
+* gibt es (sofern nicht durch Firewalls unterbunden)
 * auch mehrere Wege (Hoppingsequenzen), einen Rechner auf Layer III-Ebene zu erreichen. 
 
 **Routen**
@@ -91,16 +89,15 @@ existieren
 * **Statisches Routing**
   * das manuelle Eintragen fester Routen an Routern
   * erfolgt meist an Grenzroutern
-  * hat meist die Form *Route alles, das nicht zu Deinem Adressbereich gehört, übers
+  * hat meist die Form *route alles, das nicht zu Deinem Adressbereich gehört, übers
 Interface X zu Router Y*
-  * kann lokal auch die Form haben *Route alles [aus Subnetz X] an Subnetz Y über Router Z
+  * kann lokal auch die Form haben *route alles [aus Subnetz X] an Subnetz Y über Router Z*
   * z.B. via `ip route add 192.168.1.0/24 via 10.0.0.1`
 
 Hinweise:
 
-* *Statisches und Dynamisches Routing mit eigenen Weitverkehrsprotokollen wird auf
-Providerebene dafür verwendet, um ganze Weitverkehrs-Routing-Domänen zu bilden.*
-* Dynamisches Routing impliziert Umlernen von Netzwerkstrukturen.
+* Provider nutzen *__Statisches und Dynamisches Routing__ mit speziellen __Weitverkehrsprotokollen__, um ganze Weitverkehrs-Routing-Domänen zu bilden.*
+* __Dynamisches Routing__ impliziert Umlernen von Netzwerkstrukturen.
 * Klassische Routingprotokolle sind
   * RIP (Router Information Protocol)
   * OSPF (Open Shortest Path First)
