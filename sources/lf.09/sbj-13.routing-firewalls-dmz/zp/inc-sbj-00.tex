@@ -6,21 +6,86 @@
 \selectlanguage{ngerman}
 \begin{frame}  
   \frametitle{LF09:13:IPv4-Segmentation}
+  \begin{center}
   \includegraphics[height=7cm]{\imgLf/ipv4-segmentation-task-final-nw-design.png}
+  \end{center}
 \end{frame}
 
 \begin{frame}  
   \frametitle{LF09:13:IPv4-Segmentation:Routes ohne Loops}
+  \begin{center}
   \includegraphics[height=7cm]{\imgLf/ipv4-segmentation-task-routes.png}
+  \end{center}
+\end{frame}
+
+\begin{frame}  
+  \frametitle{LF09:13:IPv4-Segmentation:Static Route Configuration}
+  \begin{center}
+    \begin{minipage}{0.9\textwidth}
+      \inputminted [fontsize=\footnotesize,linenos]{bash}{\snpLf/dm-0913-routings.sh}
+    \end{minipage}
+  \end{center}
 \end{frame}
 
 \begin{frame}  
   \frametitle{LF09:13:IPv4-Segmentation:notwendige Firewalls}
+  \begin{center}
   \includegraphics[height=7cm]{\imgLf/ipv4-segmentation-task-firewalls.png}
+  \end{center}
 \end{frame}
 
 \begin{frame}  
   \frametitle{LF09:13:IPv4-Segmentation:Reduzierter Routingkontext}
+  \begin{center}
   \includegraphics[height=7cm]{\imgLf/ipv4-segmentation-task-condensed.png}
+  \end{center}
 \end{frame}
 
+\begin{frame}  
+  \frametitle{LF09:13:IPv4-Segmentation:DMZ}
+  \begin{center}
+    \includegraphics[height=7cm]{\imgLf/dmz-korea-wkpd.png}
+  \end{center}
+\end{frame}
+
+\begin{frame}  
+  \frametitle{LF09:13:IPv4-Segmentation:DMZ:Architekturen}
+  \begin{columns}
+    \column{0.5\textwidth}
+    \begin{center}
+      \textbf{einstufige DMZ}
+      
+      \vspace{0.5cm}
+      \includegraphics[height=3cm]{\imgLf/dmz-1stufig.png}
+    \end{center}
+    \column{0.5\textwidth}
+    \begin{center}
+      \textbf{zweistufige DMZ}
+
+      \vspace{0.5cm}
+      \includegraphics[height=3cm]{\imgLf/dmz-2stufig.png}
+    \end{center}   
+  \end{columns}
+\end{frame}
+
+\begin{frame}  
+  \frametitle{LF09:13:IPv4-Segmentation:DMZ:Umsetzung}
+  \begin{center}
+    \includegraphics[height=7cm]{\imgLf/ipv4-segmentation-dmz.png}
+    \end{center}
+\end{frame}
+
+
+\begin{frame}  
+  \frametitle{LF09:13:IPv4-Segmentation:VLAN:Layer-III-Switch}
+  \begin{center}
+    \includegraphics[height=7cm]{\imgLf/ipv4-segmentation-layeriii.png}
+  \end{center}
+\end{frame}
+
+\begin{frame}  
+  \frametitle{LF09:13:IPv4-Segmentation:VLAN:Umsetzung}
+  \begin{center}
+    \includegraphics[height=7cm]{\imgLf/ipv4-segmentation-vlan.png}
+  \end{center}
+\end{frame}

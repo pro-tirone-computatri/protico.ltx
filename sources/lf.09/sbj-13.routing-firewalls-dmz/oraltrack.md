@@ -125,7 +125,7 @@ Das Tool `ip` (LNX) bzw. `route` (W11) kann aktuelle Routen auslesen und neue Ro
 
 <!-- uebung::end -->
 
-Lösung
+Lösung **[→ ZP:Sheet:4]**
 
 ---
 
@@ -144,6 +144,22 @@ Lösung
 * Anfragen anhand von Mustern (Häufigkeit der Anfrage, Anfrageinhalt, Protokoll) 
   zulassen oder blockieren (Layer III - VII)
 
+**Firewall-Strageien**
+
+* __*ERLAUBE ZUERST ALLES, UNTERBINDE DANN DAS, WAS NICHT ERLAUBT SEIN SOLL*__:
+  * 'Default Allow Principle'
+  * Was nicht verboten ist, ist erlaubt/möglich 
+  * Vorteil: einfach zu managen, weil 'Sonderwünsche' oft schon möglich sind.
+  * Nachteil: eher unsicher, weil - Menschen bedingt - Schlupflöcher.
+  
+* __*UNTERBINDE ZUERST ALLES, ERMÖGLICHE DANN DAS, WAS ERLAUBT SEIN SOLL*__:
+  * 'Default Deny Principle'
+  * Was nicht erlaubt ist, ist verboten/unterbunden.
+  * Vorteil: sicher (weil weniger Schlupflöcher)
+  * Nachteil: aufwendig zu managen, weil 'Sonderwünsche' Aufwand bedeuten.
+
+
+
 ---
 
 <!-- uebung::start -->
@@ -154,7 +170,7 @@ Lösung
 
 <!-- uebung::end -->
 
-Lösung: **[→ ZP:Sheet:4]**
+Lösung: **[→ ZP:Sheet:5]**
 
 ---
 
@@ -162,12 +178,111 @@ Lösung: **[→ ZP:Sheet:4]**
 <span style="color: green;">_ÜBUNG_</span> <span style="color:magenta;">**LF09:13:routing:04**</span>
 
 * [ ] Überlegen Sie, ob und wie Sie mit diesen Informationen über Routing- und Firewalltechniken
-      die bisherige Lösung verfeinern können.
+      die bisherige Lösung aus Teilnetzen und Routerübergängen erfeinern können.
 * [ ] Zeichnen Sie das 'kondensierte Netz', wenn möglich
 
 <!-- uebung::end -->
 
-Lösung: **[→ ZP:Sheet:5]**
+Lösung: **[→ ZP:Sheet:6]**
 
 ---
 
+### 4) Demilitarized Zone DMZ  **[→ ZP:Sheet:7]**
+
+> "A 'demilitarized zone' is an area, agreed upon between the parties to an 
+> armed conflict, which cannot be occupied or used for military purposes by 
+> any party to the conflict." [→ [https://casebook.icrc.org/a_to_z/glossary/demilitarized-zones](https://casebook.icrc.org/a_to_z/glossary/demilitarized-zones)]
+
+Hat in der IT aber eine andere Bedeutung:
+
+Eine DMZ
+
+* meint einen Bereich zwischen den Routern ins Internet und den Routern in nachgelagerte Netze (Intranet, ...).
+* erlaubt es, mittels unterschiedlich starken Firewalls für nachgelagerte Rechner stärker geschützte Bereiche vom Eingangsbereich abzugrenzen
+
+Idee:
+
+> In der DMZ dürfen/können von außen kommende Rechner mehr als in der nachgelagerten geschützten Zone.
+
+
+gibt es als: **[→ ZP:Sheet:8]**
+  
+* **einstufige DMZ**: trennt die Bereiche mit einem Router 
+* **zweistufige DMZ**: trennt die Bereiche mit zwei Routern 
+
+**Strategie für zweistufige DMZ**:
+
+* Außenrouter/Gateway
+  * Lasse initial alle Anfragen von außen zu. 
+  * Erlaube alle Anfragen von innen nach außen.
+  * Unterbinde danach nur die Art von Anfragen von außen aus, die an keiner Stelle zulässig sind, weder in der DMZ, noch im Intranet.
+  * Verbiete außerdem die Art von Anfragen von innen nach außen, die Du generell keinem Rechner/Mitarbeiter erlauben willst.
+
+* Binnenrouter/Intranet
+  * Verbiete initial alle Zugriffe von außen. 
+  * Erlaube danach von außen und innen nur die Serviceanfragen, die Du in dem Intranet(teil) erlauben willst (https, smtp, vpn-software)
+  * Erlaube den Zugriff von außen für gewisse feste IP-Adressen (Vorsicht IP-SPOOFING)
+
+---
+
+<!-- uebung::start -->
+<span style="color: green;">_ÜBUNG_</span> <span style="color:magenta;">**LF09:13:routing:05**</span>
+
+Rekonzipieren Sie das bisherige 'IPv4-Firmennetz' im Hinblick auf Sicherheitsaspekte so, dass
+
+* [ ] die Produktionsrechner in einer DMZ angesiedelt sind
+* [ ] weiterhin nur Developer auf die DMZ-Rechner zugreifen können
+* [ ] die Developerrechner nicht in der DMZ stehen.
+* [ ] die Rechner aller anderen Abteilungen nicht in der DMZ stehen.
+
+<!-- uebung::end -->
+
+Lösung: **[→ ZP:Sheet:9]**
+
+---
+
+
+### 5) VLAN
+
+* steht für **Virtual Local Area Network**
+* setzt Nutzung eines Layer-III-Switches voraus. **[→ ZP:Sheet:10]**
+
+Dabei
+
+* sind alle Rechner Teil desselben physisch vollverswitchten Netzes (Broadcastdomäne)
+* weiß der Switch, welcher Rechner mit welcher IP-Adresse an welchem Port hängt
+* leitet der Switch eine Nachricht anhand der Destination-IP-Adresse im Layer-III-Paket an den zuständigen Port
+* werden mehrere Ports eines Switches per Konfiguration zu einer virtuellen Broadcastdomäne zusammengefasst
+* garantiert der Switch, dass Broadcastanfragen (ARP-Requests) nur innerhalb der virtuellen Broadcastdomäne (Subnetz) propagiert werden
+* verhindert der Switch (damit), dass Rechner in einer virtuellen Broadcastdomäne (ohne weitere Maßnahmen) 
+  mit einem Rechner einer anderen Broadcastdomäne sprechen kann, obwohl beide an demselben Switch angeschlossen sind.
+
+
+Das bedeutet:
+  
+* Layer-III-Switch versteht/interpretiert die Datenpakete verstehen/interpretieren.
+  * Hinweis: Layer-3-Switch versteht alle Ebenen, Layer-2-Switch nur Layer-II-Anteile der Datenpakete (Ethernetframe)
+* Wenn die Kommunikation zwischen virtuellen Broadcastdomänen ermöglicht werden sollen, muss ein Router so in den Switch eingebunden sein, dass "[...] in jedem VLAN ein Interface besitzt".  (→ vgl. Schreiner: Computernetzwerke, 2014 (2014), S. 127)
+
+
+
+Disclaimer: Begriff VLAN (wie Begriff Netz) doppeldeutig benutzt:
+
+* Bei einem LAN wird ein per Netzadresse und Netzmaske definiertes Netz in mehrere Subnetze segmentiert. Beide, LAN und Subnetze werden je nach Kontext sprachlich als 'Netze' bezeichnet.
+* Ein VLAN meint meist die Gesamtheit einer über den/die Switchkette gebildetes Netz. Per definitionem besteht es ab aus Subnetzen, die nur virtuell realisiert werden.
+
+
+---
+
+<!-- uebung::start -->
+<span style="color: green;">_ÜBUNG_</span> <span style="color:magenta;">**LF09:13:routing:06**</span>
+
+[ ] Realisieren Sie die inneren Netze FIN, MNG und HR des rekonfigurierten 'IPv4-Firmennetzes' 
+    jetzt mit einem(!) Layer-III-Switch als VLAN(s)
+
+
+<!-- uebung::end -->
+
+Lösung: **[→ ZP:Sheet:11]**
+
+---
