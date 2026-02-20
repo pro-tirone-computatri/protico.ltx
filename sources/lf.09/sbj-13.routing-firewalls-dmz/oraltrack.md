@@ -265,6 +265,17 @@ Das bedeutet:
 * Wenn die Kommunikation zwischen virtuellen Broadcastdomänen ermöglicht werden sollen, muss ein Router so in den Switch eingebunden sein, dass "[...] in jedem VLAN ein Interface besitzt".  (→ vgl. Schreiner: Computernetzwerke, 2014 (2014), S. 127)
 
 
+**Grundsatz:**
+
+* Die tatsächlichen Fähigkeiten der Layer-III-Switche variieren:
+  * einfachere Layer-III-Switche erwarten physikalisch angeschlossene Router zur Realisierung des lokalen Hoppings
+  * komplexere Layer-III-Switche emulieren Router als Teil ihrer Software 
+  
+So gilt:
+
+1. **Layer-III-Switch routet** von einer lokalen BCD in die nächste lokale BCD, gelegentlich ohne physisch vorhanden Router.
+2. **Layer-III-Switch routet nicht** von sich aus ins Internet.
+
 
 Disclaimer: Begriff VLAN (wie Begriff Netz) doppeldeutig benutzt:
 
@@ -277,7 +288,7 @@ Disclaimer: Begriff VLAN (wie Begriff Netz) doppeldeutig benutzt:
 <!-- uebung::start -->
 <span style="color: green;">_ÜBUNG_</span> <span style="color:magenta;">**LF09:13:routing:06**</span>
 
-[ ] Realisieren Sie die inneren Netze FIN, MNG und HR des rekonfigurierten 'IPv4-Firmennetzes' 
+* [ ] Realisieren Sie die inneren Netze FIN, MNG und HR des rekonfigurierten 'IPv4-Firmennetzes' 
     jetzt mit einem(!) Layer-III-Switch als VLAN(s)
 
 
