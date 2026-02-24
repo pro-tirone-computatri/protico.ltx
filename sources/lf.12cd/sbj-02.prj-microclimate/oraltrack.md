@@ -64,54 +64,8 @@ Bitte realisieren Sie das Projekt so, dass Vorgehen und Resultate es auf der 175
 * Daten- u. Prozessanalytiker: automatisierte Auswertung der Daten inkl. Codeimplementierung und Darstellung
 
 
-### 4.) Produktbacklog
+### 4.) Product-/Sprintbacklog **[→ einzel Docs]**
 
-* **MVP-Teil-A**
-  * { } exemplarische Datenerhebung mit einem Sensor
-  * { } Übertragung der Daten an den 'Data-Aggregator'
-* **MVP-Teil-B**
-  * { } Konzeption des Datenhaltungssystems
-  * { } exemplarische Integration von 
-* **MVP-Teil-C**
-  * { } exemplarische Datenlieferung an Daten-Evaluator
-  * { } Berechnung eines initialen Markanten (Durchschnitt)
-* **MVP-Teil-D**
-  * { } exemplarischer Abruf eines Ergebnisses in einem Client
-* **MVP (Durchstichsvariante)**
-  * { } Erhebung einer Messung mit einem Sensor
-  * { } ordnungsgemäße Übertragung an den Daten-Aggregator
-  * { } ordnungsgemäße Integration in den Daten-Aggregator
-  * { } ordnungsgemäße Anfrage und Auslieferung von bzw. an Daten-Evaluator
-  * { } ordnungsgemäße Berechnung von Minimum, Maximum im Daten-Evaluator
-  * { } ordnungsgemäße Anfrage und Auslieferung des Ergebnisses von bzw. an Data-Visualizer
-* { } Sensorik auf Temperatur und Luftfeuchtigkeit erweitern.
-* { } Übertragung zum Data-Aggregator auf Temperatur und Luftfeuchtigkeit erweitern.
-* { } Data-Aggregator zum MQTT-Broker machen (auf MQTT umstellen) mit (eclipse-mosquitto)
-* { } Data-Evaluator auf MQTT-Subscriber umstellen.
-* { } Prozess der Datenerhebung designen und dokumentieren in BPMN
-* { } Datenevaluation auf Durchschnitt, Median erweitern
-* { } Auslieferung an Data-Visualizer auf Durchschnitt, Median erweitern
-* { } Berechnungen auf weitere Aussagen erweitern
-  * ...
-* { } Berechnung der Prozessgüte erweitern  
-
-### 5.) Sprints
-
-
-#### 5.A)
-Sprint A
-
-#### 5.B)
-Sprint B
-
-#### 5.C)
-Sprint C
-
-#### 5.D)
-Sprint D
-
-#### 5.E)
-Sprint E
 
 ### 6) Projektabschluss
 
