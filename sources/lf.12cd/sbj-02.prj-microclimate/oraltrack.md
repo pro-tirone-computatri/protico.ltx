@@ -64,7 +64,7 @@ Bitte realisieren Sie das Projekt so, dass Vorgehen und Resultate es auf der 175
 * Daten- u. Prozessanalytiker: automatisierte Auswertung der Daten inkl. Codeimplementierung und Darstellung
 
 
-### 4.) Product-/Sprintbacklog **[→ einzel Docs]**
+### 4.) Product-/Sprintbacklog **[→ einzelne Docs]**
 
 
 ### 6) Projektabschluss

@@ -8,11 +8,14 @@
 
 <!-- LTeX:Language=de-DE -->
 
-* **Folien:** 1 - 5 Punkte [best] bzgl. _Story/Inhalt, Gestaltung, Bilder_
-* **Publikum:** 1 - 5 Punkte [best] bzgl. *Auftritt, Kontakt*
-* **Präsentieren:** 1 - 5 Punkte [best] bzgl. *Gestik, Sprechen* 
 
-| Nr. | Sprecherin: | Folien | Publikum | Präsentieren |
+**Bewertung** anhand 3 Kriterien (1/5 - 5/5 Sterne ala Amazon):
+
+* (1) **Inhalt** [wie schlüssig, interessant, pointiert?]
+* (2) **Folien:** [ passt Storyline, Bildersprache, Zenstil?]
+* (3) **Präsentation:** [wie zugewandt, ruhig vorgetragen? nützliche Gesten?]
+
+| Nr. | Sprecherin | Inhalt | Folien | Präsentation |
 --- | --- | --- | --- | --- |
 | 01. |  |  |  |  |
 | 02. |  |  |  |  |
@@ -34,8 +37,5 @@
 | 18. |  |  |  |  |
 | 19. |  |  |  |  |
 | 20. |  |  |  |  |
-| 21. |  |  |  |  |
-| 22. |  |  |  |  |
-| 99. | Dr. Thomas Mann |  |  |  |
 
 

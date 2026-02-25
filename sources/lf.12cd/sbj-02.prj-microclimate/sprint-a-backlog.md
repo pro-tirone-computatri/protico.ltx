@@ -12,17 +12,17 @@
 Sprint A
 * **MVP-Teil-A**
   * {2} exemplarische Datenerhebung mit einem Sensor 
-    * [ ] DoD: Temperatur (Luftfeuchtigkeit) ist mit Sensor gemessen
+    * [X] DoD: Temperatur (Luftfeuchtigkeit) ist mit Sensor gemessen
   * {5} Übertragung der Daten an den 'Data-Aggregator'
-    * [ ] DoD: Temperatur (Luftfeuchtigkeit) ist im 'Data-Aggregator'-Datenbereich abgelegt
+    * [X] DoD: Temperatur (Luftfeuchtigkeit) ist im 'Data-Aggregator'-Datenbereich abgelegt
 * **MVP-Teil-B**
   * {5} Konzeption des Datenhaltungssystems
-    * [ ] DoD: Technisches Datenhaltungssystem läuft mit einem Test-Datensatz
+    * [X] DoD: Technisches Datenhaltungssystem läuft mit einem Test-Datensatz
   * {3} exemplarische Integration der erhaltenen Daten von **MVP-Teil-A**
-    * [ ] DoD: Technisches Datenhaltungssystem läuft mit dem Mess-Datensatz
+    * [X] DoD: Technisches Datenhaltungssystem läuft mit dem Mess-Datensatz
 * **MVP-Teil-C**
   * {8} exemplarische Datenlieferung an Daten-Evaluator
-    * [ ] DoD: Temperatur (Luftfeuchtigkeit) ist im 'Data-Evaluator'-Datenbereich abgelegt
+    * [X] DoD: Temperatur (Luftfeuchtigkeit) ist im 'Data-Evaluator'-Datenbereich abgelegt
   * {1} Berechnung eines initialen Markanten (Durchschnitt)
-    * [ ] DoD: Temperaturdurchschnitt ist automaisiert berechnet.
+    * [X] DoD: Temperaturdurchschnitt ist automaisiert berechnet.
 
