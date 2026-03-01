@@ -73,3 +73,58 @@ print(f"executing exercise <{EXC}>")
 #     - list.pop(0) /* gibt erstes element zurück und entfernt es aus der Liste */
 #     - list.insert(i,element) /* fügt element an Position i in die Liste ein*/
 
+
+comparisons=0
+sort_order={"7":0,"8":1,"9":2,"10":3,"B":4,"D":5,"K":6,"A":7}
+
+# is element a 'lesser' than element b?
+def is_before(elema,elemo):
+  global comparisons
+  global sort_order
+  comparisons+=1
+
+  if sort_order[elema]<sort_order[elemo]:
+    return True
+  else:
+    return False
+
+# the function required by the task. returns number of sorted cards
+def insertion_sort():
+  global chaosl
+  global sortl
+
+  cardcounter=0
+
+  # as long as there are cards on the stack
+  while len(chaosl)>0:
+
+    card=chaosl.pop(0) # take the top card from the stack
+    cardcounter+=1
+
+    # find that card in the sorted list which shall follow the card to be sorted in
+    search_successor=True
+    position=0
+
+    while ( search_successor and position<len(sortl)):
+      if is_before(card,sortl[position]):
+        search_successor=False
+      else:
+        position+=1
+
+    # if you didn't find a successor, new card must become the last
+    if (search_successor):
+      sortl.append(card)
+    # otherwise you know the position of the successor
+    else:
+      # note: feature of python: existint elements are shifted backwards 
+      sortl.insert(position,card)
+
+  return cardcounter
+
+#main
+
+sortl=[]
+chaosl=["7","A","B","K","9","D","8","10"]
+cards=insertion_sort()
+print(f"sorted list: {sortl}")
+print(f"{cards} cards sortedly inserted by using {comparisons} comparisons")

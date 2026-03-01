@@ -42,10 +42,8 @@ exercises:
 lesson-ort: oraltrack
 	@ WD=`pwd` && SJN=`basename $${WD}` && LFN=`cat ../td.lf` && \
 	  TGD="${BLD}/$${LFN}" && mkdir -p $${TGD} && \
-		if [ -d $${TGD}/$${SJN}-exam.sh2go ]; then rm -rf $${TGD}/$${SJN}-exam.sh2go ]; fi && \
-		if [ -d $${TGD}/$${SJN}-snp.sh2go ]; then rm -rf $${TGD}/$${SJN}-snp.sh2go ]; fi && \
-		cp -rd exam.sh2go $${TGD}/$${SJN}-exam.sh2go && \
-		cp -rd snp.sh2go $${TGD}/$${SJN}-snp.sh2go && \
+		if [ -d $${TGD}/$${SJN}-snp.sose ]; then rm -rf $${TGD}/$${SJN}-snp.sose ]; fi && \
+		cp -rd snp.sose $${TGD}/$${SJN}-snp.sose && \
     mv oraltrack.pdf $${TGD}/$${SJN}-oraltrack.pdf	
 	@ tree ${BLD}
 

@@ -40,3 +40,49 @@ print(f"executing exercise <{EXC}>")
 # (3) Bzgl. Python s. sose-02.py
 # (4) Bzgl. des Datentyps Liste s. sose-02.py:
 
+
+comparisons=0
+sort_order={"7":0,"8":1,"9":2,"10":3,"B":4,"D":5,"K":6,"A":7}
+
+# is element a 'lesser' than element b?
+def is_before(elema,elemo):
+  global comparisons
+  global sort_order
+  comparisons+=1
+
+  if sort_order[elema]<sort_order[elemo]:
+    return True
+  else:
+    return False
+
+# find the smallest element in the unsorted list
+def get_first(chaosl):
+  elema=chaosl[0]
+  for elemo in chaosl:
+    if is_before(elemo,elema):
+      elema=elemo
+  return elema
+
+# the function required by the task. returns number of sorted cards
+def selection_sort():
+  global chaosl
+  global sortl
+
+  cardcounter=0
+
+  while len(chaosl)>0:
+    elem_a=get_first(chaosl)
+    sortl.append(elem_a)
+    chaosl.remove(elem_a)
+
+    cardcounter+=1
+  
+  return cardcounter
+
+#main
+
+sortl=[]
+chaosl=["7","A","B","K","9","D","8","10"]
+cards=selection_sort()
+print(f"sorted list: {sortl}")
+print(f"{cards} cards selected and inserted by using {comparisons} comparisons")

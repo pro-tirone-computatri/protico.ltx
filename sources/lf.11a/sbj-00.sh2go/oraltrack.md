@@ -100,7 +100,7 @@ Hinweis: Powershell 7 (= pwsh) gibt es als Binaries auch für Linux und Mac. All
 ---
 
 <!-- uebung::start -->
-<span style="color: green;">_ÜBUNG_</span> <span style="color:magenta;">**LFCX:sh2go:01**</span>
+<span style="color: green;">_ÜBUNG_</span> <span style="color:magenta;">**LF11a:sbj-00.sh2go:01**</span>
 
 * [ ] Installieren Sie die aktuellste Powershell auf Ihrem Windowsrechner.
 * [ ] Verifizieren Sie ihre Installation
@@ -180,7 +180,7 @@ Hinweis: *Falls `ifconfig` oder gar `ping` unter LNX oder WSL fehlt, bitte in de
 ---
 
 <!-- uebung::start -->
-<span style="color: green;">_ÜBUNG_</span> <span style="color:magenta;">**LFCX:sh2go:02**</span>
+<span style="color: green;">_ÜBUNG_</span> <span style="color:magenta;">**LF11a:sbj-00.sh2go:02**</span>
 
 * [ ] Installieren Sie eine Ihnen genehme Linux-Variante.
 * [ ] Verifizieren Sie Ihre Installation
@@ -232,7 +232,7 @@ Die Community stellt aber unter dem Namen [→ VSCODIUM](https://vscodium.com/) 
 ---
 
 <!-- uebung::start -->
-<span style="color: green;">_ÜBUNG_</span> <span style="color:magenta;">**LFCX:sh2go:03**</span>
+<span style="color: green;">_ÜBUNG_</span> <span style="color:magenta;">**LF11a:sbj-00.sh2go:03**</span>
 
 * [ ] Öffnen Sie das Script `sh2go-00-happy-coding.sh` in Ihrer VS-Umgebung.
 * [ ] Ersetzen Sie 'Happy Coding' durch eine Botschaft Ihrer Wahl.
@@ -286,10 +286,11 @@ Anleitungen und die entsprechenden Lösungen. Beispiel:
 ---
 
 <!-- uebung::start -->
-<span style="color: green;">_ÜBUNG_</span> <span style="color:magenta;">**LFCX:sh2go:04**</span>
+<span style="color: green;">_ÜBUNG_</span> <span style="color:magenta;">**LF11a:sbj-00.sh2go:04**</span>
 
 **sh2go** ist gedacht als (Selbst)Lernprogramm für die Shellprogrammierung:
 
+* [ ] Laden Sie sich aus Ihrem Downloadbereiche den Ordner `sbj-00.sh2go-snp.sh2go` herunter
 * [ ] Gehen Sie die Aufgaben von 0 - n durch.
 * [ ] Öffnen Sie die Aufgabendatei in einem Shellskripteditor Ihrer Wahl.
 * [ ] Lösen Sie die Aufgabe. (Ihr Kern ist immer in einer Zeile umsetzbar)

@@ -30,3 +30,28 @@ print(f"executing exercise <{EXC}>")
 # (2) Was die Bedingungen sind, dass etwas dem anderen gleicht, hängt von der
 #     Domäne ab und kann mit einer Funktion 'equals' gesondert implementiert
 #     werden. Hier reicht der übliche Vergleich '='
+
+comparisons=0
+
+def linear_search(str_tuple,str_element):
+  global comparisons
+  position=0
+  while (position<len(str_tuple)):
+    comparisons+=1
+    if (str_tuple[position]==str_element):
+      return position
+    position+=1
+
+  return -1
+
+
+chaost=("7","A","B","K","9","D","8","10")
+searchfor="K"
+position=linear_search(chaost,searchfor)
+
+if (position==-1):
+  print(f"{chaot} does not contain an element <{searchfor}>")
+else:
+  print(f"At index position {position}, {chaost} contains <{searchfor}> as its {position+1}th element")
+
+print(f"found <{searchfor}> by using {comparisons} comparisons")

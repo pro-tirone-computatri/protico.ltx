@@ -49,3 +49,53 @@ print(f"executing exercise <{EXC}>")
 #     - den Suchbereich auf den Bereich links vom mittigen Element eingrenzt
 #     - die nächsten Schleifendurchgang startet
 
+
+comparisons=0
+
+# dictionary determining the sort order: 
+# get the sort position of the card as value of the card as key
+sort_order={"7":0,"8":1,"9":2,"10":3,"B":4,"D":5,"K":6,"A":7}
+
+# is element a 'lesser' than element b?
+def is_before(elema,elemo):
+  global sort_order
+
+  if sort_order[elema]<sort_order[elemo]:
+    return True
+  else:
+    return False
+
+# the requested iterative binary search function
+def binary_search(slist,sstart, send, selem):
+  global comparisons
+  global sort_order
+
+  while sstart <= send:
+    comparisons+=1                      # each loop is a search step
+
+    midind=(sstart+send)//2
+
+    if (slist[midind]==selem):
+      return midind
+
+    if is_before(selem,slist[midind]): # focus on left part
+      send=midind-1
+    else:                              # focus on right part 
+      sstart=midind+1
+    # next loop with 'shifted' search erea
+  
+  return -1
+
+# main
+
+# the sorted card stack
+sortl=["7","8","9","10","B","D","K","A"] 
+searchfor="K"
+
+position=binary_search(sortl,0,len(sortl)-1,searchfor)
+
+if (position==-1):
+  print(f"{sortl} does not contain an element <{searchfor}>")
+else:
+  print(f"At index number {position}, list {sortl} contains <{searchfor}> as its {position+1}th element")
+  print(f"found <{searchfor}> by using {comparisons} comparisons")
