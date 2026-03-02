@@ -1,0 +1,12 @@
+{
+  "img_name": "logo-mosquitto.png",
+  "img_author": "Eclipse Mosquitto Project",
+  "img_comment": "",
+  "license_name": "Eclipse-2.0-Lisense",
+  "licensing_url": "https://projects.eclipse.org/projects/iot.mosquitto",
+  "license_url": "https://www.eclipse.org/legal/epl-2.0/",
+  "repo_name" : "github/mosquitto",
+  "repo_url" : "https://github.com/eclipse-mosquitto/mosquitto/",
+  "repo_img_id" : "",
+  "download_date": "20260302"
+}

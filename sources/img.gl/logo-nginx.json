@@ -1,0 +1,12 @@
+{
+  "img_name": "logo-nginx.png",
+  "img_author": "NGINX Project",
+  "img_comment": "",
+  "license_name": "MIT",
+  "licensing_url": "https://nginx.org/LICENSE",
+  "license_url": "https://nginx.org/LICENSE",
+  "repo_name" : "nginx",
+  "repo_url" : "https://nginx.org/img/",
+  "repo_img_id" : "",
+  "download_date": "20260302"
+}
