@@ -9,12 +9,13 @@
 
 ### 1. MQTT **[→ ZP:Sheet:2]**
 
-* stand bis Version 3.1 für *Message Queueing Telemetry Transport*, ab 3.1.1 eigenständiger Begriff
-* ist ein leichtgewichtiges Publish/Subscribe-Messaging-Protokoll. 
+* stand bis Version 3.1 für *Message Queueing Telemetry Transport*
+* ist ab Version 3.1.1 eigenständiger Begriff
+* ist ein leichtgewichtiges Publish/Subscribe-Messaging-Protokoll 
 * basiert auf dem Prinzip des Veröffentlichens von Nachrichten und Abonnierens von Themen, auch bekannt als „Pub/Sub“
 * nutzt Topics in Form von gereihten 'Begriffen', die je durch einen Slash getrennt sind
-* erlaubt den Subskribern mit Wildcards mehre Sensorenachrichten zu abbonieren
-* Publisher bestimmt das Format (gern JSON, aber auch binär oder XML etc.)
+* erlaubt den *Subscibern* (Abbonnenten) mit Wildcards mehrere Sensorennachrichten zu abonnieren.
+* Der Publisher bestimmt das Format (gern JSON, aber auch binär oder XML etc.)
 * Technisch kann jeder Client Publisher und Subscriber werden.
 
 * [https://de.wikipedia.org/wiki/MQTT](https://de.wikipedia.org/wiki/MQTT)
@@ -26,9 +27,13 @@
 ### 4. MQTT Anwendung 
 
 #### 4.1) 
-Über Mosquitto
 
-#### 4.2)
+<!-- LTeX:Language=en-US -->
+> Eclipse Mosquitto is an open source (EPL/EDL licensed) message broker that implements the MQTT protocol versions 5.0, 3.1.1 and 3.1. 
+
+<!-- LTeX:Language=de-DE -->
+
+##### 4.2)
 Zur Installation 
 
 **A) Inbetriebnahme des Servers unter Ubuntu 24.04 (LTS)**:
@@ -98,8 +103,8 @@ Zur Installation
 * **C1**: Werte eines Typs subskribieren (in eigenem Terminal)
   * `mosquitto_sub -t "home/sensor/temperature"`
 * **C2**: Einfache Werte dazu publizieren (in eigenem Terminal))
-  * `mosquitto_pub -t "home/sensor/temperature" -m "30.5" -q 1 -r`
-  * `mosquitto_pub -t "home/sensor/temperature" -m "45.2" -q 1 -r`
+  * `mosquitto_pub -t "home/sensor/temperature"` `-m "30.5"` `-q 1 -r`
+  * `mosquitto_pub -t "home/sensor/temperature"` `-m "45.2"` `-q 1 -r`
     * `-t` = Message-Topic
     * `-m` = Message. (Kann z.B. JSON File sein)
     * `-q` = Qos-Level: 
@@ -109,13 +114,13 @@ Zur Installation
     * `-r`: retain: message will be retained as a "last known good" value on the broker
     * 
 * **C3**: Komplex Werte dazu publizieren (in eigenem Terminal))
-  * `mosquitto_pub -t "home/sensor/temperature" -m "{'time':'20260304', 'temp':30.5, 'weight':5}" -q 1 -r`
+  * `mosquitto_pub -t "home/sensor/temperature"` `-m "{'time':'20260304', 'temp':30.5, 'weight':5}" -q 1 -r`
   
 Anmerkung: 
-* Was *-t* meint, ist durch die Werte / die Sensoren bestimmt
+* Was *-t* meint, ist durch die Werte / die Sensoren bestimmt.
 * Ein Topic ist immer eine Begriffsreihe, deren Element durch je einen '/' voneinander getrennt sind.
 * Ein Publisher liefert immer eine ausgefüllte Begriffsreihe.
-* Ein Subscriber kann Wildcards benutzen
+* Ein Subscriber kann Wildcards benutzen:
   * `+` wildcard for a single level of hierarchy
   * `#` wildcard for all remaining levels of hierarchy
   

@@ -67,9 +67,9 @@
   * {1} hinreichend großen Testdatensatz pro Sensortyp erstellen.
     * [ ] DoD1: Für alle Sensorentypen sind 10 Testwerte + Messzeitpunkt definiert.
     * [ ] DoD2: Wenn mit Messreihen gearbeitet wird, sind 10 Testdatensätze definiert.
-  * {40} Testdatensatz-Publishing simulieren per Skript  mit/für `mosquitto_pub`
+  * {5} Testdatensatz-Publishing simulieren per Skript  mit/für `mosquitto_pub`
     * [ ] DoD: Der Testdatensatz ist per `mosquitto_pub` zum MQTT-Broker übertragen
-  * {13} Testdatensatz-Subscribing simulieren per Skript mit/für `mosquitto_sub`
+  * {5} Testdatensatz-Subscribing simulieren per Skript mit/für `mosquitto_sub`
     * [ ] DoD: Der Testdatensatz ist per `mosquitto_sub` vom MQTT-Broker abgeholt
   * {5} Daten(file)format im Aggregator festlegen
     * [ ] DoD: In einer Spezifikation ist festgelegt, wie die Daten im Aggregator abgelegt werden
