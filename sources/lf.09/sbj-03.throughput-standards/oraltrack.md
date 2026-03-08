@@ -1,6 +1,6 @@
 <!--
-% This file is part of the Open Source project 'proTironeComputatri'
-% (c) 2025 Karsten Reincke (https://github.com/pro-tirone-computatri/protico.ltx)
+% This file is part of the Open Source project 'proTirone'
+% (c) 2025 Karsten Reincke (https://github.com/protirone/protico.ltx)
 % It is distributed under the terms of the creative commons license
 % CC-BY-4.0 (= https://creativecommons.org/licenses/by/4.0/)
 -->
@@ -230,7 +230,7 @@ Wie lang braucht die Übertragung?
 * [ ] Rufen Sie eine Shell auf
 * [ ] Geben Sie folgendes Kommando ein
 
-`git clone https://github.com/pro-tirone-computatri/protico.ltx.git`
+`git clone https://github.com/protirone/protico.ltx.git`
 
 * In welcher Einheit wird Ihnen der Fortschritt der heruntergeladenen Dateien und der Datendurchsatz reportet.
 * Was gibt Ihnen der Report als Größe des heruntergeladenen Repositories an?

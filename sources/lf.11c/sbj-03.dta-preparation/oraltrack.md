@@ -1,6 +1,6 @@
 <!--
-% This file is part of the Open Source project 'proTironeComputatri'
-% (c) 2025 Karsten Reincke (https://github.com/pro-tirone-computatri/protico.ltx)
+% This file is part of the Open Source project 'proTirone'
+% (c) 2025 Karsten Reincke (https://github.com/protirone/protico.ltx)
 % It is distributed under the terms of the creative commons license
 % CC-BY-4.0 (= https://creativecommons.org/licenses/by/4.0/)
 -->
@@ -85,7 +85,7 @@ Es gibt aktuell zwei Verfahren, die Gravitationskonstante zu messen. Die Verfahr
     * CSV Dateien :- [https://de.wikipedia.org/wiki/CSV_(Dateiformat)](https://de.wikipedia.org/wiki/CSV_(Dateiformat))
     * INI-Dateien (Schlüssel-Wert-Paare) :- [https://en.wikipedia.org/wiki/INI\_file](https://en.wikipedia.org/wiki/INI_file)
     * YAML-Dateien :- [https://de.wikipedia.org/wiki/YAML](https://de.wikipedia.org/wiki/YAML)
-    * → [protico.lessons](https://github.com/pro-tirone-computatri/protico.lessons/tree/main/download/lf.cx): lf.cx.Datafiles)
+    * → [protico.lessons](https://github.com/protirone/protico.lessons/tree/main/download/lf.cx): lf.cx.Datafiles)
   * **semi-strukturierte Daten** haben Format, das die Bedeutung nicht vollständig repräsentiert [Bilder etc.]
   * **unstrukturierte Daten** = Sammlungen von Daten mit unterschiedlichen Formaten und unterschiedlicher Bedeutung.
 

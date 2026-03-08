@@ -1,4 +1,4 @@
-# (C) 2026 K.Reincke: proTironeComputatri snippet [CC-BY-4.0]
+# (C) 2026 K.Reincke: proTirone snippet [CC-BY-4.0]
 # functions to write and to convert daydata (dsp-beta) csv files 
 
 # (1) adapters to read daydata from a file

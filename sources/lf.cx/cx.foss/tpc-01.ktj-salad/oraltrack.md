@@ -1,6 +1,6 @@
 <!--
-% This file is part of the Open Source project 'proTironeComputatri'
-% (c) 2025 Karsten Reincke (https://github.com/pro-tirone-computatri/protico.ltx)
+% This file is part of the Open Source project 'proTirone'
+% (c) 2025 Karsten Reincke (https://github.com/protirone/protico.ltx)
 % It is distributed under the terms of the creative commons license
 % CC-BY-4.0 (= https://creativecommons.org/licenses/by/4.0/)
 
@@ -277,7 +277,7 @@ Fakten dazu:
 
 * Immer noch KR (Autorenschaft + Neuerungen) und Deutsche Telekom AG
 * KR durfte die originale Version überarbeiten, weil er sich die Erlaubnis zur Nutzung, Verbesserung und Weitergabe beim Eintritt in die Rentenzeit geholt hat.
-* Gleichermaßen ist auch die Veröffentlichung in [proTironeComputatri](https://github.com/pro-tirone-computatri/protico.ltx) zulässig.
+* Gleichermaßen ist auch die Veröffentlichung in [proTirone](https://github.com/protirone/protico.ltx) zulässig.
 
 
 

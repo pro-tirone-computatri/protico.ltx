@@ -4,7 +4,7 @@ author: [K. Reincke]
 date: PTCDATE
 keywords: [Netzwerklayer-I, Netzwerklayer-II]
 header-left: "\\theauthor"
-header-center: "proTironeComputatri"
+header-center: "proTirone"
 header-right: "\\thetitle" 
 footer-left: "\\thedate"
 footer-center: "[CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/deed.de)"

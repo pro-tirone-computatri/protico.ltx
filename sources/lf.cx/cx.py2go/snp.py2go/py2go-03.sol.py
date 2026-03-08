@@ -1,4 +1,4 @@
-# (C) 2025 K.Reincke: proTironeComputatri snippet [CC-BY-4.0]
+# (C) 2025 K.Reincke: proTirone snippet [CC-BY-4.0]
 '''
 1. Weisen Sie einer Variable myName Ihren Vornamen und Namen als String zu.
 2. Weisen Sie einer Variable my_age Ihr Alter zu.

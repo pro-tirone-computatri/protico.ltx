@@ -1,4 +1,4 @@
-# (C) 2026 K.Reincke: proTironeComputatri snippet [CC-BY-4.0]
+# (C) 2026 K.Reincke: proTirone snippet [CC-BY-4.0]
 # functions for reading and converting a csv file of planking data: VP-1.0 
 
 # (1) adapter to read planking data from a csvfile

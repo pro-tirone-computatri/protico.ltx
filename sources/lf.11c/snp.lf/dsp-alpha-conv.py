@@ -1,4 +1,4 @@
-# (C) 2026 K.Reincke: proTironeComputatri snippet [CC-BY-4.0]
+# (C) 2026 K.Reincke: proTirone snippet [CC-BY-4.0]
 
 # - loads a set of blood pressure measurements given as CSV file in format
 #   id:str, day:str, time:str, systole:str, diastole:str, pulse:str

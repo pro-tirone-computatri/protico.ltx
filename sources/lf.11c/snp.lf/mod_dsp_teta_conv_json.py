@@ -1,4 +1,4 @@
-# (C) 2026 K.Reincke: proTironeComputatri snippet [CC-BY-4.0]
+# (C) 2026 K.Reincke: proTirone snippet [CC-BY-4.0]
 # function for converting a csv file of planking data into a json file: VP-1.0 
 
 # (3) adapter to write planking into a json file

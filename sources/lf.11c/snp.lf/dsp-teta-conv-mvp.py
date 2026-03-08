@@ -1,4 +1,4 @@
-# (C) 2026 K.Reincke: proTironeComputatri snippet [CC-BY-4.0]
+# (C) 2026 K.Reincke: proTirone snippet [CC-BY-4.0]
 # for converting a csv file of planking data into a json file: MVP 
 
 # intermediate representation and hard-coded test data set of planking data

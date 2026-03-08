@@ -1,4 +1,4 @@
-# (C) 2026 K.Reincke: proTironeComputatri snippet [CC-BY-4.0]
+# (C) 2026 K.Reincke: proTirone snippet [CC-BY-4.0]
 # converts a csv file of day data into the respective ini file: VP-0.1
 
 # intermediate representation and hard-coded testdata

@@ -1,4 +1,4 @@
-# (C) 2025 K.Reincke: proTironeComputatri snippet [CC-BY-4.0]
+# (C) 2025 K.Reincke: proTirone snippet [CC-BY-4.0]
 
 '''
 1. Definieren Sie zwei Variablen <my_name> und <three>

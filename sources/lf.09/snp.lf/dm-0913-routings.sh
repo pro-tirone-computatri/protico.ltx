@@ -1,4 +1,4 @@
-# (C) 2025 K.Reincke: proTironeComputatri snippet [CC-BY-4.0]
+# (C) 2025 K.Reincke: proTirone snippet [CC-BY-4.0]
 
 # ssh admin@192.168.1.225 << HDOC
 ip route add 192.168.1.128/27 via 192.168.1.229 # RN1 > FIN

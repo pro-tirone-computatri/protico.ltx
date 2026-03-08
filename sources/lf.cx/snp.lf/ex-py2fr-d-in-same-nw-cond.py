@@ -1,4 +1,4 @@
-# (C) 2025 K.Reincke: proTironeComputatri snippet [CC-BY-4.0]
+# (C) 2025 K.Reincke: proTirone snippet [CC-BY-4.0]
 import ipaddress, sys
 # set default values and and overload them by cmdline arguments
 IP_AD1,NT_MSK,IP_AD2 = '192.168.0.2','255.255.255.0','192.168.0.14'

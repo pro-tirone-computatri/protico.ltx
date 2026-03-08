@@ -1,6 +1,6 @@
 <!--
-% This file is part of the Open Source project 'proTironeComputatri'
-% (c) 2025 Karsten Reincke (https://github.com/pro-tirone-computatri/protico.ltx)
+% This file is part of the Open Source project 'proTirone'
+% (c) 2025 Karsten Reincke (https://github.com/protirone/protico.ltx)
 % It is distributed under the terms of the creative commons license
 % CC-BY-4.0 (= https://creativecommons.org/licenses/by/4.0/)
 -->
@@ -122,7 +122,7 @@ Beim Lesen entstand/entsteht - jedenfalls bei mir - eine komplett weibliche inne
 Das **generische Femininum** nutzen - und einmal dazu sagen: Männer sind mitgemeint:
 
 * Die Lösung erfüllt alle Regeln des _Amtlichen Regelwerks für die deutsche Rechtschreibung_ vom RfdR.
-* Deshalb nutzen die Unterlagen von [→ proTironeComputatri](https://github.com/pro-tirone-computatri/protico.ltx) diese Lösung.
+* Deshalb nutzen die Unterlagen von [→ proTirone](https://github.com/protirone/protico.ltx) diese Lösung.
 * Im Unterricht bzw. in Übungen müssen die Schülerinnen (Schüler sind mitgemeint) das NICHT übernehmen. 
 
 Idee: 

@@ -1,5 +1,5 @@
 # (C) 2025 K.Reincke: 
-# proTironeComputatri 
+# proTirone 
 # snippet [CC-BY-4.0]
 
 import pandas as pd

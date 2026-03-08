@@ -1,4 +1,4 @@
-# proTironeComputatri-Backlog
+# proTirone-Backlog
 
 * [ ] Write a customization tutorial
 * [ ] Write LF09 lessons 
@@ -13,7 +13,7 @@
   * [x] using `Markdown`
 * [x] Insert a BY-Page in each beamer sheet for fulfilling the CC-BY-SA requirements
 * [x] Normalize the input statements by using LaTeX variables for the paths
-* [x] Create and integrate a proTironeComputatri - Logo
+* [x] Create and integrate a proTirone - Logo
 * [x] Integrate a build method to compile all docs as PDF automatically while preserving the file structure
 * [x] Reorganize the repository structure in a way that it is also capable of incorporating teaching/learning materials in other formats
 * [x] insert in lf.tpl a collecting routine to compile the complete LF dd based on the LF-sbj-dds and their theme-dds 

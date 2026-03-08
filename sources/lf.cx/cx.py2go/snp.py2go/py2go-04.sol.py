@@ -1,4 +1,4 @@
-# (C) 2025 K.Reincke: proTironeComputatri snippet [CC-BY-4.0]
+# (C) 2025 K.Reincke: proTirone snippet [CC-BY-4.0]
 '''
 1. Weisen Sie einer Variable my_first_name Ihren Vornamen zu.
 2. Weisen Sie einer Variable my_last_name Ihren Nachnamen zu.
