@@ -89,7 +89,7 @@ Genauer erläutere ich einzelne Unterrichtseinheiten und -aspekte in meinem Blog
 * [X] Bis Ende July 2025 Aufbau des Template- und Buildsystems
 * [X] Bis Ende August 2025 Integration einer exemplarischen Unterrichtseinheit
 * [X] Bis Ende September 2025 Reset des automatischen Deployments der Stunden und Releases 
-* [ ] Bis Ende Januar 2026 (Ende 1. Halbjahr 2025/26) Integration eines Grundbestandes an LF03- und LF09-Stunden
+* [X] Bis Ende Januar 2026 (Ende 1. Halbjahr 2025/26) Integration eines Grundbestandes an LF03- und LF09-Stunden
 * [ ] Bis Ende July 2026 (Ende 2. Halbjahr 2025/26) Integration aller LF03- und LF09-Stunden
 * [ ] Bis Ende July 2026 (Ende 2. Halbjahr 2025/26) stückweise Integration von LF-11c- und LF-11d-Stunden
 * [ ] ...
