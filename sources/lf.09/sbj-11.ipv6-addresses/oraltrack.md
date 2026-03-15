@@ -90,12 +90,16 @@ Das ist immer noch unvorstellbar groß
   * nicht routbar 
   * quasi MAC-Adresse
   * Erkennungspräfix: fe80::/10 ( 0x[fe|80] = 111111110|100000000)
+  * Mit Algorithmus aus MAC-Adresse errechenpar = quasi eine APIPA-Adresse
 * __Unique Local Address__ = 
   * ULA
   * nicht ins Internet routbar
   * in einem privaten Netz routbar
   * wie private IPv4-Adressen
   * Erkennungspräfix: fc00::/7 ( 0x[fc|00] = 11111100|000000000)
+  * Subklassifizierung mittels L-Bit (= 8. Bit im ersten Byte):
+    * `L = 0` :- `fc00::/8` :- "is currently not defined" = darf/sollte nicht genutzt werden
+    * `L = 1` :- `fd00::/8` :- signalisiert, dass Adresse lokal generiert worden ist
 * __Loopback__ = 
   * allows a host to talk to itself over IPv6
   * wie superprivate Adressen
@@ -115,12 +119,45 @@ Das ist immer noch unvorstellbar groß
 Für weitere Einzelheiten vgl. [https://www.ripe.net/media/documents/ipv6_reference_card.pdf](https://www.ripe.net/media/documents/ipv6_reference_card.pdf)
 
 
+**Darf man ULA's nach eigenenm Gutdünken ausfüllen?*
+
+* *Im Prinzip ja*, wenn man das Präfix `fd00::/8` verwendet.
+* = daran denken, dass `fc00::/8` eine 'unter Aufsicht generierte private IP-Adresse' signalisieren würde, was organisatorisch bisher nicht festgelegt ist.
+
+**ABER:** Es gibt eine begründete Konvention zur Erzeugung von ULA's:
+
+ | Prefix/L	| Global ID (random) | Subnet ID | Interface ID
+---|---|---|---|---|
+Width | 8 | 40 | 16 | 64 |
+Value | `fd` | `xx:xxxx:xxxx` | `yyyy` | zzzz:zzzz:zzzz:zzzz |
+
+* nach [https://en.wikipedia.org/wiki/Unique_local_address](https://en.wikipedia.org/wiki/Unique_local_address)
+
+Doppeltes Problem bei ULA's:
+
+1. Wie stellt man sicher, dass in einem lokalen Netz IPv6-Adressen nicht doppelt auftauchen?
+2. Wie organisiert man ein lokales Netz mit IPv6-Adressen so, dass bei einem Merger wenig Arbeit anfällt?
+
+Dazu gibt es Vorschläge mit Zufallszahlen zu arbeiten: [https://www.rfc-editor.org/rfc/rfc4193](https://www.rfc-editor.org/rfc/rfc4193)
+
+**ANTWORT: Nein, man sollte sich an das Schema halten**
+
+Wenn man dieses Schema/Verfahren nutzt,
+
+1. können Router leichter die Subnetzadresse herausfiltern (fester Platz)
+2. wird die Wahrscheinlichkeit einer doppelten Adresse minimiert
+3. können sich Rechner selbst eine Adresse für ein Subnetz errechnen 
+
+
 **Denkfrage:**
 
 Wenn doch jedes Interface eines Rechners leicht eine routbare IPv6-Adresse bekommen kann,
 wozu braucht man dann *Unique Local Addresses*?
 
 *Antwort*: Um *Unique Local Addresses* zu verwenden, braucht man keinen Provider zu involvieren, muss also für dessen Bereitstellungsleistung auch nichts bezahlen.
+
+
+
 
 ### 3) IPv6-Segmentierung [→ ZP:Sheet:5]
 
