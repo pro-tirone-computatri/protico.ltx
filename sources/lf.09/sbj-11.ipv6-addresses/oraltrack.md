@@ -90,14 +90,14 @@ Das ist immer noch unvorstellbar groß
   * nicht routbar 
   * quasi MAC-Adresse
   * Erkennungspräfix: fe80::/10 ( 0x[fe|80] = 111111110|100000000)
-  * Mit Algorithmus aus MAC-Adresse errechenpar = quasi eine APIPA-Adresse
+  * Mit Algorithmus aus MAC-Adresse errechenbar = quasi eine APIPA-Adresse
 * __Unique Local Address__ = 
   * ULA
   * nicht ins Internet routbar
   * in einem privaten Netz routbar
   * wie private IPv4-Adressen
   * Erkennungspräfix: fc00::/7 ( 0x[fc|00] = 11111100|000000000)
-  * Subklassifizierung mittels L-Bit (= 8. Bit im ersten Byte):
+  * Subsegmentierung mittels L-Bit (= 8. Bit im ersten Byte):
     * `L = 0` :- `fc00::/8` :- "is currently not defined" = darf/sollte nicht genutzt werden
     * `L = 1` :- `fd00::/8` :- signalisiert, dass Adresse lokal generiert worden ist
 * __Loopback__ = 
@@ -119,12 +119,13 @@ Das ist immer noch unvorstellbar groß
 Für weitere Einzelheiten vgl. [https://www.ripe.net/media/documents/ipv6_reference_card.pdf](https://www.ripe.net/media/documents/ipv6_reference_card.pdf)
 
 
-**Darf man ULA's nach eigenenm Gutdünken ausfüllen?*
+**Darf man ULA's nach eigenem Gutdünken ausfüllen?**
 
 * *Im Prinzip ja*, wenn man das Präfix `fd00::/8` verwendet.
-* = daran denken, dass `fc00::/8` eine 'unter Aufsicht generierte private IP-Adresse' signalisieren würde, was organisatorisch bisher nicht festgelegt ist.
+  * `fc00::/8` nicht verwenden, signalisiert eine 'unter Aufsicht generierte private IP-Adresse'
+  * Verfahren dafür bisher nicht festgelegt ist.
 
-**ABER:** Es gibt eine begründete Konvention zur Erzeugung von ULA's:
+**Realiter NEIN:** Es gibt eine begründete Konvention zur Erzeugung von ULA's:
 
  | Prefix/L	| Global ID (random) | Subnet ID | Interface ID
 ---|---|---|---|---|
@@ -140,14 +141,17 @@ Doppeltes Problem bei ULA's:
 
 Dazu gibt es Vorschläge mit Zufallszahlen zu arbeiten: [https://www.rfc-editor.org/rfc/rfc4193](https://www.rfc-editor.org/rfc/rfc4193)
 
-**ANTWORT: Nein, man sollte sich an das Schema halten**
-
-Wenn man dieses Schema/Verfahren nutzt,
+**Also: Man muss sich an das Schema halten:**, weil 
 
 1. können Router leichter die Subnetzadresse herausfiltern (fester Platz)
 2. wird die Wahrscheinlichkeit einer doppelten Adresse minimiert
 3. können sich Rechner selbst eine Adresse für ein Subnetz errechnen 
 
+Hinweis: 
+
+* RfC = Request for Comments wird im Internet/Informatik oft wie ein Standard genommen: 
+* "RFCs are the core output of the IETF."
+* [https://www.ietf.org/process/rfcs/](https://www.ietf.org/process/rfcs/)
 
 **Denkfrage:**
 

@@ -234,6 +234,75 @@ nach  \href{https://de.wikipedia.org/wiki/IPv6}{https://de.wikipedia.org/wiki/IP
 \end{flushright}
 \end{frame}
 
+\begin{frame}[fragile]  
+  \frametitle{LF09:11:IPv6-Segmentierung für Unique Local Adresses}
+  \vspace{0.2cm}
+  \begin{tiny}
+
+    \begin{itemize}
+      \item \textcolor{red}{formal:} IPv6-ULA-Prefix $\rightarrow$ \texttt{fc::/7}
+      \item \textcolor{teal}{faktisch:} IPv6-ULA-Prefix $\rightarrow$ \texttt{fd::/8}
+      \item Denn: 8. Bit = L-Bit spaltet \texttt{fc::/7} in \texttt{fc::/8} u. \texttt{fd::/8}
+      \item \texttt{fc::/8} bisher reserviert und undefiniert
+    \end{itemize}
+
+    \begin{center}
+      \renewcommand{\arraystretch}{3}
+      \begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+      \hline
+       \multicolumn{8}{|c|}{\footnotesize{\textcolor{magenta}{Netzpräfix (64 Bit)}}} &
+       \multicolumn{8}{c|}{\footnotesize{\textcolor{gray}{Interface Identifier (64 Bit)}}}\\
+      \hline
+      \textcolor{gray}{\tiny{F.}} & \textcolor{gray}{\tiny{E.}} &
+          \textcolor{gray}{\tiny{D.}} & \textcolor{gray}{\tiny{C.}} &
+            \textcolor{gray}{\tiny{B.}} & \textcolor{gray}{\tiny{A.}} &
+              \textcolor{gray}{\tiny{9.}} & \textcolor{gray}{\tiny{8.}} &
+                \textcolor{gray}{\tiny{7.}} & \textcolor{gray}{\tiny{6.}} &
+                  \textcolor{gray}{\tiny{5.}} & \textcolor{gray}{\tiny{4.}} &
+                    \textcolor{gray}{\tiny{3.}} & \textcolor{gray}{\tiny{2.}} &
+                     \textcolor{gray}{\tiny{1.}} & \textcolor{gray}{\tiny{0.}} \\
+  
+      \hline
+      \textcolor{red}{\tiny{fd}} & \textcolor{orange}{\tiny{xx}} &
+          \textcolor{orange}{\tiny{xx}} & \textcolor{orange}{\tiny{xx}} &
+            \textcolor{orange}{\tiny{xx}} & \textcolor{orange}{\tiny{xx}} &
+              \textcolor{blue}{\tiny{yy}} & \textcolor{teal}{\tiny{yy}} &
+                \textcolor{gray}{\tiny{zz}} & \textcolor{gray}{\tiny{zz}} &
+                  \textcolor{gray}{\tiny{zz}} & \textcolor{gray}{\tiny{zz}} &
+                    \textcolor{gray}{\tiny{zz}} & \textcolor{gray}{\tiny{zz}} &
+                     \textcolor{gray}{\tiny{73}} & \textcolor{gray}{\tiny{44}} \\
+      \hline
+       \multicolumn{1}{|c|}{\tiny{\textcolor{red}{Prefix/L}}} &
+       \multicolumn{5}{c|}{\footnotesize{\textcolor{orange}{Random}}} &
+       \multicolumn{2}{c|}{\footnotesize{\textcolor{blue}{Subnet-Id}}} &
+       \multicolumn{8}{c|}{\footnotesize{\textcolor{gray}{Interface Identifier (64 Bit)}}}\\   
+       
+       
+      \hline
+  
+      \multicolumn{2}{|c|}{fdxx} & \multicolumn{2}{c|}{xxxx} &
+        \multicolumn{2}{c|}{xxxx} & \multicolumn{2}{c|}{yyyy} &
+          \multicolumn{2}{c|}{zzzz} & \multicolumn{2}{c|}{zzzz} &
+            \multicolumn{2}{c|}{zzzz} & \multicolumn{2}{c|}{zzzz} \\
+      \hline
+      \multicolumn{6}{|c|}{\tiny{\textcolor{red}{Routing-Präfix}}} &
+      \multicolumn{2}{c|}{\tiny{\textcolor{blue}{Subnet-Ids}}} &
+      \multicolumn{8}{c|}{\footnotesize{\textcolor{gray}{Interface Identifier (64 Bit)}}}\\  
+      \hline
+      \end{tabular}
+    \end{center}
+  \end{tiny}
+  
+  \vspace{0.4cm}
+  \begin{flushright}
+  \begin{tiny}
+  nach  \href{https://en.wikipedia.org/wiki/Unique\_local\_address}{https://en.wikipedia.org/wiki/Unique\_local\_address}
+  \end{tiny}
+  \end{flushright}
+  \end{frame}
+  
+
+
 \begin{frame}
   \frametitle{LF09:11:Ergänzende Hinweise}
   \begin{footnotesize}

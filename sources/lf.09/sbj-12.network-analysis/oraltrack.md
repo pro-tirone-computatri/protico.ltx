@@ -8,7 +8,41 @@
 
 **[→ ZP:Sheet:2]**
 
-### 1) `arp` (unter W11: `arp -a`) 
+
+### 1. Überblick
+
+| Tool(LNX) | Information(en) zu | Tool(W11) |
+|---|---|---|
+| `arp` | aktive MAC-Adressen in Broadcastdomäne (+ Zusatzinfos) | `arp -a -v`|
+| `ip neighbor` | (aktive) MAC- und IP-Adressen in Broadcastdomäne | `netsh interface ipv4 show neighbors` |
+| `ifconfig` | Netzmaske, IP- und Broadcastadresse  | `ipconfig /all` |
+| `ip address` | IP-Adresse in CIDR-Notation, Broadcast- und MAC-Adresse | `netsh interface ipv4 show addresses` |
+| `ip route` | Netzadresse in CIDR-Notation, IP-Adresse und Gatewayadresse | `route print` |
+| `ping` | Erreichbarkeit eines 'Rechners' auf IP-Ebene | `ping` |
+| `traceroute` | Hoppings auf dem Weg zum anderen Rechner | `tracert` |
+| `nslookup` | IP-Adresse zu Domainnamen (u.umgekehrt) | `nslookup` |
+| `netstat -r` | Routingtabelle | `netstat -r` |
+| `netstat -ano` | alle lauschenden und etablierte TCP- u. UDP-Ports | `netstat -ano` |
+
+### 2. Demofahrplan:
+
+1. mit `arp` die via ARP-Cache aktuell bekannten Rechner ermitteln
+2. mit `ip neighbor` feinere Informationen dazu abfragen
+3. mit `ping` fehlende Rechner kontaktieren
+4. \1. und/oder \2. wiederholen und die Cache-Auffrischung verifizieren
+5. mit `ip address` eigene IP-Adresse in CIDR-Notation, Broadcast- und MAC-Adresse ermitteln
+6. mit `ip route` Netzadresse in CIDR-Notation, IP-Adresse und Gatewayadresse abfragen
+7. mit `netstat -r` verifizieren
+8. mit `ping 8.8.8.8` Erreichbarkeit Google-DNS-Server abfragen
+9. mit `traceroute 8.8.8.8` Hoppings durch private-Subnetze und durchs Internet hindurch abfragen
+10. mit `nslookup dns.google.com` IP-Adresse vom Google-DNS-Server erfragen
+11. mit `nslookup 8.8.8.8` zugehörigen Domainname erfragen
+12. mit `netstat -ano | grep tcp` lauschenden und etablierte TCP-Ports abfragen (:80)
+
+### 3. Einzelinformationen
+
+#### 3.1 `arp` 
+(unter W11: `arp -a`) 
 
 > "[...] manipulates or displays the kernel's IPv4 network neighbour cache." [ → man(arp)]
 
@@ -16,7 +50,7 @@
 * Enthält die eigene MAC-Adresse.
 
 
-Beispiel aus privatem Heimnetz
+Beispiel: <!-- TODO: Ersetzen durch GSLDK-Adresse -->
 
 ```
 Address      HWtype  HWaddress           Flags Mask Iface
@@ -24,7 +58,8 @@ Address      HWtype  HWaddress           Flags Mask Iface
 speedport.ip ether   c4:e5:32:15:a6:bc   C          wlp113s0f0
 ```
 
-### 2) `ifconfig` (unter W11: `ipconfig /all`)
+#### 3.2 `ifconfig` 
+(unter W11: `ipconfig /all`)
 
 > "[...] is used to configure [or display] the kernel-resident network interfaces" [ → man(ifconfig)]
 
@@ -38,7 +73,7 @@ Status enthält jeweils:
 * alle an das Interface gebundene IPv6-Adressen mit Prefixlänge 
 * MAC-Adresse
 
-Beispiel aus privatem Heimnetz:
+Beispiel: <!-- TODO: Ersetzen durch GSLDK-Adresse -->
 
 ```
 inet 192.168.2.102 netmask 255.255.255.0 broadcast 192.168.2.255
@@ -48,12 +83,10 @@ inet6 fe80::3b8:77e6:12cc:b8b3  prefixlen 64  scopeid 0x20<link>
 ether a0:d3:65:d3:60:ee  (Ethernet)
 ```
 
-### 3) `ip` (unter W11: netsh)
+#### 3.3 `ip` 
+(unter W11: netsh)
 
 > "[...] show[s] / manipulate[s] routing, network devices, interfaces and tunnels [ → man(ip)]
-
-#### 3.1) `ip` 
-unter Linux
 
 * `ip addr` "shows addresses assigned to all network interfaces" (= IPv4- und IPv6-Adressen in CIDR-Notation)
 * `ip neigh` "shows the current neighbour table in kernel." (= Infos über BCD-Partner)
@@ -76,8 +109,8 @@ ist moderner als ipfconfig, liefert feinere Aussagen.
 * `ip -6 route show` zeigt die ipv6-Routingtabelle an
 * `ip -stats -human link show` zeigt eine Paketstatistik an
 
-#### 3.2) `netsh` 
-unter Windows 11
+#### 3.4 `netsh` 
+nur unter Windows 11
 
 * steht für *Network Shell* [ → [https://learn.microsoft.com/de-de/windows-server/administration/windows-commands/netsh](https://learn.microsoft.com/de-de/windows-server/administration/windows-commands/netsh)]
 * wird von einer Shell -- z.B. pwsh -- aus aufgerufen
@@ -91,8 +124,8 @@ Beispiele:
 * `netsh interface ipv6 show addresses` (Befehl: *show* Parameter: *addresses*)
 
 
-
-### 4) `ping`
+#### 4 `ping`
+unter LNX/W11
 
 > "send[s] ICMP ECHO_REQUEST to network hosts" [ → man(ping)]
 
@@ -101,14 +134,15 @@ Beispiele:
 * gut, um das prinzipielle Funktionieren der Netzkonfiguration zu verifizieren
 
 
-### 5) `traceroute` (W11: `tracert`)
+#### 3.5 `traceroute` 
+(unter W11: `tracert`)
 
 > "print[s] the route packets trace to network host"  [ → man(traceroute)]
 
 * ermittelt die Hoppings bis zum Zielrechner.
 * erlaubt Einblick in Netzwerkstruktur
 
-Beispiel aus privatem Heimnetz:
+Beispiel: <!-- TODO: Ersetzen durch GSLDK-Adresse -->
 
 ```
  1  speedport.ip (192.168.2.1)  6.802 ms  6.740 ms  6.727 ms
@@ -122,14 +156,15 @@ Beispiel aus privatem Heimnetz:
 
 ```
 
-### 6) `nslookup`
+#### 3.6 `nslookup`
+unter LNX/W11
 
 > "quer[ies] Internet name servers interactively" [ → man(nslookup)]
 
 * erhält Domänenname, liefert IP-Adresse
 * erhält IP-Adresse, liefert Domänennamen (reverse ns-lookup)
 
-Beispiel aus privatem Heimnetz:
+Beispiel: <!-- TODO: Ersetzen durch GSLDK-Adresse -->
 
 ```
 nslookup karsten-reincke.de
@@ -149,12 +184,14 @@ nslookup 81.169.145.160
 160.145.169.81.in-addr.arpa	name = wa0.rzone.de
 
 ```
+
 **Nette Einzelanwendungen:**
 
 `nslookup -query=A google.de` liefert Ihnen die IPv4-Adresse
 `nslookup -query=AAAA google.de` liefert Ihnen die IPv6-Adresse
 
-### 7) `netstat`
+#### 3.7 `netstat`
+unter LNX/W11
 
 > "[...] print[s] network connections, routing tables, interface statistics [...]" [ → man(netstat)]
 
@@ -164,7 +201,7 @@ liefert
 * `netstat -i` zeigt Infos zu allen Interfaces an
 * `netstat -s` zeigt Statistiken für Übertragungsprotokolle
 
-Beispiel aus privatem Heimnetz:
+Beispiel: <!-- TODO: Ersetzen durch GSLDK-Adresse -->
 
 ```
 netstat -r

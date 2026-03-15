@@ -15,7 +15,7 @@
   *[s. lf.09/sbj-04.arp-hub, lf.09/sbj-05.arp-switch, lf.09/sbj-06.arp-router]*
 - [ ] Cloudlösungen (SaaS, DaaS, Edgecomputing) *[s. sbj-03.architectures]*
 - [ ] Client-Server-Systeme *[s. sbj-03.architectures]*
-- [ ] Einbindung in Domäne
+- [ ] Einbindung in Domäne *[s. sbj-09.ipv4-addresses, sbj-10.ipv4-classes]
 - [ ] Netzwerkprotokolle und OSI-Modelle (Ethernet, IP, DNS) *[s. sbj-02.general-concepts, lf.09/sbj-02.network-concepts]*
 - [ ] Leistungsumfang v. Netzwerkkarte, Gateway, Router, Switch 
   *[s. lf.09/sbj-04.arp-hub, lf.09/sbj-05.arp-switch, lf.09/sbj-06.arp-router]*
@@ -62,10 +62,10 @@
 - [ ] Sicherungsschicht, Bridge, Switch, ARP *[s. lf.09/sbj-05.arp-switch, f.09/sbj-06.arp-router, sbj-07.mac-addresses]*
 - [ ] Vermittlungsschicht, Router, IPv4 Adressen *[s. sbj-09.ipv4-addresses, sbj-08.bitwise-operations]*
 - [ ] Segmentierung, IPv4-Adressen \& Typisierung *[s. sbj-10.ipv4-classes]*
-- [ ] VLAN 
-- [ ] Routing
+- [ ] VLAN *[s. sbj-13.routing-firewalls-dmz]* 
+- [ ] Routing *[s. sbj-13.routing-firewalls-dmz]*
 - [ ] Penetrationtest, Identity-/Access-Management 
-- [ ] DNS \& DHCP 
+- [ ] DNS \& DHCP *[s. sbj-14.dns]*
 - [ ] Layer II/III Multicasts 
 - [ ] Layer IV [s. Ports \& Sockets 
 - [ ] TCP/IP u. UDP/IP Protokoll 

@@ -38,8 +38,9 @@
 |  | Adressen | Netzsegmentierung | sbj-10.ipv4-classes* |
 |  | Adressen | IPv6 | sbj-11.ipv6* |
 |  | Adressen | Net-Analyse | sbj-12.network-analysis* |
-|  | Adressen | DMZ \& Firewalls | ...* |
-|  | Adressen | VLAN & Layer-III-Switches | ...* |
+|  | Adressen | DMZ \& Firewalls | sbj-13.routing-firewalls-dmz* |
+|  | Adressen | VLAN & Layer-III-Switches | sbj-13.routing-firewalls-dmz* |
+|  | Adressen | DNS | sbj-14.dns* |
 |  | Layer II-IV | Protokolle \& Packaging | ...* |
 |  | Layer IV | Ports | ...* |
 |  | Layer IV | NAT \& Hopping | ...* |
@@ -64,4 +65,8 @@
 |  | Selbstorganisation | ... | ...* |
 |  | Tooling | *freeplane* | ...* |
 
+## LF03 Nachträge
 
+| Datum | Thema | Aspekt | Material |
+|---|---|---|---|
+|  | Patterns | Systemarchitekturen | sbj-03.architectures* |
